@@ -1,0 +1,938 @@
+{
+	"file_history":
+	[
+		"/home/niraj/.config/nvim/lua/kickstart/plugins/debug.lua",
+		"/home/niraj/.config/nvim/lua/kickstart/plugins/neo-tree.lua",
+		"/home/niraj/.config/nvim/lua/kickstart/plugins/indent_line.lua",
+		"/home/niraj/.config/nvim/lua/kickstart/plugins/lint.lua",
+		"/home/niraj/.config/nvim/lua/custom/plugins/core.lua",
+		"/home/niraj/.config/nvim/lua/custom/plugins/init.lua",
+		"/home/niraj/.config/nvim/init.lua",
+		"/home/niraj/.config/nvim/lua/custom/plugins/which-key.lua",
+		"/home/niraj/.config/nvim/lua/config/keymaps.lua",
+		"/home/niraj/.local/share/nvim/lazy/persistence.nvim/doc/persistence.nvim.txt",
+		"/home/niraj/.bashrc",
+		"/home/niraj/.tmux.conf",
+		"/home/niraj/Desktop/Projects/instaclone/frontend/components.json",
+		"/home/niraj/Desktop/Projects/js/insta1/insta/node_modules/framer-motion/dist/es/gestures/utils/is-node-or-child.mjs",
+		"/home/niraj/Desktop/Projects/social-media/node_modules/resolve/lib/homedir.js",
+		"/home/niraj/Downloads/instaclone-main/package.json",
+		"/home/niraj/Desktop/Projects/linkedin/.env",
+		"/home/niraj/Downloads/instaclone-main/backend/utils/db.js",
+		"/home/niraj/.config/nvim/lua/plugins/neo-tree.lua",
+		"/home/niraj/Desktop/Projects/flutter/rohit semriwal ecommerce/ecommerce-backend/node_modules/dashdash/lib/dashdash.js",
+		"/home/niraj/.config/nvim.bak/lua/config/lazy.lua",
+		"/home/niraj/.config/nvim.bak/lua/config/keymaps.lua",
+		"/home/niraj/.config/nvim.bak/lua/config/autocmds.lua",
+		"/home/niraj/.config/nvim.bak/lua/plugins/bufferline.lua",
+		"/home/niraj/.config/sublime-text/Packages/User/Preferences.sublime-settings",
+		"/home/niraj/.config/sublime-text/Packages/Default/Preferences.sublime-settings",
+		"/home/niraj/Desktop/Projects/js/bookstore/frontend/src/App.css",
+		"/home/niraj/Desktop/Projects/js/bookstore/frontend/src/index.css",
+		"/home/niraj/Desktop/Projects/js/bookstore/frontend/src/App.jsx",
+		"/home/niraj/.config/nvim/lua/kickstart/health.lua",
+		"/home/niraj/.config/sublime-text/Packages/LSP-typescript/LSP-typescript.sublime-settings",
+		"/home/niraj/.config/sublime-text/Packages/User/LSP-typescript.sublime-settings",
+		"/home/niraj/.config/starship.toml",
+		"/home/niraj/.local/share/applications/alacarte-made.desktop",
+		"/home/niraj/.local/share/applications/alacarte-made-1.desktop",
+		"/home/niraj/Downloads/pixel-saver-master/pixel-saver@deadalnix.me/metadata.json",
+		"/home/niraj/Downloads/gestureImprovements47@gestures/metadata.json",
+		"/home/niraj/.config/tmux/.tmux.conf",
+		"/media/niraj/4ADA77CBDA77B235/Watch/Lust, Caution (2007) [720p] [BluRay] [YTS.MX]/Lust,.Caution.2007.720p.BluRay.x264.AAC-[YTS.MX].srt",
+		"/home/niraj/Downloads/Lekton/README.md",
+		"/home/niraj/Desktop/a.sfd",
+		"/home/niraj/Desktop/token.txt",
+		"/home/niraj/.config/nvim/lua/options.lua",
+		"/home/niraj/Dropbox/obsidian-vault/ssh.pub",
+		"/home/niraj/.config/.gsd-keyboard.settings-ported",
+		"/home/niraj/.config/mimeapps.list",
+		"/home/niraj/.config/dleyna-server-service.conf",
+		"/home/niraj/.config/baloofileinformationrc",
+		"/home/niraj/.config/dolphinrc",
+		"/home/niraj/.config/gnome-initial-setup-done",
+		"/home/niraj/.config/QtProject.conf",
+		"/home/niraj/.config/user-dirs.locale",
+		"/home/niraj/.config/kservicemenurc",
+		"/home/niraj/.config/gsconnect/private.pem",
+		"/home/niraj/.config/lazygit/state.yml",
+		"/home/niraj/.config/lazygit/config.yml",
+		"/home/niraj/.config/gtk-2.0/gtkfilechooser.ini",
+		"/home/niraj/.config/Code/User/sync/keybindings/lastSynckeybindings.json",
+		"/home/niraj/.config/xdg-terminals.list",
+		"/home/niraj/.config/Caprine/custom.css",
+		"/home/niraj/.ssh/id_rsa.pub",
+		"/home/niraj/Dropbox/obsidian-vault/Learn-react/React.md",
+		"/home/niraj/Dropbox/obsidian-vault/.obsidian.vimrc",
+		"/home/niraj/Desktop/projects/js/ts-ecom-api/src/routes/products.ts",
+		"/home/niraj/.bash_history",
+		"/home/niraj/.zshrc",
+		"/home/niraj/.config/nvim.bak/lua/config/options.lua",
+		"/home/niraj/.blerc",
+		"/home/niraj/.cache/oh-my-posh/themes/1_shell.omp.json",
+		"/home/niraj/Documents/Learn-react/.obsidian.vimrc",
+		"/home/niraj/Documents/Learn-react/.obsidian/.obsidian.vimrc",
+		"/home/niraj/Desktop/projects/js/ts-ecom-api/src/index.ts",
+		"/home/niraj/.config/sublime-text/Packages/Materialize/schemes/Material Glacier.tmTheme",
+		"/home/niraj/.config/sublime-text/Packages/User/Material Glacier.sublime-color-scheme",
+		"/home/niraj/Desktop/projects/js/ts-ecom-api/src/middlewares/roleMiddleware.ts",
+		"/home/niraj/Desktop/projects/js/ts-ecom-api/src/error-handler.ts",
+		"/home/niraj/.config/sublime-text/Packages/NeoVintageous/Preferences.sublime-settings",
+		"/home/niraj/Desktop/projects/js/ts-ecom-api/.env",
+		"/home/niraj/Downloads/ts-ecom-api-master/.env",
+		"/home/niraj/.ssh/config",
+		"/home/niraj/Desktop/nvim/lua/plugins/dap.lua",
+		"/home/niraj/Desktop/emergency.txt",
+		"/home/niraj/.config/kanata/config.kbd",
+		"/home/niraj/.openai_key.zsh",
+		"/home/niraj/Downloads/WebStorm-2024.2/WebStorm-242.20224.342/Install-Linux-tar.txt",
+		"/home/niraj/Desktop/hello.py",
+		"/home/niraj/.config/system.d/user/kanata.service",
+		"/home/niraj/Desktop/nvim/lua/plugins/persistance.lua",
+		"/home/niraj/.config/nvim/lua/mappings.lua",
+		"/home/niraj/Desktop/Projects/flutter/rohit semriwal ecommerce/ecommerce-frontend/lib/core/ui.dart",
+		"/mnt/sdb3/Watch/Furiosa A Mad Max Saga (2024) [1080p] [WEBRip] [5.1] [YTS.MX]/Furiosa.A.Mad.Max.Saga.2024.1080p.WEBRip.x264.AAC5.1-[YTS.MX].srt",
+		"/home/niraj/.config/neovide/config.toml",
+		"/home/niraj/.config/wezterm/config/appearance.lua",
+		"/home/niraj/.config/wezterm/config/domains.lua",
+		"/home/niraj/.config/wezterm/config/bindings.lua",
+		"/home/niraj/.config/wezterm/config/launch.lua",
+		"/home/niraj/.config/wezterm/config/init.lua",
+		"/home/niraj/.config/wezterm/config/general.lua",
+		"/home/niraj/.config/wezterm/config/fonts.lua",
+		"/mnt/sdb3/Projects/js/Nomad-backend-master/routes/galleryRoutes.js",
+		"/home/niraj/Desktop/Projects/js/Nomad-backend-master/.gitignore",
+		"/home/niraj/Desktop/Downloads/Saint.Maud.English-WWW.MY-SUBS.CO.srt",
+		"/home/niraj/Desktop/Projects/flutter/rohit semriwal ecommerce/ecommerce-backend/src/server.js",
+		"/home/niraj/Desktop/Link to nvim/lua/config/lazy.lua",
+		"/home/niraj/Desktop/Link to nvim/lua/plugins/core.lua",
+		"/home/niraj/Downloads/Saint.Maud.English-WWW.MY-SUBS.CO.srt",
+		"/home/niraj/.flutter",
+		"/home/niraj/Desktop/Link to nvim/lua/config/keymaps.lua",
+		"/home/niraj/.config/nautilus/search-metadata",
+		"/home/niraj/Desktop/Link to nvim/lua/plugins/lsp-saga.lua",
+		"/home/niraj/.config/kdeglobals",
+		"/home/niraj/.config/nvim.bak/init.lua",
+		"/home/niraj/Desktop/keymaps.lua",
+		"/home/niraj/.config/nvim.bak/lua/plugins/hl-chunk.lua",
+		"/home/niraj/.config/nvim.bak/lua/mappings.lua",
+		"/home/niraj/.config/nvim.bak/lua/plugins/lsp-config.lua",
+		"/home/niraj/.local/share/nvim/neo-tree.nvim.log",
+		"/home/niraj/.config/nvim/lua/plugins/example.lua",
+		"/home/niraj/.config/nvim/lua/plugins/flutter-tools.lua",
+		"/home/niraj/.config/nvim/lua/chadrc.lua",
+		"/home/niraj/Desktop/function OpenDiagnosticIfNoFloat()",
+		"/home/niraj/.config/nvim/lua/plugins/init.lua",
+		"/home/niraj/.config/nvim/configs/lazy.lua",
+		"/home/niraj/.config/nvim/configs/conform.lua",
+		"/home/niraj/.config/nvim/configs/lspconfig.lua",
+		"/home/niraj/.local/share/nvim/lazy/navigator.lua/lua/navigator/lspclient/mapping.lua",
+		"/mnt/sdb3/Projects/flutter/todo_app/lib/main.dart",
+		"/home/niraj/.local/share/neovide/neovide-settings.json"
+	],
+	"folder_history":
+	[
+		"/home/niraj/.config/nvim/lua/custom/plugins",
+		"/home/niraj/.config/nvim",
+		"/home/niraj/Desktop/Projects/js/bookstore",
+		"/home/niraj/.config/nvim.bak",
+		"/home/niraj/Desktop/projects/js/ts-ecom-api",
+		"/home/niraj/Desktop/nvim/lua/plugins",
+		"/home/niraj/.config/neovide",
+		"/home/niraj/.local/share/nvim/lazy/lspsaga.nvim/lua/lspsaga/codeaction",
+		"/home/niraj/Desktop/Projects/ecom_app",
+		"/home/niraj/Desktop/Projects/ts-ecom-api",
+		"/home/niraj/Desktop/Projects/todo_app",
+		"/home/niraj/Desktop/Projects/Nomad-backend-master"
+	],
+	"last_version": 4180,
+	"last_window_id": 36,
+	"log_indexing": false,
+	"next_update_check": 1731478712,
+	"settings":
+	{
+		"new_window_full_screen": false,
+		"new_window_height": 0.0,
+		"new_window_maximized": true,
+		"new_window_position":
+		[
+			0.0,
+			80.0
+		],
+		"new_window_settings":
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+				]
+			},
+			"build_system_choices":
+			[
+			],
+			"build_varint": "",
+			"command_palette":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+					[
+						"men",
+						"View: Toggle Menu"
+					],
+					[
+						"insta",
+						"Package Control: Install Package"
+					],
+					[
+						"package cont",
+						"Package Control: Install Package"
+					],
+					[
+						"install",
+						"Package Control: Install Package"
+					],
+					[
+						"ui",
+						"UI: Select Color Scheme"
+					],
+					[
+						"colorsc",
+						"UI: Select Color Scheme"
+					],
+					[
+						"menu",
+						"View: Toggle Menu"
+					],
+					[
+						"theme",
+						"UI: Select Color Scheme"
+					],
+					[
+						"color",
+						"UI: Customize Color Scheme"
+					],
+					[
+						"split",
+						"File: Split View"
+					],
+					[
+						"install ",
+						"Package Control: Install Package"
+					],
+					[
+						"neovin",
+						"Preferences: NeoVintageous Settings"
+					],
+					[
+						"dart",
+						"Preferences: LSP-Dart Settings"
+					],
+					[
+						"prefe",
+						"Preferences: Settings"
+					],
+					[
+						"term",
+						"Preferences: Terminus Key Bindings"
+					],
+					[
+						"flutter",
+						"Flutter: Devices"
+					],
+					[
+						"remo",
+						"Package Control: Remove Package"
+					],
+					[
+						"pref",
+						"Preferences: Settings"
+					]
+				],
+				"width": 0.0
+			},
+			"console":
+			{
+				"height": 315.0,
+				"history":
+				[
+					"node"
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/home/niraj/.profile",
+				"/home/niraj/.config/nvim/lua/kickstart/plugins/debug.lua",
+				"/home/niraj/.config/nvim/lua/kickstart/plugins/neo-tree.lua",
+				"/home/niraj/.config/nvim/lua/kickstart/plugins/indent_line.lua",
+				"/home/niraj/.config/nvim/lua/kickstart/plugins/lint.lua",
+				"/home/niraj/.config/nvim/lua/custom/plugins/core.lua",
+				"/home/niraj/.config/nvim/lua/custom/plugins/init.lua",
+				"/home/niraj/.config/nvim/init.lua",
+				"/home/niraj/.config/nvim/lua/custom/plugins/which-key.lua",
+				"/home/niraj/.config/nvim/lua/config/keymaps.lua",
+				"/home/niraj/.local/share/nvim/lazy/persistence.nvim/doc/persistence.nvim.txt",
+				"/home/niraj/.bashrc",
+				"/home/niraj/.tmux.conf",
+				"/home/niraj/Desktop/Projects/instaclone/frontend/components.json",
+				"/home/niraj/Desktop/Projects/js/insta1/insta/node_modules/framer-motion/dist/es/gestures/utils/is-node-or-child.mjs",
+				"/home/niraj/Desktop/Projects/social-media/node_modules/resolve/lib/homedir.js",
+				"/home/niraj/Downloads/instaclone-main/package.json",
+				"/home/niraj/Desktop/Projects/linkedin/.env",
+				"/home/niraj/Downloads/instaclone-main/backend/utils/db.js",
+				"/home/niraj/.config/nvim/lua/plugins/neo-tree.lua",
+				"/home/niraj/Desktop/Projects/flutter/rohit semriwal ecommerce/ecommerce-backend/node_modules/dashdash/lib/dashdash.js",
+				"/home/niraj/.config/nvim.bak/lua/config/lazy.lua",
+				"/home/niraj/.config/nvim.bak/lua/config/keymaps.lua",
+				"/home/niraj/.config/nvim.bak/lua/config/autocmds.lua",
+				"/home/niraj/.config/nvim.bak/lua/plugins/bufferline.lua",
+				"/home/niraj/.config/sublime-text/Packages/User/Preferences.sublime-settings",
+				"/home/niraj/.config/sublime-text/Packages/Default/Preferences.sublime-settings",
+				"/home/niraj/Desktop/Projects/js/bookstore/frontend/src/App.css",
+				"/home/niraj/Desktop/Projects/js/bookstore/frontend/src/App.jsx",
+				"/home/niraj/.config/nvim/lua/kickstart/health.lua",
+				"/home/niraj/.config/starship.toml",
+				"/home/niraj/.local/share/applications/alacarte-made.desktop",
+				"/home/niraj/.local/share/applications/alacarte-made-1.desktop",
+				"/home/niraj/Downloads/pixel-saver-master/pixel-saver@deadalnix.me/metadata.json",
+				"/home/niraj/Downloads/gestureImprovements47@gestures/metadata.json",
+				"/home/niraj/.config/tmux/.tmux.conf",
+				"/media/niraj/4ADA77CBDA77B235/Watch/Lust, Caution (2007) [720p] [BluRay] [YTS.MX]/Lust,.Caution.2007.720p.BluRay.x264.AAC-[YTS.MX].srt",
+				"/home/niraj/Downloads/Lekton/README.md",
+				"/home/niraj/Desktop/a.sfd",
+				"/home/niraj/Desktop/token.txt",
+				"/home/niraj/Dropbox/obsidian-vault/ssh.pub",
+				"/home/niraj/.config/.gsd-keyboard.settings-ported",
+				"/home/niraj/.config/mimeapps.list",
+				"/home/niraj/.config/dleyna-server-service.conf",
+				"/home/niraj/.config/baloofileinformationrc",
+				"/home/niraj/.config/dolphinrc",
+				"/home/niraj/.config/gnome-initial-setup-done",
+				"/home/niraj/.config/QtProject.conf",
+				"/home/niraj/.config/user-dirs.locale",
+				"/home/niraj/.config/kservicemenurc",
+				"/home/niraj/.config/gsconnect/private.pem",
+				"/home/niraj/.config/lazygit/state.yml",
+				"/home/niraj/.config/lazygit/config.yml",
+				"/home/niraj/.config/gtk-2.0/gtkfilechooser.ini",
+				"/home/niraj/.config/Code/User/sync/keybindings/lastSynckeybindings.json",
+				"/home/niraj/.config/xdg-terminals.list",
+				"/home/niraj/.config/Caprine/custom.css",
+				"/home/niraj/.ssh/id_rsa.pub",
+				"/home/niraj/Dropbox/obsidian-vault/Learn-react/React.md",
+				"/home/niraj/Dropbox/obsidian-vault/.obsidian.vimrc",
+				"/home/niraj/Desktop/projects/js/ts-ecom-api/src/routes/products.ts",
+				"/home/niraj/.bash_history",
+				"/home/niraj/.zshrc",
+				"/home/niraj/.config/nvim.bak/lua/config/options.lua",
+				"/home/niraj/.blerc",
+				"/home/niraj/.cache/oh-my-posh/themes/1_shell.omp.json",
+				"/home/niraj/Documents/Learn-react/.obsidian.vimrc",
+				"/home/niraj/Documents/Learn-react/.obsidian/.obsidian.vimrc",
+				"/home/niraj/Desktop/projects/js/ts-ecom-api/src/index.ts",
+				"/home/niraj/Desktop/projects/js/ts-ecom-api/src/middlewares/roleMiddleware.ts",
+				"/home/niraj/Desktop/projects/js/ts-ecom-api/src/error-handler.ts",
+				"/home/niraj/Desktop/projects/js/ts-ecom-api/.env",
+				"/home/niraj/Downloads/ts-ecom-api-master/.env",
+				"/home/niraj/.ssh/config",
+				"/home/niraj/Desktop/nvim/lua/plugins/dap.lua",
+				"/home/niraj/Desktop/emergency.txt",
+				"/home/niraj/.config/kanata/config.kbd",
+				"/home/niraj/.openai_key.zsh",
+				"/home/niraj/Downloads/WebStorm-2024.2/WebStorm-242.20224.342/Install-Linux-tar.txt",
+				"/home/niraj/Desktop/hello.py",
+				"/home/niraj/.config/system.d/user/kanata.service",
+				"/home/niraj/Desktop/nvim/lua/plugins/persistance.lua",
+				"/home/niraj/.config/nvim/lua/mappings.lua",
+				"/home/niraj/.config/nvim/lua/options.lua",
+				"/home/niraj/Desktop/Projects/flutter/rohit semriwal ecommerce/ecommerce-frontend/lib/core/ui.dart",
+				"/mnt/sdb3/Watch/Furiosa A Mad Max Saga (2024) [1080p] [WEBRip] [5.1] [YTS.MX]/Furiosa.A.Mad.Max.Saga.2024.1080p.WEBRip.x264.AAC5.1-[YTS.MX].srt",
+				"/home/niraj/.config/neovide/config.toml",
+				"/home/niraj/.config/wezterm/config/appearance.lua",
+				"/home/niraj/.config/wezterm/config/domains.lua",
+				"/home/niraj/.config/wezterm/config/bindings.lua",
+				"/home/niraj/.config/wezterm/config/launch.lua",
+				"/home/niraj/.config/wezterm/config/init.lua",
+				"/home/niraj/.config/wezterm/config/general.lua",
+				"/home/niraj/.config/wezterm/config/fonts.lua",
+				"/mnt/sdb3/Projects/js/Nomad-backend-master/routes/galleryRoutes.js",
+				"/home/niraj/Desktop/Projects/js/Nomad-backend-master/.gitignore",
+				"/home/niraj/Desktop/Downloads/Saint.Maud.English-WWW.MY-SUBS.CO.srt",
+				"/home/niraj/Desktop/Projects/flutter/rohit semriwal ecommerce/ecommerce-backend/src/server.js",
+				"/home/niraj/Desktop/Link to nvim/lua/config/lazy.lua",
+				"/home/niraj/Desktop/Link to nvim/lua/plugins/core.lua",
+				"/home/niraj/Downloads/Saint.Maud.English-WWW.MY-SUBS.CO.srt",
+				"/home/niraj/.flutter",
+				"/home/niraj/Desktop/Link to nvim/lua/config/keymaps.lua",
+				"/home/niraj/.config/nautilus/search-metadata",
+				"/home/niraj/Desktop/Link to nvim/lua/plugins/lsp-saga.lua",
+				"/home/niraj/.config/kdeglobals",
+				"/home/niraj/.config/nvim.bak/init.lua",
+				"/home/niraj/Desktop/keymaps.lua",
+				"/home/niraj/.config/nvim.bak/lua/plugins/hl-chunk.lua",
+				"/home/niraj/.config/nvim.bak/lua/mappings.lua",
+				"/home/niraj/.config/nvim.bak/lua/plugins/lsp-config.lua",
+				"/home/niraj/.config/nvim/lua/plugins/example.lua",
+				"/home/niraj/.local/share/nvim/neo-tree.nvim.log",
+				"/home/niraj/.config/nvim/lua/plugins/flutter-tools.lua",
+				"/home/niraj/.config/nvim/lua/chadrc.lua",
+				"/home/niraj/Desktop/function OpenDiagnosticIfNoFloat()",
+				"/home/niraj/.config/nvim/lua/plugins/init.lua",
+				"/home/niraj/.config/nvim/configs/lazy.lua",
+				"/home/niraj/.config/nvim/configs/conform.lua",
+				"/home/niraj/.config/nvim/configs/lspconfig.lua",
+				"/home/niraj/.local/share/nvim/lazy/navigator.lua/lua/navigator/lspclient/mapping.lua",
+				"/home/niraj/.local/share/neovide/neovide-settings.json",
+				"/mnt/sdb3/Projects/flutter/todo_app/lib/main.dart",
+				"/mnt/sdb3/Watch/Under The Hawthorn Tree (2010) [1080p] [BluRay] [5.1] [YTS.MX]/Under.The.Hawthorn.Tree.2010.1080p.BluRay.x264.AAC5.1-[YTS.MX].srt",
+				"/home/niraj/.config/sublime-text/Packages/User/LSP-Dart.sublime-settings",
+				"/home/niraj/.config/sublime-text/Packages/LSP-Dart/LSP-Dart.sublime-settings",
+				"/home/niraj/Desktop/Projects/todo_app/lib/providers/notes_provoder.dart",
+				"/home/niraj/Desktop/Projects/todo_app/lib/main.dart"
+			],
+			"find":
+			{
+				"height": 37.0
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+				],
+				"reverse": false,
+				"scrollbar_highlights": true,
+				"show_context": true,
+				"use_buffer2": true,
+				"use_gitignore": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"incremental_find":
+			{
+				"height": 37.0
+			},
+			"input":
+			{
+				"height": 63.0
+			},
+			"menu_visible": true,
+			"output.Terminus":
+			{
+				"height": 310.0
+			},
+			"output.exec":
+			{
+				"height": 445.0
+			},
+			"output.find_results":
+			{
+				"height": 0.0
+			},
+			"pinned_build_system": "",
+			"replace":
+			{
+				"height": 70.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_symbol":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"show_minimap": false,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 229.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+			}
+		},
+		"new_window_width": 0.0
+	},
+	"windows":
+	[
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+				]
+			},
+			"buffers":
+			[
+				{
+					"file": "/home/niraj/.profile",
+					"settings":
+					{
+						"buffer_size": 828,
+						"line_ending": "Unix"
+					}
+				}
+			],
+			"build_system": "",
+			"build_system_choices":
+			[
+			],
+			"build_varint": "",
+			"command_palette":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+					[
+						"men",
+						"View: Toggle Menu"
+					],
+					[
+						"insta",
+						"Package Control: Install Package"
+					],
+					[
+						"package cont",
+						"Package Control: Install Package"
+					],
+					[
+						"install",
+						"Package Control: Install Package"
+					],
+					[
+						"ui",
+						"UI: Select Color Scheme"
+					],
+					[
+						"colorsc",
+						"UI: Select Color Scheme"
+					],
+					[
+						"menu",
+						"View: Toggle Menu"
+					],
+					[
+						"theme",
+						"UI: Select Color Scheme"
+					],
+					[
+						"color",
+						"UI: Customize Color Scheme"
+					],
+					[
+						"split",
+						"File: Split View"
+					],
+					[
+						"install ",
+						"Package Control: Install Package"
+					],
+					[
+						"neovin",
+						"Preferences: NeoVintageous Settings"
+					],
+					[
+						"dart",
+						"Preferences: LSP-Dart Settings"
+					],
+					[
+						"prefe",
+						"Preferences: Settings"
+					],
+					[
+						"term",
+						"Preferences: Terminus Key Bindings"
+					],
+					[
+						"flutter",
+						"Flutter: Devices"
+					],
+					[
+						"remo",
+						"Package Control: Remove Package"
+					],
+					[
+						"pref",
+						"Preferences: Settings"
+					]
+				],
+				"width": 0.0
+			},
+			"console":
+			{
+				"height": 315.0,
+				"history":
+				[
+					"node"
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"expanded_folders":
+			[
+				"/home/niraj/.config/nvim/lua/custom/plugins"
+			],
+			"file_history":
+			[
+				"/home/niraj/.config/nvim/lua/kickstart/plugins/debug.lua",
+				"/home/niraj/.config/nvim/lua/kickstart/plugins/neo-tree.lua",
+				"/home/niraj/.config/nvim/lua/kickstart/plugins/indent_line.lua",
+				"/home/niraj/.config/nvim/lua/kickstart/plugins/lint.lua",
+				"/home/niraj/.config/nvim/lua/custom/plugins/core.lua",
+				"/home/niraj/.config/nvim/lua/custom/plugins/init.lua",
+				"/home/niraj/.config/nvim/init.lua",
+				"/home/niraj/.config/nvim/lua/custom/plugins/which-key.lua",
+				"/home/niraj/.config/nvim/lua/config/keymaps.lua",
+				"/home/niraj/.local/share/nvim/lazy/persistence.nvim/doc/persistence.nvim.txt",
+				"/home/niraj/.bashrc",
+				"/home/niraj/.tmux.conf",
+				"/home/niraj/Desktop/Projects/instaclone/frontend/components.json",
+				"/home/niraj/Desktop/Projects/js/insta1/insta/node_modules/framer-motion/dist/es/gestures/utils/is-node-or-child.mjs",
+				"/home/niraj/Desktop/Projects/social-media/node_modules/resolve/lib/homedir.js",
+				"/home/niraj/Downloads/instaclone-main/package.json",
+				"/home/niraj/Desktop/Projects/linkedin/.env",
+				"/home/niraj/Downloads/instaclone-main/backend/utils/db.js",
+				"/home/niraj/.config/nvim/lua/plugins/neo-tree.lua",
+				"/home/niraj/Desktop/Projects/flutter/rohit semriwal ecommerce/ecommerce-backend/node_modules/dashdash/lib/dashdash.js",
+				"/home/niraj/.config/nvim.bak/lua/config/lazy.lua",
+				"/home/niraj/.config/nvim.bak/lua/config/keymaps.lua",
+				"/home/niraj/.config/nvim.bak/lua/config/autocmds.lua",
+				"/home/niraj/.config/nvim.bak/lua/plugins/bufferline.lua",
+				"/home/niraj/.config/sublime-text/Packages/User/Preferences.sublime-settings",
+				"/home/niraj/.config/sublime-text/Packages/Default/Preferences.sublime-settings",
+				"/home/niraj/Desktop/Projects/js/bookstore/frontend/src/App.css",
+				"/home/niraj/Desktop/Projects/js/bookstore/frontend/src/App.jsx",
+				"/home/niraj/.config/nvim/lua/kickstart/health.lua",
+				"/home/niraj/.config/starship.toml",
+				"/home/niraj/.local/share/applications/alacarte-made.desktop",
+				"/home/niraj/.local/share/applications/alacarte-made-1.desktop",
+				"/home/niraj/Downloads/pixel-saver-master/pixel-saver@deadalnix.me/metadata.json",
+				"/home/niraj/Downloads/gestureImprovements47@gestures/metadata.json",
+				"/home/niraj/.config/tmux/.tmux.conf",
+				"/media/niraj/4ADA77CBDA77B235/Watch/Lust, Caution (2007) [720p] [BluRay] [YTS.MX]/Lust,.Caution.2007.720p.BluRay.x264.AAC-[YTS.MX].srt",
+				"/home/niraj/Downloads/Lekton/README.md",
+				"/home/niraj/Desktop/a.sfd",
+				"/home/niraj/Desktop/token.txt",
+				"/home/niraj/Dropbox/obsidian-vault/ssh.pub",
+				"/home/niraj/.config/.gsd-keyboard.settings-ported",
+				"/home/niraj/.config/mimeapps.list",
+				"/home/niraj/.config/dleyna-server-service.conf",
+				"/home/niraj/.config/baloofileinformationrc",
+				"/home/niraj/.config/dolphinrc",
+				"/home/niraj/.config/gnome-initial-setup-done",
+				"/home/niraj/.config/QtProject.conf",
+				"/home/niraj/.config/user-dirs.locale",
+				"/home/niraj/.config/kservicemenurc",
+				"/home/niraj/.config/gsconnect/private.pem",
+				"/home/niraj/.config/lazygit/state.yml",
+				"/home/niraj/.config/lazygit/config.yml",
+				"/home/niraj/.config/gtk-2.0/gtkfilechooser.ini",
+				"/home/niraj/.config/Code/User/sync/keybindings/lastSynckeybindings.json",
+				"/home/niraj/.config/xdg-terminals.list",
+				"/home/niraj/.config/Caprine/custom.css",
+				"/home/niraj/.ssh/id_rsa.pub",
+				"/home/niraj/Dropbox/obsidian-vault/Learn-react/React.md",
+				"/home/niraj/Dropbox/obsidian-vault/.obsidian.vimrc",
+				"/home/niraj/Desktop/projects/js/ts-ecom-api/src/routes/products.ts",
+				"/home/niraj/.bash_history",
+				"/home/niraj/.zshrc",
+				"/home/niraj/.config/nvim.bak/lua/config/options.lua",
+				"/home/niraj/.blerc",
+				"/home/niraj/.cache/oh-my-posh/themes/1_shell.omp.json",
+				"/home/niraj/Documents/Learn-react/.obsidian.vimrc",
+				"/home/niraj/Documents/Learn-react/.obsidian/.obsidian.vimrc",
+				"/home/niraj/Desktop/projects/js/ts-ecom-api/src/index.ts",
+				"/home/niraj/Desktop/projects/js/ts-ecom-api/src/middlewares/roleMiddleware.ts",
+				"/home/niraj/Desktop/projects/js/ts-ecom-api/src/error-handler.ts",
+				"/home/niraj/Desktop/projects/js/ts-ecom-api/.env",
+				"/home/niraj/Downloads/ts-ecom-api-master/.env",
+				"/home/niraj/.ssh/config",
+				"/home/niraj/Desktop/nvim/lua/plugins/dap.lua",
+				"/home/niraj/Desktop/emergency.txt",
+				"/home/niraj/.config/kanata/config.kbd",
+				"/home/niraj/.openai_key.zsh",
+				"/home/niraj/Downloads/WebStorm-2024.2/WebStorm-242.20224.342/Install-Linux-tar.txt",
+				"/home/niraj/Desktop/hello.py",
+				"/home/niraj/.config/system.d/user/kanata.service",
+				"/home/niraj/Desktop/nvim/lua/plugins/persistance.lua",
+				"/home/niraj/.config/nvim/lua/mappings.lua",
+				"/home/niraj/.config/nvim/lua/options.lua",
+				"/home/niraj/Desktop/Projects/flutter/rohit semriwal ecommerce/ecommerce-frontend/lib/core/ui.dart",
+				"/mnt/sdb3/Watch/Furiosa A Mad Max Saga (2024) [1080p] [WEBRip] [5.1] [YTS.MX]/Furiosa.A.Mad.Max.Saga.2024.1080p.WEBRip.x264.AAC5.1-[YTS.MX].srt",
+				"/home/niraj/.config/neovide/config.toml",
+				"/home/niraj/.config/wezterm/config/appearance.lua",
+				"/home/niraj/.config/wezterm/config/domains.lua",
+				"/home/niraj/.config/wezterm/config/bindings.lua",
+				"/home/niraj/.config/wezterm/config/launch.lua",
+				"/home/niraj/.config/wezterm/config/init.lua",
+				"/home/niraj/.config/wezterm/config/general.lua",
+				"/home/niraj/.config/wezterm/config/fonts.lua",
+				"/mnt/sdb3/Projects/js/Nomad-backend-master/routes/galleryRoutes.js",
+				"/home/niraj/Desktop/Projects/js/Nomad-backend-master/.gitignore",
+				"/home/niraj/Desktop/Downloads/Saint.Maud.English-WWW.MY-SUBS.CO.srt",
+				"/home/niraj/Desktop/Projects/flutter/rohit semriwal ecommerce/ecommerce-backend/src/server.js",
+				"/home/niraj/Desktop/Link to nvim/lua/config/lazy.lua",
+				"/home/niraj/Desktop/Link to nvim/lua/plugins/core.lua",
+				"/home/niraj/Downloads/Saint.Maud.English-WWW.MY-SUBS.CO.srt",
+				"/home/niraj/.flutter",
+				"/home/niraj/Desktop/Link to nvim/lua/config/keymaps.lua",
+				"/home/niraj/.config/nautilus/search-metadata",
+				"/home/niraj/Desktop/Link to nvim/lua/plugins/lsp-saga.lua",
+				"/home/niraj/.config/kdeglobals",
+				"/home/niraj/.config/nvim.bak/init.lua",
+				"/home/niraj/Desktop/keymaps.lua",
+				"/home/niraj/.config/nvim.bak/lua/plugins/hl-chunk.lua",
+				"/home/niraj/.config/nvim.bak/lua/mappings.lua",
+				"/home/niraj/.config/nvim.bak/lua/plugins/lsp-config.lua",
+				"/home/niraj/.config/nvim/lua/plugins/example.lua",
+				"/home/niraj/.local/share/nvim/neo-tree.nvim.log",
+				"/home/niraj/.config/nvim/lua/plugins/flutter-tools.lua",
+				"/home/niraj/.config/nvim/lua/chadrc.lua",
+				"/home/niraj/Desktop/function OpenDiagnosticIfNoFloat()",
+				"/home/niraj/.config/nvim/lua/plugins/init.lua",
+				"/home/niraj/.config/nvim/configs/lazy.lua",
+				"/home/niraj/.config/nvim/configs/conform.lua",
+				"/home/niraj/.config/nvim/configs/lspconfig.lua",
+				"/home/niraj/.local/share/nvim/lazy/navigator.lua/lua/navigator/lspclient/mapping.lua",
+				"/home/niraj/.local/share/neovide/neovide-settings.json",
+				"/mnt/sdb3/Projects/flutter/todo_app/lib/main.dart",
+				"/mnt/sdb3/Watch/Under The Hawthorn Tree (2010) [1080p] [BluRay] [5.1] [YTS.MX]/Under.The.Hawthorn.Tree.2010.1080p.BluRay.x264.AAC5.1-[YTS.MX].srt",
+				"/home/niraj/.config/sublime-text/Packages/User/LSP-Dart.sublime-settings",
+				"/home/niraj/.config/sublime-text/Packages/LSP-Dart/LSP-Dart.sublime-settings",
+				"/home/niraj/Desktop/Projects/todo_app/lib/providers/notes_provoder.dart",
+				"/home/niraj/Desktop/Projects/todo_app/lib/main.dart",
+				"/home/niraj/Desktop/Projects/Nomad-backend-master/models/User.js"
+			],
+			"find":
+			{
+				"height": 37.0
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+				],
+				"reverse": false,
+				"scrollbar_highlights": true,
+				"show_context": true,
+				"use_buffer2": true,
+				"use_gitignore": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"folders":
+			[
+				{
+					"path": "/home/niraj/.config/nvim/lua/custom/plugins"
+				}
+			],
+			"groups":
+			[
+				{
+					"sheets":
+					[
+						{
+							"buffer": 0,
+							"file": "/home/niraj/.profile",
+							"selected": true,
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 828,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/ShellScript/Bash.sublime-syntax",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 0,
+							"stack_multiselect": false,
+							"type": "text"
+						}
+					]
+				}
+			],
+			"incremental_find":
+			{
+				"height": 37.0
+			},
+			"input":
+			{
+				"height": 63.0
+			},
+			"layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			},
+			"menu_visible": true,
+			"output.Terminus":
+			{
+				"height": 310.0
+			},
+			"output.exec":
+			{
+				"height": 445.0
+			},
+			"output.find_results":
+			{
+				"height": 0.0
+			},
+			"pinned_build_system": "",
+			"position": "0,1,0,0,0,0,0,1920,1032,1920,1080,0",
+			"project": "",
+			"replace":
+			{
+				"height": 70.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_symbol":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"selected_group": 0,
+			"settings":
+			{
+			},
+			"show_minimap": false,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 229.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+			},
+			"window_id": 36,
+			"workspace_name": ""
+		}
+	],
+	"workspaces":
+	{
+		"recent_workspaces":
+		[
+		]
+	}
+}

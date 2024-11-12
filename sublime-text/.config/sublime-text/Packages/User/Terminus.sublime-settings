@@ -1,0 +1,12 @@
+{
+	"theme": "adaptive",
+	 "256color": true,
+
+	 "view_settings": {
+	"font_face":"FiraCode Nerd Font"
+	,"font_size":14
+        // these are extra view settings which are passed to the terminus_view,
+        // you could change settings like "font_face", "font_size" and paddings.
+    }
+}
+

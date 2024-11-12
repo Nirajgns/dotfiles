@@ -1,0 +1,25 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Dart",
+		"Dartlight",
+		"FileIcons",
+		"FlutterEnhancements",
+		"LSP-Dart",
+		"LSP-typescript",
+		"Materialize",
+		"NeoVintageous",
+		"NeoVintageousFiles",
+		"Package Control",
+		"SublimeLinter Inline Errors",
+		"Terminal",
+		"Terminus",
+		"Theme - Adaptify",
+		"Theme - Darkmatter",
+		"TOML",
+	],
+}

@@ -1,0 +1,27 @@
+{
+	"font_face": "FiraCode Nerd Font",
+	"font_size": 12,
+	"theme": "Adaptive.sublime-theme",
+	"color_scheme": "Adaptify Dark.sublime-color-scheme",
+	"highlight_line": true,
+	"caret_style": "phase",
+	"caret_extra_top": 0,
+	"caret_extra_bottom": 0,
+	"caret_extra_width": 1,
+	"indent_guide_options": ["solid","draw_normal","draw_active"],
+	"auto_complete_trailing_symbols": true,
+	"highlight_modified_tabs": true,
+	"show_full_path": false,
+	"vintageous_i_escape_jk" :true,
+	"vintageous_i_escape_kj": true,
+
+	"auto_hide_status_bar": false,
+	"auto_hide_menu": true,
+	"ignored_packages":
+	[
+		"Vintage",
+	],
+	
+	"index_files": false,
+	"neovintageous_build_version": 13200,
+}

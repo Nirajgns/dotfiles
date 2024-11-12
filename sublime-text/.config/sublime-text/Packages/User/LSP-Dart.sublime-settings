@@ -1,0 +1,16 @@
+// Settings in here override those in "LSP-Dart/LSP-Dart.sublime-settings"
+{
+	"env": {
+		// The path to the root of your Flutter SDK.
+		"FLUTTER_ROOT": "/home/niraj/developmemt/flutter",
+		//
+		// If FLUTTER_ROOT is not specified, then specify at least DART_SDK.
+		// For instance, /usr/lib/dart on Ubuntu.
+		// "DART_SDK": "..."
+		//
+		// If not specified, this plugin also attempts the environment
+		// variables FLUTTER_ROOT and DART_SDK from the Sublime Text process,
+		// in the order specified. It also attempts `which flutter` and
+		// `which dart`, in that order.
+	},
+}
