@@ -62,6 +62,8 @@ return {
       })
     end
 
+    vim.keymap.set("n", "<leader>qb", ":Dashboard<cr>", { silent = true, desc = "Dashboard" })
+
     return opts
   end,
 }

@@ -47,5 +47,11 @@ return {
         end,
       },
     })
+    vim.keymap.set(
+      "n",
+      "<leader>ft",
+      ":Telescope flutter commands<cr>",
+      { silent = true, desc = "telescope flutter tools" }
+    )
   end,
 }

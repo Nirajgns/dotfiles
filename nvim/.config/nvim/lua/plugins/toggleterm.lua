@@ -34,14 +34,15 @@ return {
           border = "rounded", --... other options supported by win open
         },
       })
+
+      vim.keymap.set({ "n", "t" }, "<A-f>", "<cmd>4ToggleTerm direction=float<cr>", { noremap = true, silent = true })
+
+      vim.keymap.set(
+        { "n", "t" },
+        "<A-v>",
+        "<cmd>9ToggleTerm direction=vertical size=50<cr>",
+        { noremap = true, silent = true }
+      )
     end,
   },
-  -- vim.keymap.set({ "n", "t" }, "<A-f>", "<cmd>4ToggleTerm direction=float<cr>", { noremap = true, silent = true }),
-
-  -- vim.keymap.set(
-  --   { "n", "t" },
-  --   "<A-v>",
-  --   "<cmd>9ToggleTerm direction=vertical size=50<cr>",
-  --   { noremap = true, silent = true }
-  -- )
 }

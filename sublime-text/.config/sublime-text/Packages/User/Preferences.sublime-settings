@@ -16,7 +16,7 @@
 	"vintageous_i_escape_kj": true,
 
 	"auto_hide_status_bar": false,
-	"auto_hide_menu": true,
+	"auto_hide_menu": false,
 	"ignored_packages":
 	[
 		"Vintage",

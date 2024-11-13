@@ -33,10 +33,9 @@ map("c", "<C-l>", "<Right>", { noremap = true, silent = false })
 map("n", "<Tab>", ":bnext<CR>", { noremap = true, silent = true })
 map("n", "<S-Tab>", ":bprevious<CR>", { noremap = true, silent = true })
 
---flutter tools
-map("n", "<leader>ft", ":Telescope flutter commands<cr>", { silent = true, desc = "telescope flutter tools" })
+vim.keymap.del("n", "<leader>ft")
+vim.keymap.del("n", "<leader>fT")
 
---terminal toggles
 --===================Search & Replace====================-
 wk.add({
   {
@@ -51,31 +50,14 @@ wk.add({
   },
 }, { prefix = "<leader>" })
 
-wk.add({
-  {
-    "<leader>sw",
-    '<cmd>lua require("grug-far").grug_far({ prefills = { search = vim.fn.expand("<cword>") } })<CR>',
-    desc = "Search current word",
-    mode = "v",
-  },
-}, { mode = "v", prefix = "<leader>" })
-
----marks with telescope---
-map("n", "<leader>'", "<cmd>Telescope marks<cr>", { noremap = true, silent = true, desc = "marks with telescope" })
-
 ---=======================for easy typing--------------------------
 map({ "i", "t" }, "<C-BS>", "<C-w>", { noremap = true, silent = true, desc = "delete word with ctrl+bcspc" })
 
----docs in side---
 map({ "n" }, "<C-S-s>", "<cmd>wa<cr>", { noremap = true, silent = true, desc = "save all" })
 
 -----------copy and paste--------------
 map("v", "<C-c>", '"+y', { silent = true, desc = "copy in visual mode" })
-
 map("c", "<C-v>", "<C-r>+", { noremap = true, desc = "paste in command mode" })
 map("n", "<C-S-v>", '"+P', { silent = true, desc = "paste in normal mode" })
 map("v", "<C-S-v>", '"+P', { silent = true, desc = "paste in visual mode" })
 map("i", "<C-v>", "<C-R>+", { silent = true, desc = "paste in insert mode" })
-
---Dashboard
-map("n", "<leader>qb", ":Dashboard<cr>", { silent = true, desc = "Dashboard" })
