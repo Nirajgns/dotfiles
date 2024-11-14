@@ -121,3 +121,9 @@ vim.api.nvim_create_autocmd("TermOpen", {
     vim.opt_local.relativenumber = false
   end,
 })
+
+-- Disable cursorline in terminal windows
+vim.api.nvim_create_autocmd("TermOpen", {
+  pattern = "*",
+  command = "setlocal nocursorline",
+})
