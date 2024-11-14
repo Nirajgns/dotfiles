@@ -14,6 +14,7 @@ require("lazy").setup({
     -- import any extras modules here
     { "LazyVim/LazyVim", import = "lazyvim.plugins" },
     -- import/override with your plugins
+    -- { import = "lazyvim.plugins.extras.coding.blink" },
     { import = "plugins" },
   },
   defaults = {
