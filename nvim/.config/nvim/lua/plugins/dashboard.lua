@@ -62,7 +62,7 @@ return {
       })
     end
 
-    vim.keymap.set("n", "<leader>qb", ":Dashboard<cr>", { silent = true, desc = "Dashboard" })
+    vim.keymap.set("n", "<leader>qb", ":Dashboard<cr>:Neotree close<cr>", { silent = true, desc = "Dashboard" })
 
     return opts
   end,

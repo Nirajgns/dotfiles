@@ -15,8 +15,7 @@ return {
       automatic_installation = true,
       handlers = {},
       ensure_installed = {
-        "dart-debug-adapter",
-        -- "delve",   --or any other debugger you need
+        "js-debug-adapter",
       },
     })
     require("nvim-dap-virtual-text").setup({ highlight_new_as_changed = true })
@@ -43,5 +42,48 @@ return {
     dap.listeners.after.event_initialized["dapui_config"] = dapui.open
     dap.listeners.before.event_terminated["dapui_config"] = dapui.close
     dap.listeners.before.event_exited["dapui_config"] = dapui.close
+
+    --NOTE: Adapters for different languages and debuggers
+    dap.adapters["pwa-node"] = {
+      type = "server",
+      host = "localhost",
+      port = 8123,
+      executable = {
+        command = "js-debug-adapter",
+      },
+    }
+
+    -- dap.adapters.chrome = {
+    --   type = "executable",
+    --   command = "node",
+    --   args = { os.getenv("HOME") .. "/code/vscode-chrome-debug/out/src/chromeDebug.js" },
+    -- }
+    --
+    -- dap.configurations.javascriptreact = {
+    --   {
+    --     name = "Frontend Launch File",
+    --     type = "chrome",
+    --     request = "attach",
+    --     program = "${file}",
+    --     cwd = vim.fn.getcwd(),
+    --     sourceMaps = true,
+    --     protocol = "inspector",
+    --     port = 9222,
+    --     webRoot = "${workspaceFolder}",
+    --   },
+    -- }
+
+    for _, language in ipairs({ "typescript", "javascript" }) do
+      dap.configurations[language] = {
+        {
+          type = "pwa-node",
+          request = "launch",
+          name = "Launch file",
+          program = "${file}",
+          cwd = "${workspaceFolder}",
+          runtimeExecutable = "node",
+        },
+      }
+    end
   end,
 }
