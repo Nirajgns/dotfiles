@@ -41,6 +41,20 @@ return {
           { LazyVim.lualine.pretty_path() },
         },
         lualine_x = {
+          function() --to get attached lsp servers
+            local buf_clients = vim.lsp.get_clients({ bufnr = vim.api.nvim_get_current_buf() })
+            if next(buf_clients) == nil then
+              return "" --return empty string when no lsp in attached
+            end
+
+            local client_names = {}
+            for _, client in pairs(buf_clients) do
+              table.insert(client_names, client.name)
+            end
+
+            return table.concat(client_names, ", ")
+          end,
+
           {
             function()
               return require("noice").api.status.command.get()
