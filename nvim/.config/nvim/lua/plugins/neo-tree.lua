@@ -1,5 +1,8 @@
 return {
   "nvim-neo-tree/neo-tree.nvim",
+  dependencies = {
+    "nvim-tree/nvim-web-devicons",
+  },
   opts = {
     popup_border_style = "rounded",
     default_component_configs = {

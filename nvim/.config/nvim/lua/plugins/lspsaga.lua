@@ -1,7 +1,7 @@
 return {
   "nvimdev/lspsaga.nvim",
   lazy = true,
-  event = "LazyFile",
+  event = "LspAttach",
   config = function()
     local wk = require("which-key")
     require("lspsaga").setup({
@@ -40,12 +40,12 @@ return {
         { silent = true, desc = "toggle lspsaga floating terminal" }
       ),
       wk.add({
-        { "<leader>l", group = "Lspsaga" },
+        { "<leader>l", group = "Lint,Lazy,Lspsaga" },
         { "<leader>lR", "<cmd>Lspsaga rename<cr>", desc = "Rename with lsp" },
         { "<leader>lc", "<cmd>Lspsaga code_action<cr>", desc = "Code Action" },
         { "<leader>ld", "<cmd>Lspsaga goto_definition<cr>", desc = "Lsp GoTo Definition" },
         { "<leader>li", "<cmd>LspInfo<cr>", desc = "Lsp info and status" },
-        { "<leader>lO", "<cmd>Lspsaga outline<cr>", desc = " lspsaga outline" },
+        { "<leader>lo", "<cmd>Lspsaga outline<cr>", desc = " lspsaga outline" },
         { "<leader>lp", "<cmd>Lspsaga peek_definition<cr>", desc = "Preview Definition" },
         { "<leader>lr", "<cmd>Lspsaga finder<cr>", desc = "Lsp Finder" },
         { "<leader>ls", "<cmd>Lspsaga signature_help<cr>", desc = "Signature Help" },

@@ -49,7 +49,7 @@ return {
     sources = {
       -- adding any nvim-cmp sources here will enable them
       -- with blink.compat
-      compat = {},
+      -- compat = {},
       completion = {
         -- remember to enable your providers here
         enabled_providers = { "lsp", "path", "snippets", "buffer" },
@@ -58,26 +58,26 @@ return {
 
     keymap = {
       preset = "enter",
-      ["<Tab>"] = {
-        LazyVim.cmp.map({ "snippet_forward", "ai_accept" }),
-        "fallback",
-      },
+      -- ["<Tab>"] = {
+      --   LazyVim.cmp.map({ "snippet_forward", "ai_accept" }),
+      --   "fallback",
+      -- },
     },
   },
-  ---@param opts blink.cmp.Config | { sources: { compat: string[] } }
-  config = function(_, opts)
-    -- setup compat sources
-    local enabled = opts.sources.completion.enabled_providers
-    for _, source in ipairs(opts.sources.compat or {}) do
-      opts.sources.providers[source] = vim.tbl_deep_extend(
-        "force",
-        { name = source, module = "blink.compat.source" },
-        opts.sources.providers[source] or {}
-      )
-      if type(enabled) == "table" and not vim.tbl_contains(enabled, source) then
-        table.insert(enabled, source)
-      end
-    end
-    require("blink.cmp").setup(opts)
-  end,
+  ------@param opts blink.cmp.Config | { sources: { compat: string[] } }
+  ---config = function(_, opts)
+  ---  -- setup compat sources
+  ---  local enabled = opts.sources.completion.enabled_providers
+  ---  for _, source in ipairs(opts.sources.compat or {}) do
+  ---    opts.sources.providers[source] = vim.tbl_deep_extend(
+  ---      "force",
+  ---      { name = source, module = "blink.compat.source" },
+  ---      opts.sources.providers[source] or {}
+  ---    )
+  ---    if type(enabled) == "table" and not vim.tbl_contains(enabled, source) then
+  ---      table.insert(enabled, source)
+  ---    end
+  ---  end
+  ---  require("blink.cmp").setup(opts)
+  ---end,
 }
