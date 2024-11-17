@@ -3,7 +3,9 @@ return {
   "folke/noice.nvim",
   event = "VeryLazy",
   opts = {
-    lsp = { progress = { enabled = true } },
+    lsp = { progress = { enabled = true }, signature = {
+      auto_open = { enabled = false },
+    } },
     routes = {
       {
         filter = {
