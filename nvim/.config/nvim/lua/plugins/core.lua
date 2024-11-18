@@ -2,10 +2,9 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "catppuccin-mocha",
+      colorscheme = "catppuccin",
     },
   },
-  -- Using lazy.nvim
   -- {
   --   "cdmill/neomodern.nvim",
   --   lazy = false,

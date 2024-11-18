@@ -35,7 +35,31 @@ return {
       dap.set_breakpoint(vim.fn.input("Breakpoint condition: "))
     end, { desc = "Set Breakpoint with condition" })
 
-    dapui.setup()
+    dapui.setup(
+      -- Change breakpoint icons
+      vim.api.nvim_set_hl(0, "DapBreak", { fg = "#aa1400" }),
+      vim.api.nvim_set_hl(0, "DapStop", { fg = "#ffcc00" })
+    )
+    local breakpoint_icons = vim.g.have_nerd_font
+        and {
+          Breakpoint = "",
+          BreakpointCondition = "",
+          BreakpointRejected = "",
+          LogPoint = "",
+          Stopped = "",
+        }
+      or {
+        Breakpoint = "●",
+        BreakpointCondition = "⊜",
+        BreakpointRejected = "⊘",
+        LogPoint = "◆",
+        Stopped = "⭔",
+      }
+    for type, icon in pairs(breakpoint_icons) do
+      local tp = "Dap" .. type
+      local hl = (type == "Stopped") and "DapStop" or "DapBreak"
+      vim.fn.sign_define(tp, { text = icon, texthl = hl, numhl = hl })
+    end
 
     vim.keymap.set("n", "<F7>", dapui.toggle, { desc = "Debug: See last session result." })
 

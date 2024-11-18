@@ -32,7 +32,7 @@ return {
         },
         packages = { enable = false },
         project = {
-          enable = true,
+          enable = true, --FIX: in issue with dashboard, try disabling and re-enabling this
           limit = 9,
           action = function()
             require("persistence").load()

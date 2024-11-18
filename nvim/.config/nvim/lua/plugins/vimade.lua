@@ -15,13 +15,13 @@ return {
             start = 1,
             to = 0.3,
             direction = direction.OUT,
-            ease = ease.OUT_SINE,
             duration = 500,
+            ease = ease.OUT_SINE,
             delay = 1,
           }),
         }),
       },
-      link = { buf_opts = { buftype = { "prompt", "terminal" } } },
     })
+    vim.keymap.set("n", "<leader>ut", ":VimadeToggle<CR>", { noremap = true, silent = true })
   end,
 }
