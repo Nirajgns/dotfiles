@@ -4,10 +4,14 @@ return {
   opts = {
     options = {
       buffer_close_icon = " ",
+      indicator = {
+        style = "underline",
+      },
+      -- separator_style = "slope", --"slant" | "slope" | "thick" | "thin" | { 'any', 'any' },
       offsets = {
         {
           filetype = "neo-tree",
-          text = "File Explorer",
+          text = "Neo-Tree",
           highlight = "Directory",
           text_align = "center",
         },

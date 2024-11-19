@@ -26,10 +26,12 @@ export PATH=$ANDROID_HOME/cmdline-tools/tools/bin/:$PATH
 export PATH=$ANDROID_HOME/emulator/:$PATH
 export PATH=$ANDROID_HOME/platform-tools/:$PATH
 export PATH=~/.cargo/bin/:$PATH
+export PATH="$PATH:/opt/nvim-linux64/bin"
 
 #aliases
 alias cls='clear'
 alias nv='neovide'
+alias tma='tmux attach'
 
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 . "$HOME/.cargo/env"
