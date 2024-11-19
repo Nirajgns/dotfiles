@@ -18,4 +18,13 @@ return {
       },
     },
   },
+  keys = {
+    {
+      "<leader>e",
+      function()
+        require("neo-tree.command").execute({ toggle = true, reveal = true, dir = LazyVim.root() })
+      end,
+      desc = "Explorer NeoTree (Root Dir)",
+    },
+  },
 }
