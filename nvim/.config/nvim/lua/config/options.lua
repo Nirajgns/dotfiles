@@ -7,8 +7,8 @@ local opt = vim.opt
 opt.scrolloff = 5
 
 -- Line Numbers
-opt.relativenumber = false
-opt.number = true
+opt.relativenumber = true
+-- opt.number = true
 
 -- Tabs & Indentation
 opt.tabstop = 2

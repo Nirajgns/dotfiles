@@ -11,11 +11,11 @@ return {
           type_opts = {
             float = {
               relative = "editor",
-              row = 0.08,
-              col = 0.045,
-              width = 0.9,
-              height = 0.8,
-              border = "single",
+              row = (1 - 0.75) / 2, -- Center vertically
+              col = (1 - 0.75) / 2, -- Center horizontally
+              width = 0.75, -- 80% of the editor's width
+              height = 0.75, -- 80% of the editor's height
+              border = "rounded", -- Rounded border for the floating window
             },
             horizontal = { location = "rightbelow", split_ratio = 0.35 },
             vertical = { location = "rightbelow", split_ratio = 0.35 },

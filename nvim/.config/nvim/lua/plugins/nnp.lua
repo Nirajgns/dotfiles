@@ -6,7 +6,7 @@ return {
   config = function()
     require("no-neck-pain").setup({
       debug = false,
-      width = 130,
+      width = 135,
       minSideBufferWidth = 10,
       disableOnLastBuffer = false,
       killAllBuffersOnDisable = false,
@@ -16,45 +16,25 @@ return {
         reloadOnColorSchemeChange = false,
         skipEnteringNoNeckPainBuffer = false,
       },
-      -- Supported integrations that might clash with `no-neck-pain.nvim`'s behavior.
     })
   end,
 
-  vim.keymap.set("n", "<leader>qz", function()
-    -- Declare a global variable to track the state
-    if not _G.is_nnp_enabled then
-      _G.is_nnp_enabled = false
-    end
+  vim.keymap.set("n", "<leader>uz", function()
+    _G.is_nnp_enabled = not _G.is_nnp_enabled
 
-    if not _G.is_nnp_enabled then
-      -- Enable Neotree float
+    if _G.is_nnp_enabled then
+      vim.cmd("set relativenumber!")
+      vim.cmd("set nonu")
       vim.cmd("Neotree float")
-
-      -- Close Neotree after 50ms
       vim.defer_fn(function()
         vim.cmd("Neotree close")
-      end, 50)
-
-      -- Enable NoNeckPain after 200ms
-      vim.defer_fn(function()
         vim.cmd("NoNeckPain")
       end, 200)
-
-      -- Toggle the state
-      _G.is_nnp_enabled = true
-    elseif _G.is_nnp_enabled then
-      -- Disable NoNeckPain after 200ms
-      vim.defer_fn(function()
-        vim.cmd("NoNeckPain")
-      end, 200)
-
-      -- Move Neotree to the left after 200ms
-      vim.defer_fn(function()
-        vim.cmd("Neotree left")
-      end, 200)
-
-      -- Toggle the state
-      _G.is_nnp_enabled = false
+    else
+      vim.cmd("set relativenumber!")
+      vim.cmd("set nu")
+      vim.cmd("NoNeckPain")
+      vim.cmd("Neotree left")
     end
   end, { silent = true, desc = "Toggle Zenmode with NNP" }),
 }

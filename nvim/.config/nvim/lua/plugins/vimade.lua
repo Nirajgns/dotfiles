@@ -13,15 +13,20 @@ return {
         Fade({
           value = animate.Number({
             start = 1,
-            to = 0.3,
+            to = 0.4,
             direction = direction.OUT,
-            duration = 500,
+            duration = 300,
             ease = ease.OUT_SINE,
             delay = 1,
           }),
         }),
       },
     })
-    vim.keymap.set("n", "<leader>ut", ":VimadeToggle<CR>", { noremap = true, silent = true })
+    vim.keymap.set(
+      "n",
+      "<leader>uv",
+      ":VimadeToggle<CR>",
+      { desc = "Toggle inactive window shading via Vimade", noremap = true, silent = true }
+    )
   end,
 }
