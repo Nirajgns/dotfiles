@@ -12,7 +12,7 @@ vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(vim.lsp.diagn
 -- then check for diagnostics under the cursor
 local augroup = vim.api.nvim_create_augroup("LspDiagnosticsFloat", { clear = true })
 
--- Set the autocommand to open the diagnostic float on CursorHold event
+--NOTE: Set the autocommand to open the diagnostic float on CursorHold event
 vim.api.nvim_create_autocmd("CursorHold", {
   group = augroup,
   pattern = "*",
@@ -21,16 +21,16 @@ vim.api.nvim_create_autocmd("CursorHold", {
   end,
 })
 
---set set_highlight_groups for folded lines
+--NOTE:set set_highlight_groups for folded lines
 local function set_highlight_groups()
-  vim.cmd("highlight Folded guibg=none guifg=brown")
+  vim.cmd("highlight Folded guibg=none guifg=gray gui=italic")
 end
 
 set_highlight_groups()
 
 --------------------------------neovide------------------
 vim.g.neovide_hide_mouse_when_typing = true
-vim.g.gui_font_default_size = 14
+vim.g.gui_font_default_size = 15
 vim.g.gui_font_size = vim.g.gui_font_default_size
 vim.g.gui_font_face = "IosevkaTerm Nerd Font"
 
@@ -44,7 +44,8 @@ vim.g.neovide_cursor_trail_size = 0.3
 
 vim.g.neovide_cursor_animation_length = 0.2
 vim.g.neovide_scroll_animation_length = 0.08
---these functions prevent neovide from scrolling on buffer switch
+
+--NOTE: these functions prevent neovide from scrolling on buffer switch
 vim.api.nvim_create_autocmd("BufLeave", {
   callback = function()
     vim.g.neovide_scroll_animation_length = 0
@@ -75,11 +76,9 @@ ResetGuiFont = function()
   RefreshGuiFont()
 end
 
--- Call function on startup to set default value
 ResetGuiFont()
 
--- Keymaps for adjusting neovide fontsize
-
+--NOTE: Keymaps for adjusting neovide fontsize
 vim.keymap.set({ "n", "i" }, "<C-+>", function()
   ResizeGuiFont(1)
 end, { desc = "increase font size" })
@@ -90,7 +89,7 @@ vim.keymap.set({ "n", "i" }, "<C-=>", function()
   ResetGuiFont()
 end, { desc = "reset font size" })
 
---command to disable numbers in terminal buffers
+--NOTE: Autocommand to disable numbers in terminal buffers
 vim.api.nvim_create_autocmd("TermOpen", {
   pattern = "*",
   callback = function()
@@ -99,7 +98,7 @@ vim.api.nvim_create_autocmd("TermOpen", {
   end,
 })
 
--- Disable cursorline in terminal windows
+--NOTE: Disable cursorline in terminal windows
 vim.api.nvim_create_autocmd("TermOpen", {
   pattern = "*",
   command = "setlocal nocursorline",

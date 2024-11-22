@@ -16,7 +16,7 @@ return {
             to = 0.4,
             direction = direction.OUT,
             duration = 300,
-            ease = ease.OUT_SINE,
+            ease = ease.LINEAR,
             delay = 1,
           }),
         }),
