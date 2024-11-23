@@ -101,5 +101,21 @@ vim.api.nvim_create_autocmd("TermOpen", {
 --NOTE: Disable cursorline in terminal windows
 vim.api.nvim_create_autocmd("TermOpen", {
   pattern = "*",
-  command = "setlocal nocursorline",
+  command = "setlocal cursorline",
+})
+
+--NOTE: Autocmd to manage cursorline in active/inactive windows, excluding NeoTree and file buffers
+-- vim.api.nvim_create_autocmd({ "WinEnter", "BufEnter" }, {
+--   callback = function()
+--     if vim.bo.filetype ~= "neo-tree" or vim.bo.buftype == "" then
+--       -- vim.wo.cursorline = true -- Enable cursorline in the active window
+--     end
+--   end,
+-- })
+vim.api.nvim_create_autocmd({ "WinLeave", "BufLeave" }, {
+  callback = function()
+    if vim.bo.filetype ~= "neo-tree" and vim.bo.buftype ~= "" then
+      vim.wo.cursorline = false -- Disable cursorline in inactive windows
+    end
+  end,
 })

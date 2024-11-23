@@ -11,7 +11,7 @@ return {
       offsets = {
         {
           filetype = "neo-tree",
-          text = "Neo-Tree",
+          text = "Project Explorer",
           highlight = "Directory",
           text_align = "center",
         },

@@ -1,7 +1,7 @@
 return {
   "nvimdev/lspsaga.nvim",
   lazy = true,
-  event = "LspAttach",
+  event = "LazyFile",
   config = function()
     local wk = require("which-key")
     require("lspsaga").setup({
