@@ -4,10 +4,10 @@ return {
   init = function()
     vim.g.lualine_laststatus = vim.o.laststatus
     if vim.fn.argc(-1) > 0 then
-      -- set an empty statusline till lualine loads
+      -- Set an empty statusline until lualine loads
       vim.o.statusline = " "
     else
-      -- hide the statusline on the starter page
+      -- Hide the statusline on the starter page
       vim.o.laststatus = 0
     end
   end,
@@ -15,10 +15,9 @@ return {
     local icons = LazyVim.config.icons
     vim.o.laststatus = vim.g.lualine_laststatus
 
-    local opts = {
+    return {
       options = {
         theme = "auto",
-        -- component_separators = { left = "", right = "" },
         section_separators = { left = "", right = "" },
         globalstatus = vim.o.laststatus == 3,
         disabled_filetypes = { statusline = { "dashboard", "alpha", "starter" } },
@@ -41,20 +40,19 @@ return {
           { LazyVim.lualine.pretty_path() },
         },
         lualine_x = {
-          function() --to get attached lsp servers
-            local buf_clients = vim.lsp.get_clients({ bufnr = vim.api.nvim_get_current_buf() })
-            if next(buf_clients) == nil then
-              return "" --return empty string when no lsp in attached
+          function()
+            -- Get attached LSP servers
+            local clients = vim.lsp.get_clients({ bufnr = vim.api.nvim_get_current_buf() })
+            if next(clients) == nil then
+              return ""
             end
-
-            local client_names = {}
-            for _, client in pairs(buf_clients) do
-              table.insert(client_names, client.name)
-            end
-
-            return table.concat(client_names, ", ")
+            return table.concat(
+              vim.tbl_map(function(c)
+                return c.name
+              end, clients),
+              ", "
+            )
           end,
-
           {
             function()
               return require("noice").api.status.command.get()
@@ -119,13 +117,6 @@ return {
           { "location", padding = { left = 0, right = 1 } },
         },
         lualine_z = {
-          -- function()
-          --   if vim.bo.filetype == "dart" then
-          --     return ""
-          --   else
-          --     return ""
-          --   end
-          -- end,
           function()
             return "  " .. os.date("%R")
           end,
@@ -133,25 +124,5 @@ return {
       },
       extensions = { "neo-tree", "lazy" },
     }
-
-    -- do not add trouble symbols if aerial is enabled
-    -- if vim.g.trouble_lualine then
-    --   local trouble = require("trouble")
-    --   local symbols = trouble.statusline
-    --     and trouble.statusline({
-    --       mode = "symbols",
-    --       groups = {},
-    --       title = false,
-    --       filter = { range = true },
-    --       format = "{kind_icon}{symbol.name:Normal}",
-    --       hl_group = "lualine_c_normal",
-    --     })
-    --   table.insert(opts.sections.lualine_c, {
-    --     symbols and symbols.get,
-    --     cond = symbols and symbols.has,
-    --   })
-    -- end
-
-    return opts
   end,
 }

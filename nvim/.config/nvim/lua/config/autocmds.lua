@@ -105,13 +105,6 @@ vim.api.nvim_create_autocmd("TermOpen", {
 })
 
 --NOTE: Autocmd to manage cursorline in active/inactive windows, excluding NeoTree and file buffers
--- vim.api.nvim_create_autocmd({ "WinEnter", "BufEnter" }, {
---   callback = function()
---     if vim.bo.filetype ~= "neo-tree" or vim.bo.buftype == "" then
---       -- vim.wo.cursorline = true -- Enable cursorline in the active window
---     end
---   end,
--- })
 vim.api.nvim_create_autocmd({ "WinLeave", "BufLeave" }, {
   callback = function()
     if vim.bo.filetype ~= "neo-tree" and vim.bo.buftype ~= "" then

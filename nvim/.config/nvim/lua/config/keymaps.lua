@@ -5,9 +5,9 @@
 local map = vim.keymap.set
 local wk = require("which-key")
 
---jk to exit insert and terminal mode
-map("i", "jk", "<ESC>", { noremap = true, silent = true })
-map("t", "jk", "<C-\\><C-n>", { noremap = true, silent = true })
+--ll to exit insert and terminal mode
+map("i", "ll", "<ESC>", { noremap = true, silent = true })
+map("t", "ll", "<C-\\><C-n>", { noremap = true, silent = true })
 
 map("t", "<esc>", "<C-\\><C-n>", { noremap = true, silent = true })
 

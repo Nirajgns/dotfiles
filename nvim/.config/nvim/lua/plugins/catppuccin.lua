@@ -1,6 +1,6 @@
 return {
   "catppuccin/nvim",
-  enabled = true,
+  -- enabled = false,
   config = function()
     require("catppuccin").setup({
       color_overrides = {
@@ -15,7 +15,7 @@ return {
         loops = { "italic" },
         functions = { "italic" },
         --   keywords = {},
-        -- strings = { "italic" },
+        strings = { "italic" },
         --   variables = {},
         --   numbers = {},
         --   booleans = {},

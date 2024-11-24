@@ -17,6 +17,9 @@ return {
 
         TelescopePromptNormal = { fg = "text", bg = "surface" },
         TelescopePromptBorder = { fg = "surface", bg = "surface" },
+
+        Comment = { fg = "surface" },
+        VertSplit = { fg = "surface", bg = "surface" },
       },
     })
   end,

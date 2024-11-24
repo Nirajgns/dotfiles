@@ -106,7 +106,7 @@ return {
     )
     vim.keymap.set(
       { "n", "t" },
-      "<A-f>",
+      "<A-t>",
       "<cmd>6ToggleTerm direction=float<cr>",
       { noremap = true, silent = true, desc = "float terminal 6" }
     )

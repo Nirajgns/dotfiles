@@ -6,8 +6,8 @@ return {
         style = "float",
         relative = "editor",
         border = "rounded",
-        width = 0.85, -- Width (80%)
-        height = 0.85, -- Height (80%)
+        width = 0.9,
+        height = 0.9,
       },
     },
     dashboard = { enabled = false },

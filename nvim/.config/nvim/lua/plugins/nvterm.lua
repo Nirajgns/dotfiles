@@ -30,7 +30,7 @@ return {
     )
     vim.keymap.set(
       { "n", "t" },
-      "<A-f>",
+      "<A-t>",
       '<cmd>lua require("nvterm.terminal").toggle("float")<CR>',
       { noremap = true, silent = true, desc = "floating terminal toggle" }
     )

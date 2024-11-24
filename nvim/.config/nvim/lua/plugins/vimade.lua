@@ -17,7 +17,7 @@ return {
             direction = direction.OUT,
             duration = 300,
             ease = ease.LINEAR,
-            delay = 1,
+            delay = 0,
           }),
         }),
       },
