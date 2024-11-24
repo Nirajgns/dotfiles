@@ -5,4 +5,5 @@ return {
   { "garymjr/nvim-snippets", enabled = false },
   { "echasnovski/mini.icons", enabled = false },
   { "echasnovski/mini.icons", version = "*", enabled = false },
+  { "rcarriga/nvim-notify", enabled = false },
 }
