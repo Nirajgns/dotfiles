@@ -61,3 +61,5 @@ map("c", "<C-v>", "<C-r>+", { noremap = true, desc = "paste in command mode" })
 map("n", "<C-S-v>", '"+P', { silent = true, desc = "paste in normal mode" })
 map("v", "<C-S-v>", '"+P', { silent = true, desc = "paste in visual mode" })
 map("i", "<C-v>", "<C-R>+", { silent = true, desc = "paste in insert mode" })
+
+map("n", "<leader>lS", "<cmd>LspStop<cr><cmd>LspStart<cr>", { desc = "Force lsp restart" })

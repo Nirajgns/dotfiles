@@ -5,6 +5,7 @@ return {
   config = function()
     local wk = require("which-key")
     require("lspsaga").setup({
+      beacon = { enable = true, frequency = 20 },
       ui = {
         code_action = "🕯️",
         winbar_prefix = "   ",
