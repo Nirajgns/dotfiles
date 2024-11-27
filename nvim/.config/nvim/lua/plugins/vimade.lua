@@ -14,7 +14,7 @@ return {
             start = 1,
             to = 0.4,
             direction = direction.OUT,
-            duration = 300,
+            duration = 700,
             ease = ease.LINEAR,
             delay = 0,
           }),
@@ -25,7 +25,7 @@ return {
       "n",
       "<leader>uv",
       ":VimadeToggle<CR>",
-      { desc = "Toggle inactive window shading via Vimade", noremap = true, silent = true }
+      { desc = "Toggle Vimade Shading", noremap = true, silent = true }
     )
   end,
 }

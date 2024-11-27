@@ -8,7 +8,7 @@ local js_based_languages = {
 return {
   "mfussenegger/nvim-dap",
   keys = {
-
+    { "<leader>d", desc = "Debugger" },
     {
       "<leader>da",
       function()
@@ -24,12 +24,13 @@ return {
       end,
       desc = "Run with Args",
     },
-    { "<leader>dO", ":DapStepOut<cr>", desc = "Step Out" },
-    { "<leader>db", ":DapToggleBreakpoint<cr>", desc = "Toggle Breakpoint" },
-    { "<leader>dc", ":DapContinue<cr>:Neotree close<cr>", desc = "Start/Continue" },
-    { "<leader>di", ":DapStepInto<cr>", desc = "Step Into" },
-    { "<leader>do", ":DapStepOver<cr>", desc = "Step Over" },
-    { "<leader>dt", ":DapTerminate<cr>", desc = "Terminate debugging" },
+    { "<leader>dO", ":DapStepOut<cr>", desc = "Step Out", silent = true },
+    { "<leader>db", ":DapToggleBreakpoint<cr>", desc = "Toggle Breakpoint", silent = true },
+    { "<leader>dc", ":DapContinue<cr>:Neotree close<cr>", desc = "Start/Continue", silent = true },
+    { "<leader>di", ":DapStepInto<cr>", desc = "Step Into", silent = true },
+    { "<leader>do", ":DapStepOver<cr>", desc = "Step Over", silent = true },
+    { "<leader>dt", ":DapTerminate<cr>:Neotree cr>", desc = "Terminate debugging", silent = true },
+    { "<leader>dv", ":DapVirtualTextToggle<cr>", desc = "Toggle DAP virtual text ", silent = true },
   },
 
   dependencies = {
@@ -176,6 +177,11 @@ return {
     end, { desc = "Set Breakpoint with condition" })
 
     -- Toggle dap-ui
-    vim.keymap.set("n", "<leader>dut", require("dapui").toggle, { desc = "Debug: See last session result." })
+    vim.keymap.set(
+      "n",
+      "<leader>du",
+      require("dapui").toggle,
+      { desc = "Toggle Dap UI (Last state of debugger)", silent = true }
+    )
   end,
 }

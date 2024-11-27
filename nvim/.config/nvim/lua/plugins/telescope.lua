@@ -3,10 +3,8 @@ return {
   lazy = true,
   cmd = "Telescope",
   opts = function()
-    local actions = require("telescope.actions")
     require("telescope").setup({
       defaults = {
-        mappings = { n = { ["q"] = actions.close } },
         prompt_prefix = "  ",
         selection_caret = "🢂 ",
         layout_strategy = "horizontal",

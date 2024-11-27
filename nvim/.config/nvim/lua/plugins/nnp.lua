@@ -6,7 +6,7 @@ return {
   config = function()
     require("no-neck-pain").setup({
       debug = false,
-      width = 120,
+      width = 130,
       minSideBufferWidth = 20,
       disableOnLastBuffer = false,
       killAllBuffersOnDisable = false,
@@ -23,7 +23,7 @@ return {
     _G.is_nnp_enabled = not _G.is_nnp_enabled
 
     if _G.is_nnp_enabled then
-      vim.cmd("set relativenumber!")
+      -- vim.cmd("set relativenumber!")
       vim.cmd("set nonu")
       vim.cmd("Neotree float")
       vim.defer_fn(function()
@@ -31,7 +31,7 @@ return {
         vim.cmd("NoNeckPain")
       end, 200)
     else
-      vim.cmd("set relativenumber!")
+      -- vim.cmd("set relativenumber!")
       vim.cmd("set nu")
       vim.cmd("NoNeckPain")
       vim.cmd("Neotree left")
