@@ -12,44 +12,38 @@ return {
   },
   opts = function()
     return {
-      highlight = {
-        use_nvim_cmp_as_default = true,
-      },
-      nerd_font_variant = "normal",
-      windows = {
-        autocomplete = {
+      completion = {
+        accept = {
+          auto_brackets = { enabled = true },
+        },
+        menu = {
           border = "rounded",
-          winblend = 20,
-          selection = "preselect",
+          winblend = 10,
           winhighlight = "Normal:CatppuccinSurface0,FloatBorder:CatppuccinSurface2,Search:None",
         },
         documentation = {
           auto_show = true,
-          border = "rounded",
-          winblend = 20,
-          min_width = 1,
-          min_height = 1,
-          winhighlight = "Normal:CatppuccinSurface0,FloatBorder:CatppuccinSurface2,Search:None",
-        },
-        signature_help = {
-          auto_show = true,
-          border = "rounded",
-          winhighlight = "Normal:CatppuccinSurface0,FloatBorder:CatppuccinSurface2,Search:None",
-          winblend = 20,
-        },
-        ghost_text = {
-          enabled = false,
+          window = {
+            border = "rounded",
+            winblend = 10,
+            winhighlight = "Normal:CatppuccinSurface0,FloatBorder:CatppuccinSurface2,Search:None",
+          },
+          auto_show_delay_ms = 100,
         },
       },
-      accept = { auto_brackets = { enabled = true } },
-      trigger = { signature_help = { enabled = true } },
-      sources = {
-        completion = {
-          enabled_providers = { "lsp", "path", "snippets", "buffer" },
+      signature = {
+        enabled = true,
+        window = {
+          border = "rounded",
+          winblend = 10,
+          winhighlight = "Normal:CatppuccinSurface0,FloatBorder:CatppuccinSurface2,Search:None",
         },
       },
       keymap = {
         preset = "enter",
+      },
+      apperance = {
+        use_nvim_cmp_as_default = true,
       },
     }
   end,

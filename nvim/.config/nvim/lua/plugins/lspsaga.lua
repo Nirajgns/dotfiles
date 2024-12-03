@@ -12,6 +12,7 @@ return {
         expand = " ",
         collapse = " ",
         lines = { "╰", "├", "│", "─", "╭" },
+        button = { "", "" },
       },
       outline = {
         auto_preview = true,

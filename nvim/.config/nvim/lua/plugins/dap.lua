@@ -7,6 +7,73 @@ local js_based_languages = {
 }
 return {
   "mfussenegger/nvim-dap",
+
+  config = function()
+    local dap = require("dap")
+    for _, language in ipairs(js_based_languages) do
+      dap.configurations[language] = {
+        {
+          type = "pwa-node",
+          request = "launch",
+          name = "Launch file fore node.js",
+          program = "${file}",
+          cwd = "${workspaceFolder}",
+        },
+        {
+          type = "pwa-node",
+          request = "attach",
+          name = "Attach node.js process",
+          processId = require("dap.utils").pick_process,
+          cwd = "${workspaceFolder}",
+        },
+        {
+          type = "pwa-chrome",
+          request = "launch",
+          name = "Start Chrome with localhost",
+          url = function()
+            local co = coroutine.running()
+            return coroutine.create(function()
+              vim.ui.input({
+                prompt = "Enter URL: ",
+                default = "http://localhost:5173",
+              }, function(url)
+                if url == nil or url == "" then
+                  return
+                else
+                  coroutine.resume(co, url)
+                end
+              end)
+            end)
+          end,
+          webRoot = "${workspaceFolder}",
+          userDataDir = "${workspaceFolder}/.vscode/vscode-chrome-debug-userdatadir",
+          protocol = "inspector",
+          sourceMaps = true,
+        },
+      }
+    end
+    -- Set custom breakpoint icons
+    local breakpoint_icons = {
+      Breakpoint = "",
+      BreakpointCondition = "",
+      BreakpointRejected = "",
+      LogPoint = "",
+      Stopped = "",
+    }
+    for type, icon in pairs(breakpoint_icons) do
+      local hl = (type == "Stopped") and "DapStop" or "DapBreak"
+      vim.fn.sign_define("Dap" .. type, { text = icon, texthl = hl, numhl = hl })
+    end
+    vim.api.nvim_set_hl(0, "DapBreak", { fg = "#aa1400" })
+    vim.api.nvim_set_hl(0, "DapStop", { fg = "#ffcc00" })
+
+    -- Keybindings
+
+    -- Conditional breakpoint
+    vim.keymap.set("n", "<leader>dB", function()
+      dap.set_breakpoint(vim.fn.input("Breakpoint condition: "))
+    end, { desc = "Set Breakpoint with condition" })
+  end,
   keys = {
     { "<leader>d", desc = "Debugger" },
     {
@@ -29,7 +96,7 @@ return {
     { "<leader>dc", ":DapContinue<cr>:Neotree close<cr>", desc = "Start/Continue", silent = true },
     { "<leader>di", ":DapStepInto<cr>", desc = "Step Into", silent = true },
     { "<leader>do", ":DapStepOver<cr>", desc = "Step Over", silent = true },
-    { "<leader>dt", ":DapTerminate<cr>:Neotree cr>", desc = "Terminate debugging", silent = true },
+    { "<leader>dt", ":DapTerminate<cr>", desc = "Terminate debugging", silent = true },
     { "<leader>dv", ":DapVirtualTextToggle<cr>", desc = "Toggle DAP virtual text ", silent = true },
   },
 
@@ -41,6 +108,18 @@ return {
         local dapui = require("dapui")
         dapui.setup()
         local dap = require("dap")
+
+        -- Toggle dap-ui
+        vim.keymap.set(
+          "n",
+          "<leader>du",
+          require("dapui").toggle,
+          { desc = "Toggle Dap UI (Last state of debugger)", silent = true }
+        )
+
+        vim.keymap.set("n", "<leader>de", function()
+          require("dapui").eval()
+        end, { desc = "Float eval expression", silent = true })
 
         dap.listeners.after.event_initialized["dapui_config"] = dapui.open
         dap.listeners.before.event_terminated["dapui_config"] = dapui.close
@@ -100,88 +179,4 @@ return {
       build = "./install.sh",
     },
   },
-
-  config = function()
-    local dap = require("dap")
-    for _, language in ipairs(js_based_languages) do
-      dap.configurations[language] = {
-        {
-          type = "pwa-node",
-          request = "launch",
-          name = "Launch file with pwa-node",
-          program = "${file}",
-          cwd = vim.fn.getcwd(),
-          sourceMaps = true,
-        },
-        --NOTE: (add --inspect flag when you run the node or nodemon process esle debugger won't attach)
-        {
-          type = "pwa-node",
-          request = "attach",
-          name = "Attach PWA node",
-          processId = require("dap.utils").pick_process,
-          cwd = vim.fn.getcwd(),
-          sourceMaps = true,
-        },
-        -- Debug web applications (client-side) with pwa-chrome
-        {
-          type = "pwa-chrome", -- Change from "chrome" to "pwa-chrome"
-          request = "launch",
-          name = "Launch & Debug PWA Chrome",
-          url = function()
-            local co = coroutine.running()
-            return coroutine.create(function()
-              vim.ui.input({
-                prompt = "Enter URL: ",
-                default = "http://localhost:3000",
-              }, function(url)
-                if url == nil or url == "" then
-                  return
-                else
-                  coroutine.resume(co, url)
-                end
-              end)
-            end)
-          end,
-          webRoot = vim.fn.getcwd(),
-          protocol = "inspector",
-          sourceMaps = true,
-          userDataDir = false,
-        },
-        {
-          name = "----- ↓ launch.json configs ↓ -----",
-          type = "",
-          request = "launch",
-        },
-      }
-    end
-    -- Set custom breakpoint icons
-    local breakpoint_icons = {
-      Breakpoint = "",
-      BreakpointCondition = "",
-      BreakpointRejected = "",
-      LogPoint = "",
-      Stopped = "",
-    }
-    for type, icon in pairs(breakpoint_icons) do
-      local hl = (type == "Stopped") and "DapStop" or "DapBreak"
-      vim.fn.sign_define("Dap" .. type, { text = icon, texthl = hl, numhl = hl })
-    end
-    vim.api.nvim_set_hl(0, "DapBreak", { fg = "#aa1400" })
-    vim.api.nvim_set_hl(0, "DapStop", { fg = "#ffcc00" })
-
-    -- Keybindings
-
-    -- Conditional breakpoint
-    vim.keymap.set("n", "<leader>dB", function()
-      dap.set_breakpoint(vim.fn.input("Breakpoint condition: "))
-    end, { desc = "Set Breakpoint with condition" })
-
-    -- Toggle dap-ui
-    vim.keymap.set(
-      "n",
-      "<leader>du",
-      require("dapui").toggle,
-      { desc = "Toggle Dap UI (Last state of debugger)", silent = true }
-    )
-  end,
 }
