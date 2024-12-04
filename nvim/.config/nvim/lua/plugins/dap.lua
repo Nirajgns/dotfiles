@@ -15,14 +15,14 @@ return {
         {
           type = "pwa-node",
           request = "launch",
-          name = "Launch file fore node.js",
+          name = "Launch with node.js",
           program = "${file}",
           cwd = "${workspaceFolder}",
         },
         {
           type = "pwa-node",
           request = "attach",
-          name = "Attach node.js process",
+          name = "Attach a node.js process",
           processId = require("dap.utils").pick_process,
           cwd = "${workspaceFolder}",
         },
@@ -120,6 +120,10 @@ return {
         vim.keymap.set("n", "<leader>de", function()
           require("dapui").eval()
         end, { desc = "Float eval expression", silent = true })
+
+        vim.keymap.set("n", "<leader>df", function()
+          require("dapui").float_element()
+        end, { desc = "DAP float", silent = true })
 
         dap.listeners.after.event_initialized["dapui_config"] = dapui.open
         dap.listeners.before.event_terminated["dapui_config"] = dapui.close

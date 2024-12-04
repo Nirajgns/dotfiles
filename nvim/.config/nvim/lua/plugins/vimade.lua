@@ -1,6 +1,7 @@
 return {
   "TaDaa/vimade",
   -- enabled = false,
+  event = "LazyFile",
   config = function()
     local Fade = require("vimade.style.fade").Fade
     local direction = require("vimade.style.value.direction")

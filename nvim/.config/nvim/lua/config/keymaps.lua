@@ -3,7 +3,6 @@
 -- Add any additional keymaps here
 
 local map = vim.keymap.set
-local wk = require("which-key")
 
 --jk to exit insert and terminal mode
 map("i", "jk", "<ESC>", { noremap = true, silent = true })
@@ -35,20 +34,7 @@ map("n", "<S-Tab>", ":bprevious<CR>", { noremap = true, silent = true })
 
 vim.keymap.del("n", "<leader>ft")
 vim.keymap.del("n", "<leader>fT")
-
---===================Search & Replace====================-
-wk.add({
-  {
-    "<leader>sf",
-    '<cmd>lua require("grug-far").grug_far({ prefills = { flags = vim.fn.expand("%") , search = vim.fn.expand("<cword>") } })<CR>',
-    desc = "Search on current file",
-  },
-  {
-    "<leader>sp",
-    '<cmd>lua require("grug-far").grug_far({ prefills = { search = vim.fn.expand("<cword>") } })<CR>',
-    desc = "Search and replace on project",
-  },
-}, { prefix = "<leader>" })
+vim.keymap.del("n", "<leader>sr")
 
 ---=======================for easy typing--------------------------
 map({ "i", "t" }, "<C-BS>", "<C-w>", { noremap = true, silent = true, desc = "delete word with ctrl+bcspc" })
@@ -62,4 +48,4 @@ map("n", "<C-S-v>", '"+P', { silent = true, desc = "paste in normal mode" })
 map("v", "<C-S-v>", '"+P', { silent = true, desc = "paste in visual mode" })
 map("i", "<C-v>", "<C-R>+", { silent = true, desc = "paste in insert mode" })
 
-map("n", "<leader>lS", "<cmd>LspStop<cr><cmd>LspStart<cr>", { desc = "Force lsp restart" })
+map("n", "<leader>lS", "<cmd>LspRestart<cr>", { desc = "Force lsp restart" })
