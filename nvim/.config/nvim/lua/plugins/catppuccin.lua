@@ -1,6 +1,6 @@
 return {
   "catppuccin/nvim",
-  -- enabled = false,
+  enabled = false,
   config = function()
     require("catppuccin").setup({
       color_overrides = {

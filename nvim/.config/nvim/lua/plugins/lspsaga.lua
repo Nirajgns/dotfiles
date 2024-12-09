@@ -15,7 +15,7 @@ return {
         button = { "", "" },
       },
       outline = {
-        auto_preview = true,
+        auto_preview = false,
         detail = true,
         keys = {
           toggle_or_jump = "o",
@@ -47,7 +47,7 @@ return {
         { "<leader>lc", "<cmd>Lspsaga code_action<cr>", desc = "Code Action" },
         { "<leader>ld", "<cmd>Lspsaga goto_definition<cr>", desc = "Lsp GoTo Definition" },
         { "<leader>li", "<cmd>LspInfo<cr>", desc = "Lsp info and status" },
-        { "<leader>lo", "<cmd>Lspsaga outline<cr>", desc = " lspsaga outline" },
+        { "<leader>lO", "<cmd>Lspsaga outline<cr>", desc = " lspsaga outline" },
         { "<leader>lp", "<cmd>Lspsaga peek_definition<cr>", desc = "Preview Definition" },
         { "<leader>lr", "<cmd>Lspsaga finder<cr>", desc = "Lsp Finder" },
         { "<leader>ls", "<cmd>Lspsaga signature_help<cr>", desc = "Signature Help" },

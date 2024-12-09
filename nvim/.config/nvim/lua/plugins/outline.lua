@@ -1,14 +1,14 @@
 return {
   "hedyhli/outline.nvim",
   event = "LazyFile",
-  enabled = false,
+  enabled = true,
   config = function()
     vim.keymap.set("n", "<leader>lo", "<cmd>Outline<CR>", { desc = "Toggle Outline" })
     require("outline").setup({
       outline_window = {
         auto_jump = true,
         jump_highlight_duration = false,
-        width = 30,
+        width = 35,
         -- Whether width is relative to the total width of nvim
         -- When relative_width = true, this means take 25% of the total
         -- screen width for outline window.

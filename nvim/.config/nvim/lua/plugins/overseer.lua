@@ -32,11 +32,25 @@ return {
   opts = {
     dap = false,
     task_list = {
+      default_detail = 2,
+      max_width = 50,
+      min_width = 50,
+      width = 50,
+      max_height = 15,
+      min_height = 15,
+      height = 15,
+      separator = "---------------------------------------------------------------------------------------------------",
       bindings = {
         ["<C-h>"] = false,
         ["<C-j>"] = false,
         ["<C-k>"] = false,
         ["<C-l>"] = false,
+        ["C-left"] = "DecreaseWidth",
+        ["C-right"] = "IncreaseWidth",
+        ["<C-p>"] = "PrevTask",
+        ["<C-n>"] = "NextTask",
+        ["<C-b>"] = "ScrollOutputUp",
+        ["<C-f>"] = "ScrollOutputDown",
       },
     },
     form = {

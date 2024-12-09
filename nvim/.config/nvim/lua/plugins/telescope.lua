@@ -2,8 +2,14 @@ return {
   "nvim-telescope/telescope.nvim",
   lazy = true,
   cmd = "Telescope",
+  dependencies = { "debugloop/telescope-undo.nvim" },
   opts = function()
     require("telescope").setup({
+      extensions = {
+        undo = {
+          -- telescope-undo.nvim config, see below
+        },
+      },
       defaults = {
         prompt_prefix = "  ",
         selection_caret = "🢂 ",
@@ -23,6 +29,12 @@ return {
     "n",
     "<leader>'",
     "<cmd>Telescope marks<cr>",
-    { noremap = true, silent = true, desc = "marks with telescope" }
+    { noremap = true, silent = true, desc = "marks with telescope" },
+    vim.keymap.set(
+      "n",
+      "<leader>fu",
+      "<cmd>Telescope undo<cr>",
+      { noremap = true, silent = true, desc = "Undo tree with telescope" }
+    )
   ),
 }

@@ -1,18 +1,30 @@
 {
 	"file_history":
 	[
+		"/home/niraj/dotfiles/tmux/.tmux.conf",
+		"/home/niraj/.tmux.conf.bak",
+		"/home/niraj/.tmux.conf",
+		"/home/niraj/.config/kconf_updaterc",
+		"/home/niraj/.config/QtProject.conf",
+		"/home/niraj/.config/gnome-initial-setup-done",
+		"/home/niraj/.config/discoverrc",
+		"/home/niraj/.config/appimagelauncher.cfg",
+		"/home/niraj/.zshrc",
+		"/home/niraj/.bashrc",
+		"/home/niraj/.config/kitty/kitty.conf",
+		"/home/niraj/.config/GNOME-xdg-terminals.list",
+		"/home/niraj/.config/xdg-terminals.list",
+		"/home/niraj/.config/.gsd-keyboard.settings-ported",
+		"/home/niraj/yazi/target/release/ya.d",
 		"/home/niraj/dotfiles/bottom/bottom/bottom.toml",
 		"/home/niraj/.local/share/nvim/lazy/persistence.nvim/lua/persistence/config.lua",
 		"/home/niraj/.config/bottom/bottom.toml",
 		"/home/niraj/bottom/bottom.toml",
-		"/home/niraj/.config/GNOME-xdg-terminals.list",
-		"/home/niraj/.config/xdg-terminals.list",
 		"/home/niraj/Desktop/Projects/js/meetly/package.json",
 		"/home/niraj/.gitconfig",
 		"/home/niraj/dotfiles/bash/.bashrc",
 		"/home/niraj/.config/kitty/kitty.conf.bak",
 		"/media/niraj/F8722EA8722E6C16/Dropbox/obsidian-vault/.gitignore",
-		"/home/niraj/.config/kitty/kitty.conf",
 		"/home/niraj/.dotfiles/sublime-text/.config/sublime-text/Packages/Default/Preferences.sublime-settings",
 		"/home/niraj/.dotfiles/sublime-text/.config/sublime-text/Packages/User/Preferences.sublime-settings",
 		"/home/niraj/.profile",
@@ -26,8 +38,6 @@
 		"/home/niraj/.config/nvim/lua/custom/plugins/which-key.lua",
 		"/home/niraj/.config/nvim/lua/config/keymaps.lua",
 		"/home/niraj/.local/share/nvim/lazy/persistence.nvim/doc/persistence.nvim.txt",
-		"/home/niraj/.bashrc",
-		"/home/niraj/.tmux.conf",
 		"/home/niraj/Desktop/Projects/instaclone/frontend/components.json",
 		"/home/niraj/Desktop/Projects/js/insta1/insta/node_modules/framer-motion/dist/es/gestures/utils/is-node-or-child.mjs",
 		"/home/niraj/Desktop/Projects/social-media/node_modules/resolve/lib/homedir.js",
@@ -60,13 +70,10 @@
 		"/home/niraj/Desktop/token.txt",
 		"/home/niraj/.config/nvim/lua/options.lua",
 		"/home/niraj/Dropbox/obsidian-vault/ssh.pub",
-		"/home/niraj/.config/.gsd-keyboard.settings-ported",
 		"/home/niraj/.config/mimeapps.list",
 		"/home/niraj/.config/dleyna-server-service.conf",
 		"/home/niraj/.config/baloofileinformationrc",
 		"/home/niraj/.config/dolphinrc",
-		"/home/niraj/.config/gnome-initial-setup-done",
-		"/home/niraj/.config/QtProject.conf",
 		"/home/niraj/.config/user-dirs.locale",
 		"/home/niraj/.config/kservicemenurc",
 		"/home/niraj/.config/gsconnect/private.pem",
@@ -80,7 +87,6 @@
 		"/home/niraj/Dropbox/obsidian-vault/.obsidian.vimrc",
 		"/home/niraj/Desktop/projects/js/ts-ecom-api/src/routes/products.ts",
 		"/home/niraj/.bash_history",
-		"/home/niraj/.zshrc",
 		"/home/niraj/.config/nvim.bak/lua/config/options.lua",
 		"/home/niraj/.blerc",
 		"/home/niraj/.cache/oh-my-posh/themes/1_shell.omp.json",
@@ -122,13 +128,7 @@
 		"/home/niraj/Desktop/Link to nvim/lua/plugins/core.lua",
 		"/home/niraj/Downloads/Saint.Maud.English-WWW.MY-SUBS.CO.srt",
 		"/home/niraj/.flutter",
-		"/home/niraj/Desktop/Link to nvim/lua/config/keymaps.lua",
-		"/home/niraj/.config/nautilus/search-metadata",
-		"/home/niraj/Desktop/Link to nvim/lua/plugins/lsp-saga.lua",
-		"/home/niraj/.config/kdeglobals",
-		"/home/niraj/.config/nvim.bak/init.lua",
-		"/home/niraj/Desktop/keymaps.lua",
-		"/home/niraj/.config/nvim.bak/lua/plugins/hl-chunk.lua"
+		"/home/niraj/Desktop/Link to nvim/lua/config/keymaps.lua"
 	],
 	"folder_history":
 	[
@@ -148,7 +148,7 @@
 	"last_version": 4180,
 	"last_window_id": 37,
 	"log_indexing": false,
-	"next_update_check": 1732078184,
+	"next_update_check": 1733762657,
 	"settings":
 	{
 		"new_window_full_screen": false,
@@ -275,19 +275,30 @@
 			},
 			"file_history":
 			[
+				"/home/niraj/dotfiles/tmux/.tmux.conf",
+				"/home/niraj/.tmux.conf.bak",
+				"/home/niraj/.tmux.conf",
+				"/home/niraj/.config/kconf_updaterc",
+				"/home/niraj/.config/QtProject.conf",
+				"/home/niraj/.config/gnome-initial-setup-done",
+				"/home/niraj/.config/discoverrc",
+				"/home/niraj/.config/appimagelauncher.cfg",
+				"/home/niraj/.zshrc",
 				"/home/niraj/.bashrc",
+				"/home/niraj/.config/kitty/kitty.conf",
+				"/home/niraj/.config/GNOME-xdg-terminals.list",
+				"/home/niraj/.config/xdg-terminals.list",
+				"/home/niraj/.config/.gsd-keyboard.settings-ported",
+				"/home/niraj/yazi/target/release/ya.d",
 				"/home/niraj/dotfiles/bottom/bottom/bottom.toml",
 				"/home/niraj/.local/share/nvim/lazy/persistence.nvim/lua/persistence/config.lua",
 				"/home/niraj/.config/bottom/bottom.toml",
 				"/home/niraj/bottom/bottom.toml",
-				"/home/niraj/.config/GNOME-xdg-terminals.list",
-				"/home/niraj/.config/xdg-terminals.list",
 				"/home/niraj/Desktop/Projects/js/meetly/package.json",
 				"/home/niraj/.gitconfig",
 				"/home/niraj/dotfiles/bash/.bashrc",
 				"/home/niraj/.config/kitty/kitty.conf.bak",
 				"/media/niraj/F8722EA8722E6C16/Dropbox/obsidian-vault/.gitignore",
-				"/home/niraj/.config/kitty/kitty.conf",
 				"/home/niraj/.profile",
 				"/home/niraj/.config/nvim/lua/kickstart/plugins/debug.lua",
 				"/home/niraj/.config/nvim/lua/kickstart/plugins/neo-tree.lua",
@@ -299,7 +310,6 @@
 				"/home/niraj/.config/nvim/lua/custom/plugins/which-key.lua",
 				"/home/niraj/.config/nvim/lua/config/keymaps.lua",
 				"/home/niraj/.local/share/nvim/lazy/persistence.nvim/doc/persistence.nvim.txt",
-				"/home/niraj/.tmux.conf",
 				"/home/niraj/Desktop/Projects/instaclone/frontend/components.json",
 				"/home/niraj/Desktop/Projects/js/insta1/insta/node_modules/framer-motion/dist/es/gestures/utils/is-node-or-child.mjs",
 				"/home/niraj/Desktop/Projects/social-media/node_modules/resolve/lib/homedir.js",
@@ -328,13 +338,10 @@
 				"/home/niraj/Desktop/a.sfd",
 				"/home/niraj/Desktop/token.txt",
 				"/home/niraj/Dropbox/obsidian-vault/ssh.pub",
-				"/home/niraj/.config/.gsd-keyboard.settings-ported",
 				"/home/niraj/.config/mimeapps.list",
 				"/home/niraj/.config/dleyna-server-service.conf",
 				"/home/niraj/.config/baloofileinformationrc",
 				"/home/niraj/.config/dolphinrc",
-				"/home/niraj/.config/gnome-initial-setup-done",
-				"/home/niraj/.config/QtProject.conf",
 				"/home/niraj/.config/user-dirs.locale",
 				"/home/niraj/.config/kservicemenurc",
 				"/home/niraj/.config/gsconnect/private.pem",
@@ -348,7 +355,6 @@
 				"/home/niraj/Dropbox/obsidian-vault/.obsidian.vimrc",
 				"/home/niraj/Desktop/projects/js/ts-ecom-api/src/routes/products.ts",
 				"/home/niraj/.bash_history",
-				"/home/niraj/.zshrc",
 				"/home/niraj/.config/nvim.bak/lua/config/options.lua",
 				"/home/niraj/.blerc",
 				"/home/niraj/.cache/oh-my-posh/themes/1_shell.omp.json",
@@ -396,13 +402,7 @@
 				"/home/niraj/Desktop/keymaps.lua",
 				"/home/niraj/.config/nvim.bak/lua/plugins/hl-chunk.lua",
 				"/home/niraj/.config/nvim.bak/lua/mappings.lua",
-				"/home/niraj/.config/nvim.bak/lua/plugins/lsp-config.lua",
-				"/home/niraj/.config/nvim/lua/plugins/example.lua",
-				"/home/niraj/.local/share/nvim/neo-tree.nvim.log",
-				"/home/niraj/.config/nvim/lua/plugins/flutter-tools.lua",
-				"/home/niraj/.config/nvim/lua/chadrc.lua",
-				"/home/niraj/Desktop/function OpenDiagnosticIfNoFloat()",
-				"/home/niraj/.config/nvim/lua/plugins/init.lua"
+				"/home/niraj/.config/nvim.bak/lua/plugins/lsp-config.lua"
 			],
 			"find":
 			{
@@ -514,32 +514,24 @@
 			"buffers":
 			[
 				{
-					"file": "/home/niraj/.bashrc",
+					"contents": "nitini",
 					"settings":
 					{
-						"buffer_size": 1083,
-						"encoding": "UTF-8",
-						"line_ending": "Unix"
+						"buffer_size": 6,
+						"line_ending": "Unix",
+						"name": "nitini"
 					},
 					"undo_stack":
 					[
 						[
-							5,
+							7,
 							1,
 							"insert",
 							{
-								"characters": "\n"
+								"characters": "nitini"
 							},
-							"AQAAALcCAAAAAAAAuAIAAAAAAAAAAAAA",
-							"AQAAAAAAAAABAAAAtwIAAAAAAAC3AgAAAAAAAAAAAAAAAPC/"
-						],
-						[
-							7,
-							1,
-							"",
-							null,
-							"AQAAALgCAAAAAAAA4QIAAAAAAAAAAAAA",
-							"AQAAAAAAAAABAAAAuAIAAAAAAAC4AgAAAAAAAAAAAAAAAPC/"
+							"BgAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAACAAAAAAAAAAAAAAACAAAAAAAAAAMAAAAAAAAAAAAAAAMAAAAAAAAABAAAAAAAAAAAAAAABAAAAAAAAAAFAAAAAAAAAAAAAAAFAAAAAAAAAAYAAAAAAAAAAAAAAA",
+							"AQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
 						]
 					]
 				}
@@ -657,18 +649,30 @@
 			],
 			"file_history":
 			[
+				"/home/niraj/dotfiles/tmux/.tmux.conf",
+				"/home/niraj/.tmux.conf.bak",
+				"/home/niraj/.tmux.conf",
+				"/home/niraj/.config/kconf_updaterc",
+				"/home/niraj/.config/QtProject.conf",
+				"/home/niraj/.config/gnome-initial-setup-done",
+				"/home/niraj/.config/discoverrc",
+				"/home/niraj/.config/appimagelauncher.cfg",
+				"/home/niraj/.zshrc",
+				"/home/niraj/.bashrc",
+				"/home/niraj/.config/kitty/kitty.conf",
+				"/home/niraj/.config/GNOME-xdg-terminals.list",
+				"/home/niraj/.config/xdg-terminals.list",
+				"/home/niraj/.config/.gsd-keyboard.settings-ported",
+				"/home/niraj/yazi/target/release/ya.d",
 				"/home/niraj/dotfiles/bottom/bottom/bottom.toml",
 				"/home/niraj/.local/share/nvim/lazy/persistence.nvim/lua/persistence/config.lua",
 				"/home/niraj/.config/bottom/bottom.toml",
 				"/home/niraj/bottom/bottom.toml",
-				"/home/niraj/.config/GNOME-xdg-terminals.list",
-				"/home/niraj/.config/xdg-terminals.list",
 				"/home/niraj/Desktop/Projects/js/meetly/package.json",
 				"/home/niraj/.gitconfig",
 				"/home/niraj/dotfiles/bash/.bashrc",
 				"/home/niraj/.config/kitty/kitty.conf.bak",
 				"/media/niraj/F8722EA8722E6C16/Dropbox/obsidian-vault/.gitignore",
-				"/home/niraj/.config/kitty/kitty.conf",
 				"/home/niraj/.profile",
 				"/home/niraj/.config/nvim/lua/kickstart/plugins/debug.lua",
 				"/home/niraj/.config/nvim/lua/kickstart/plugins/neo-tree.lua",
@@ -680,8 +684,6 @@
 				"/home/niraj/.config/nvim/lua/custom/plugins/which-key.lua",
 				"/home/niraj/.config/nvim/lua/config/keymaps.lua",
 				"/home/niraj/.local/share/nvim/lazy/persistence.nvim/doc/persistence.nvim.txt",
-				"/home/niraj/.bashrc",
-				"/home/niraj/.tmux.conf",
 				"/home/niraj/Desktop/Projects/instaclone/frontend/components.json",
 				"/home/niraj/Desktop/Projects/js/insta1/insta/node_modules/framer-motion/dist/es/gestures/utils/is-node-or-child.mjs",
 				"/home/niraj/Desktop/Projects/social-media/node_modules/resolve/lib/homedir.js",
@@ -710,13 +712,10 @@
 				"/home/niraj/Desktop/a.sfd",
 				"/home/niraj/Desktop/token.txt",
 				"/home/niraj/Dropbox/obsidian-vault/ssh.pub",
-				"/home/niraj/.config/.gsd-keyboard.settings-ported",
 				"/home/niraj/.config/mimeapps.list",
 				"/home/niraj/.config/dleyna-server-service.conf",
 				"/home/niraj/.config/baloofileinformationrc",
 				"/home/niraj/.config/dolphinrc",
-				"/home/niraj/.config/gnome-initial-setup-done",
-				"/home/niraj/.config/QtProject.conf",
 				"/home/niraj/.config/user-dirs.locale",
 				"/home/niraj/.config/kservicemenurc",
 				"/home/niraj/.config/gsconnect/private.pem",
@@ -730,7 +729,6 @@
 				"/home/niraj/Dropbox/obsidian-vault/.obsidian.vimrc",
 				"/home/niraj/Desktop/projects/js/ts-ecom-api/src/routes/products.ts",
 				"/home/niraj/.bash_history",
-				"/home/niraj/.zshrc",
 				"/home/niraj/.config/nvim.bak/lua/config/options.lua",
 				"/home/niraj/.blerc",
 				"/home/niraj/.cache/oh-my-posh/themes/1_shell.omp.json",
@@ -778,13 +776,7 @@
 				"/home/niraj/Desktop/keymaps.lua",
 				"/home/niraj/.config/nvim.bak/lua/plugins/hl-chunk.lua",
 				"/home/niraj/.config/nvim.bak/lua/mappings.lua",
-				"/home/niraj/.config/nvim.bak/lua/plugins/lsp-config.lua",
-				"/home/niraj/.config/nvim/lua/plugins/example.lua",
-				"/home/niraj/.local/share/nvim/neo-tree.nvim.log",
-				"/home/niraj/.config/nvim/lua/plugins/flutter-tools.lua",
-				"/home/niraj/.config/nvim/lua/chadrc.lua",
-				"/home/niraj/Desktop/function OpenDiagnosticIfNoFloat()",
-				"/home/niraj/.config/nvim/lua/plugins/init.lua"
+				"/home/niraj/.config/nvim.bak/lua/plugins/lsp-config.lua"
 			],
 			"find":
 			{
@@ -831,30 +823,28 @@
 					[
 						{
 							"buffer": 0,
-							"file": "/home/niraj/.bashrc",
 							"selected": true,
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 1083,
+								"buffer_size": 6,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										736,
-										736
+										5,
+										5
 									]
 								],
 								"settings":
 								{
-									"syntax": "Packages/ShellScript/Bash.sublime-syntax",
-									"tab_size": 2,
-									"translate_tabs_to_spaces": true
+									"auto_name": "nitini",
+									"syntax": "Packages/Text/Plain text.tmLanguage"
 								},
 								"translation.x": 0.0,
-								"translation.y": 305.0,
+								"translation.y": 0.0,
 								"zoom_level": 1.0
 							},
 							"stack_index": 0,
