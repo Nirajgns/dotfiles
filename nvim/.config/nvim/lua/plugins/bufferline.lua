@@ -5,7 +5,7 @@ return {
     options = {
       buffer_close_icon = " ",
       indicator = {
-        style = "underline",
+        style = "icon",
       },
       -- separator_style = "slope", --"slant" | "slope" | "thick" | "thin" | { 'any', 'any' },
       offsets = {

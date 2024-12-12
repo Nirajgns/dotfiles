@@ -11,9 +11,9 @@ return {
       },
     },
     window = {
-      width = 30,
+      width = 35,
       popup = { -- settings that apply to float position only
-        size = { height = "35", width = "90" },
+        size = { height = "43", width = "90" },
         position = "50%", -- 50% means center it
       },
     },

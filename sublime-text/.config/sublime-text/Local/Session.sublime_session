@@ -148,16 +148,16 @@
 	"last_version": 4180,
 	"last_window_id": 37,
 	"log_indexing": false,
-	"next_update_check": 1733762657,
+	"next_update_check": 1733996204,
 	"settings":
 	{
 		"new_window_full_screen": false,
-		"new_window_height": 1032.0,
-		"new_window_maximized": false,
+		"new_window_height": 0.0,
+		"new_window_maximized": true,
 		"new_window_position":
 		[
-			56.0,
-			98.0
+			0.0,
+			48.0
 		],
 		"new_window_settings":
 		{
@@ -275,6 +275,7 @@
 			},
 			"file_history":
 			[
+				"/home/niraj/dotfiles/nvim/.config/nvim/lua/plugins/snacks.lua",
 				"/home/niraj/dotfiles/tmux/.tmux.conf",
 				"/home/niraj/.tmux.conf.bak",
 				"/home/niraj/.tmux.conf",
@@ -401,8 +402,7 @@
 				"/home/niraj/.config/nvim.bak/init.lua",
 				"/home/niraj/Desktop/keymaps.lua",
 				"/home/niraj/.config/nvim.bak/lua/plugins/hl-chunk.lua",
-				"/home/niraj/.config/nvim.bak/lua/mappings.lua",
-				"/home/niraj/.config/nvim.bak/lua/plugins/lsp-config.lua"
+				"/home/niraj/.config/nvim.bak/lua/mappings.lua"
 			],
 			"find":
 			{
@@ -493,14 +493,14 @@
 			"show_minimap": false,
 			"show_open_files": false,
 			"show_tabs": true,
-			"side_bar_visible": false,
+			"side_bar_visible": true,
 			"side_bar_width": 229.0,
 			"status_bar_visible": true,
 			"template_settings":
 			{
 			}
 		},
-		"new_window_width": 960.0
+		"new_window_width": 0.0
 	},
 	"windows":
 	[
@@ -531,7 +531,79 @@
 								"characters": "nitini"
 							},
 							"BgAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAACAAAAAAAAAAAAAAACAAAAAAAAAAMAAAAAAAAAAAAAAAMAAAAAAAAABAAAAAAAAAAAAAAABAAAAAAAAAAFAAAAAAAAAAAAAAAFAAAAAAAAAAYAAAAAAAAAAAAAAA",
-							"AQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+							"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvw"
+						]
+					]
+				},
+				{
+					"file": "/home/niraj/dotfiles/nvim/.config/nvim/lua/plugins/snacks.lua",
+					"settings":
+					{
+						"buffer_size": 3631,
+						"encoding": "UTF-8",
+						"line_ending": "Unix"
+					},
+					"undo_stack":
+					[
+						[
+							5,
+							1,
+							"nv_vi_d",
+							{
+								"count": 1,
+								"mode": "mode_visual",
+								"register": "\""
+							},
+							"AQAAALoNAAAAAAAAug0AAAAAAABFAAAAICAgICAgeyBzZWN0aW9uID0gInByb2plY3RzIiB9LAogICAgICAgIHsgc2VjdGlvbiA9ICJyZWNlbnRfZmlsZXMiIH0s",
+							"AQAAAAAAAAABAAAA/w0AAAAAAAC6DQAAAAAAAAAAAAAAAPC/"
+						],
+						[
+							7,
+							1,
+							"sequence",
+							{
+								"commands":
+								[
+									[
+										"nv_vi_a",
+										{
+											"count": 1,
+											"mode": "mode_internal_normal",
+											"register": "\""
+										}
+									],
+									[
+										"revert",
+										null
+									]
+								]
+							},
+							"AQAAAAAAAAAAAAAAAAAAAAAAAADrEAAAcmV0dXJuIHsKICAiZm9sa2Uvc25hY2tzLm52aW0iLAogIG9wdHMgPSB7CiAgICB0ZXJtaW5hbCA9IHsKICAgICAgd2luID0gewogICAgICAgIHN0eWxlID0gImZsb2F0IiwKICAgICAgICByZWxhdGl2ZSA9ICJlZGl0b3IiLAogICAgICAgIGJvcmRlciA9ICJyb3VuZGVkIiwKICAgICAgICB3aWR0aCA9IDAuOSwKICAgICAgICBoZWlnaHQgPSAwLjksCiAgICAgIH0sCiAgICB9LAogICAgZGFzaGJvYXJkID0gewoKICAgICAgd2lkdGggPSA2MCwKICAgICAgcm93ID0gbmlsLCAtLSBkYXNoYm9hcmQgcG9zaXRpb24uIG5pbCBmb3IgY2VudGVyCiAgICAgIGNvbCA9IG5pbCwgLS0gZGFzaGJvYXJkIHBvc2l0aW9uLiBuaWwgZm9yIGNlbnRlcgogICAgICBwYW5lX2dhcCA9IDQsIC0tIGVtcHR5IGNvbHVtbnMgYmV0d2VlbiB2ZXJ0aWNhbCBwYW5lcwogICAgICBhdXRva2V5cyA9ICIxMjM0NTY3ODkwYWJjZGVmZ2hpamtsbW5vcHFyc3R1dnd4eXpBQkNERUZHSElKS0xNTk9QUVJTVFVWV1hZWiIsIC0tIGF1dG9rZXkgc2VxdWVuY2UKICAgICAgLS0gVGhlc2Ugc2V0dGluZ3MgYXJlIHVzZWQgYnkgc29tZSBidWlsdC1pbiBzZWN0aW9ucwogICAgICBwcmVzZXQgPSB7CiAgICAgICAga2V5cyA9IHsKICAgICAgICAgIHsgaWNvbiA9ICLvgIIgIiwga2V5ID0gImYiLCBkZXNjID0gIkZpbmQgRmlsZSIsIGFjdGlvbiA9ICI6bHVhIFNuYWNrcy5kYXNoYm9hcmQucGljaygnZmlsZXMnKSIgfSwKICAgICAgICAgIHsgaWNvbiA9ICLvhZsgIiwga2V5ID0gIm4iLCBkZXNjID0gIk5ldyBGaWxlIiwgYWN0aW9uID0gIjplbmUgfCBzdGFydGluc2VydCIgfSwKICAgICAgICAgIHsgaWNvbiA9ICLvgKIgIiwga2V5ID0gImciLCBkZXNjID0gIkZpbmQgVGV4dCIsIGFjdGlvbiA9ICI6bHVhIFNuYWNrcy5kYXNoYm9hcmQucGljaygnbGl2ZV9ncmVwJykiIH0sCiAgICAgICAgICB7IGljb24gPSAi74OFICIsIGtleSA9ICJyIiwgZGVzYyA9ICJSZWNlbnQgRmlsZXMiLCBhY3Rpb24gPSAiOmx1YSBTbmFja3MuZGFzaGJvYXJkLnBpY2soJ29sZGZpbGVzJykiIH0sCiAgICAgICAgICB7CiAgICAgICAgICAgIGljb24gPSAi75CjICIsCiAgICAgICAgICAgIGtleSA9ICJjIiwKICAgICAgICAgICAgZGVzYyA9ICJDb25maWciLAogICAgICAgICAgICBhY3Rpb24gPSAiOmx1YSBTbmFja3MuZGFzaGJvYXJkLnBpY2soJ2ZpbGVzJywge2N3ZCA9IHZpbS5mbi5zdGRwYXRoKCdjb25maWcnKX0pIiwKICAgICAgICAgIH0sCiAgICAgICAgICB7IGljb24gPSAi7o2IICIsIGtleSA9ICJzIiwgZGVzYyA9ICJSZXN0b3JlIFNlc3Npb24iLCBzZWN0aW9uID0gInNlc3Npb24iIH0sCiAgICAgICAgICB7IGljb24gPSAi87CSsiAiLCBrZXkgPSAiTCIsIGRlc2MgPSAiTGF6eSIsIGFjdGlvbiA9ICI6TGF6eSIsIGVuYWJsZWQgPSBwYWNrYWdlLmxvYWRlZC5sYXp5IH49IG5pbCB9LAogICAgICAgICAgeyBpY29uID0gIu+QpiAiLCBrZXkgPSAicSIsIGRlc2MgPSAiUXVpdCIsIGFjdGlvbiA9ICI6cWEiIH0sCiAgICAgICAgfSwKICAgICAgICAtLSBVc2VkIGJ5IHRoZSBgaGVhZGVyYCBzZWN0aW9uCiAgICAgICAgaGVhZGVyID0gW1sgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg7oK67oK4ICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgIO6CuuKWiOKWiOKWiOKWiO6CuCDugrrilojilojilojilojilojilojugrwgICAgICAgICAgIO6CvuKWiOKWiOKWiOKWiOKWiO6CuCAgICAgIO6CvuKWiOKWiO6CvCAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICDugrrilojilojilojilojilojilojugrjugr7ilojilojilojilojilojugrwgICAgICAgICAgICAg7oK+4paI4paI4paI4paI4paI7oK4IO6CuCAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAg7oK64paI4paI4paI4paI4paI4paI4paI7oK47oK+4paI4paI7oK8IO6CuuKWiOKWiOKWiOKWiOKWiOKWiOKWiOKWiO6CvO6CuuKWiOKWiOKWiO6CuO6CvuKWiOKWiOKWiOKWiOKWiO6CuOKWiOKWiOKWiCDilojilojilojugrggICDugrrilojilojilojugrjilojilojilojilojugrjilojilojilojilojugrggICAKICAgICAgICAgICDugrrilojugrjugr7ilojilojilojilojilojilojilojilojugrwgIO6CuuKWiOKWiOKWiO6CvCAgICDugrrilojilojilojilojilojugrjugr7ilojilojilojilojilojilojilojilogg4paI4paI4paI4paI4paIIOKWiOKWiOKWiOKWiOKWiO6CvuKWiOKWiOKWiOKWiO6CvuKWiOKWiOKWiOKWiOKWiCAgIAogICAgICAgICAg7oK64paI4paI4paI7oK47oK+4paI4paI4paI4paI4paI4paI7oK8IO6CuuKWiOKWiOKWiOKWiOKWiOKWiOKWiOKWiO6CvO6CuuKWiOKWiO6CvCDugr7ilojilojugrjugr7ilojilojilojilojilojilojilogg4paI4paI4paI4paI4paIIOKWiOKWiOKWiOKWiOKWiCDilojilojilojilogg4paI4paI4paI4paI4paIICAgCiAgICAgICAg7oK64paI4paI4paI4paI4paI4paI7oK87oK+4paI4paI4paI4paI4paI7oK8IO6CuuKWiOKWiOKWiO6CvCAgICDugrrilojilojilojugrgg7oK64paI4paI4paI7oK47oK+4paI4paI4paI4paI4paI4paIIOKWiOKWiOKWiOKWiOKWiCDilojilojilojilojilogg4paI4paI4paI4paIIOKWiOKWiOKWiOKWiOKWiO6CuCAgCiAgICAgICDugrrilojilojilojilojilojilojugrwgIO6CvuKWiOKWiOKWiO6CvO6CuuKWiOKWiOKWiOKWiOKWiOKWiOKWiOKWiOKWiO6CuO6CvuKWiOKWiOKWiOKWiOKWiOKWiOKWiOKWiOKWiO6CvCDugr7ilojilojilojilojugrwg4paI4paI4paI4paI4paIIOKWiOKWiOKWiOKWiOKWiCDilojilojilojilogg4paI4paI4paI4paI4paI4paI7oK4IAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIF1dLAogICAgICB9LAogICAgICAtLSBpdGVtIGZpZWxkIGZvcm1hdHRlcnMKICAgICAgZm9ybWF0cyA9IHsKICAgICAgICBpY29uID0gZnVuY3Rpb24oaXRlbSkKICAgICAgICAgIGlmIGl0ZW0uZmlsZSBhbmQgaXRlbS5pY29uID09ICJmaWxlIiBvciBpdGVtLmljb24gPT0gImRpcmVjdG9yeSIgdGhlbgogICAgICAgICAgICByZXR1cm4gTS5pY29uKGl0ZW0uZmlsZSwgaXRlbS5pY29uKQogICAgICAgICAgZW5kCiAgICAgICAgICByZXR1cm4geyBpdGVtLmljb24sIHdpZHRoID0gMiwgaGwgPSAiaWNvbiIgfQogICAgICAgIGVuZCwKICAgICAgICBmb290ZXIgPSB7ICIlcyIsIGFsaWduID0gImNlbnRlciIgfSwKICAgICAgICBoZWFkZXIgPSB7ICIlcyIsIGFsaWduID0gImNlbnRlciIgfSwKICAgICAgICBmaWxlID0gZnVuY3Rpb24oaXRlbSwgY3R4KQogICAgICAgICAgbG9jYWwgZm5hbWUgPSB2aW0uZm4uZm5hbWVtb2RpZnkoaXRlbS5maWxlLCAiOn4iKQogICAgICAgICAgZm5hbWUgPSBjdHgud2lkdGggYW5kICNmbmFtZSA+IGN0eC53aWR0aCBhbmQgdmltLmZuLnBhdGhzaG9ydGVuKGZuYW1lKSBvciBmbmFtZQogICAgICAgICAgaWYgI2ZuYW1lID4gY3R4LndpZHRoIHRoZW4KICAgICAgICAgICAgbG9jYWwgZGlyID0gdmltLmZuLmZuYW1lbW9kaWZ5KGZuYW1lLCAiOmgiKQogICAgICAgICAgICBsb2NhbCBmaWxlID0gdmltLmZuLmZuYW1lbW9kaWZ5KGZuYW1lLCAiOnQiKQogICAgICAgICAgICBpZiBkaXIgYW5kIGZpbGUgdGhlbgogICAgICAgICAgICAgIGZpbGUgPSBmaWxlOnN1YigtKGN0eC53aWR0aCAtICNkaXIgLSAyKSkKICAgICAgICAgICAgICBmbmFtZSA9IGRpciAuLiAiL+KApiIgLi4gZmlsZQogICAgICAgICAgICBlbmQKICAgICAgICAgIGVuZAogICAgICAgICAgbG9jYWwgZGlyLCBmaWxlID0gZm5hbWU6bWF0Y2goIl4oLiopLyguKykkIikKICAgICAgICAgIHJldHVybiBkaXIgYW5kIHsgeyBkaXIgLi4gIi8iLCBobCA9ICJkaXIiIH0sIHsgZmlsZSwgaGwgPSAiZmlsZSIgfSB9IG9yIHsgeyBmbmFtZSwgaGwgPSAiZmlsZSIgfSB9CiAgICAgICAgZW5kLAogICAgICB9LAogICAgICBzZWN0aW9ucyA9IHsKICAgICAgICB7IHNlY3Rpb24gPSAiaGVhZGVyIiB9LAogICAgICAgIHsgc2VjdGlvbiA9ICJrZXlzIiwgZ2FwID0gMSwgcGFkZGluZyA9IDEgfSwKICAKICAgICAgICB7IHNlY3Rpb24gPSAic3RhcnR1cCIgfSwKICAgICAgfSwKICAgIH0sCiAgICBub3RpZmllciA9IHsgdG9wX2Rvd24gPSBmYWxzZSwgd28gPSB7IHdpbmJsZW5kID0gMTAwMCB9IH0sCiAgfSwKfQo",
+							"AQAAAAAAAAABAAAAuQ0AAAAAAAC5DQAAAAAAAAAAAAAAAPC/"
+						],
+						[
+							14,
+							1,
+							"nv_vi_dd",
+							{
+								"count": 1,
+								"mode": "mode_internal_normal",
+								"register": "\""
+							},
+							"AQAAABQOAAAAAAAAFA4AAAAAAABmAAAAICAgICAgICB7IGljb24gPSAi74WbICIsIHRpdGxlID0gIlJlY2VudCBGaWxlcyIsIHNlY3Rpb24gPSAicmVjZW50X2ZpbGVzIiwgaW5kZW50ID0gMiwgcGFkZGluZyA9IDEgfSwK",
+							"AQAAAAAAAAABAAAAFA4AAAAAAAAUDgAAAAAAAAAAAAAAAPC/"
+						],
+						[
+							16,
+							1,
+							"nv_vi_dd",
+							{
+								"count": 1,
+								"mode": "mode_internal_normal",
+								"register": "\""
+							},
+							"AQAAALgNAAAAAAAAuA0AAAAAAABeAAAAICAgICAgICB7IGljb24gPSAi74G8ICIsIHRpdGxlID0gIlByb2plY3RzIiwgc2VjdGlvbiA9ICJwcm9qZWN0cyIsIGluZGVudCA9IDIsIHBhZGRpbmcgPSAxIH0sCg",
+							"AQAAAAAAAAABAAAAwA0AAAAAAADADQAAAAAAAAAAAAAAAPC/"
 						]
 					]
 				}
@@ -823,7 +895,6 @@
 					[
 						{
 							"buffer": 0,
-							"selected": true,
 							"semi_transient": false,
 							"settings":
 							{
@@ -845,6 +916,39 @@
 								},
 								"translation.x": 0.0,
 								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 1,
+							"stack_multiselect": false,
+							"type": "text"
+						},
+						{
+							"buffer": 1,
+							"file": "/home/niraj/dotfiles/nvim/.config/nvim/lua/plugins/snacks.lua",
+							"selected": true,
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 3631,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										3521,
+										3521
+									]
+								],
+								"settings":
+								{
+									"_nv_visual_sel_mode": "mode_visual",
+									"syntax": "Packages/Lua/Lua.sublime-syntax",
+									"tab_size": 2,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 817.0,
 								"zoom_level": 1.0
 							},
 							"stack_index": 0,
@@ -898,7 +1002,7 @@
 				"height": 0.0
 			},
 			"pinned_build_system": "",
-			"position": "0,0,0,0,0,56,50,1016,1082,1920,1080,0",
+			"position": "0,1,0,0,0,0,0,1920,1032,1920,1080,0",
 			"project": "",
 			"replace":
 			{
@@ -940,7 +1044,7 @@
 			"show_minimap": false,
 			"show_open_files": false,
 			"show_tabs": true,
-			"side_bar_visible": false,
+			"side_bar_visible": true,
 			"side_bar_width": 229.0,
 			"status_bar_visible": true,
 			"template_settings":

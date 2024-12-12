@@ -30,7 +30,7 @@ set_highlight_groups()
 
 --------------------------------neovide------------------
 vim.g.neovide_hide_mouse_when_typing = true
-vim.g.gui_font_default_size = 14
+vim.g.gui_font_default_size = 13.2
 vim.g.gui_font_size = vim.g.gui_font_default_size
 vim.g.gui_font_face = "IosevkaTerm Nerd Font"
 
@@ -45,7 +45,7 @@ vim.g.neovide_cursor_trail_size = 0.3
 vim.g.neovide_cursor_animation_length = 0.2
 vim.g.neovide_scroll_animation_length = 0.08
 
---NOTE: these functions prevent neovide from scrolling on buffer switch
+--NOTE: these functions prevent neovide from scrolling animations on buffer switch
 vim.api.nvim_create_autocmd("BufLeave", {
   callback = function()
     vim.g.neovide_scroll_animation_length = 0
