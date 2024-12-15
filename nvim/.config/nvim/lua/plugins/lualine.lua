@@ -1,7 +1,7 @@
 return {
   "nvim-lualine/lualine.nvim",
   event = function()
-    return { "LazyFile" }
+    return { "BufReadPost", "BufWritePost", "BufNewFile" }
   end,
   init = function()
     vim.g.lualine_laststatus = vim.o.laststatus
@@ -62,9 +62,6 @@ return {
             cond = function()
               return package.loaded["noice"] and require("noice").api.status.command.has()
             end,
-            color = function()
-              return LazyVim.ui.fg("Statement")
-            end,
           },
           {
             function()
@@ -72,9 +69,6 @@ return {
             end,
             cond = function()
               return package.loaded["noice"] and require("noice").api.status.mode.has()
-            end,
-            color = function()
-              return LazyVim.ui.fg("Constant")
             end,
           },
           { "overseer" },
@@ -85,16 +79,10 @@ return {
             cond = function()
               return package.loaded["dap"] and require("dap").status() ~= ""
             end,
-            color = function()
-              return LazyVim.ui.fg("Debug")
-            end,
           },
           {
             require("lazy.status").updates,
             cond = require("lazy.status").has_updates,
-            color = function()
-              return LazyVim.ui.fg("Special")
-            end,
           },
           {
             "diff",

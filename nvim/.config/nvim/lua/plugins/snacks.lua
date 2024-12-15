@@ -1,57 +1,20 @@
 return {
   "folke/snacks.nvim",
-  keys = {
-
-    {
-      "<leader>uD",
-      (function()
-        local isDim = false -- Local to this function's scope but persists across calls
-        return function()
-          if not isDim then
-            Snacks.dim()
-            isDim = true
-          else
-            Snacks.dim.disable()
-            isDim = false
-          end
-        end
-      end)(),
-      desc = "Toggle Dim",
-    },
-
-    {
-      "<leader>.",
-      function()
-        Snacks.scratch()
-      end,
-      desc = "Toggle Scratch Buffer",
-    },
-    {
-      "<leader>SS",
-      function()
-        Snacks.scratch.select()
-      end,
-      desc = "Select Scratch Buffer",
-    },
-
-    {
-      "]]",
-      function()
-        Snacks.words.jump(vim.v.count1)
-      end,
-      desc = "Next Reference",
-      mode = { "n", "t" },
-    },
-    {
-      "[[",
-      function()
-        Snacks.words.jump(-vim.v.count1)
-      end,
-      desc = "Prev Reference",
-      mode = { "n", "t" },
-    },
-  },
   opts = {
+    words = { enabled = true },
+    scroll = { enabled = false },
+    zen = { enabled = false },
+    animate = { enabled = false },
+    indent = {
+      enabled = false,
+      char = "",
+      only_scope = false,
+      only_current = false,
+      hl = "SnacksIndent",
+
+      chunk = { enabled = true },
+      scope = { enabled = false },
+    },
     terminal = {
       win = {
         style = "float",

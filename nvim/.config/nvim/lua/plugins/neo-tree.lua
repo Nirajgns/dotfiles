@@ -3,6 +3,7 @@ return {
   dependencies = {
     "nvim-tree/nvim-web-devicons",
   },
+  cmd = "Neotree",
   opts = {
     popup_border_style = "rounded",
     default_component_configs = {

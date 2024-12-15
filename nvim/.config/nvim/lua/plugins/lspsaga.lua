@@ -41,6 +41,25 @@ return {
         "<cmd>Lspsaga term_toggle<cr>",
         { silent = true, desc = "toggle lspsaga floating terminal" }
       ),
+      vim.keymap.set("n", "K", "<cmd>Lspsaga hover_doc<cr>", { desc = "hover doc", silent = true }),
+      vim.keymap.set("n", "gr", "<cmd>Lspsaga finder<cr>", { desc = "references (finder)", silent = true }),
+      vim.keymap.set("n", "gd", "<cmd>Lspsaga goto_definition<cr>", { desc = "go to definition", silent = true }),
+      vim.keymap.set("n", "gpd", "<cmd>Lspsaga peek_definition<cr>", { desc = "peek definition", silent = true }),
+      vim.keymap.set(
+        "n",
+        "gpy",
+        "<cmd>Lspsaga peek_type_definition<cr>",
+        { desc = "peek type definition", silent = true }
+      ),
+      vim.keymap.set(
+        "n",
+        "gy",
+        "<cmd>Lspsaga goto_type_definition<cr>",
+        { desc = "go to type definition", silent = true }
+      ),
+      vim.keymap.set("n", "<leader>ca", "<cmd>Lspsaga code_action<cr>", { desc = "code actions", silent = true }),
+      -- vim.keymap.set('i', '<c-s-k>', vim.lsp.buf.signature_help, { desc = 'Signature Help', has = 'signatureHelp' }),
+      vim.keymap.set("v", "<leader>ca", "<cmd>Lspsaga code_action<cr>", { desc = "code actions", silent = true }),
       wk.add({
         { "<leader>l", group = "Lint,Lazy,Lspsaga" },
         { "<leader>lR", "<cmd>Lspsaga rename<cr>", desc = "Rename with lsp" },

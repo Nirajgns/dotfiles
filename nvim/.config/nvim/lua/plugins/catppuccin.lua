@@ -24,7 +24,7 @@ return {
         --   operators = {},
       },
     })
-
+    vim.cmd.colorscheme("catppuccin")
     local cp = require("catppuccin.palettes").get_palette()
 
     local TelescopeColor = {

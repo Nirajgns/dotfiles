@@ -18,7 +18,7 @@ return {
     })
   end,
 
-  vim.keymap.set("n", "<leader>uz", function()
+  vim.keymap.set("n", "<leader>uN", function()
     _G.is_nnp_enabled = not _G.is_nnp_enabled
 
     if _G.is_nnp_enabled then
@@ -41,5 +41,5 @@ return {
       vim.cmd("NoNeckPain")
       vim.cmd("Neotree left")
     end
-  end, { silent = true, desc = "Toggle Zenmode with NNP" }),
+  end, { silent = true, desc = "Toggle  NNP(Zen)" }),
 }

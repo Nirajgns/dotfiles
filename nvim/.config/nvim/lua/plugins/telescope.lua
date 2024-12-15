@@ -29,12 +29,6 @@ return {
     "n",
     "<leader>'",
     "<cmd>Telescope marks<cr>",
-    { noremap = true, silent = true, desc = "marks with telescope" },
-    vim.keymap.set(
-      "n",
-      "<leader>fu",
-      "<cmd>Telescope undo<cr>",
-      { noremap = true, silent = true, desc = "Undo tree with telescope" }
-    )
+    { noremap = true, silent = true, desc = "marks with telescope" }
   ),
 }

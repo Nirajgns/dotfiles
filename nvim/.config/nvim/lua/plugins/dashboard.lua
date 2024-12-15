@@ -36,8 +36,7 @@ return {
           limit = 9,
           action = function()
             require("persistence").load()
-            require("neo-tree.command").execute({ toggle = true, dir = LazyVim.root() })
-            vim.cmd("Neotree close")
+            -- require("neo-tree.command").execute({ toggle = true, dir = LazyVim.root() })
             vim.cmd("Neotree show")
           end,
         },
@@ -68,3 +67,42 @@ return {
     return opts
   end,
 }
+
+--FIX: this for line 126 assert issue
+
+-- local function read_project(data)
+--   local res = {}
+--
+--   -- Ensure data is a valid string
+--   data = string.gsub(data, '%z', '') -- Remove null characters
+--
+--   -- Safely try to load and execute the string
+--   local ok, dump = pcall(loadstring, data)
+--   if not ok or type(dump) ~= "function" then
+--     table.insert(res, (' '):rep(3) .. ' Failed to load projects')
+--     table.insert(res, '')
+--     return res
+--   end
+--
+--   local list = dump() -- Execute the loaded string (if valid)
+--   if list then
+--     list = vim.list_slice(list, #list - config.project.limit)
+--   end
+--
+--   for _, dir in ipairs(list or {}) do
+--     dir = dir:gsub(vim.env.HOME, '~') -- Replace $HOME with ~
+--     table.insert(res, (' '):rep(3) .. ' ' .. dir)
+--   end
+--
+--   if #res == 0 then
+--     table.insert(res, (' '):rep(3) .. ' empty project')
+--   else
+--     reverse(res)
+--   end
+--
+--   table.insert(res, 1, config.project.icon .. config.project.label)
+--   table.insert(res, 1, '')
+--   table.insert(res, '')
+--
+--   return res
+-- end

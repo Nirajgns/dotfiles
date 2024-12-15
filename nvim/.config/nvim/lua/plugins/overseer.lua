@@ -53,23 +53,5 @@ return {
         ["<C-f>"] = "ScrollOutputDown",
       },
     },
-    form = {
-      win_opts = {
-        border = "rounded",
-        winblend = 0,
-      },
-    },
-    confirm = {
-      win_opts = {
-        border = "rounded",
-        winblend = 0,
-      },
-    },
-    task_win = {
-      win_opts = {
-        border = "rounded",
-        winblend = 0,
-      },
-    },
   },
 }

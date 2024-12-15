@@ -1,6 +1,11 @@
 {
 	"file_history":
 	[
+		"/home/niraj/.config/nvim.baaak/lua/custom/plugins/dashboard.lua",
+		"/home/niraj/.local/share/nvim/lazy/dashboard-nvim/lua/dashboard/theme/hyper.lua",
+		"/home/niraj/.local/share/nvim/lazy/nvim-lspconfig/lua/lspconfig/util.lua",
+		"/home/niraj/.local/share/nvim/lazy/nvim-lspconfig/lua/lspconfig/configs/eslint.lua",
+		"/home/niraj/dotfiles/nvim/.config/nvim/lua/plugins/snacks.lua",
 		"/home/niraj/dotfiles/tmux/.tmux.conf",
 		"/home/niraj/.tmux.conf.bak",
 		"/home/niraj/.tmux.conf",
@@ -123,12 +128,7 @@
 		"/mnt/sdb3/Projects/js/Nomad-backend-master/routes/galleryRoutes.js",
 		"/home/niraj/Desktop/Projects/js/Nomad-backend-master/.gitignore",
 		"/home/niraj/Desktop/Downloads/Saint.Maud.English-WWW.MY-SUBS.CO.srt",
-		"/home/niraj/Desktop/Projects/flutter/rohit semriwal ecommerce/ecommerce-backend/src/server.js",
-		"/home/niraj/Desktop/Link to nvim/lua/config/lazy.lua",
-		"/home/niraj/Desktop/Link to nvim/lua/plugins/core.lua",
-		"/home/niraj/Downloads/Saint.Maud.English-WWW.MY-SUBS.CO.srt",
-		"/home/niraj/.flutter",
-		"/home/niraj/Desktop/Link to nvim/lua/config/keymaps.lua"
+		"/home/niraj/Desktop/Projects/flutter/rohit semriwal ecommerce/ecommerce-backend/src/server.js"
 	],
 	"folder_history":
 	[
@@ -148,7 +148,7 @@
 	"last_version": 4180,
 	"last_window_id": 37,
 	"log_indexing": false,
-	"next_update_check": 1733996204,
+	"next_update_check": 1734321844,
 	"settings":
 	{
 		"new_window_full_screen": false,
@@ -275,6 +275,444 @@
 			},
 			"file_history":
 			[
+				"/home/niraj/.config/nvim.baaak/lua/custom/plugins/lspsaga.lua",
+				"/home/niraj/.config/nvim.baaak/lua/custom/plugins/dashboard.lua",
+				"/home/niraj/.config/nvim.baaak/lua/custom/plugins/gitsigns.lua",
+				"/home/niraj/.config/nvim.bak/lua/plugins/gitsigns.lua",
+				"/home/niraj/.config/nvim.baaak/lua/custom/plugins/neo-tree.lua",
+				"/home/niraj/.local/share/nvim/lazy/dashboard-nvim/lua/dashboard/theme/hyper.lua",
+				"/home/niraj/.local/share/nvim/lazy/nvim-lspconfig/lua/lspconfig/util.lua",
+				"/home/niraj/.local/share/nvim/lazy/nvim-lspconfig/lua/lspconfig/configs/eslint.lua",
+				"/home/niraj/dotfiles/nvim/.config/nvim/lua/plugins/snacks.lua",
+				"/home/niraj/dotfiles/tmux/.tmux.conf",
+				"/home/niraj/.tmux.conf.bak",
+				"/home/niraj/.tmux.conf",
+				"/home/niraj/.config/kconf_updaterc",
+				"/home/niraj/.config/QtProject.conf",
+				"/home/niraj/.config/gnome-initial-setup-done",
+				"/home/niraj/.config/discoverrc",
+				"/home/niraj/.config/appimagelauncher.cfg",
+				"/home/niraj/.zshrc",
+				"/home/niraj/.bashrc",
+				"/home/niraj/.config/kitty/kitty.conf",
+				"/home/niraj/.config/GNOME-xdg-terminals.list",
+				"/home/niraj/.config/xdg-terminals.list",
+				"/home/niraj/.config/.gsd-keyboard.settings-ported",
+				"/home/niraj/yazi/target/release/ya.d",
+				"/home/niraj/dotfiles/bottom/bottom/bottom.toml",
+				"/home/niraj/.local/share/nvim/lazy/persistence.nvim/lua/persistence/config.lua",
+				"/home/niraj/.config/bottom/bottom.toml",
+				"/home/niraj/bottom/bottom.toml",
+				"/home/niraj/Desktop/Projects/js/meetly/package.json",
+				"/home/niraj/.gitconfig",
+				"/home/niraj/dotfiles/bash/.bashrc",
+				"/home/niraj/.config/kitty/kitty.conf.bak",
+				"/media/niraj/F8722EA8722E6C16/Dropbox/obsidian-vault/.gitignore",
+				"/home/niraj/.profile",
+				"/home/niraj/.config/nvim/lua/kickstart/plugins/debug.lua",
+				"/home/niraj/.config/nvim/lua/kickstart/plugins/neo-tree.lua",
+				"/home/niraj/.config/nvim/lua/kickstart/plugins/indent_line.lua",
+				"/home/niraj/.config/nvim/lua/kickstart/plugins/lint.lua",
+				"/home/niraj/.config/nvim/lua/custom/plugins/core.lua",
+				"/home/niraj/.config/nvim/lua/custom/plugins/init.lua",
+				"/home/niraj/.config/nvim/init.lua",
+				"/home/niraj/.config/nvim/lua/custom/plugins/which-key.lua",
+				"/home/niraj/.config/nvim/lua/config/keymaps.lua",
+				"/home/niraj/.local/share/nvim/lazy/persistence.nvim/doc/persistence.nvim.txt",
+				"/home/niraj/Desktop/Projects/instaclone/frontend/components.json",
+				"/home/niraj/Desktop/Projects/js/insta1/insta/node_modules/framer-motion/dist/es/gestures/utils/is-node-or-child.mjs",
+				"/home/niraj/Desktop/Projects/social-media/node_modules/resolve/lib/homedir.js",
+				"/home/niraj/Downloads/instaclone-main/package.json",
+				"/home/niraj/Desktop/Projects/linkedin/.env",
+				"/home/niraj/Downloads/instaclone-main/backend/utils/db.js",
+				"/home/niraj/.config/nvim/lua/plugins/neo-tree.lua",
+				"/home/niraj/Desktop/Projects/flutter/rohit semriwal ecommerce/ecommerce-backend/node_modules/dashdash/lib/dashdash.js",
+				"/home/niraj/.config/nvim.bak/lua/config/lazy.lua",
+				"/home/niraj/.config/nvim.bak/lua/config/keymaps.lua",
+				"/home/niraj/.config/nvim.bak/lua/config/autocmds.lua",
+				"/home/niraj/.config/nvim.bak/lua/plugins/bufferline.lua",
+				"/home/niraj/.config/sublime-text/Packages/User/Preferences.sublime-settings",
+				"/home/niraj/.config/sublime-text/Packages/Default/Preferences.sublime-settings",
+				"/home/niraj/Desktop/Projects/js/bookstore/frontend/src/App.css",
+				"/home/niraj/Desktop/Projects/js/bookstore/frontend/src/App.jsx",
+				"/home/niraj/.config/nvim/lua/kickstart/health.lua",
+				"/home/niraj/.config/starship.toml",
+				"/home/niraj/.local/share/applications/alacarte-made.desktop",
+				"/home/niraj/.local/share/applications/alacarte-made-1.desktop",
+				"/home/niraj/Downloads/pixel-saver-master/pixel-saver@deadalnix.me/metadata.json",
+				"/home/niraj/Downloads/gestureImprovements47@gestures/metadata.json",
+				"/home/niraj/.config/tmux/.tmux.conf",
+				"/media/niraj/4ADA77CBDA77B235/Watch/Lust, Caution (2007) [720p] [BluRay] [YTS.MX]/Lust,.Caution.2007.720p.BluRay.x264.AAC-[YTS.MX].srt",
+				"/home/niraj/Downloads/Lekton/README.md",
+				"/home/niraj/Desktop/a.sfd",
+				"/home/niraj/Desktop/token.txt",
+				"/home/niraj/Dropbox/obsidian-vault/ssh.pub",
+				"/home/niraj/.config/mimeapps.list",
+				"/home/niraj/.config/dleyna-server-service.conf",
+				"/home/niraj/.config/baloofileinformationrc",
+				"/home/niraj/.config/dolphinrc",
+				"/home/niraj/.config/user-dirs.locale",
+				"/home/niraj/.config/kservicemenurc",
+				"/home/niraj/.config/gsconnect/private.pem",
+				"/home/niraj/.config/lazygit/state.yml",
+				"/home/niraj/.config/lazygit/config.yml",
+				"/home/niraj/.config/gtk-2.0/gtkfilechooser.ini",
+				"/home/niraj/.config/Code/User/sync/keybindings/lastSynckeybindings.json",
+				"/home/niraj/.config/Caprine/custom.css",
+				"/home/niraj/.ssh/id_rsa.pub",
+				"/home/niraj/Dropbox/obsidian-vault/Learn-react/React.md",
+				"/home/niraj/Dropbox/obsidian-vault/.obsidian.vimrc",
+				"/home/niraj/Desktop/projects/js/ts-ecom-api/src/routes/products.ts",
+				"/home/niraj/.bash_history",
+				"/home/niraj/.config/nvim.bak/lua/config/options.lua",
+				"/home/niraj/.blerc",
+				"/home/niraj/.cache/oh-my-posh/themes/1_shell.omp.json",
+				"/home/niraj/Documents/Learn-react/.obsidian.vimrc",
+				"/home/niraj/Documents/Learn-react/.obsidian/.obsidian.vimrc",
+				"/home/niraj/Desktop/projects/js/ts-ecom-api/src/index.ts",
+				"/home/niraj/Desktop/projects/js/ts-ecom-api/src/middlewares/roleMiddleware.ts",
+				"/home/niraj/Desktop/projects/js/ts-ecom-api/src/error-handler.ts",
+				"/home/niraj/Desktop/projects/js/ts-ecom-api/.env",
+				"/home/niraj/Downloads/ts-ecom-api-master/.env",
+				"/home/niraj/.ssh/config",
+				"/home/niraj/Desktop/nvim/lua/plugins/dap.lua",
+				"/home/niraj/Desktop/emergency.txt",
+				"/home/niraj/.config/kanata/config.kbd",
+				"/home/niraj/.openai_key.zsh",
+				"/home/niraj/Downloads/WebStorm-2024.2/WebStorm-242.20224.342/Install-Linux-tar.txt",
+				"/home/niraj/Desktop/hello.py",
+				"/home/niraj/.config/system.d/user/kanata.service",
+				"/home/niraj/Desktop/nvim/lua/plugins/persistance.lua",
+				"/home/niraj/.config/nvim/lua/mappings.lua",
+				"/home/niraj/.config/nvim/lua/options.lua",
+				"/home/niraj/Desktop/Projects/flutter/rohit semriwal ecommerce/ecommerce-frontend/lib/core/ui.dart",
+				"/mnt/sdb3/Watch/Furiosa A Mad Max Saga (2024) [1080p] [WEBRip] [5.1] [YTS.MX]/Furiosa.A.Mad.Max.Saga.2024.1080p.WEBRip.x264.AAC5.1-[YTS.MX].srt",
+				"/home/niraj/.config/neovide/config.toml",
+				"/home/niraj/.config/wezterm/config/appearance.lua",
+				"/home/niraj/.config/wezterm/config/domains.lua",
+				"/home/niraj/.config/wezterm/config/bindings.lua",
+				"/home/niraj/.config/wezterm/config/launch.lua",
+				"/home/niraj/.config/wezterm/config/init.lua",
+				"/home/niraj/.config/wezterm/config/general.lua",
+				"/home/niraj/.config/wezterm/config/fonts.lua",
+				"/mnt/sdb3/Projects/js/Nomad-backend-master/routes/galleryRoutes.js",
+				"/home/niraj/Desktop/Projects/js/Nomad-backend-master/.gitignore",
+				"/home/niraj/Desktop/Downloads/Saint.Maud.English-WWW.MY-SUBS.CO.srt",
+				"/home/niraj/Desktop/Projects/flutter/rohit semriwal ecommerce/ecommerce-backend/src/server.js",
+				"/home/niraj/Desktop/Link to nvim/lua/config/lazy.lua",
+				"/home/niraj/Desktop/Link to nvim/lua/plugins/core.lua",
+				"/home/niraj/Downloads/Saint.Maud.English-WWW.MY-SUBS.CO.srt",
+				"/home/niraj/.flutter"
+			],
+			"find":
+			{
+				"height": 37.0
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+				],
+				"reverse": false,
+				"scrollbar_highlights": true,
+				"show_context": true,
+				"use_buffer2": true,
+				"use_gitignore": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"incremental_find":
+			{
+				"height": 37.0
+			},
+			"input":
+			{
+				"height": 63.0
+			},
+			"menu_visible": false,
+			"output.Terminus":
+			{
+				"height": 310.0
+			},
+			"output.exec":
+			{
+				"height": 445.0
+			},
+			"output.find_results":
+			{
+				"height": 0.0
+			},
+			"pinned_build_system": "",
+			"replace":
+			{
+				"height": 70.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_symbol":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"show_minimap": false,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 229.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+			}
+		},
+		"new_window_width": 0.0
+	},
+	"windows":
+	[
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+				]
+			},
+			"buffers":
+			[
+				{
+					"file": "/home/niraj/.config/nvim.baaak/lua/custom/plugins/neo-tree.lua",
+					"settings":
+					{
+						"buffer_size": 855,
+						"encoding": "UTF-8",
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/niraj/.config/nvim.bak/lua/plugins/gitsigns.lua",
+					"settings":
+					{
+						"buffer_size": 354,
+						"line_ending": "Unix"
+					},
+					"undo_stack":
+					[
+						[
+							1,
+							1,
+							"revert",
+							null,
+							"AgAAAAAAAAAAAAAAAAAAAAAAAABiAQAAcmV0dXJuIHsKICAibGV3aXM2OTkxL2dpdHNpZ25zLm52aW0iLAogIGV2ZW50ID0gIkxhenlGaWxlIiwKICBvcHRzID0gewogICAgY3VycmVudF9saW5lX2JsYW1lID0gdHJ1ZSwKICAgIGN1cnJlbnRfbGluZV9ibGFtZV9vcHRzID0gewogICAgICB2aXJ0X3RleHQgPSB0cnVlLAogICAgICB2aXJ0X3RleHRfcG9zID0gInJpZ2h0X2FsaWduIiwgLS0gJ2VvbCcgfCAnb3ZlcmxheScgfCAncmlnaHRfYWxpZ24nCiAgICAgIGRlbGF5ID0gMTAwLAogICAgICBpZ25vcmVfd2hpdGVzcGFjZSA9IGZhbHNlLAogICAgICB2aXJ0X3RleHRfcHJpb3JpdHkgPSAxMDAsCiAgICAgIHVzZV9mb2N1cyA9IHRydWUsCiAgICB9LAogIH0sCn0KAAAAAAAAAADPAQAAAAAAAAAAAAA",
+							"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvw"
+						],
+						[
+							2,
+							1,
+							"revert",
+							null,
+							"AgAAAAAAAAAAAAAAAAAAAAAAAADPAQAAcmV0dXJuIHsKICAibGV3aXM2OTkxL2dpdHNpZ25zLm52aW0iLAogIGV2ZW50ID0gIkxhenlGaWxlIiwKICBvcHRzID0gewogICAgY3VycmVudF9saW5lX2JsYW1lID0gdHJ1ZSwKICAgIGN1cnJlbnRfbGluZV9ibGFtZV9vcHRzID0gewogICAgICB2aXJ0X3RleHQgPSB0cnVlLAogICAgICB2aXJ0X3RleHRfcG9zID0gInJpZ2h0X2FsaWduIiwgLS0gJ2VvbCcgfCAnb3ZlcmxheScgfCAncmlnaHRfYWxpZ24nCiAgICAgIGRlbGF5ID0gMTAwLAogICAgICBpZ25vcmVfd2hpdGVzcGFjZSA9IGZhbHNlLAogICAgICB2aXJ0X3RleHRfcHJpb3JpdHkgPSAxMDAsCiAgICAgIHVzZV9mb2N1cyA9IHRydWUsCiAgICB9LAogIH0sCiAgdmltLmtleW1hcC5zZXQoIm4iLCAiPGxlYWRlcj5nYiIsIGdpdHNpZ25zLnRvZ2dsZV9jdXJyZW50X2xpbmVfYmxhbWUsIHsgZGVzYyA9ICJUb2dnbGUgZ2l0IGJsYW1lIGxpbmUiIH0pLAp9CgAAAAAAAAAA9wEAAAAAAAAAAAAA",
+							"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvw"
+						],
+						[
+							3,
+							1,
+							"revert",
+							null,
+							"AgAAAAAAAAAAAAAAAAAAAAAAAAD3AQAAcmV0dXJuIHsKICAibGV3aXM2OTkxL2dpdHNpZ25zLm52aW0iLAogIGV2ZW50ID0gIkxhenlGaWxlIiwKICBvcHRzID0gewogICAgY3VycmVudF9saW5lX2JsYW1lID0gdHJ1ZSwKICAgIGN1cnJlbnRfbGluZV9ibGFtZV9vcHRzID0gewogICAgICB2aXJ0X3RleHQgPSB0cnVlLAogICAgICB2aXJ0X3RleHRfcG9zID0gInJpZ2h0X2FsaWduIiwgLS0gJ2VvbCcgfCAnb3ZlcmxheScgfCAncmlnaHRfYWxpZ24nCiAgICAgIGRlbGF5ID0gMTAwLAogICAgICBpZ25vcmVfd2hpdGVzcGFjZSA9IGZhbHNlLAogICAgICB2aXJ0X3RleHRfcHJpb3JpdHkgPSAxMDAsCiAgICAgIHVzZV9mb2N1cyA9IHRydWUsCiAgICB9LAogIH0sCiAgb25fYXR0YWNoPWZ1bmN0aW9uIChidWZucikKICAgIAogIGVuZAogIHZpbS5rZXltYXAuc2V0KCJuIiwgIjxsZWFkZXI+Z2IiLCBnaXRzaWducy50b2dnbGVfY3VycmVudF9saW5lX2JsYW1lLCB7IGRlc2MgPSAiVG9nZ2xlIGdpdCBibGFtZSBsaW5lIiB9KSwKfQoAAAAAAAAAAFcCAAAAAAAAAAAAAA",
+							"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvw"
+						],
+						[
+							4,
+							1,
+							"revert",
+							null,
+							"BAAAAAAAAAAAAAAAAAAAAAAAAABXAgAAcmV0dXJuIHsKICAibGV3aXM2OTkxL2dpdHNpZ25zLm52aW0iLAogIGV2ZW50ID0gIkxhenlGaWxlIiwKICBvcHRzID0gewogICAgY3VycmVudF9saW5lX2JsYW1lID0gdHJ1ZSwKICAgIGN1cnJlbnRfbGluZV9ibGFtZV9vcHRzID0gewogICAgICB2aXJ0X3RleHQgPSB0cnVlLAogICAgICB2aXJ0X3RleHRfcG9zID0gInJpZ2h0X2FsaWduIiwgLS0gJ2VvbCcgfCAnb3ZlcmxheScgfCAncmlnaHRfYWxpZ24nCiAgICAgIGRlbGF5ID0gMTAwLAogICAgICBpZ25vcmVfd2hpdGVzcGFjZSA9IGZhbHNlLAogICAgICB2aXJ0X3RleHRfcHJpb3JpdHkgPSAxMDAsCiAgICAgIHVzZV9mb2N1cyA9IHRydWUsCiAgICB9LAogIH0sCiAgb25fYXR0YWNoID0gZnVuY3Rpb24oYnVmbnIpCiAgICBtYXAoIm4iLCAiPGxlYWRlcj5nYiIsIGdpdHNpZ25zLnRvZ2dsZV9jdXJyZW50X2xpbmVfYmxhbWUsIHsgZGVzYyA9ICJUb2dnbGUgZ2l0IGJsYW1lIGxpbmUiIH0pCiAgZW5kLAogIHZpbS5rZXltYXAuc2V0KCJuIiwgIjxsZWFkZXI+Z2IiLCBnaXRzaWducy50b2dnbGVfY3VycmVudF9saW5lX2JsYW1lLCB7IGRlc2MgPSAiVG9nZ2xlIGdpdCBibGFtZSBsaW5lIiB9KSwKfQoAAAAAAAAAAGIBAAAAAAAAAAAAAAAAAAAAAAAAYgEAAAAAAAAAAAAAAAAAAAAAAABiAQAAAAAAAAAAAAA",
+							"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvw"
+						]
+					]
+				},
+				{
+					"file": "/home/niraj/.config/nvim.baaak/lua/custom/plugins/gitsigns.lua",
+					"settings":
+					{
+						"buffer_size": 2849,
+						"encoding": "UTF-8",
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/niraj/.config/nvim.baaak/lua/custom/plugins/dashboard.lua",
+					"settings":
+					{
+						"buffer_size": 4318,
+						"encoding": "UTF-8",
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/niraj/.config/nvim.baaak/lua/custom/plugins/lspsaga.lua",
+					"settings":
+					{
+						"buffer_size": 3011,
+						"encoding": "UTF-8",
+						"line_ending": "Unix"
+					},
+					"undo_stack":
+					[
+					]
+				}
+			],
+			"build_system": "",
+			"build_system_choices":
+			[
+			],
+			"build_varint": "",
+			"command_palette":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+					[
+						"install",
+						"Package Control: Install Package"
+					],
+					[
+						"settin",
+						"Preferences: Settings"
+					],
+					[
+						"men",
+						"View: Toggle Menu"
+					],
+					[
+						"insta",
+						"Package Control: Install Package"
+					],
+					[
+						"package cont",
+						"Package Control: Install Package"
+					],
+					[
+						"ui",
+						"UI: Select Color Scheme"
+					],
+					[
+						"colorsc",
+						"UI: Select Color Scheme"
+					],
+					[
+						"menu",
+						"View: Toggle Menu"
+					],
+					[
+						"theme",
+						"UI: Select Color Scheme"
+					],
+					[
+						"color",
+						"UI: Customize Color Scheme"
+					],
+					[
+						"split",
+						"File: Split View"
+					],
+					[
+						"install ",
+						"Package Control: Install Package"
+					],
+					[
+						"neovin",
+						"Preferences: NeoVintageous Settings"
+					],
+					[
+						"dart",
+						"Preferences: LSP-Dart Settings"
+					],
+					[
+						"prefe",
+						"Preferences: Settings"
+					],
+					[
+						"term",
+						"Preferences: Terminus Key Bindings"
+					],
+					[
+						"flutter",
+						"Flutter: Devices"
+					],
+					[
+						"remo",
+						"Package Control: Remove Package"
+					],
+					[
+						"pref",
+						"Preferences: Settings"
+					]
+				],
+				"width": 0.0
+			},
+			"console":
+			{
+				"height": 315.0,
+				"history":
+				[
+					"node"
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"expanded_folders":
+			[
+				"/home/niraj/.config/nvim/lua/custom/plugins"
+			],
+			"file_history":
+			[
+				"/home/niraj/.config/nvim.baaak/lua/custom/plugins/dashboard.lua",
+				"/home/niraj/.local/share/nvim/lazy/dashboard-nvim/lua/dashboard/theme/hyper.lua",
+				"/home/niraj/.local/share/nvim/lazy/nvim-lspconfig/lua/lspconfig/util.lua",
+				"/home/niraj/.local/share/nvim/lazy/nvim-lspconfig/lua/lspconfig/configs/eslint.lua",
 				"/home/niraj/dotfiles/nvim/.config/nvim/lua/plugins/snacks.lua",
 				"/home/niraj/dotfiles/tmux/.tmux.conf",
 				"/home/niraj/.tmux.conf.bak",
@@ -398,457 +836,7 @@
 				"/home/niraj/Desktop/Link to nvim/lua/config/keymaps.lua",
 				"/home/niraj/.config/nautilus/search-metadata",
 				"/home/niraj/Desktop/Link to nvim/lua/plugins/lsp-saga.lua",
-				"/home/niraj/.config/kdeglobals",
-				"/home/niraj/.config/nvim.bak/init.lua",
-				"/home/niraj/Desktop/keymaps.lua",
-				"/home/niraj/.config/nvim.bak/lua/plugins/hl-chunk.lua",
-				"/home/niraj/.config/nvim.bak/lua/mappings.lua"
-			],
-			"find":
-			{
-				"height": 37.0
-			},
-			"find_in_files":
-			{
-				"height": 0.0,
-				"where_history":
-				[
-				]
-			},
-			"find_state":
-			{
-				"case_sensitive": false,
-				"find_history":
-				[
-				],
-				"highlight": true,
-				"in_selection": false,
-				"preserve_case": false,
-				"regex": false,
-				"replace_history":
-				[
-				],
-				"reverse": false,
-				"scrollbar_highlights": true,
-				"show_context": true,
-				"use_buffer2": true,
-				"use_gitignore": true,
-				"whole_word": false,
-				"wrap": true
-			},
-			"incremental_find":
-			{
-				"height": 37.0
-			},
-			"input":
-			{
-				"height": 63.0
-			},
-			"menu_visible": false,
-			"output.Terminus":
-			{
-				"height": 310.0
-			},
-			"output.exec":
-			{
-				"height": 445.0
-			},
-			"output.find_results":
-			{
-				"height": 0.0
-			},
-			"pinned_build_system": "",
-			"replace":
-			{
-				"height": 70.0
-			},
-			"save_all_on_build": true,
-			"select_file":
-			{
-				"height": 0.0,
-				"last_filter": "",
-				"selected_items":
-				[
-				],
-				"width": 0.0
-			},
-			"select_project":
-			{
-				"height": 0.0,
-				"last_filter": "",
-				"selected_items":
-				[
-				],
-				"width": 0.0
-			},
-			"select_symbol":
-			{
-				"height": 0.0,
-				"last_filter": "",
-				"selected_items":
-				[
-				],
-				"width": 0.0
-			},
-			"show_minimap": false,
-			"show_open_files": false,
-			"show_tabs": true,
-			"side_bar_visible": true,
-			"side_bar_width": 229.0,
-			"status_bar_visible": true,
-			"template_settings":
-			{
-			}
-		},
-		"new_window_width": 0.0
-	},
-	"windows":
-	[
-		{
-			"auto_complete":
-			{
-				"selected_items":
-				[
-				]
-			},
-			"buffers":
-			[
-				{
-					"contents": "nitini",
-					"settings":
-					{
-						"buffer_size": 6,
-						"line_ending": "Unix",
-						"name": "nitini"
-					},
-					"undo_stack":
-					[
-						[
-							7,
-							1,
-							"insert",
-							{
-								"characters": "nitini"
-							},
-							"BgAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAACAAAAAAAAAAAAAAACAAAAAAAAAAMAAAAAAAAAAAAAAAMAAAAAAAAABAAAAAAAAAAAAAAABAAAAAAAAAAFAAAAAAAAAAAAAAAFAAAAAAAAAAYAAAAAAAAAAAAAAA",
-							"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvw"
-						]
-					]
-				},
-				{
-					"file": "/home/niraj/dotfiles/nvim/.config/nvim/lua/plugins/snacks.lua",
-					"settings":
-					{
-						"buffer_size": 3631,
-						"encoding": "UTF-8",
-						"line_ending": "Unix"
-					},
-					"undo_stack":
-					[
-						[
-							5,
-							1,
-							"nv_vi_d",
-							{
-								"count": 1,
-								"mode": "mode_visual",
-								"register": "\""
-							},
-							"AQAAALoNAAAAAAAAug0AAAAAAABFAAAAICAgICAgeyBzZWN0aW9uID0gInByb2plY3RzIiB9LAogICAgICAgIHsgc2VjdGlvbiA9ICJyZWNlbnRfZmlsZXMiIH0s",
-							"AQAAAAAAAAABAAAA/w0AAAAAAAC6DQAAAAAAAAAAAAAAAPC/"
-						],
-						[
-							7,
-							1,
-							"sequence",
-							{
-								"commands":
-								[
-									[
-										"nv_vi_a",
-										{
-											"count": 1,
-											"mode": "mode_internal_normal",
-											"register": "\""
-										}
-									],
-									[
-										"revert",
-										null
-									]
-								]
-							},
-							"AQAAAAAAAAAAAAAAAAAAAAAAAADrEAAAcmV0dXJuIHsKICAiZm9sa2Uvc25hY2tzLm52aW0iLAogIG9wdHMgPSB7CiAgICB0ZXJtaW5hbCA9IHsKICAgICAgd2luID0gewogICAgICAgIHN0eWxlID0gImZsb2F0IiwKICAgICAgICByZWxhdGl2ZSA9ICJlZGl0b3IiLAogICAgICAgIGJvcmRlciA9ICJyb3VuZGVkIiwKICAgICAgICB3aWR0aCA9IDAuOSwKICAgICAgICBoZWlnaHQgPSAwLjksCiAgICAgIH0sCiAgICB9LAogICAgZGFzaGJvYXJkID0gewoKICAgICAgd2lkdGggPSA2MCwKICAgICAgcm93ID0gbmlsLCAtLSBkYXNoYm9hcmQgcG9zaXRpb24uIG5pbCBmb3IgY2VudGVyCiAgICAgIGNvbCA9IG5pbCwgLS0gZGFzaGJvYXJkIHBvc2l0aW9uLiBuaWwgZm9yIGNlbnRlcgogICAgICBwYW5lX2dhcCA9IDQsIC0tIGVtcHR5IGNvbHVtbnMgYmV0d2VlbiB2ZXJ0aWNhbCBwYW5lcwogICAgICBhdXRva2V5cyA9ICIxMjM0NTY3ODkwYWJjZGVmZ2hpamtsbW5vcHFyc3R1dnd4eXpBQkNERUZHSElKS0xNTk9QUVJTVFVWV1hZWiIsIC0tIGF1dG9rZXkgc2VxdWVuY2UKICAgICAgLS0gVGhlc2Ugc2V0dGluZ3MgYXJlIHVzZWQgYnkgc29tZSBidWlsdC1pbiBzZWN0aW9ucwogICAgICBwcmVzZXQgPSB7CiAgICAgICAga2V5cyA9IHsKICAgICAgICAgIHsgaWNvbiA9ICLvgIIgIiwga2V5ID0gImYiLCBkZXNjID0gIkZpbmQgRmlsZSIsIGFjdGlvbiA9ICI6bHVhIFNuYWNrcy5kYXNoYm9hcmQucGljaygnZmlsZXMnKSIgfSwKICAgICAgICAgIHsgaWNvbiA9ICLvhZsgIiwga2V5ID0gIm4iLCBkZXNjID0gIk5ldyBGaWxlIiwgYWN0aW9uID0gIjplbmUgfCBzdGFydGluc2VydCIgfSwKICAgICAgICAgIHsgaWNvbiA9ICLvgKIgIiwga2V5ID0gImciLCBkZXNjID0gIkZpbmQgVGV4dCIsIGFjdGlvbiA9ICI6bHVhIFNuYWNrcy5kYXNoYm9hcmQucGljaygnbGl2ZV9ncmVwJykiIH0sCiAgICAgICAgICB7IGljb24gPSAi74OFICIsIGtleSA9ICJyIiwgZGVzYyA9ICJSZWNlbnQgRmlsZXMiLCBhY3Rpb24gPSAiOmx1YSBTbmFja3MuZGFzaGJvYXJkLnBpY2soJ29sZGZpbGVzJykiIH0sCiAgICAgICAgICB7CiAgICAgICAgICAgIGljb24gPSAi75CjICIsCiAgICAgICAgICAgIGtleSA9ICJjIiwKICAgICAgICAgICAgZGVzYyA9ICJDb25maWciLAogICAgICAgICAgICBhY3Rpb24gPSAiOmx1YSBTbmFja3MuZGFzaGJvYXJkLnBpY2soJ2ZpbGVzJywge2N3ZCA9IHZpbS5mbi5zdGRwYXRoKCdjb25maWcnKX0pIiwKICAgICAgICAgIH0sCiAgICAgICAgICB7IGljb24gPSAi7o2IICIsIGtleSA9ICJzIiwgZGVzYyA9ICJSZXN0b3JlIFNlc3Npb24iLCBzZWN0aW9uID0gInNlc3Npb24iIH0sCiAgICAgICAgICB7IGljb24gPSAi87CSsiAiLCBrZXkgPSAiTCIsIGRlc2MgPSAiTGF6eSIsIGFjdGlvbiA9ICI6TGF6eSIsIGVuYWJsZWQgPSBwYWNrYWdlLmxvYWRlZC5sYXp5IH49IG5pbCB9LAogICAgICAgICAgeyBpY29uID0gIu+QpiAiLCBrZXkgPSAicSIsIGRlc2MgPSAiUXVpdCIsIGFjdGlvbiA9ICI6cWEiIH0sCiAgICAgICAgfSwKICAgICAgICAtLSBVc2VkIGJ5IHRoZSBgaGVhZGVyYCBzZWN0aW9uCiAgICAgICAgaGVhZGVyID0gW1sgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg7oK67oK4ICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgIO6CuuKWiOKWiOKWiOKWiO6CuCDugrrilojilojilojilojilojilojugrwgICAgICAgICAgIO6CvuKWiOKWiOKWiOKWiOKWiO6CuCAgICAgIO6CvuKWiOKWiO6CvCAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICDugrrilojilojilojilojilojilojugrjugr7ilojilojilojilojilojugrwgICAgICAgICAgICAg7oK+4paI4paI4paI4paI4paI7oK4IO6CuCAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAg7oK64paI4paI4paI4paI4paI4paI4paI7oK47oK+4paI4paI7oK8IO6CuuKWiOKWiOKWiOKWiOKWiOKWiOKWiOKWiO6CvO6CuuKWiOKWiOKWiO6CuO6CvuKWiOKWiOKWiOKWiOKWiO6CuOKWiOKWiOKWiCDilojilojilojugrggICDugrrilojilojilojugrjilojilojilojilojugrjilojilojilojilojugrggICAKICAgICAgICAgICDugrrilojugrjugr7ilojilojilojilojilojilojilojilojugrwgIO6CuuKWiOKWiOKWiO6CvCAgICDugrrilojilojilojilojilojugrjugr7ilojilojilojilojilojilojilojilogg4paI4paI4paI4paI4paIIOKWiOKWiOKWiOKWiOKWiO6CvuKWiOKWiOKWiOKWiO6CvuKWiOKWiOKWiOKWiOKWiCAgIAogICAgICAgICAg7oK64paI4paI4paI7oK47oK+4paI4paI4paI4paI4paI4paI7oK8IO6CuuKWiOKWiOKWiOKWiOKWiOKWiOKWiOKWiO6CvO6CuuKWiOKWiO6CvCDugr7ilojilojugrjugr7ilojilojilojilojilojilojilogg4paI4paI4paI4paI4paIIOKWiOKWiOKWiOKWiOKWiCDilojilojilojilogg4paI4paI4paI4paI4paIICAgCiAgICAgICAg7oK64paI4paI4paI4paI4paI4paI7oK87oK+4paI4paI4paI4paI4paI7oK8IO6CuuKWiOKWiOKWiO6CvCAgICDugrrilojilojilojugrgg7oK64paI4paI4paI7oK47oK+4paI4paI4paI4paI4paI4paIIOKWiOKWiOKWiOKWiOKWiCDilojilojilojilojilogg4paI4paI4paI4paIIOKWiOKWiOKWiOKWiOKWiO6CuCAgCiAgICAgICDugrrilojilojilojilojilojilojugrwgIO6CvuKWiOKWiOKWiO6CvO6CuuKWiOKWiOKWiOKWiOKWiOKWiOKWiOKWiOKWiO6CuO6CvuKWiOKWiOKWiOKWiOKWiOKWiOKWiOKWiOKWiO6CvCDugr7ilojilojilojilojugrwg4paI4paI4paI4paI4paIIOKWiOKWiOKWiOKWiOKWiCDilojilojilojilogg4paI4paI4paI4paI4paI4paI7oK4IAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIF1dLAogICAgICB9LAogICAgICAtLSBpdGVtIGZpZWxkIGZvcm1hdHRlcnMKICAgICAgZm9ybWF0cyA9IHsKICAgICAgICBpY29uID0gZnVuY3Rpb24oaXRlbSkKICAgICAgICAgIGlmIGl0ZW0uZmlsZSBhbmQgaXRlbS5pY29uID09ICJmaWxlIiBvciBpdGVtLmljb24gPT0gImRpcmVjdG9yeSIgdGhlbgogICAgICAgICAgICByZXR1cm4gTS5pY29uKGl0ZW0uZmlsZSwgaXRlbS5pY29uKQogICAgICAgICAgZW5kCiAgICAgICAgICByZXR1cm4geyBpdGVtLmljb24sIHdpZHRoID0gMiwgaGwgPSAiaWNvbiIgfQogICAgICAgIGVuZCwKICAgICAgICBmb290ZXIgPSB7ICIlcyIsIGFsaWduID0gImNlbnRlciIgfSwKICAgICAgICBoZWFkZXIgPSB7ICIlcyIsIGFsaWduID0gImNlbnRlciIgfSwKICAgICAgICBmaWxlID0gZnVuY3Rpb24oaXRlbSwgY3R4KQogICAgICAgICAgbG9jYWwgZm5hbWUgPSB2aW0uZm4uZm5hbWVtb2RpZnkoaXRlbS5maWxlLCAiOn4iKQogICAgICAgICAgZm5hbWUgPSBjdHgud2lkdGggYW5kICNmbmFtZSA+IGN0eC53aWR0aCBhbmQgdmltLmZuLnBhdGhzaG9ydGVuKGZuYW1lKSBvciBmbmFtZQogICAgICAgICAgaWYgI2ZuYW1lID4gY3R4LndpZHRoIHRoZW4KICAgICAgICAgICAgbG9jYWwgZGlyID0gdmltLmZuLmZuYW1lbW9kaWZ5KGZuYW1lLCAiOmgiKQogICAgICAgICAgICBsb2NhbCBmaWxlID0gdmltLmZuLmZuYW1lbW9kaWZ5KGZuYW1lLCAiOnQiKQogICAgICAgICAgICBpZiBkaXIgYW5kIGZpbGUgdGhlbgogICAgICAgICAgICAgIGZpbGUgPSBmaWxlOnN1YigtKGN0eC53aWR0aCAtICNkaXIgLSAyKSkKICAgICAgICAgICAgICBmbmFtZSA9IGRpciAuLiAiL+KApiIgLi4gZmlsZQogICAgICAgICAgICBlbmQKICAgICAgICAgIGVuZAogICAgICAgICAgbG9jYWwgZGlyLCBmaWxlID0gZm5hbWU6bWF0Y2goIl4oLiopLyguKykkIikKICAgICAgICAgIHJldHVybiBkaXIgYW5kIHsgeyBkaXIgLi4gIi8iLCBobCA9ICJkaXIiIH0sIHsgZmlsZSwgaGwgPSAiZmlsZSIgfSB9IG9yIHsgeyBmbmFtZSwgaGwgPSAiZmlsZSIgfSB9CiAgICAgICAgZW5kLAogICAgICB9LAogICAgICBzZWN0aW9ucyA9IHsKICAgICAgICB7IHNlY3Rpb24gPSAiaGVhZGVyIiB9LAogICAgICAgIHsgc2VjdGlvbiA9ICJrZXlzIiwgZ2FwID0gMSwgcGFkZGluZyA9IDEgfSwKICAKICAgICAgICB7IHNlY3Rpb24gPSAic3RhcnR1cCIgfSwKICAgICAgfSwKICAgIH0sCiAgICBub3RpZmllciA9IHsgdG9wX2Rvd24gPSBmYWxzZSwgd28gPSB7IHdpbmJsZW5kID0gMTAwMCB9IH0sCiAgfSwKfQo",
-							"AQAAAAAAAAABAAAAuQ0AAAAAAAC5DQAAAAAAAAAAAAAAAPC/"
-						],
-						[
-							14,
-							1,
-							"nv_vi_dd",
-							{
-								"count": 1,
-								"mode": "mode_internal_normal",
-								"register": "\""
-							},
-							"AQAAABQOAAAAAAAAFA4AAAAAAABmAAAAICAgICAgICB7IGljb24gPSAi74WbICIsIHRpdGxlID0gIlJlY2VudCBGaWxlcyIsIHNlY3Rpb24gPSAicmVjZW50X2ZpbGVzIiwgaW5kZW50ID0gMiwgcGFkZGluZyA9IDEgfSwK",
-							"AQAAAAAAAAABAAAAFA4AAAAAAAAUDgAAAAAAAAAAAAAAAPC/"
-						],
-						[
-							16,
-							1,
-							"nv_vi_dd",
-							{
-								"count": 1,
-								"mode": "mode_internal_normal",
-								"register": "\""
-							},
-							"AQAAALgNAAAAAAAAuA0AAAAAAABeAAAAICAgICAgICB7IGljb24gPSAi74G8ICIsIHRpdGxlID0gIlByb2plY3RzIiwgc2VjdGlvbiA9ICJwcm9qZWN0cyIsIGluZGVudCA9IDIsIHBhZGRpbmcgPSAxIH0sCg",
-							"AQAAAAAAAAABAAAAwA0AAAAAAADADQAAAAAAAAAAAAAAAPC/"
-						]
-					]
-				}
-			],
-			"build_system": "",
-			"build_system_choices":
-			[
-			],
-			"build_varint": "",
-			"command_palette":
-			{
-				"height": 0.0,
-				"last_filter": "",
-				"selected_items":
-				[
-					[
-						"install",
-						"Package Control: Install Package"
-					],
-					[
-						"settin",
-						"Preferences: Settings"
-					],
-					[
-						"men",
-						"View: Toggle Menu"
-					],
-					[
-						"insta",
-						"Package Control: Install Package"
-					],
-					[
-						"package cont",
-						"Package Control: Install Package"
-					],
-					[
-						"ui",
-						"UI: Select Color Scheme"
-					],
-					[
-						"colorsc",
-						"UI: Select Color Scheme"
-					],
-					[
-						"menu",
-						"View: Toggle Menu"
-					],
-					[
-						"theme",
-						"UI: Select Color Scheme"
-					],
-					[
-						"color",
-						"UI: Customize Color Scheme"
-					],
-					[
-						"split",
-						"File: Split View"
-					],
-					[
-						"install ",
-						"Package Control: Install Package"
-					],
-					[
-						"neovin",
-						"Preferences: NeoVintageous Settings"
-					],
-					[
-						"dart",
-						"Preferences: LSP-Dart Settings"
-					],
-					[
-						"prefe",
-						"Preferences: Settings"
-					],
-					[
-						"term",
-						"Preferences: Terminus Key Bindings"
-					],
-					[
-						"flutter",
-						"Flutter: Devices"
-					],
-					[
-						"remo",
-						"Package Control: Remove Package"
-					],
-					[
-						"pref",
-						"Preferences: Settings"
-					]
-				],
-				"width": 0.0
-			},
-			"console":
-			{
-				"height": 315.0,
-				"history":
-				[
-					"node"
-				]
-			},
-			"distraction_free":
-			{
-				"menu_visible": true,
-				"show_minimap": false,
-				"show_open_files": false,
-				"show_tabs": false,
-				"side_bar_visible": false,
-				"status_bar_visible": false
-			},
-			"expanded_folders":
-			[
-				"/home/niraj/.config/nvim/lua/custom/plugins"
-			],
-			"file_history":
-			[
-				"/home/niraj/dotfiles/tmux/.tmux.conf",
-				"/home/niraj/.tmux.conf.bak",
-				"/home/niraj/.tmux.conf",
-				"/home/niraj/.config/kconf_updaterc",
-				"/home/niraj/.config/QtProject.conf",
-				"/home/niraj/.config/gnome-initial-setup-done",
-				"/home/niraj/.config/discoverrc",
-				"/home/niraj/.config/appimagelauncher.cfg",
-				"/home/niraj/.zshrc",
-				"/home/niraj/.bashrc",
-				"/home/niraj/.config/kitty/kitty.conf",
-				"/home/niraj/.config/GNOME-xdg-terminals.list",
-				"/home/niraj/.config/xdg-terminals.list",
-				"/home/niraj/.config/.gsd-keyboard.settings-ported",
-				"/home/niraj/yazi/target/release/ya.d",
-				"/home/niraj/dotfiles/bottom/bottom/bottom.toml",
-				"/home/niraj/.local/share/nvim/lazy/persistence.nvim/lua/persistence/config.lua",
-				"/home/niraj/.config/bottom/bottom.toml",
-				"/home/niraj/bottom/bottom.toml",
-				"/home/niraj/Desktop/Projects/js/meetly/package.json",
-				"/home/niraj/.gitconfig",
-				"/home/niraj/dotfiles/bash/.bashrc",
-				"/home/niraj/.config/kitty/kitty.conf.bak",
-				"/media/niraj/F8722EA8722E6C16/Dropbox/obsidian-vault/.gitignore",
-				"/home/niraj/.profile",
-				"/home/niraj/.config/nvim/lua/kickstart/plugins/debug.lua",
-				"/home/niraj/.config/nvim/lua/kickstart/plugins/neo-tree.lua",
-				"/home/niraj/.config/nvim/lua/kickstart/plugins/indent_line.lua",
-				"/home/niraj/.config/nvim/lua/kickstart/plugins/lint.lua",
-				"/home/niraj/.config/nvim/lua/custom/plugins/core.lua",
-				"/home/niraj/.config/nvim/lua/custom/plugins/init.lua",
-				"/home/niraj/.config/nvim/init.lua",
-				"/home/niraj/.config/nvim/lua/custom/plugins/which-key.lua",
-				"/home/niraj/.config/nvim/lua/config/keymaps.lua",
-				"/home/niraj/.local/share/nvim/lazy/persistence.nvim/doc/persistence.nvim.txt",
-				"/home/niraj/Desktop/Projects/instaclone/frontend/components.json",
-				"/home/niraj/Desktop/Projects/js/insta1/insta/node_modules/framer-motion/dist/es/gestures/utils/is-node-or-child.mjs",
-				"/home/niraj/Desktop/Projects/social-media/node_modules/resolve/lib/homedir.js",
-				"/home/niraj/Downloads/instaclone-main/package.json",
-				"/home/niraj/Desktop/Projects/linkedin/.env",
-				"/home/niraj/Downloads/instaclone-main/backend/utils/db.js",
-				"/home/niraj/.config/nvim/lua/plugins/neo-tree.lua",
-				"/home/niraj/Desktop/Projects/flutter/rohit semriwal ecommerce/ecommerce-backend/node_modules/dashdash/lib/dashdash.js",
-				"/home/niraj/.config/nvim.bak/lua/config/lazy.lua",
-				"/home/niraj/.config/nvim.bak/lua/config/keymaps.lua",
-				"/home/niraj/.config/nvim.bak/lua/config/autocmds.lua",
-				"/home/niraj/.config/nvim.bak/lua/plugins/bufferline.lua",
-				"/home/niraj/.config/sublime-text/Packages/User/Preferences.sublime-settings",
-				"/home/niraj/.config/sublime-text/Packages/Default/Preferences.sublime-settings",
-				"/home/niraj/Desktop/Projects/js/bookstore/frontend/src/App.css",
-				"/home/niraj/Desktop/Projects/js/bookstore/frontend/src/App.jsx",
-				"/home/niraj/.config/nvim/lua/kickstart/health.lua",
-				"/home/niraj/.config/starship.toml",
-				"/home/niraj/.local/share/applications/alacarte-made.desktop",
-				"/home/niraj/.local/share/applications/alacarte-made-1.desktop",
-				"/home/niraj/Downloads/pixel-saver-master/pixel-saver@deadalnix.me/metadata.json",
-				"/home/niraj/Downloads/gestureImprovements47@gestures/metadata.json",
-				"/home/niraj/.config/tmux/.tmux.conf",
-				"/media/niraj/4ADA77CBDA77B235/Watch/Lust, Caution (2007) [720p] [BluRay] [YTS.MX]/Lust,.Caution.2007.720p.BluRay.x264.AAC-[YTS.MX].srt",
-				"/home/niraj/Downloads/Lekton/README.md",
-				"/home/niraj/Desktop/a.sfd",
-				"/home/niraj/Desktop/token.txt",
-				"/home/niraj/Dropbox/obsidian-vault/ssh.pub",
-				"/home/niraj/.config/mimeapps.list",
-				"/home/niraj/.config/dleyna-server-service.conf",
-				"/home/niraj/.config/baloofileinformationrc",
-				"/home/niraj/.config/dolphinrc",
-				"/home/niraj/.config/user-dirs.locale",
-				"/home/niraj/.config/kservicemenurc",
-				"/home/niraj/.config/gsconnect/private.pem",
-				"/home/niraj/.config/lazygit/state.yml",
-				"/home/niraj/.config/lazygit/config.yml",
-				"/home/niraj/.config/gtk-2.0/gtkfilechooser.ini",
-				"/home/niraj/.config/Code/User/sync/keybindings/lastSynckeybindings.json",
-				"/home/niraj/.config/Caprine/custom.css",
-				"/home/niraj/.ssh/id_rsa.pub",
-				"/home/niraj/Dropbox/obsidian-vault/Learn-react/React.md",
-				"/home/niraj/Dropbox/obsidian-vault/.obsidian.vimrc",
-				"/home/niraj/Desktop/projects/js/ts-ecom-api/src/routes/products.ts",
-				"/home/niraj/.bash_history",
-				"/home/niraj/.config/nvim.bak/lua/config/options.lua",
-				"/home/niraj/.blerc",
-				"/home/niraj/.cache/oh-my-posh/themes/1_shell.omp.json",
-				"/home/niraj/Documents/Learn-react/.obsidian.vimrc",
-				"/home/niraj/Documents/Learn-react/.obsidian/.obsidian.vimrc",
-				"/home/niraj/Desktop/projects/js/ts-ecom-api/src/index.ts",
-				"/home/niraj/Desktop/projects/js/ts-ecom-api/src/middlewares/roleMiddleware.ts",
-				"/home/niraj/Desktop/projects/js/ts-ecom-api/src/error-handler.ts",
-				"/home/niraj/Desktop/projects/js/ts-ecom-api/.env",
-				"/home/niraj/Downloads/ts-ecom-api-master/.env",
-				"/home/niraj/.ssh/config",
-				"/home/niraj/Desktop/nvim/lua/plugins/dap.lua",
-				"/home/niraj/Desktop/emergency.txt",
-				"/home/niraj/.config/kanata/config.kbd",
-				"/home/niraj/.openai_key.zsh",
-				"/home/niraj/Downloads/WebStorm-2024.2/WebStorm-242.20224.342/Install-Linux-tar.txt",
-				"/home/niraj/Desktop/hello.py",
-				"/home/niraj/.config/system.d/user/kanata.service",
-				"/home/niraj/Desktop/nvim/lua/plugins/persistance.lua",
-				"/home/niraj/.config/nvim/lua/mappings.lua",
-				"/home/niraj/.config/nvim/lua/options.lua",
-				"/home/niraj/Desktop/Projects/flutter/rohit semriwal ecommerce/ecommerce-frontend/lib/core/ui.dart",
-				"/mnt/sdb3/Watch/Furiosa A Mad Max Saga (2024) [1080p] [WEBRip] [5.1] [YTS.MX]/Furiosa.A.Mad.Max.Saga.2024.1080p.WEBRip.x264.AAC5.1-[YTS.MX].srt",
-				"/home/niraj/.config/neovide/config.toml",
-				"/home/niraj/.config/wezterm/config/appearance.lua",
-				"/home/niraj/.config/wezterm/config/domains.lua",
-				"/home/niraj/.config/wezterm/config/bindings.lua",
-				"/home/niraj/.config/wezterm/config/launch.lua",
-				"/home/niraj/.config/wezterm/config/init.lua",
-				"/home/niraj/.config/wezterm/config/general.lua",
-				"/home/niraj/.config/wezterm/config/fonts.lua",
-				"/mnt/sdb3/Projects/js/Nomad-backend-master/routes/galleryRoutes.js",
-				"/home/niraj/Desktop/Projects/js/Nomad-backend-master/.gitignore",
-				"/home/niraj/Desktop/Downloads/Saint.Maud.English-WWW.MY-SUBS.CO.srt",
-				"/home/niraj/Desktop/Projects/flutter/rohit semriwal ecommerce/ecommerce-backend/src/server.js",
-				"/home/niraj/Desktop/Link to nvim/lua/config/lazy.lua",
-				"/home/niraj/Desktop/Link to nvim/lua/plugins/core.lua",
-				"/home/niraj/Downloads/Saint.Maud.English-WWW.MY-SUBS.CO.srt",
-				"/home/niraj/.flutter",
-				"/home/niraj/Desktop/Link to nvim/lua/config/keymaps.lua",
-				"/home/niraj/.config/nautilus/search-metadata",
-				"/home/niraj/Desktop/Link to nvim/lua/plugins/lsp-saga.lua",
-				"/home/niraj/.config/kdeglobals",
-				"/home/niraj/.config/nvim.bak/init.lua",
-				"/home/niraj/Desktop/keymaps.lua",
-				"/home/niraj/.config/nvim.bak/lua/plugins/hl-chunk.lua",
-				"/home/niraj/.config/nvim.bak/lua/mappings.lua",
-				"/home/niraj/.config/nvim.bak/lua/plugins/lsp-config.lua"
+				"/home/niraj/.config/kdeglobals"
 			],
 			"find":
 			{
@@ -895,27 +883,122 @@
 					[
 						{
 							"buffer": 0,
+							"file": "/home/niraj/.config/nvim.baaak/lua/custom/plugins/neo-tree.lua",
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 6,
+								"buffer_size": 855,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										5,
-										5
+										0,
+										0
 									]
 								],
 								"settings":
 								{
-									"auto_name": "nitini",
-									"syntax": "Packages/Text/Plain text.tmLanguage"
+									"syntax": "Packages/Lua/Lua.sublime-syntax",
+									"tab_size": 2,
+									"translate_tabs_to_spaces": true
 								},
 								"translation.x": 0.0,
 								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 4,
+							"stack_multiselect": false,
+							"type": "text"
+						},
+						{
+							"buffer": 1,
+							"file": "/home/niraj/.config/nvim.bak/lua/plugins/gitsigns.lua",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 354,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Lua/Lua.sublime-syntax",
+									"tab_size": 2,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 3,
+							"stack_multiselect": false,
+							"type": "text"
+						},
+						{
+							"buffer": 2,
+							"file": "/home/niraj/.config/nvim.baaak/lua/custom/plugins/gitsigns.lua",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 2849,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										767,
+										767
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Lua/Lua.sublime-syntax",
+									"tab_size": 2,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 474.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 2,
+							"stack_multiselect": false,
+							"type": "text"
+						},
+						{
+							"buffer": 3,
+							"file": "/home/niraj/.config/nvim.baaak/lua/custom/plugins/dashboard.lua",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 4318,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										3228,
+										4318
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Lua/Lua.sublime-syntax",
+									"tab_size": 2,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 1235.0,
 								"zoom_level": 1.0
 							},
 							"stack_index": 1,
@@ -923,32 +1006,31 @@
 							"type": "text"
 						},
 						{
-							"buffer": 1,
-							"file": "/home/niraj/dotfiles/nvim/.config/nvim/lua/plugins/snacks.lua",
+							"buffer": 4,
+							"file": "/home/niraj/.config/nvim.baaak/lua/custom/plugins/lspsaga.lua",
 							"selected": true,
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 3631,
+								"buffer_size": 3011,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										3521,
-										3521
+										1001,
+										2035
 									]
 								],
 								"settings":
 								{
-									"_nv_visual_sel_mode": "mode_visual",
 									"syntax": "Packages/Lua/Lua.sublime-syntax",
 									"tab_size": 2,
 									"translate_tabs_to_spaces": true
 								},
 								"translation.x": 0.0,
-								"translation.y": 817.0,
+								"translation.y": 232.0,
 								"zoom_level": 1.0
 							},
 							"stack_index": 0,

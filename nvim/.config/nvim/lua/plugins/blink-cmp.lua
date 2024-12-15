@@ -12,6 +12,11 @@ return {
   },
   opts = function()
     return {
+      sources = {
+        default = { "lsp", "path", "snippets", "buffer" },
+        -- optionally disable cmdline completions
+        -- cmdline = {},
+      },
       completion = {
         accept = {
           auto_brackets = { enabled = true },

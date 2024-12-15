@@ -30,7 +30,7 @@ set_highlight_groups()
 
 --------------------------------neovide------------------
 vim.g.neovide_hide_mouse_when_typing = true
-vim.g.gui_font_default_size = 13.2
+vim.g.gui_font_default_size = 13
 vim.g.gui_font_size = vim.g.gui_font_default_size
 vim.g.gui_font_face = "IosevkaTerm Nerd Font"
 
