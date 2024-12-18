@@ -9,6 +9,7 @@ return {
     local animate = require("vimade.style.value.animate")
 
     require("vimade").setup({
+      ncmode = "windows",
       style = {
         Fade({
           value = animate.Number({

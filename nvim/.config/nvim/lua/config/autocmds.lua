@@ -30,7 +30,7 @@ set_highlight_groups()
 
 --------------------------------neovide------------------
 vim.g.neovide_hide_mouse_when_typing = true
-vim.g.gui_font_default_size = 13
+vim.g.gui_font_default_size = 13.2
 vim.g.gui_font_size = vim.g.gui_font_default_size
 vim.g.gui_font_face = "IosevkaTerm Nerd Font"
 
@@ -104,10 +104,10 @@ vim.api.nvim_create_autocmd("TermOpen", {
   command = "setlocal cursorline",
 })
 
---NOTE: Autocmd to manage cursorline in active/inactive windows, excluding NeoTree and file buffers
+--NOTE: Autocmd to manage cursorline in active/inactive windows, excluding NeoTree, Outline and file buffers
 vim.api.nvim_create_autocmd({ "WinLeave", "BufLeave" }, {
   callback = function()
-    if vim.bo.filetype ~= "neo-tree" and vim.bo.buftype ~= "" then
+    if vim.bo.filetype ~= "neo-tree" and vim.bo.filetype ~= "Outline" and vim.bo.buftype ~= "" then
       vim.wo.cursorline = false -- Disable cursorline in inactive windows
     end
   end,

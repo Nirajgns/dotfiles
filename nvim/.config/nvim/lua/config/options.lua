@@ -1,7 +1,6 @@
 -- Options are automatically loaded before lazy.nvim startup
 -- Default options that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/options.lua
 -- Add any additional options here
-
 local opt = vim.opt
 
 opt.scrolloff = 5
@@ -57,7 +56,7 @@ opt.foldlevel = 20
 vim.wo.foldmethod = "indent" --"expr"
 -- vim.wo.foldexpr = "nvim_treesitter#foldexpr()"
 vim.wo.foldtext =
-  [[substitute(getline(v:foldstart), '\\t', repeat(' ', &tabstop), 'g') .'       ...        --->' .'  ' . (v:foldend - v:foldstart + 1) . ' lines folded!']]
+  [[substitute(getline(v:foldstart), '\\t', repeat(' ', &tabstop), 'g') .'       ...        --->' .'           ' . (v:foldend - v:foldstart + 1) . ' lines folded!']]
 vim.wo.fillchars = "fold:\\"
 
 -- vim.wo.foldnestmax = 3

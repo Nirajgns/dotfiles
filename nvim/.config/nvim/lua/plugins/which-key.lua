@@ -9,7 +9,7 @@ return {
     win = {
       no_overlap = false,
       wo = {
-        winblend = 20,
+        winblend = 10,
       },
     },
   },

@@ -1,6 +1,7 @@
 return {
   "catppuccin/nvim",
-  enabled = false,
+  -- enabled = false,
+  name = "catppuccin",
   config = function()
     require("catppuccin").setup({
       color_overrides = {
@@ -24,7 +25,6 @@ return {
         --   operators = {},
       },
     })
-    vim.cmd.colorscheme("catppuccin")
     local cp = require("catppuccin.palettes").get_palette()
 
     local TelescopeColor = {

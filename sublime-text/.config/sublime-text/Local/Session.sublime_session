@@ -275,6 +275,7 @@
 			},
 			"file_history":
 			[
+				"/home/niraj/.local/share/nvim/lazy/LazyVim/lua/lazyvim/init.lua",
 				"/home/niraj/.config/nvim.baaak/lua/custom/plugins/lspsaga.lua",
 				"/home/niraj/.config/nvim.baaak/lua/custom/plugins/dashboard.lua",
 				"/home/niraj/.config/nvim.baaak/lua/custom/plugins/gitsigns.lua",
@@ -401,8 +402,7 @@
 				"/home/niraj/Desktop/Projects/flutter/rohit semriwal ecommerce/ecommerce-backend/src/server.js",
 				"/home/niraj/Desktop/Link to nvim/lua/config/lazy.lua",
 				"/home/niraj/Desktop/Link to nvim/lua/plugins/core.lua",
-				"/home/niraj/Downloads/Saint.Maud.English-WWW.MY-SUBS.CO.srt",
-				"/home/niraj/.flutter"
+				"/home/niraj/Downloads/Saint.Maud.English-WWW.MY-SUBS.CO.srt"
 			],
 			"find":
 			{
@@ -537,7 +537,7 @@
 							"revert",
 							null,
 							"AgAAAAAAAAAAAAAAAAAAAAAAAABiAQAAcmV0dXJuIHsKICAibGV3aXM2OTkxL2dpdHNpZ25zLm52aW0iLAogIGV2ZW50ID0gIkxhenlGaWxlIiwKICBvcHRzID0gewogICAgY3VycmVudF9saW5lX2JsYW1lID0gdHJ1ZSwKICAgIGN1cnJlbnRfbGluZV9ibGFtZV9vcHRzID0gewogICAgICB2aXJ0X3RleHQgPSB0cnVlLAogICAgICB2aXJ0X3RleHRfcG9zID0gInJpZ2h0X2FsaWduIiwgLS0gJ2VvbCcgfCAnb3ZlcmxheScgfCAncmlnaHRfYWxpZ24nCiAgICAgIGRlbGF5ID0gMTAwLAogICAgICBpZ25vcmVfd2hpdGVzcGFjZSA9IGZhbHNlLAogICAgICB2aXJ0X3RleHRfcHJpb3JpdHkgPSAxMDAsCiAgICAgIHVzZV9mb2N1cyA9IHRydWUsCiAgICB9LAogIH0sCn0KAAAAAAAAAADPAQAAAAAAAAAAAAA",
-							"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvw"
+							"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
 						],
 						[
 							2,
@@ -545,7 +545,7 @@
 							"revert",
 							null,
 							"AgAAAAAAAAAAAAAAAAAAAAAAAADPAQAAcmV0dXJuIHsKICAibGV3aXM2OTkxL2dpdHNpZ25zLm52aW0iLAogIGV2ZW50ID0gIkxhenlGaWxlIiwKICBvcHRzID0gewogICAgY3VycmVudF9saW5lX2JsYW1lID0gdHJ1ZSwKICAgIGN1cnJlbnRfbGluZV9ibGFtZV9vcHRzID0gewogICAgICB2aXJ0X3RleHQgPSB0cnVlLAogICAgICB2aXJ0X3RleHRfcG9zID0gInJpZ2h0X2FsaWduIiwgLS0gJ2VvbCcgfCAnb3ZlcmxheScgfCAncmlnaHRfYWxpZ24nCiAgICAgIGRlbGF5ID0gMTAwLAogICAgICBpZ25vcmVfd2hpdGVzcGFjZSA9IGZhbHNlLAogICAgICB2aXJ0X3RleHRfcHJpb3JpdHkgPSAxMDAsCiAgICAgIHVzZV9mb2N1cyA9IHRydWUsCiAgICB9LAogIH0sCiAgdmltLmtleW1hcC5zZXQoIm4iLCAiPGxlYWRlcj5nYiIsIGdpdHNpZ25zLnRvZ2dsZV9jdXJyZW50X2xpbmVfYmxhbWUsIHsgZGVzYyA9ICJUb2dnbGUgZ2l0IGJsYW1lIGxpbmUiIH0pLAp9CgAAAAAAAAAA9wEAAAAAAAAAAAAA",
-							"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvw"
+							"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
 						],
 						[
 							3,
@@ -553,15 +553,15 @@
 							"revert",
 							null,
 							"AgAAAAAAAAAAAAAAAAAAAAAAAAD3AQAAcmV0dXJuIHsKICAibGV3aXM2OTkxL2dpdHNpZ25zLm52aW0iLAogIGV2ZW50ID0gIkxhenlGaWxlIiwKICBvcHRzID0gewogICAgY3VycmVudF9saW5lX2JsYW1lID0gdHJ1ZSwKICAgIGN1cnJlbnRfbGluZV9ibGFtZV9vcHRzID0gewogICAgICB2aXJ0X3RleHQgPSB0cnVlLAogICAgICB2aXJ0X3RleHRfcG9zID0gInJpZ2h0X2FsaWduIiwgLS0gJ2VvbCcgfCAnb3ZlcmxheScgfCAncmlnaHRfYWxpZ24nCiAgICAgIGRlbGF5ID0gMTAwLAogICAgICBpZ25vcmVfd2hpdGVzcGFjZSA9IGZhbHNlLAogICAgICB2aXJ0X3RleHRfcHJpb3JpdHkgPSAxMDAsCiAgICAgIHVzZV9mb2N1cyA9IHRydWUsCiAgICB9LAogIH0sCiAgb25fYXR0YWNoPWZ1bmN0aW9uIChidWZucikKICAgIAogIGVuZAogIHZpbS5rZXltYXAuc2V0KCJuIiwgIjxsZWFkZXI+Z2IiLCBnaXRzaWducy50b2dnbGVfY3VycmVudF9saW5lX2JsYW1lLCB7IGRlc2MgPSAiVG9nZ2xlIGdpdCBibGFtZSBsaW5lIiB9KSwKfQoAAAAAAAAAAFcCAAAAAAAAAAAAAA",
-							"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvw"
+							"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
 						],
 						[
 							4,
 							1,
 							"revert",
 							null,
-							"BAAAAAAAAAAAAAAAAAAAAAAAAABXAgAAcmV0dXJuIHsKICAibGV3aXM2OTkxL2dpdHNpZ25zLm52aW0iLAogIGV2ZW50ID0gIkxhenlGaWxlIiwKICBvcHRzID0gewogICAgY3VycmVudF9saW5lX2JsYW1lID0gdHJ1ZSwKICAgIGN1cnJlbnRfbGluZV9ibGFtZV9vcHRzID0gewogICAgICB2aXJ0X3RleHQgPSB0cnVlLAogICAgICB2aXJ0X3RleHRfcG9zID0gInJpZ2h0X2FsaWduIiwgLS0gJ2VvbCcgfCAnb3ZlcmxheScgfCAncmlnaHRfYWxpZ24nCiAgICAgIGRlbGF5ID0gMTAwLAogICAgICBpZ25vcmVfd2hpdGVzcGFjZSA9IGZhbHNlLAogICAgICB2aXJ0X3RleHRfcHJpb3JpdHkgPSAxMDAsCiAgICAgIHVzZV9mb2N1cyA9IHRydWUsCiAgICB9LAogIH0sCiAgb25fYXR0YWNoID0gZnVuY3Rpb24oYnVmbnIpCiAgICBtYXAoIm4iLCAiPGxlYWRlcj5nYiIsIGdpdHNpZ25zLnRvZ2dsZV9jdXJyZW50X2xpbmVfYmxhbWUsIHsgZGVzYyA9ICJUb2dnbGUgZ2l0IGJsYW1lIGxpbmUiIH0pCiAgZW5kLAogIHZpbS5rZXltYXAuc2V0KCJuIiwgIjxsZWFkZXI+Z2IiLCBnaXRzaWducy50b2dnbGVfY3VycmVudF9saW5lX2JsYW1lLCB7IGRlc2MgPSAiVG9nZ2xlIGdpdCBibGFtZSBsaW5lIiB9KSwKfQoAAAAAAAAAAGIBAAAAAAAAAAAAAAAAAAAAAAAAYgEAAAAAAAAAAAAAAAAAAAAAAABiAQAAAAAAAAAAAAA",
-							"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvw"
+							"BQAAAAAAAAAAAAAAAAAAAAAAAABXAgAAcmV0dXJuIHsKICAibGV3aXM2OTkxL2dpdHNpZ25zLm52aW0iLAogIGV2ZW50ID0gIkxhenlGaWxlIiwKICBvcHRzID0gewogICAgY3VycmVudF9saW5lX2JsYW1lID0gdHJ1ZSwKICAgIGN1cnJlbnRfbGluZV9ibGFtZV9vcHRzID0gewogICAgICB2aXJ0X3RleHQgPSB0cnVlLAogICAgICB2aXJ0X3RleHRfcG9zID0gInJpZ2h0X2FsaWduIiwgLS0gJ2VvbCcgfCAnb3ZlcmxheScgfCAncmlnaHRfYWxpZ24nCiAgICAgIGRlbGF5ID0gMTAwLAogICAgICBpZ25vcmVfd2hpdGVzcGFjZSA9IGZhbHNlLAogICAgICB2aXJ0X3RleHRfcHJpb3JpdHkgPSAxMDAsCiAgICAgIHVzZV9mb2N1cyA9IHRydWUsCiAgICB9LAogIH0sCiAgb25fYXR0YWNoID0gZnVuY3Rpb24oYnVmbnIpCiAgICBtYXAoIm4iLCAiPGxlYWRlcj5nYiIsIGdpdHNpZ25zLnRvZ2dsZV9jdXJyZW50X2xpbmVfYmxhbWUsIHsgZGVzYyA9ICJUb2dnbGUgZ2l0IGJsYW1lIGxpbmUiIH0pCiAgZW5kLAogIHZpbS5rZXltYXAuc2V0KCJuIiwgIjxsZWFkZXI+Z2IiLCBnaXRzaWducy50b2dnbGVfY3VycmVudF9saW5lX2JsYW1lLCB7IGRlc2MgPSAiVG9nZ2xlIGdpdCBibGFtZSBsaW5lIiB9KSwKfQoAAAAAAAAAAGIBAAAAAAAAAAAAAAAAAAAAAAAAYgEAAAAAAAAAAAAAAAAAAAAAAABiAQAAAAAAAAAAAAAAAAAAAAAAAGIBAAAAAAAAAAAAAA",
+							"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
 						]
 					]
 				},
@@ -590,10 +590,15 @@
 						"buffer_size": 3011,
 						"encoding": "UTF-8",
 						"line_ending": "Unix"
-					},
-					"undo_stack":
-					[
-					]
+					}
+				},
+				{
+					"file": "/home/niraj/.local/share/nvim/lazy/LazyVim/lua/lazyvim/init.lua",
+					"settings":
+					{
+						"buffer_size": 150,
+						"line_ending": "Unix"
+					}
 				}
 			],
 			"build_system": "",
@@ -908,7 +913,7 @@
 								"translation.y": 0.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 4,
+							"stack_index": 5,
 							"stack_multiselect": false,
 							"type": "text"
 						},
@@ -939,7 +944,7 @@
 								"translation.y": 0.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 3,
+							"stack_index": 4,
 							"stack_multiselect": false,
 							"type": "text"
 						},
@@ -970,7 +975,7 @@
 								"translation.y": 474.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 2,
+							"stack_index": 3,
 							"stack_multiselect": false,
 							"type": "text"
 						},
@@ -1001,14 +1006,13 @@
 								"translation.y": 1235.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 1,
+							"stack_index": 2,
 							"stack_multiselect": false,
 							"type": "text"
 						},
 						{
 							"buffer": 4,
 							"file": "/home/niraj/.config/nvim.baaak/lua/custom/plugins/lspsaga.lua",
-							"selected": true,
 							"semi_transient": false,
 							"settings":
 							{
@@ -1031,6 +1035,38 @@
 								},
 								"translation.x": 0.0,
 								"translation.y": 232.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 1,
+							"stack_multiselect": false,
+							"type": "text"
+						},
+						{
+							"buffer": 5,
+							"file": "/home/niraj/.local/share/nvim/lazy/LazyVim/lua/lazyvim/init.lua",
+							"selected": true,
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 150,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Lua/Lua.sublime-syntax",
+									"tab_size": 2,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
 								"zoom_level": 1.0
 							},
 							"stack_index": 0,
