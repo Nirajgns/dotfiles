@@ -1,6 +1,5 @@
 return {
   "folke/trouble.nvim",
-
   event = "LazyFile",
   opts = {
     modes = {

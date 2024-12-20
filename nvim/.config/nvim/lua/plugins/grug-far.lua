@@ -3,13 +3,15 @@ return {
   keys = {
     {
       "<leader>sf",
-      '<cmd>lua require("grug-far").grug_far({ prefills = { flags = vim.fn.expand("%") , search = vim.fn.expand("<cword>") } })<CR>',
-      { desc = "Search and replace on current file", mode = { "n", "v" } },
+      '<cmd>lua require("grug-far").open({ prefills = { paths = vim.fn.expand("%"),search = vim.fn.expand("<cword>") } })<CR>',
+      desc = "Search and replace on current file",
+      mode = { "n", "v" },
     },
     {
       "<leader>sp",
       '<cmd>lua require("grug-far").grug_far({ prefills = { search = vim.fn.expand("<cword>") } })<CR>',
-      { desc = "Search and replace on entire project" },
+      desc = "Search and replace on entire project",
+      mode = { "n", "v" },
     },
   },
   config = function()

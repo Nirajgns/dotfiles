@@ -1,7 +1,13 @@
 {
 	"file_history":
 	[
+		"/home/niraj/.config/nvim.baaak/lua/custom/plugins/neo-tree.lua",
+		"/home/niraj/.config/nvim.bak/lua/plugins/gitsigns.lua",
+		"/home/niraj/.config/nvim.baaak/lua/custom/plugins/gitsigns.lua",
 		"/home/niraj/.config/nvim.baaak/lua/custom/plugins/dashboard.lua",
+		"/home/niraj/.config/nvim.baaak/lua/custom/plugins/lspsaga.lua",
+		"/home/niraj/.local/share/nvim/lazy/LazyVim/lua/lazyvim/init.lua",
+		"/home/niraj/Desktop/Projects/instaclone/frontend/src/components/CommentDialog.jsx",
 		"/home/niraj/.local/share/nvim/lazy/dashboard-nvim/lua/dashboard/theme/hyper.lua",
 		"/home/niraj/.local/share/nvim/lazy/nvim-lspconfig/lua/lspconfig/util.lua",
 		"/home/niraj/.local/share/nvim/lazy/nvim-lspconfig/lua/lspconfig/configs/eslint.lua",
@@ -122,13 +128,7 @@
 		"/home/niraj/.config/wezterm/config/domains.lua",
 		"/home/niraj/.config/wezterm/config/bindings.lua",
 		"/home/niraj/.config/wezterm/config/launch.lua",
-		"/home/niraj/.config/wezterm/config/init.lua",
-		"/home/niraj/.config/wezterm/config/general.lua",
-		"/home/niraj/.config/wezterm/config/fonts.lua",
-		"/mnt/sdb3/Projects/js/Nomad-backend-master/routes/galleryRoutes.js",
-		"/home/niraj/Desktop/Projects/js/Nomad-backend-master/.gitignore",
-		"/home/niraj/Desktop/Downloads/Saint.Maud.English-WWW.MY-SUBS.CO.srt",
-		"/home/niraj/Desktop/Projects/flutter/rohit semriwal ecommerce/ecommerce-backend/src/server.js"
+		"/home/niraj/.config/wezterm/config/init.lua"
 	],
 	"folder_history":
 	[
@@ -148,16 +148,16 @@
 	"last_version": 4180,
 	"last_window_id": 37,
 	"log_indexing": false,
-	"next_update_check": 1734321844,
+	"next_update_check": 1734581044,
 	"settings":
 	{
-		"new_window_full_screen": false,
-		"new_window_height": 0.0,
+		"new_window_full_screen": true,
+		"new_window_height": 1032.0,
 		"new_window_maximized": true,
 		"new_window_position":
 		[
 			0.0,
-			48.0
+			0.0
 		],
 		"new_window_settings":
 		{
@@ -275,12 +275,13 @@
 			},
 			"file_history":
 			[
-				"/home/niraj/.local/share/nvim/lazy/LazyVim/lua/lazyvim/init.lua",
-				"/home/niraj/.config/nvim.baaak/lua/custom/plugins/lspsaga.lua",
-				"/home/niraj/.config/nvim.baaak/lua/custom/plugins/dashboard.lua",
-				"/home/niraj/.config/nvim.baaak/lua/custom/plugins/gitsigns.lua",
-				"/home/niraj/.config/nvim.bak/lua/plugins/gitsigns.lua",
 				"/home/niraj/.config/nvim.baaak/lua/custom/plugins/neo-tree.lua",
+				"/home/niraj/.config/nvim.bak/lua/plugins/gitsigns.lua",
+				"/home/niraj/.config/nvim.baaak/lua/custom/plugins/gitsigns.lua",
+				"/home/niraj/.config/nvim.baaak/lua/custom/plugins/dashboard.lua",
+				"/home/niraj/.config/nvim.baaak/lua/custom/plugins/lspsaga.lua",
+				"/home/niraj/.local/share/nvim/lazy/LazyVim/lua/lazyvim/init.lua",
+				"/home/niraj/Desktop/Projects/instaclone/frontend/src/components/CommentDialog.jsx",
 				"/home/niraj/.local/share/nvim/lazy/dashboard-nvim/lua/dashboard/theme/hyper.lua",
 				"/home/niraj/.local/share/nvim/lazy/nvim-lspconfig/lua/lspconfig/util.lua",
 				"/home/niraj/.local/share/nvim/lazy/nvim-lspconfig/lua/lspconfig/configs/eslint.lua",
@@ -401,8 +402,7 @@
 				"/home/niraj/Desktop/Downloads/Saint.Maud.English-WWW.MY-SUBS.CO.srt",
 				"/home/niraj/Desktop/Projects/flutter/rohit semriwal ecommerce/ecommerce-backend/src/server.js",
 				"/home/niraj/Desktop/Link to nvim/lua/config/lazy.lua",
-				"/home/niraj/Desktop/Link to nvim/lua/plugins/core.lua",
-				"/home/niraj/Downloads/Saint.Maud.English-WWW.MY-SUBS.CO.srt"
+				"/home/niraj/Desktop/Link to nvim/lua/plugins/core.lua"
 			],
 			"find":
 			{
@@ -500,7 +500,7 @@
 			{
 			}
 		},
-		"new_window_width": 0.0
+		"new_window_width": 1920.0
 	},
 	"windows":
 	[
@@ -513,93 +513,6 @@
 			},
 			"buffers":
 			[
-				{
-					"file": "/home/niraj/.config/nvim.baaak/lua/custom/plugins/neo-tree.lua",
-					"settings":
-					{
-						"buffer_size": 855,
-						"encoding": "UTF-8",
-						"line_ending": "Unix"
-					}
-				},
-				{
-					"file": "/home/niraj/.config/nvim.bak/lua/plugins/gitsigns.lua",
-					"settings":
-					{
-						"buffer_size": 354,
-						"line_ending": "Unix"
-					},
-					"undo_stack":
-					[
-						[
-							1,
-							1,
-							"revert",
-							null,
-							"AgAAAAAAAAAAAAAAAAAAAAAAAABiAQAAcmV0dXJuIHsKICAibGV3aXM2OTkxL2dpdHNpZ25zLm52aW0iLAogIGV2ZW50ID0gIkxhenlGaWxlIiwKICBvcHRzID0gewogICAgY3VycmVudF9saW5lX2JsYW1lID0gdHJ1ZSwKICAgIGN1cnJlbnRfbGluZV9ibGFtZV9vcHRzID0gewogICAgICB2aXJ0X3RleHQgPSB0cnVlLAogICAgICB2aXJ0X3RleHRfcG9zID0gInJpZ2h0X2FsaWduIiwgLS0gJ2VvbCcgfCAnb3ZlcmxheScgfCAncmlnaHRfYWxpZ24nCiAgICAgIGRlbGF5ID0gMTAwLAogICAgICBpZ25vcmVfd2hpdGVzcGFjZSA9IGZhbHNlLAogICAgICB2aXJ0X3RleHRfcHJpb3JpdHkgPSAxMDAsCiAgICAgIHVzZV9mb2N1cyA9IHRydWUsCiAgICB9LAogIH0sCn0KAAAAAAAAAADPAQAAAAAAAAAAAAA",
-							"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
-						],
-						[
-							2,
-							1,
-							"revert",
-							null,
-							"AgAAAAAAAAAAAAAAAAAAAAAAAADPAQAAcmV0dXJuIHsKICAibGV3aXM2OTkxL2dpdHNpZ25zLm52aW0iLAogIGV2ZW50ID0gIkxhenlGaWxlIiwKICBvcHRzID0gewogICAgY3VycmVudF9saW5lX2JsYW1lID0gdHJ1ZSwKICAgIGN1cnJlbnRfbGluZV9ibGFtZV9vcHRzID0gewogICAgICB2aXJ0X3RleHQgPSB0cnVlLAogICAgICB2aXJ0X3RleHRfcG9zID0gInJpZ2h0X2FsaWduIiwgLS0gJ2VvbCcgfCAnb3ZlcmxheScgfCAncmlnaHRfYWxpZ24nCiAgICAgIGRlbGF5ID0gMTAwLAogICAgICBpZ25vcmVfd2hpdGVzcGFjZSA9IGZhbHNlLAogICAgICB2aXJ0X3RleHRfcHJpb3JpdHkgPSAxMDAsCiAgICAgIHVzZV9mb2N1cyA9IHRydWUsCiAgICB9LAogIH0sCiAgdmltLmtleW1hcC5zZXQoIm4iLCAiPGxlYWRlcj5nYiIsIGdpdHNpZ25zLnRvZ2dsZV9jdXJyZW50X2xpbmVfYmxhbWUsIHsgZGVzYyA9ICJUb2dnbGUgZ2l0IGJsYW1lIGxpbmUiIH0pLAp9CgAAAAAAAAAA9wEAAAAAAAAAAAAA",
-							"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
-						],
-						[
-							3,
-							1,
-							"revert",
-							null,
-							"AgAAAAAAAAAAAAAAAAAAAAAAAAD3AQAAcmV0dXJuIHsKICAibGV3aXM2OTkxL2dpdHNpZ25zLm52aW0iLAogIGV2ZW50ID0gIkxhenlGaWxlIiwKICBvcHRzID0gewogICAgY3VycmVudF9saW5lX2JsYW1lID0gdHJ1ZSwKICAgIGN1cnJlbnRfbGluZV9ibGFtZV9vcHRzID0gewogICAgICB2aXJ0X3RleHQgPSB0cnVlLAogICAgICB2aXJ0X3RleHRfcG9zID0gInJpZ2h0X2FsaWduIiwgLS0gJ2VvbCcgfCAnb3ZlcmxheScgfCAncmlnaHRfYWxpZ24nCiAgICAgIGRlbGF5ID0gMTAwLAogICAgICBpZ25vcmVfd2hpdGVzcGFjZSA9IGZhbHNlLAogICAgICB2aXJ0X3RleHRfcHJpb3JpdHkgPSAxMDAsCiAgICAgIHVzZV9mb2N1cyA9IHRydWUsCiAgICB9LAogIH0sCiAgb25fYXR0YWNoPWZ1bmN0aW9uIChidWZucikKICAgIAogIGVuZAogIHZpbS5rZXltYXAuc2V0KCJuIiwgIjxsZWFkZXI+Z2IiLCBnaXRzaWducy50b2dnbGVfY3VycmVudF9saW5lX2JsYW1lLCB7IGRlc2MgPSAiVG9nZ2xlIGdpdCBibGFtZSBsaW5lIiB9KSwKfQoAAAAAAAAAAFcCAAAAAAAAAAAAAA",
-							"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
-						],
-						[
-							4,
-							1,
-							"revert",
-							null,
-							"BQAAAAAAAAAAAAAAAAAAAAAAAABXAgAAcmV0dXJuIHsKICAibGV3aXM2OTkxL2dpdHNpZ25zLm52aW0iLAogIGV2ZW50ID0gIkxhenlGaWxlIiwKICBvcHRzID0gewogICAgY3VycmVudF9saW5lX2JsYW1lID0gdHJ1ZSwKICAgIGN1cnJlbnRfbGluZV9ibGFtZV9vcHRzID0gewogICAgICB2aXJ0X3RleHQgPSB0cnVlLAogICAgICB2aXJ0X3RleHRfcG9zID0gInJpZ2h0X2FsaWduIiwgLS0gJ2VvbCcgfCAnb3ZlcmxheScgfCAncmlnaHRfYWxpZ24nCiAgICAgIGRlbGF5ID0gMTAwLAogICAgICBpZ25vcmVfd2hpdGVzcGFjZSA9IGZhbHNlLAogICAgICB2aXJ0X3RleHRfcHJpb3JpdHkgPSAxMDAsCiAgICAgIHVzZV9mb2N1cyA9IHRydWUsCiAgICB9LAogIH0sCiAgb25fYXR0YWNoID0gZnVuY3Rpb24oYnVmbnIpCiAgICBtYXAoIm4iLCAiPGxlYWRlcj5nYiIsIGdpdHNpZ25zLnRvZ2dsZV9jdXJyZW50X2xpbmVfYmxhbWUsIHsgZGVzYyA9ICJUb2dnbGUgZ2l0IGJsYW1lIGxpbmUiIH0pCiAgZW5kLAogIHZpbS5rZXltYXAuc2V0KCJuIiwgIjxsZWFkZXI+Z2IiLCBnaXRzaWducy50b2dnbGVfY3VycmVudF9saW5lX2JsYW1lLCB7IGRlc2MgPSAiVG9nZ2xlIGdpdCBibGFtZSBsaW5lIiB9KSwKfQoAAAAAAAAAAGIBAAAAAAAAAAAAAAAAAAAAAAAAYgEAAAAAAAAAAAAAAAAAAAAAAABiAQAAAAAAAAAAAAAAAAAAAAAAAGIBAAAAAAAAAAAAAA",
-							"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
-						]
-					]
-				},
-				{
-					"file": "/home/niraj/.config/nvim.baaak/lua/custom/plugins/gitsigns.lua",
-					"settings":
-					{
-						"buffer_size": 2849,
-						"encoding": "UTF-8",
-						"line_ending": "Unix"
-					}
-				},
-				{
-					"file": "/home/niraj/.config/nvim.baaak/lua/custom/plugins/dashboard.lua",
-					"settings":
-					{
-						"buffer_size": 4318,
-						"encoding": "UTF-8",
-						"line_ending": "Unix"
-					}
-				},
-				{
-					"file": "/home/niraj/.config/nvim.baaak/lua/custom/plugins/lspsaga.lua",
-					"settings":
-					{
-						"buffer_size": 3011,
-						"encoding": "UTF-8",
-						"line_ending": "Unix"
-					}
-				},
-				{
-					"file": "/home/niraj/.local/share/nvim/lazy/LazyVim/lua/lazyvim/init.lua",
-					"settings":
-					{
-						"buffer_size": 150,
-						"line_ending": "Unix"
-					}
-				}
 			],
 			"build_system": "",
 			"build_system_choices":
@@ -714,7 +627,13 @@
 			],
 			"file_history":
 			[
+				"/home/niraj/.config/nvim.baaak/lua/custom/plugins/neo-tree.lua",
+				"/home/niraj/.config/nvim.bak/lua/plugins/gitsigns.lua",
+				"/home/niraj/.config/nvim.baaak/lua/custom/plugins/gitsigns.lua",
 				"/home/niraj/.config/nvim.baaak/lua/custom/plugins/dashboard.lua",
+				"/home/niraj/.config/nvim.baaak/lua/custom/plugins/lspsaga.lua",
+				"/home/niraj/.local/share/nvim/lazy/LazyVim/lua/lazyvim/init.lua",
+				"/home/niraj/Desktop/Projects/instaclone/frontend/src/components/CommentDialog.jsx",
 				"/home/niraj/.local/share/nvim/lazy/dashboard-nvim/lua/dashboard/theme/hyper.lua",
 				"/home/niraj/.local/share/nvim/lazy/nvim-lspconfig/lua/lspconfig/util.lua",
 				"/home/niraj/.local/share/nvim/lazy/nvim-lspconfig/lua/lspconfig/configs/eslint.lua",
@@ -835,13 +754,7 @@
 				"/home/niraj/Desktop/Downloads/Saint.Maud.English-WWW.MY-SUBS.CO.srt",
 				"/home/niraj/Desktop/Projects/flutter/rohit semriwal ecommerce/ecommerce-backend/src/server.js",
 				"/home/niraj/Desktop/Link to nvim/lua/config/lazy.lua",
-				"/home/niraj/Desktop/Link to nvim/lua/plugins/core.lua",
-				"/home/niraj/Downloads/Saint.Maud.English-WWW.MY-SUBS.CO.srt",
-				"/home/niraj/.flutter",
-				"/home/niraj/Desktop/Link to nvim/lua/config/keymaps.lua",
-				"/home/niraj/.config/nautilus/search-metadata",
-				"/home/niraj/Desktop/Link to nvim/lua/plugins/lsp-saga.lua",
-				"/home/niraj/.config/kdeglobals"
+				"/home/niraj/Desktop/Link to nvim/lua/plugins/core.lua"
 			],
 			"find":
 			{
@@ -886,193 +799,6 @@
 				{
 					"sheets":
 					[
-						{
-							"buffer": 0,
-							"file": "/home/niraj/.config/nvim.baaak/lua/custom/plugins/neo-tree.lua",
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 855,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										0,
-										0
-									]
-								],
-								"settings":
-								{
-									"syntax": "Packages/Lua/Lua.sublime-syntax",
-									"tab_size": 2,
-									"translate_tabs_to_spaces": true
-								},
-								"translation.x": 0.0,
-								"translation.y": 0.0,
-								"zoom_level": 1.0
-							},
-							"stack_index": 5,
-							"stack_multiselect": false,
-							"type": "text"
-						},
-						{
-							"buffer": 1,
-							"file": "/home/niraj/.config/nvim.bak/lua/plugins/gitsigns.lua",
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 354,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										0,
-										0
-									]
-								],
-								"settings":
-								{
-									"syntax": "Packages/Lua/Lua.sublime-syntax",
-									"tab_size": 2,
-									"translate_tabs_to_spaces": true
-								},
-								"translation.x": 0.0,
-								"translation.y": 0.0,
-								"zoom_level": 1.0
-							},
-							"stack_index": 4,
-							"stack_multiselect": false,
-							"type": "text"
-						},
-						{
-							"buffer": 2,
-							"file": "/home/niraj/.config/nvim.baaak/lua/custom/plugins/gitsigns.lua",
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 2849,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										767,
-										767
-									]
-								],
-								"settings":
-								{
-									"syntax": "Packages/Lua/Lua.sublime-syntax",
-									"tab_size": 2,
-									"translate_tabs_to_spaces": true
-								},
-								"translation.x": 0.0,
-								"translation.y": 474.0,
-								"zoom_level": 1.0
-							},
-							"stack_index": 3,
-							"stack_multiselect": false,
-							"type": "text"
-						},
-						{
-							"buffer": 3,
-							"file": "/home/niraj/.config/nvim.baaak/lua/custom/plugins/dashboard.lua",
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 4318,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										3228,
-										4318
-									]
-								],
-								"settings":
-								{
-									"syntax": "Packages/Lua/Lua.sublime-syntax",
-									"tab_size": 2,
-									"translate_tabs_to_spaces": true
-								},
-								"translation.x": 0.0,
-								"translation.y": 1235.0,
-								"zoom_level": 1.0
-							},
-							"stack_index": 2,
-							"stack_multiselect": false,
-							"type": "text"
-						},
-						{
-							"buffer": 4,
-							"file": "/home/niraj/.config/nvim.baaak/lua/custom/plugins/lspsaga.lua",
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 3011,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										1001,
-										2035
-									]
-								],
-								"settings":
-								{
-									"syntax": "Packages/Lua/Lua.sublime-syntax",
-									"tab_size": 2,
-									"translate_tabs_to_spaces": true
-								},
-								"translation.x": 0.0,
-								"translation.y": 232.0,
-								"zoom_level": 1.0
-							},
-							"stack_index": 1,
-							"stack_multiselect": false,
-							"type": "text"
-						},
-						{
-							"buffer": 5,
-							"file": "/home/niraj/.local/share/nvim/lazy/LazyVim/lua/lazyvim/init.lua",
-							"selected": true,
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 150,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										0,
-										0
-									]
-								],
-								"settings":
-								{
-									"syntax": "Packages/Lua/Lua.sublime-syntax",
-									"tab_size": 2,
-									"translate_tabs_to_spaces": true
-								},
-								"translation.x": 0.0,
-								"translation.y": 0.0,
-								"zoom_level": 1.0
-							},
-							"stack_index": 0,
-							"stack_multiselect": false,
-							"type": "text"
-						}
 					]
 				}
 			],
@@ -1120,7 +846,7 @@
 				"height": 0.0
 			},
 			"pinned_build_system": "",
-			"position": "0,1,0,0,0,0,0,1920,1032,1920,1080,0",
+			"position": "1,1,0,0,0,56,50,1976,1082,1920,1080,0",
 			"project": "",
 			"replace":
 			{

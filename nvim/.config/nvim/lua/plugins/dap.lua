@@ -94,6 +94,7 @@ return {
     { "<leader>dO", ":DapStepOut<cr>", desc = "Step Out", silent = true },
     { "<leader>db", ":DapToggleBreakpoint<cr>", desc = "Toggle Breakpoint", silent = true },
     { "<leader>dc", ":DapContinue<cr>:Neotree close<cr>", desc = "Start/Continue", silent = true },
+    { "<leader>dC", ":DapClearBreakpoints<cr>:echo 'Breakpoints cleared'<cr>", desc = "Start/Continue", silent = true },
     { "<leader>di", ":DapStepInto<cr>", desc = "Step Into", silent = true },
     { "<leader>do", ":DapStepOver<cr>", desc = "Step Over", silent = true },
     { "<leader>dt", ":DapTerminate<cr>", desc = "Terminate debugging", silent = true },
