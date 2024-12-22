@@ -4,7 +4,7 @@ return {
   event = "InsertEnter",
   version = "v0.*",
   opts_extend = {
-    "sources.completion.enabled_providers",
+    "sources.default",
     "sources.compat",
   },
   dependencies = {
@@ -15,13 +15,14 @@ return {
       sources = {
         default = { "lsp", "path", "snippets", "buffer" },
         -- optionally disable cmdline completions
-        -- cmdline = {},
+        -- cmdline = { enabled = false },
       },
       completion = {
         accept = {
           auto_brackets = { enabled = true },
         },
         menu = {
+          auto_show = true,
           border = "rounded",
           winblend = 10,
           winhighlight = "Normal:CatppuccinSurface0,FloatBorder:CatppuccinSurface2,Search:None",
@@ -46,9 +47,6 @@ return {
       },
       keymap = {
         preset = "enter",
-      },
-      apperance = {
-        use_nvim_cmp_as_default = true,
       },
     }
   end,

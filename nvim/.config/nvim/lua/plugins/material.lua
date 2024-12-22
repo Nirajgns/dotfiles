@@ -68,8 +68,8 @@ return {
       },
 
       high_visibility = {
-        lighter = false, -- Enable higher contrast text for lighter style
-        darker = false, -- Enable higher contrast text for darker style
+        lighter = true, -- Enable higher contrast text for lighter style
+        darker = true, -- Enable higher contrast text for darker style
       },
 
       lualine_style = "stealth", -- Lualine style ( can be 'stealth' or 'default' )
@@ -81,5 +81,11 @@ return {
       custom_highlights = {}, -- Overwrite highlights with your own
     })
     vim.g.material_style = "deep ocean"
+    vim.keymap.set(
+      "n",
+      "<leader>uM",
+      ":lua require('material.functions').find_style()<cr>",
+      { silent = true, desc = "Change material style" }
+    )
   end,
 }

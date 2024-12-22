@@ -41,6 +41,11 @@ return {
         },
       },
       setup = {},
+      -- servers = {
+      --   vtsls = { settings = {
+      --     enableMoveToFileCodeAction = true,
+      --   } },
+      -- },
     }
   end,
 }

@@ -11,7 +11,7 @@ return {
       "css-lsp",
       "prettierd",
       "pyright",
-      "vtsls",
+      -- "vtsls",
       "black",
       "isort",
       "flake8",

@@ -23,7 +23,7 @@ vim.api.nvim_create_autocmd("CursorHold", {
 
 --NOTE:set set_highlight_groups for folded lines
 local function set_highlight_groups()
-  vim.cmd("highlight Folded guibg=none guifg=gray gui=italic")
+  vim.cmd("highlight Folded guibg=none guifg=brown gui=italic")
 end
 
 set_highlight_groups()
@@ -40,9 +40,9 @@ vim.g.neovide_text_contrast = 1
 
 vim.g.neovide_cursor_smooth_blink = true
 vim.g.neovide_scale_factor = 1
-vim.g.neovide_cursor_trail_size = 0.3
+vim.g.neovide_cursor_trail_size = 0.4
 
-vim.g.neovide_cursor_animation_length = 0.2
+vim.g.neovide_cursor_animation_length = 0.3
 vim.g.neovide_scroll_animation_length = 0.08
 
 --NOTE: these functions prevent neovide from scrolling animations on buffer switch
@@ -55,7 +55,7 @@ vim.api.nvim_create_autocmd("BufLeave", {
 vim.api.nvim_create_autocmd("BufEnter", {
   callback = function()
     vim.fn.timer_start(70, function()
-      vim.g.neovide_scroll_animation_length = 0.2
+      vim.g.neovide_scroll_animation_length = 0.3
       vim.g.neovide_cursor_animation_length = 0.08
     end)
   end,
