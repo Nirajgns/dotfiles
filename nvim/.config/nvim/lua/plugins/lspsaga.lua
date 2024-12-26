@@ -14,6 +14,7 @@ return {
         lines = { "╰", "├", "│", "─", "╭" },
         button = { "", "" },
       },
+      lightbulb = { virtual_text = false },
       outline = {
         auto_preview = false,
         detail = true,

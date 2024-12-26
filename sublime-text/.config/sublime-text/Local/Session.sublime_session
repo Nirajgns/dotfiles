@@ -1,6 +1,9 @@
 {
 	"file_history":
 	[
+		"/home/niraj/.config/nvim.bak/lua/plugins/typescript-tools.lua",
+		"/home/niraj/.config/nvim.bak/lua/plugins/blink-cmp.lua",
+		"/home/niraj/Downloads/instaclone-main/frontend/src/lib/utils.js",
 		"/home/niraj/.config/nvim.baaak/lua/custom/plugins/neo-tree.lua",
 		"/home/niraj/.config/nvim.bak/lua/plugins/gitsigns.lua",
 		"/home/niraj/.config/nvim.baaak/lua/custom/plugins/gitsigns.lua",
@@ -125,10 +128,7 @@
 		"/mnt/sdb3/Watch/Furiosa A Mad Max Saga (2024) [1080p] [WEBRip] [5.1] [YTS.MX]/Furiosa.A.Mad.Max.Saga.2024.1080p.WEBRip.x264.AAC5.1-[YTS.MX].srt",
 		"/home/niraj/.config/neovide/config.toml",
 		"/home/niraj/.config/wezterm/config/appearance.lua",
-		"/home/niraj/.config/wezterm/config/domains.lua",
-		"/home/niraj/.config/wezterm/config/bindings.lua",
-		"/home/niraj/.config/wezterm/config/launch.lua",
-		"/home/niraj/.config/wezterm/config/init.lua"
+		"/home/niraj/.config/wezterm/config/domains.lua"
 	],
 	"folder_history":
 	[
@@ -148,16 +148,16 @@
 	"last_version": 4180,
 	"last_window_id": 37,
 	"log_indexing": false,
-	"next_update_check": 1734581044,
+	"next_update_check": 1735272244,
 	"settings":
 	{
-		"new_window_full_screen": true,
-		"new_window_height": 1032.0,
+		"new_window_full_screen": false,
+		"new_window_height": 0.0,
 		"new_window_maximized": true,
 		"new_window_position":
 		[
 			0.0,
-			0.0
+			48.0
 		],
 		"new_window_settings":
 		{
@@ -275,6 +275,10 @@
 			},
 			"file_history":
 			[
+				"/home/niraj/.config/nvim-bak/lua/plugins/coding/blink-cmp.lua",
+				"/home/niraj/.config/nvim.bak/lua/plugins/typescript-tools.lua",
+				"/home/niraj/.config/nvim.bak/lua/plugins/blink-cmp.lua",
+				"/home/niraj/Downloads/instaclone-main/frontend/src/lib/utils.js",
 				"/home/niraj/.config/nvim.baaak/lua/custom/plugins/neo-tree.lua",
 				"/home/niraj/.config/nvim.bak/lua/plugins/gitsigns.lua",
 				"/home/niraj/.config/nvim.baaak/lua/custom/plugins/gitsigns.lua",
@@ -398,11 +402,7 @@
 				"/home/niraj/.config/wezterm/config/general.lua",
 				"/home/niraj/.config/wezterm/config/fonts.lua",
 				"/mnt/sdb3/Projects/js/Nomad-backend-master/routes/galleryRoutes.js",
-				"/home/niraj/Desktop/Projects/js/Nomad-backend-master/.gitignore",
-				"/home/niraj/Desktop/Downloads/Saint.Maud.English-WWW.MY-SUBS.CO.srt",
-				"/home/niraj/Desktop/Projects/flutter/rohit semriwal ecommerce/ecommerce-backend/src/server.js",
-				"/home/niraj/Desktop/Link to nvim/lua/config/lazy.lua",
-				"/home/niraj/Desktop/Link to nvim/lua/plugins/core.lua"
+				"/home/niraj/Desktop/Projects/js/Nomad-backend-master/.gitignore"
 			],
 			"find":
 			{
@@ -500,7 +500,7 @@
 			{
 			}
 		},
-		"new_window_width": 1920.0
+		"new_window_width": 0.0
 	},
 	"windows":
 	[
@@ -513,6 +513,21 @@
 			},
 			"buffers":
 			[
+				{
+					"contents": "return {\n  'saghen/blink.cmp',\n  -- enabled = false,\n  event = 'InsertEnter',\n  version = 'v0.*',\n  opts_extend = {\n    'sources.default',\n    'sources.compat',\n  },\n  dependencies = {\n    'rafamadriz/friendly-snippets',\n  },\n  opts = function()\n    return {\n      sources = {\n        default = { 'lsp', 'path', 'snippets', 'buffer' },\n        -- optionally disable cmdline completions\n        cmdline = { enabled = false },\n      },\n      completion = {\n        accept = {\n          auto_brackets = { enabled = true },\n        },\n        menu = {\n          auto_show = true,\n          border = 'rounded',\n          winblend = 10,\n          winhighlight = 'Normal:CatppuccinSurface0,FloatBorder:CatppuccinSurface2,Search:None',\n        },\n        documentation = {\n          auto_show = true,\n          window = {\n            border = 'rounded',\n            winblend = 10,\n            winhighlight = 'Normal:CatppuccinSurface0,FloatBorder:CatppuccinSurface2,Search:None',\n          },\n          auto_show_delay_ms = 100,\n        },\n      },\n      signature = {\n        enabled = true,\n        window = {\n          border = 'rounded',\n          winblend = 10,\n          winhighlight = 'Normal:CatppuccinSurface0,FloatBorder:CatppuccinSurface2,Search:None',\n        },\n      },\n      keymap = {\n        preset = 'enter',\n      },\n    }\n  end,\n}\n",
+					"file": "/home/niraj/.config/nvim-bak/lua/plugins/coding/blink-cmp.lua",
+					"file_size": 1343,
+					"file_write_time": 133796777406520226,
+					"settings":
+					{
+						"buffer_size": 1343,
+						"encoding": "UTF-8",
+						"line_ending": "Unix"
+					},
+					"undo_stack":
+					[
+					]
+				}
 			],
 			"build_system": "",
 			"build_system_choices":
@@ -627,6 +642,9 @@
 			],
 			"file_history":
 			[
+				"/home/niraj/.config/nvim.bak/lua/plugins/typescript-tools.lua",
+				"/home/niraj/.config/nvim.bak/lua/plugins/blink-cmp.lua",
+				"/home/niraj/Downloads/instaclone-main/frontend/src/lib/utils.js",
 				"/home/niraj/.config/nvim.baaak/lua/custom/plugins/neo-tree.lua",
 				"/home/niraj/.config/nvim.bak/lua/plugins/gitsigns.lua",
 				"/home/niraj/.config/nvim.baaak/lua/custom/plugins/gitsigns.lua",
@@ -751,10 +769,7 @@
 				"/home/niraj/.config/wezterm/config/fonts.lua",
 				"/mnt/sdb3/Projects/js/Nomad-backend-master/routes/galleryRoutes.js",
 				"/home/niraj/Desktop/Projects/js/Nomad-backend-master/.gitignore",
-				"/home/niraj/Desktop/Downloads/Saint.Maud.English-WWW.MY-SUBS.CO.srt",
-				"/home/niraj/Desktop/Projects/flutter/rohit semriwal ecommerce/ecommerce-backend/src/server.js",
-				"/home/niraj/Desktop/Link to nvim/lua/config/lazy.lua",
-				"/home/niraj/Desktop/Link to nvim/lua/plugins/core.lua"
+				"/home/niraj/Desktop/Downloads/Saint.Maud.English-WWW.MY-SUBS.CO.srt"
 			],
 			"find":
 			{
@@ -799,6 +814,41 @@
 				{
 					"sheets":
 					[
+						{
+							"buffer": 0,
+							"file": "/home/niraj/.config/nvim-bak/lua/plugins/coding/blink-cmp.lua",
+							"selected": true,
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 1343,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										631,
+										631
+									]
+								],
+								"settings":
+								{
+									"_nv_visual_block_direction": 1,
+									"_nv_visual_sel_mode": "mode_visual_block",
+									"highlight_line": true,
+									"syntax": "Packages/Lua/Lua.sublime-syntax",
+									"tab_size": 2,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 0,
+							"stack_multiselect": false,
+							"type": "text"
+						}
 					]
 				}
 			],
@@ -846,7 +896,7 @@
 				"height": 0.0
 			},
 			"pinned_build_system": "",
-			"position": "1,1,0,0,0,56,50,1976,1082,1920,1080,0",
+			"position": "0,1,0,0,0,0,0,1920,1032,1920,1080,0",
 			"project": "",
 			"replace":
 			{

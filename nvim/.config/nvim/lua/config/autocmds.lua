@@ -30,7 +30,6 @@ set_highlight_groups()
 
 --------------------------------neovide------------------
 vim.g.neovide_hide_mouse_when_typing = true
-vim.g.gui_font_default_size = 13.2
 vim.g.gui_font_size = vim.g.gui_font_default_size
 vim.g.gui_font_face = "IosevkaTerm Nerd Font"
 
@@ -62,8 +61,11 @@ vim.api.nvim_create_autocmd("BufEnter", {
 })
 
 --=============FONT SIZE SETTINGS IN NEOVIDE==============--
+vim.g.gui_font_default_size = 13.2
+
 RefreshGuiFont = function()
   vim.opt.guifont = string.format("%s:h%s", vim.g.gui_font_face, vim.g.gui_font_size)
+  print("Font size set to: " .. vim.g.gui_font_size)
 end
 
 ResizeGuiFont = function(delta)
@@ -80,10 +82,10 @@ ResetGuiFont()
 
 --NOTE: Keymaps for adjusting neovide fontsize
 vim.keymap.set({ "n", "i" }, "<C-+>", function()
-  ResizeGuiFont(1)
+  ResizeGuiFont(0.2)
 end, { desc = "increase font size" })
 vim.keymap.set({ "n", "i" }, "<C-->", function()
-  ResizeGuiFont(-1)
+  ResizeGuiFont(-0.2)
 end, { desc = "decrease font size" })
 vim.keymap.set({ "n", "i" }, "<C-=>", function()
   ResetGuiFont()
