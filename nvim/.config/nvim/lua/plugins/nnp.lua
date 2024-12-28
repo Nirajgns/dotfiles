@@ -22,22 +22,18 @@ return {
     _G.is_nnp_enabled = not _G.is_nnp_enabled
 
     if _G.is_nnp_enabled then
-      -- vim.cmd("set relativenumber!")
-
       vim.cmd("set laststatus=0")
       vim.cmd("lua Snacks.dim()")
-      vim.cmd("set tabline=%f")
+      vim.o.tabline = "%!v:lua.pretty_path()"
       vim.cmd("Neotree float")
       vim.defer_fn(function()
         vim.cmd("Neotree close")
         vim.cmd("NoNeckPain")
       end, 200)
     else
-      -- vim.cmd("set relativenumber!")
-
       vim.cmd("set laststatus=3")
       vim.cmd("lua Snacks.dim.disable()")
-      vim.cmd("set tabline=%!v:lua.nvim_bufferline()")
+      vim.o.tabline = "%!v:lua.nvim_bufferline()"
       vim.cmd("NoNeckPain")
       vim.cmd("Neotree left")
     end

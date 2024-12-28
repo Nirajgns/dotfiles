@@ -10,6 +10,9 @@ return {
     vim.keymap.set("i", "<A-l>", neocodeium.accept_line)
     vim.keymap.set("i", "<A-n>", neocodeium.cycle_or_complete)
     vim.keymap.set("i", "<A-c>", neocodeium.clear)
+    vim.keymap.set("i", "<A-p>", function()
+      require("neocodeium").cycle_or_complete(-1)
+    end)
     vim.keymap.set("n", "<leader>ch", "<cmd>NeoCodeium chat<cr>")
   end,
 }

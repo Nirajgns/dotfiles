@@ -18,6 +18,12 @@ return {
         position = "50%", -- 50% means center it
       },
     },
+    sources = {
+      "filesystem",
+      "buffers",
+      "git_status",
+      "document_symbols",
+    },
   },
   keys = {
     {
