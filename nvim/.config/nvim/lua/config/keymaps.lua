@@ -31,10 +31,9 @@ map("n", "<S-Tab>", ":bprevious<CR>", { noremap = true, silent = true })
 vim.keymap.del("n", "<leader>ft")
 vim.keymap.del("n", "<leader>fT")
 vim.keymap.del("n", "<leader>sr")
--- vim.keymap.del("n", "<leader>uz")
 
 ---=======================for easy typing--------------------------
-map({ "i", "t" }, "<C-BS>", "<C-w>", { noremap = true, silent = true, desc = "delete word with ctrl+bcspc" })
+map({ "i", "t", "c", "x" }, "<C-BS>", "<C-w>", { noremap = true, silent = false, desc = "delete word with ctrl+bcspc" })
 
 map({ "n" }, "<C-S-s>", "<cmd>wa<cr>", { noremap = true, silent = true, desc = "save all" })
 
