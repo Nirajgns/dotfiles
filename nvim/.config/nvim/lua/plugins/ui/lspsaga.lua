@@ -3,7 +3,6 @@ return {
   lazy = true,
   event = "LazyFile",
   config = function()
-    local wk = require("which-key")
     require("lspsaga").setup({
       beacon = { enable = true, frequency = 20 },
       ui = {
@@ -13,6 +12,12 @@ return {
         collapse = " ",
         lines = { "╰", "├", "│", "─", "╭" },
         button = { "", "" },
+      },
+      rename = {
+        in_select = false,
+        keys = {
+          quit = "<esc>",
+        },
       },
       lightbulb = { virtual_text = false },
       outline = {
@@ -44,8 +49,22 @@ return {
       ),
       vim.keymap.set("n", "K", "<cmd>Lspsaga hover_doc<cr>", { desc = "hover doc", silent = true }),
       vim.keymap.set("n", "gr", "<cmd>Lspsaga finder<cr>", { desc = "references (finder)", silent = true }),
+
+      vim.keymap.set(
+        "n",
+        "gy",
+        "<cmd>Lspsaga goto_type_definition<cr>",
+        { desc = "references (finder)", silent = true }
+      ),
       vim.keymap.set("n", "gd", "<cmd>Lspsaga goto_definition<cr>", { desc = "go to definition", silent = true }),
       vim.keymap.set("n", "gpd", "<cmd>Lspsaga peek_definition<cr>", { desc = "peek definition", silent = true }),
+
+      vim.keymap.set(
+        "n",
+        "gy",
+        "<cmd>Lspsaga goto_type_definition<cr>",
+        { desc = "go to type definition", silent = true }
+      ),
       vim.keymap.set(
         "n",
         "gpy",
@@ -59,24 +78,9 @@ return {
         { desc = "go to type definition", silent = true }
       ),
       vim.keymap.set("n", "<leader>ca", "<cmd>Lspsaga code_action<cr>", { desc = "code actions", silent = true }),
-      -- vim.keymap.set('i', '<c-s-k>', vim.lsp.buf.signature_help, { desc = 'Signature Help', has = 'signatureHelp' }),
-      vim.keymap.set("v", "<leader>ca", "<cmd>Lspsaga code_action<cr>", { desc = "code actions", silent = true }),
-      wk.add({
-        { "<leader>l", group = "Lint,Lazy,Lspsaga" },
-        { "<leader>lR", "<cmd>Lspsaga rename<cr>", desc = "Rename with lsp" },
-        { "<leader>lc", "<cmd>Lspsaga code_action<cr>", desc = "Code Action" },
-        { "<leader>ld", "<cmd>Lspsaga goto_definition<cr>", desc = "Lsp GoTo Definition" },
-        { "<leader>li", "<cmd>LspInfo<cr>", desc = "Lsp info and status" },
-        { "<leader>lO", "<cmd>Lspsaga outline<cr>", desc = " lspsaga outline" },
-        { "<leader>lp", "<cmd>Lspsaga peek_definition<cr>", desc = "Preview Definition" },
-        { "<leader>lr", "<cmd>Lspsaga finder<cr>", desc = "Lsp Finder" },
-        { "<leader>ls", "<cmd>Lspsaga signature_help<cr>", desc = "Signature Help" },
-        { "<leader>le", "<cmd>Lspsaga show_buf_diagnostics<cr>", desc = "Show buffer Diagnostics" },
-      }),
+
+      vim.keymap.set("n", "<leader>cr", "<cmd>Lspsaga rename mode=n<cr>", { desc = "Rename with lsp", silent = true }),
+      vim.keymap.set("n", "<leader>lO", "<cmd>Lspsaga outline<cr>", { desc = "Outline", silent = true }),
     })
   end,
-  dependencies = {
-    "nvim-treesitter/nvim-treesitter", -- optional
-    "nvim-tree/nvim-web-devicons", -- optional
-  },
 }

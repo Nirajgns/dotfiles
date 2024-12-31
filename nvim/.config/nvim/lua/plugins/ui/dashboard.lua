@@ -36,7 +36,6 @@ return {
           limit = 9,
           action = function()
             require("persistence").load()
-            -- require("neo-tree.command").execute({ toggle = true, dir = LazyVim.root() })
             vim.cmd("Neotree show")
           end,
         },

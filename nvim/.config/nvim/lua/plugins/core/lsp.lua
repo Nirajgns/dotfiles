@@ -5,21 +5,21 @@ return {
     local keys = require("lazyvim.plugins.lsp.keymaps").get()
     keys[#keys + 1] = { "<c-k>", mode = "i", false }
     -- change a keymap
-    keys[#keys + 1] = { "K", "<cmd>Lspsaga hover_doc<cr>", desc = "hover doc", silent = true }
-    keys[#keys + 1] = { "gr", "<cmd>Lspsaga finder<cr>", desc = "references (finder)", silent = true }
-    keys[#keys + 1] = { "gd", "<cmd>Lspsaga goto_definition<cr>", desc = "go to definition", silent = true }
-    keys[#keys + 1] = { "gpd", "<cmd>Lspsaga peek_definition<cr>", desc = "peek definition", silent = true }
-    keys[#keys + 1] = { "gpy", "<cmd>Lspsaga peek_type_definition<cr>", desc = "peek type definition", silent = true }
-    keys[#keys + 1] = { "gy", "<cmd>Lspsaga goto_type_definition<cr>", desc = "go to type definition", silent = true }
-    keys[#keys + 1] = { "<leader>ca", "<cmd>Lspsaga code_action<cr>", desc = "code actions", silent = true }
+    keys[#keys + 1] = { "K", mode = "n", false }
+    keys[#keys + 1] = { "gr", mode = "n", false }
+    keys[#keys + 1] = { "gy", mode = "n", false }
+    keys[#keys + 1] = { "gd", mode = "n", false }
+    -- keys[#keys + 1] = { "gD", mode = "n", false }
+    keys[#keys + 1] = { "<c-k>", mode = "i", false }
+    keys[#keys + 1] = { "<leader>cr", mode = "n", false }
+    keys[#keys + 1] = { "<leader>cc", mode = "n", false }
+    keys[#keys + 1] = { "<leader>ca", mode = { "v", "n" }, false }
+
     keys[#keys + 1] =
       { "<c-s-k>", vim.lsp.buf.signature_help, mode = "i", desc = "Signature Help", has = "signatureHelp" }
-    keys[#keys + 1] = { "<leader>ca", "<cmd>Lspsaga code_action<cr>", mode = "v", desc = "code actions", silent = true }
-    -- disable a keymap
-    -- keys[#keys + 1] = { "K", false }
-    -- add a keymap
-    -- keys[#keys + 1] = { "H", "<cmd>echo 'hello'<cr>" }
-    --
+
+    --change a keymap
+    -- keys[#keys + 1] = { "<leader>ca", "<cmd>Lspsaga code_action<cr>", mode = "v", desc = "code actions", silent = true }
     return {
       inlay_hints = {
         enabled = false,
