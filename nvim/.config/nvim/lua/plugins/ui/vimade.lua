@@ -9,6 +9,11 @@ return {
     local animate = require("vimade.style.value.animate")
 
     require("vimade").setup({
+      -- blocklist = { defaults = {
+      --   buf_opts = {
+      --     buftype = "terminal",
+      --   },
+      -- } },
       ncmode = "windows",
       style = {
         Fade({

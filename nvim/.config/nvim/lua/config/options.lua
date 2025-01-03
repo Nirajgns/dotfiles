@@ -53,8 +53,8 @@ opt.list = false --to remove "-" while typing "space"
 -- Folding
 -- fold settings
 opt.foldlevel = 20
-vim.wo.foldmethod = "indent" --"expr"
--- vim.wo.foldexpr = "nvim_treesitter#foldexpr()"
+vim.o.foldmethod = "expr" --"indent"
+vim.o.foldexpr = "nvim_treesitter#foldexpr()"
 vim.wo.foldtext =
   [[substitute(getline(v:foldstart), '\\t', repeat(' ', &tabstop), 'g') .'       ...        --->' .'           ' . (v:foldend - v:foldstart + 1) . ' lines folded!']]
 vim.wo.fillchars = "fold:\\"

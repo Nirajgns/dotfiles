@@ -145,10 +145,10 @@
 		"/home/niraj/Desktop/Projects/todo_app",
 		"/home/niraj/Desktop/Projects/Nomad-backend-master"
 	],
-	"last_version": 4180,
+	"last_version": 4189,
 	"last_window_id": 37,
 	"log_indexing": false,
-	"next_update_check": 1735358644,
+	"next_update_check": 1735531444,
 	"settings":
 	{
 		"new_window_full_screen": false,
@@ -275,6 +275,8 @@
 			},
 			"file_history":
 			[
+				"/home/niraj/ghostty/dist/linux/ghostty_dolphin.desktop",
+				"/home/niraj/ghostty/dist/linux/app.desktop",
 				"/home/niraj/.config/nvim-bak/lua/plugins/ui/lualine.lua",
 				"/home/niraj/.config/nvim-bak/lua/plugins/languages/vtsls.lua",
 				"/home/niraj/.config/nvim.bak/lua/config/autocmds.lua",
@@ -400,9 +402,7 @@
 				"/home/niraj/.config/wezterm/config/appearance.lua",
 				"/home/niraj/.config/wezterm/config/domains.lua",
 				"/home/niraj/.config/wezterm/config/bindings.lua",
-				"/home/niraj/.config/wezterm/config/launch.lua",
-				"/home/niraj/.config/wezterm/config/init.lua",
-				"/home/niraj/.config/wezterm/config/general.lua"
+				"/home/niraj/.config/wezterm/config/launch.lua"
 			],
 			"find":
 			{
@@ -529,10 +529,23 @@
 						"buffer_size": 4500,
 						"encoding": "UTF-8",
 						"line_ending": "Unix"
-					},
-					"undo_stack":
-					[
-					]
+					}
+				},
+				{
+					"file": "/home/niraj/ghostty/dist/linux/app.desktop",
+					"settings":
+					{
+						"buffer_size": 320,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/niraj/ghostty/dist/linux/ghostty_dolphin.desktop",
+					"settings":
+					{
+						"buffer_size": 257,
+						"line_ending": "Unix"
+					}
 				}
 			],
 			"build_system": "",
@@ -848,14 +861,13 @@
 								"translation.y": 0.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 1,
+							"stack_index": 3,
 							"stack_multiselect": false,
 							"type": "text"
 						},
 						{
 							"buffer": 1,
 							"file": "/home/niraj/.config/nvim-bak/lua/plugins/ui/lualine.lua",
-							"selected": true,
 							"semi_transient": false,
 							"settings":
 							{
@@ -875,6 +887,65 @@
 									"syntax": "Packages/Lua/Lua.sublime-syntax",
 									"tab_size": 2,
 									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 226.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 2,
+							"stack_multiselect": false,
+							"type": "text"
+						},
+						{
+							"buffer": 2,
+							"file": "/home/niraj/ghostty/dist/linux/app.desktop",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 320,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Text/Plain text.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 1,
+							"stack_multiselect": false,
+							"type": "text"
+						},
+						{
+							"buffer": 3,
+							"file": "/home/niraj/ghostty/dist/linux/ghostty_dolphin.desktop",
+							"selected": true,
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 257,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Text/Plain text.tmLanguage"
 								},
 								"translation.x": 0.0,
 								"translation.y": 0.0,

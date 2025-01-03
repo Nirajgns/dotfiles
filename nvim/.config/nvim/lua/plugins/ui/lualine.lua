@@ -46,14 +46,15 @@ return {
             -- Get attached LSP servers
             local clients = vim.lsp.get_clients({ bufnr = vim.api.nvim_get_current_buf() })
             if next(clients) == nil then
-              return ""
+              return " "
             end
-            return table.concat(
-              vim.tbl_map(function(c)
-                return c.name
-              end, clients),
-              ", "
-            )
+            return "  "
+              .. table.concat(
+                vim.tbl_map(function(c)
+                  return c.name
+                end, clients),
+                ", "
+              )
           end,
           {
             function()

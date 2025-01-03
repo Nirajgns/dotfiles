@@ -77,7 +77,12 @@ return {
         "<cmd>Lspsaga goto_type_definition<cr>",
         { desc = "go to type definition", silent = true }
       ),
-      vim.keymap.set("n", "<leader>ca", "<cmd>Lspsaga code_action<cr>", { desc = "code actions", silent = true }),
+      vim.keymap.set(
+        { "n", "v", "x" },
+        "<leader>ca",
+        "<cmd>Lspsaga code_action<cr>",
+        { desc = "code actions", silent = true }
+      ),
 
       vim.keymap.set("n", "<leader>cr", "<cmd>Lspsaga rename mode=n<cr>", { desc = "Rename with lsp", silent = true }),
       vim.keymap.set("n", "<leader>lO", "<cmd>Lspsaga outline<cr>", { desc = "Outline", silent = true }),

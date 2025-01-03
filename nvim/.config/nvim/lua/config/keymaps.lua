@@ -45,3 +45,5 @@ map("v", "<C-S-v>", '"+P', { silent = true, desc = "paste in visual mode" })
 map("i", "<C-v>", "<C-R>+", { silent = true, desc = "paste in insert mode" })
 
 map("n", "<leader>lS", "<cmd>LspRestart<cr>", { desc = "Force lsp restart" })
+
+map("n", "<leader>qo", "<cmd>source $MYVIMRC<cr>", { desc = "source nvim config" })
