@@ -153,6 +153,7 @@ return {
           handlers = {},
           ensure_installed = {
             "js-debug-adapter",
+            -- "js@v1.76.1",
           },
         })
       end,

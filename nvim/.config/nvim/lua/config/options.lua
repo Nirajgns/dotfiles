@@ -56,7 +56,7 @@ opt.foldlevel = 20
 vim.o.foldmethod = "expr" --"indent"
 vim.o.foldexpr = "nvim_treesitter#foldexpr()"
 vim.wo.foldtext =
-  [[substitute(getline(v:foldstart), '\\t', repeat(' ', &tabstop), 'g') .'       ...        --->' .'           ' . (v:foldend - v:foldstart + 1) . ' lines folded!']]
+  [[substitute(getline(v:foldstart), '\\t', repeat(' ', &tabstop), 'g') .'     ...' . substitute(getline(v:foldend), '\\t', repeat(' ', &tabstop), 'g') . '         ====>>>    ' . (v:foldend - v:foldstart + 1) . ' lines folded!']]
 vim.wo.fillchars = "fold:\\"
 
 -- vim.wo.foldnestmax = 3

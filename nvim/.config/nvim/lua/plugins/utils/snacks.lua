@@ -18,10 +18,10 @@ return {
     terminal = {
       win = {
         style = "float",
-        relative = "editor",
-        border = "rounded",
-        width = 0.9,
-        height = 0.9,
+        -- relative = "editor",
+        -- border = "rounded",
+        -- width = 0.9,
+        -- height = 0.9,
       },
     },
     dim = {

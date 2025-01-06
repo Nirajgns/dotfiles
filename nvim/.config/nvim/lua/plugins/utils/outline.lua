@@ -9,7 +9,7 @@ return {
       outline_window = {
         auto_jump = true,
         jump_highlight_duration = false,
-        width = 45,
+        width = 50,
         auto_close = false,
         relative_width = false,
         show_cursorline = true,

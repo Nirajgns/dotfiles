@@ -27,7 +27,8 @@ return {
           { action = 'lua LazyVim.pick.config_files()()',              desc = " Config",          icon = " ", key = "c" },
           { action = "LazyExtras",                                     desc = " Lazy Extras",     icon = " ", key = "x" },
           { action = "Lazy",                                           desc = " Lazy",            icon = "󰒲 ", key = "l" },
-          { action = "Mason",                                          desc = " Mason",           icon = "󰏗 ", key = "m" },
+          -- { action = "Mason",                                          desc = " Mason",           icon = "󰏗 ", key = "m" },
+          {action=function() require("persistence").select() end,      desc="Sessions",     icon="💾 ",   key="s"},
           { action = function() vim.api.nvim_input("<cmd>qa<cr>") end, desc = " Quit",            icon = " ", key = "q" },
         },
         packages = { enable = false },
@@ -36,7 +37,9 @@ return {
           limit = 9,
           action = function()
             require("persistence").load()
-            vim.cmd("Neotree show")
+            vim.defer_fn(function()
+              vim.cmd("Neotree show")
+            end, 250)
           end,
         },
         mru = { limit = 8, cwd_only = false },
