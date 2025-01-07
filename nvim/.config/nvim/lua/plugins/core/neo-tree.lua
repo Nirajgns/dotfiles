@@ -19,7 +19,28 @@ return {
         last_indent_marker = "╰",
       },
     },
-
+    filesystem = {
+      commands = {
+        -- Override delete to use trash instead of rm
+        delete = function(state)
+          local inputs = require("neo-tree.ui.inputs")
+          local node = state.tree:get_node()
+          local path = node.path
+          local pretty_path = vim.fn.fnamemodify(path, ":.") -- Convert to relative path from cwd
+          local msg = "Delete " .. pretty_path .. " ?"
+          inputs.confirm(msg, function(confirmed)
+            if not confirmed then
+              return
+            end
+            vim.fn.system({
+              "trash",
+              vim.fn.fnameescape(path),
+            })
+            require("neo-tree.sources.manager").refresh(state.name)
+          end)
+        end,
+      },
+    },
     window = {
       width = 35,
       popup = { -- settings that apply to float position only

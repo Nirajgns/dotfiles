@@ -17,6 +17,7 @@ require("lazy").setup({
     -- { import = "lazyvim.plugins.extras.coding.blink" },
     { import = "lazyvim.plugins.extras.editor.telescope" },
 
+    { import = "lazyvim.plugins.extras.coding.nvim-cmp" },
     { import = "plugins.core" },
     { import = "plugins" },
     { import = "plugins.languages" },

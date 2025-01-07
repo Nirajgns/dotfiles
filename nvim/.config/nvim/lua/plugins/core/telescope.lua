@@ -2,12 +2,22 @@ return {
   "nvim-telescope/telescope.nvim",
   lazy = true,
   cmd = "Telescope",
-  dependencies = { "debugloop/telescope-undo.nvim" },
+  dependencies = {
+    "debugloop/telescope-undo.nvim",
+    keys = {
+      { -- lazy style key map
+        "<leader>uu",
+        "<cmd>Telescope undo<cr>",
+        desc = "undo history",
+      },
+    },
+  },
   opts = function()
     require("telescope").setup({
       extensions = {
         undo = {
           -- telescope-undo.nvim config, see below
+          side_by_side = true,
         },
       },
       defaults = {
