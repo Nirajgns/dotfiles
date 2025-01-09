@@ -3,7 +3,7 @@
 -- Add any additional options here
 local opt = vim.opt
 
-opt.scrolloff = 5
+opt.scrolloff = 7
 
 -- Line Numbers
 opt.relativenumber = true

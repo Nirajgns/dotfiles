@@ -25,6 +25,6 @@ return {
       },
     },
     --leave highlights table empty so that error buffers arent red
-    highlights = {},
+    -- highlights = {},
   },
 }

@@ -1,7 +1,7 @@
 return {
   "rose-pine/neovim",
   name = "rose-pine",
-  -- enabled = false,
+  enabled = false,
   opts = {
     highlight_groups = {
       TelescopeBorder = { fg = "overlay", bg = "overlay" },
@@ -16,9 +16,6 @@ return {
 
       TelescopePromptNormal = { fg = "text", bg = "surface" },
       TelescopePromptBorder = { fg = "surface", bg = "surface" },
-
-      Comment = { fg = "subtle" },
-      VertSplit = { fg = "surface", bg = "surface" },
     },
   },
 }

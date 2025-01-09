@@ -9,6 +9,7 @@ return {
           enabled = true,
           style = "nvchad",
         },
+        blink_cmp = true,
       },
       color_overrides = {
         mocha = { base = "#11111b", mantle = "#12121c", crust = "#19191f" },

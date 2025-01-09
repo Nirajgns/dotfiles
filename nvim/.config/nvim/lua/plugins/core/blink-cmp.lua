@@ -26,6 +26,11 @@ return {
         cmdline = { enabled = false },
       },
       completion = {
+        list = {
+          selection = {
+            auto_insert = false,
+          },
+        },
         accept = {
           auto_brackets = { enabled = true },
         },

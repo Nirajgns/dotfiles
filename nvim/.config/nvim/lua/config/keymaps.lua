@@ -7,6 +7,8 @@ map("t", "jk", "<C-\\><C-n>", { noremap = true, silent = true })
 map("t", "<esc>", "<C-\\><C-n>", { noremap = true, silent = true })
 
 -- Terminal mode window navigation
+
+vim.api.nvim_set_keymap("n", "<c-q>", "<cmd>lua Snacks.bufdelete()<cr>", { desc = "delete buffer" })
 vim.api.nvim_set_keymap("t", "<C-h>", "<C-\\><C-n><C-w>h", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("t", "<C-j>", "<C-\\><C-n><C-w>j", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("t", "<C-k>", "<C-\\><C-n><C-w>k", { noremap = true, silent = true })
