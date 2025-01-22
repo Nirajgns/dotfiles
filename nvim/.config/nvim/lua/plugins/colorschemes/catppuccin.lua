@@ -9,6 +9,7 @@ return {
           enabled = true,
           style = "nvchad",
         },
+        snacks = true,
         blink_cmp = true,
       },
       color_overrides = {

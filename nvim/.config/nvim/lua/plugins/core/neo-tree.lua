@@ -11,7 +11,7 @@ return {
     popup_border_style = "rounded",
     default_component_configs = {
       indent = {
-        padding = 0,
+        padding = 1,
         with_markers = false,
         indent_marker = "│",
         expander_collapsed = "▶",
@@ -24,7 +24,7 @@ return {
         --over ride delete visual to use trash instead of rm
         delete_visual = function(state, selected_nodes)
           local inputs = require("neo-tree.ui.inputs")
-          local msg = "Are you sure you want to trash " .. #selected_nodes .. " files ?"
+          local msg = "Trash " .. #selected_nodes .. " itmes ?"
 
           inputs.confirm(msg, function(confirmed)
             if not confirmed then
@@ -37,13 +37,14 @@ return {
             require("neo-tree.sources.manager").refresh(state.name)
           end)
         end,
+
         -- Override delete to use trash instead of rm
         delete = function(state)
           local inputs = require("neo-tree.ui.inputs")
           local node = state.tree:get_node()
           local path = node.path
           local pretty_path = vim.fn.fnamemodify(path, ":.") -- Convert to relative path from cwd
-          local msg = "Delete " .. pretty_path .. " ?"
+          local msg = "Trash " .. pretty_path .. " ?"
           inputs.confirm(msg, function(confirmed)
             if not confirmed then
               return
