@@ -4,6 +4,10 @@ return {
   event = function()
     return { "BufReadPost", "BufWritePost", "BufNewFile" }
   end,
+  keys = {
+    { "s", mode = { "n", "x", "o" }, false },
+    { "S", mode = { "n", "x", "o" }, false },
+  },
   config = function()
     require("flash").setup({
       labels = "asdfghjklqwertyuiopzxcvbnm",
