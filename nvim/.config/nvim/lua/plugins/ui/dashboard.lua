@@ -24,7 +24,8 @@ return {
         header = vim.split(logo, "\n"),
         -- stylua: ignore
         shortcut = {
-          { action = 'lua LazyVim.pick.config_files()()',              desc = " Config",          icon = " ", key = "c" },
+
+          { action = 'lua Snacks.picker.files({ cwd = vim.fn.stdpath("config") })',              desc = " Config",          icon = " ", key = "c" },
           { action = "LazyExtras",                                     desc = " Lazy Extras",     icon = " ", key = "x" },
           { action = "Lazy",                                           desc = " Lazy",            icon = "󰒲 ", key = "l" },
           -- { action = "Mason",                                          desc = " Mason",           icon = "󰏗 ", key = "m" },
