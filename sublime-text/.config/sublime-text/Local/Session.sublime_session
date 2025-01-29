@@ -1,6 +1,8 @@
 {
 	"file_history":
 	[
+		"/home/niraj/.config/ghostty/config",
+		"/home/niraj/.sudo_as_admin_successful",
 		"/home/niraj/Desktop/Approutes.tsx",
 		"/home/niraj/Desktop/main.tsx",
 		"/home/niraj/t.txt",
@@ -126,9 +128,7 @@
 		"/home/niraj/Downloads/ts-ecom-api-master/.env",
 		"/home/niraj/.ssh/config",
 		"/home/niraj/Desktop/nvim/lua/plugins/dap.lua",
-		"/home/niraj/Desktop/emergency.txt",
-		"/home/niraj/.config/kanata/config.kbd",
-		"/home/niraj/.openai_key.zsh"
+		"/home/niraj/Desktop/emergency.txt"
 	],
 	"folder_history":
 	[
@@ -145,14 +145,14 @@
 		"/home/niraj/Desktop/Projects/todo_app",
 		"/home/niraj/Desktop/Projects/Nomad-backend-master"
 	],
-	"last_version": 4189,
+	"last_version": 4192,
 	"last_window_id": 37,
 	"log_indexing": false,
-	"next_update_check": 1736309044,
+	"next_update_check": 1737951506,
 	"settings":
 	{
 		"new_window_full_screen": false,
-		"new_window_height": 917.0,
+		"new_window_height": 0.0,
 		"new_window_maximized": true,
 		"new_window_position":
 		[
@@ -275,6 +275,7 @@
 			},
 			"file_history":
 			[
+				"/home/niraj/.config/ghostty/config",
 				"/home/niraj/.sudo_as_admin_successful",
 				"/home/niraj/Desktop/Approutes.tsx",
 				"/home/niraj/Desktop/main.tsx",
@@ -401,8 +402,7 @@
 				"/home/niraj/Desktop/nvim/lua/plugins/persistance.lua",
 				"/home/niraj/.config/nvim/lua/mappings.lua",
 				"/home/niraj/.config/nvim/lua/options.lua",
-				"/home/niraj/Desktop/Projects/flutter/rohit semriwal ecommerce/ecommerce-frontend/lib/core/ui.dart",
-				"/mnt/sdb3/Watch/Furiosa A Mad Max Saga (2024) [1080p] [WEBRip] [5.1] [YTS.MX]/Furiosa.A.Mad.Max.Saga.2024.1080p.WEBRip.x264.AAC5.1-[YTS.MX].srt"
+				"/home/niraj/Desktop/Projects/flutter/rohit semriwal ecommerce/ecommerce-frontend/lib/core/ui.dart"
 			],
 			"find":
 			{
@@ -501,7 +501,7 @@
 			{
 			}
 		},
-		"new_window_width": 1717.0
+		"new_window_width": 0.0
 	},
 	"windows":
 	[
@@ -514,14 +514,6 @@
 			},
 			"buffers":
 			[
-				{
-					"file": "/home/niraj/.sudo_as_admin_successful",
-					"settings":
-					{
-						"buffer_size": 0,
-						"line_ending": "Unix"
-					}
-				}
 			],
 			"build_system": "",
 			"build_system_choices":
@@ -636,6 +628,8 @@
 			],
 			"file_history":
 			[
+				"/home/niraj/.config/ghostty/config",
+				"/home/niraj/.sudo_as_admin_successful",
 				"/home/niraj/Desktop/Approutes.tsx",
 				"/home/niraj/Desktop/main.tsx",
 				"/home/niraj/t.txt",
@@ -761,9 +755,7 @@
 				"/home/niraj/Desktop/nvim/lua/plugins/persistance.lua",
 				"/home/niraj/.config/nvim/lua/mappings.lua",
 				"/home/niraj/.config/nvim/lua/options.lua",
-				"/home/niraj/Desktop/Projects/flutter/rohit semriwal ecommerce/ecommerce-frontend/lib/core/ui.dart",
-				"/mnt/sdb3/Watch/Furiosa A Mad Max Saga (2024) [1080p] [WEBRip] [5.1] [YTS.MX]/Furiosa.A.Mad.Max.Saga.2024.1080p.WEBRip.x264.AAC5.1-[YTS.MX].srt",
-				"/home/niraj/.config/neovide/config.toml"
+				"/home/niraj/Desktop/Projects/flutter/rohit semriwal ecommerce/ecommerce-frontend/lib/core/ui.dart"
 			],
 			"find":
 			{
@@ -809,36 +801,6 @@
 				{
 					"sheets":
 					[
-						{
-							"buffer": 0,
-							"file": "/home/niraj/.sudo_as_admin_successful",
-							"selected": true,
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 0,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										0,
-										0
-									]
-								],
-								"settings":
-								{
-									"syntax": "Packages/Text/Plain text.tmLanguage"
-								},
-								"translation.x": 0.0,
-								"translation.y": 0.0,
-								"zoom_level": 1.0
-							},
-							"stack_index": 0,
-							"stack_multiselect": false,
-							"type": "text"
-						}
 					]
 				}
 			],

@@ -10,7 +10,7 @@ return {
     {
       "<leader>rr",
       function()
-        require("telescope").extensions.refactoring.refactors()
+        require("refactoring").select_refactor()
       end,
       mode = { "n", "v", "x" },
       desc = "refactorings",
@@ -115,12 +115,12 @@ return {
     show_success_message = true, -- shows a message with information about the refactor on success
     -- i.e. [Refactor] Inlined 3 variable occurrences
   },
-  config = function(_, opts)
-    require("refactoring").setup(opts)
-    if LazyVim.has("telescope.nvim") then
-      LazyVim.on_load("telescope.nvim", function()
-        require("telescope").load_extension("refactoring")
-      end)
-    end
-  end,
+  -- config = function(_, opts)
+  --   require("refactoring").setup(opts)
+  --   if LazyVim.has("telescope.nvim") then
+  --     LazyVim.on_load("telescope.nvim", function()
+  --       require("telescope").load_extension("refactoring")
+  --     end)
+  --   end
+  -- end,
 }

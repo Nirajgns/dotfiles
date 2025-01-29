@@ -275,14 +275,16 @@ return {
     zen = { enabled = false },
     animate = { enabled = false },
     indent = {
-      enabled = false,
-      char = "",
-      only_scope = true,
-      only_current = true,
-      hl = "SnacksIndent",
-
-      chunk = { enabled = true },
-      scope = { enabled = false },
+      indent = { enabled = false },
+      chunk = {
+        enabled = true,
+        char = {
+          horizontal = " ",
+          corner_top = "╭",
+          corner_bottom = "╰",
+          arrow = " ",
+        },
+      },
     },
     terminal = {
       win = {
@@ -291,6 +293,16 @@ return {
         -- border = "rounded",
         -- width = 0.9,
         -- height = 0.9,
+      },
+    },
+    picker = {
+      ui_select = true,
+      icons = {
+        indent = {
+          vertical = "│ ",
+          middle = "├╴",
+          last = "╰-",
+        },
       },
     },
     dim = {
