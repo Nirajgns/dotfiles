@@ -6,4 +6,5 @@ return {
   { "echasnovski/mini.icons", version = "*", enabled = false },
   { "rcarriga/nvim-notify", enabled = false },
   { "ibhagwan/fzf-lua", enabled = false },
+  { "lewis6991/gitsigns.nvim", enabled = false },
 }
