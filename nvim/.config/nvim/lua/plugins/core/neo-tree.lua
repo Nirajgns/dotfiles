@@ -12,10 +12,10 @@ return {
     default_component_configs = {
       indent = {
         padding = 1,
-        with_markers = false,
+        -- with_markers = false,
         indent_marker = "│",
-        expander_collapsed = "▶",
-        expander_expanded = "◢",
+        expander_collapsed = "│", --"▶",
+        expander_expanded = "│", --"◢",
         last_indent_marker = "╰",
       },
     },

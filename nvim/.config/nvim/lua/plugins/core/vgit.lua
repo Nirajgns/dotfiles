@@ -23,6 +23,12 @@ return {
       },
 
       settings = {
+        scene = {
+          diff_preference = "unified", -- unified or split
+          keymaps = {
+            quit = "q",
+          },
+        },
         live_blame = {
           enabled = true,
           format = function(blame, git_config)
@@ -67,7 +73,7 @@ return {
             end
 
             local padding = math.max(0, available_space - blame_text_width)
-            return string.rep(" ", padding - 10) .. blame_text
+            return string.rep(" ", padding - 15) .. blame_text
           end,
         },
       },

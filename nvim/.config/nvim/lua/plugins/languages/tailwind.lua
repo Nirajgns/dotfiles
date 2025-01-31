@@ -20,7 +20,17 @@ return {
     keys = {
       {
         "<leader>tw",
-        "<cmd>TailwindSortOnSaveToggle<cr>",
+        function()
+          _G.isSorterEnabled = not _G.isSorterEnabled
+
+          if isSorterEnabled then
+            vim.cmd("TailwindSortOnSaveToggle")
+            vim.cmd("echo 'Tailwind-sorter ENABLED.'")
+          else
+            vim.cmd("TailwindSortOnSaveToggle")
+            vim.cmd("echo 'Tailwind-sorter DISABLED.'")
+          end
+        end,
         desc = "Toggle Tailwind Sorter",
       },
     },

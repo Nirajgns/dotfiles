@@ -279,18 +279,21 @@ return {
       chunk = {
         enabled = true,
         char = {
-          horizontal = " ",
+          horizontal = "-",
           corner_top = "╭",
           corner_bottom = "╰",
-          arrow = " ",
+          arrow = "-",
         },
       },
     },
     terminal = {
       win = {
+        wo = {
+          winbar = "",
+        },
         style = "float",
         -- relative = "editor",
-        -- border = "rounded",
+        border = "rounded",
         -- width = 0.9,
         -- height = 0.9,
       },
@@ -323,7 +326,51 @@ return {
         return vim.g.snacks_dim ~= false and vim.b[buf].snacks_dim ~= false and vim.bo[buf].buftype == ""
       end,
     },
-    dashboard = { enabled = false },
+    dashboard = {
+      enabled = false,
+      preset = {
+        header = string.rep("\n", 1)
+          .. [[                                                                       
+                                                                           
+             ████ ██████           █████      ██                     
+            ███████████             █████                             
+            █████████ ███████████████████ ███   ███████████   
+           █████████  ███    █████████████ █████ ██████████████   
+          █████████ ██████████ █████████ █████ █████ ████ █████   
+        ███████████ ███    ███ █████████ █████ █████ ████ █████  
+       ██████  █████████████████████ ████ █████ █████ ████ ██████ 
+                                                                             ]]
+          .. "\n",
+      },
+      sections = {
+        { section = "header", pane = 2 },
+        {
+          pane = 1,
+          section = "terminal",
+          cmd = "colorscript -e square && colorscript -e square",
+          height = 10,
+          padding = 1,
+        },
+        { section = "keys", gap = 0, padding = 1, pane = 2 },
+        { pane = 1, icon = " ", title = "Recent Files", section = "recent_files", indent = 2, padding = 1 },
+        { pane = 1, icon = " ", title = "Projects", section = "projects", indent = 2, padding = 1 },
+        {
+          pane = 1,
+          icon = " ",
+          title = "Git Status",
+          section = "terminal",
+          enabled = function()
+            return Snacks.git.get_root() ~= nil
+          end,
+          cmd = "git status --short --branch --renames",
+          height = 5,
+          padding = 1,
+          ttl = 5 * 60,
+          indent = 3,
+        },
+        { section = "startup" },
+      },
+    },
     notifier = { top_down = false, wo = { winblend = 1000 } },
   },
 }
