@@ -15,7 +15,7 @@ return {
         -- with_markers = false,
         indent_marker = "│",
         expander_collapsed = "│", --"▶",
-        expander_expanded = "│", --"◢",
+        expander_expanded = "├", --"◢",
         last_indent_marker = "╰",
       },
     },
