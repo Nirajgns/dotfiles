@@ -33,29 +33,30 @@ return {
           enabled = true,
           format = function(blame, git_config)
             local author = (git_config["user.name"] == blame.author) and "You" or blame.author
-            local time = os.difftime(os.time(), blame.author_time) / (60 * 60 * 24 * 30 * 12)
+            local time = os.difftime(os.time(), blame.author_time)
             local time_divisions = {
-              { 1, "years" },
-              { 12, "months" },
-              { 30, "days" },
-              { 24, "hours" },
+              { 60 * 60 * 24 * 30 * 12, "years" },
+              { 60 * 60 * 24 * 30, "months" },
+              { 60 * 60 * 24, "days" },
+              { 60 * 60, "hours" },
               { 60, "minutes" },
-              { 60, "seconds" },
+              { 1, "seconds" },
             }
 
             local counter, time_division, time_postfix = 1, time_divisions[1], time_divisions[1][2]
-            while time < 1 and counter < #time_divisions do
-              time_division, time_postfix = time_divisions[counter], time_divisions[counter][2]
-              time = time * time_division[1]
+            while time < time_division[1] and counter < #time_divisions do
               counter = counter + 1
+              time_division, time_postfix = time_divisions[counter], time_divisions[counter][2]
             end
+            time = time / time_division[1]
 
             local commit_message = blame.committed and blame.commit_message or "Uncommitted changes"
             if not blame.committed then
               author = "You"
             end
 
-            local blame_text = string.format("%s, %s • %s", author, math.floor(time + 0.5), commit_message)
+            local blame_text =
+              string.format("%s, %s %s ago • %s", author, math.floor(time + 0.5), time_postfix, commit_message)
 
             local win_width = vim.api.nvim_win_get_width(0)
             local cursor_line = vim.api.nvim_win_get_cursor(0)[1] - 1
