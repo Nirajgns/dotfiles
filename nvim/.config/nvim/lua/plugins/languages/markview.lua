@@ -1,14 +1,15 @@
 return {
   "OXY2DEV/markview.nvim",
   lazy = true,
-  ft = { "md", "markdown", ".md" },
+  ft = { "md", "markdown", ".md", "avante", "copilot-chat" },
   dependencies = {
     "nvim-treesitter/nvim-treesitter",
   },
   config = function()
     require("markview").setup({
       preview = {
-        hybrid_modes = { "n" },
+        enable = true,
+        filetypes = { "markdown", "Avante" },
       },
       markdown = {
         headings = {

@@ -1,6 +1,7 @@
 return {
   {
     "CopilotC-Nvim/CopilotChat.nvim",
+    enabled = false,
     cmd = { "CopilotChat", "CopilotChatExplain", "CopilotChatExplainLong", "CopilotChatFix", "CopilotChatToggle" },
     keys = {
       { mode = { "v", "n" }, "<leader>ac", ":CopilotChat<cr>", desc = "Copilot Review", silent = true },
@@ -11,7 +12,9 @@ return {
       { mode = { "v" }, "<leader>aa", ":CopilotChat<cr>", desc = "Copilot chat toggle", silent = true },
       { mode = { "v", "n" }, "<leader>ao", ":CopilotChatOptimize<cr>", desc = "Copilot optimize", silent = true },
       { mode = { "v", "n" }, "<leader>at", ":CopilotChatTests<cr>", desc = "Copilot generate tests", silent = true },
+      { mode = { "v", "n" }, "<leader>af", ":CopilotChatFix<cr>", desc = "Copilot fix", silent = true },
       {
+        mode = { "n", "v" },
         "<leader>ap",
         function()
           local actions = require("CopilotChat.actions")

@@ -5,21 +5,36 @@ return {
   config = function()
     require("vgit").setup({
       keymaps = {
-        ["n [h"] = function()
-          require("vgit").hunk_up()
-        end,
-        ["n ]h"] = function()
-          require("vgit").hunk_down()
-        end,
-        ["n <leader>uG"] = function()
-          require("vgit").toggle_live_blame()
-        end,
-        ["n <leader>gD"] = function()
-          require("vgit").project_diff_preview()
-        end,
-        ["n <leader>gb"] = function()
-          require("vgit").buffer_blame_preview()
-        end,
+        {
+          mode = "n",
+          key = "[h",
+          handler = "hunk_up",
+          desc = "Go up in the direction of the hunk",
+        },
+        {
+          mode = "n",
+          key = "]h",
+          handler = "hunk_down",
+          desc = "Go down in the direction of the hunk",
+        },
+        {
+          mode = "n",
+          key = "<leader>uG",
+          handler = "toggle_live_blame",
+          desc = "Toggle live blame",
+        },
+        {
+          mode = "n",
+          key = "<leader>gD",
+          handler = "project_diff_preview",
+          desc = "Show project diff preview",
+        },
+        {
+          mode = "n",
+          key = "<leader>gb",
+          handler = "buffer_blame_preview",
+          desc = "Show buffer blame preview",
+        },
       },
 
       settings = {
