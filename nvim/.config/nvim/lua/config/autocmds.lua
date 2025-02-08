@@ -86,10 +86,10 @@ ResetGuiFont()
 
 --NOTE: Keymaps for adjusting neovide fontsize
 vim.keymap.set({ "n", "i" }, "<C-+>", function()
-  ResizeGuiFont(0.2)
+  ResizeGuiFont(0.5)
 end, { desc = "increase font size" })
 vim.keymap.set({ "n", "i" }, "<C-->", function()
-  ResizeGuiFont(-0.2)
+  ResizeGuiFont(-0.5)
 end, { desc = "decrease font size" })
 vim.keymap.set({ "n", "i" }, "<C-=>", function()
   ResetGuiFont()

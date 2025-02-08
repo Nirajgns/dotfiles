@@ -6,9 +6,10 @@ return {
     spec = {
       {
         mode = { "n", "v" },
-        { "<leader>a", group = "Copilot AI" },
+        { "<leader>a", group = "AI" },
         { "<leader>t", group = "Tasks (Overseer)" },
         { "<leader>l", group = "LAZY and LSP)" },
+        { "<leader>r", group = "Refactoring" },
       },
     },
     layout = {

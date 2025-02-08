@@ -1,10 +1,10 @@
 return {
   {
     "CopilotC-Nvim/CopilotChat.nvim",
-    enabled = false,
+    -- enabled = false,
     cmd = { "CopilotChat", "CopilotChatExplain", "CopilotChatExplainLong", "CopilotChatFix", "CopilotChatToggle" },
     keys = {
-      { mode = { "v", "n" }, "<leader>ac", ":CopilotChat<cr>", desc = "Copilot Review", silent = true },
+      { mode = { "v", "n" }, "<leader>ac", ":CopilotChat<cr>", desc = "Copilot Chat", silent = true },
       { mode = { "v", "n" }, "<leader>ar", ":CopilotChatReview<cr>", desc = "Copilot Review", silent = true },
       { mode = { "v", "n" }, "<leader>ae", ":CopilotChatExplain<cr>", desc = "Explain", silent = true },
       { mode = { "v", "n" }, "<leader>aE", ":CopilotChatExplainLong<cr>", desc = "Explain long", silent = true },
@@ -25,15 +25,12 @@ return {
         desc = "CopilotChat - Prompt actions",
       },
     },
-    dependencies = {
-      { "zbirenbaum/copilot.lua" },
-    },
     build = "make tiktoken", -- Only on MacOS or Linux
     config = function()
       require("CopilotChat").setup({
-        question_header = "##    USER",
-        answer_header = "##     COPILOT",
-        error_header = "##     ERROR",
+        question_header = "  ME: ",
+        answer_header = "  COPILOT: ",
+        error_header = "  ERROR: ",
         chat_autocomplete = true,
         separator = "", -- Separator to use in chat
         window = {

@@ -3,6 +3,12 @@ return {
   event = "LazyFile",
   opts = {
     options = {
+      hover = {
+        enabled = true,
+        delay = 200,
+        reveal = { "close" },
+      },
+
       buffer_close_icon = " ",
       -- indicator = {
       --   style = "underline",
@@ -22,9 +28,16 @@ return {
           text_align = "center",
           separator = true, -- use a separator between bufferline and dap-ui
         },
+        {
+          filetype = "dapui_scopes", -- or "dapui_stacks", "dapui_scopes", "dapui_breakpoints", etc.
+          text = "Debugger UI",
+          highlight = "Directory",
+          text_align = "center",
+          separator = true, -- use a separator between bufferline and dap-ui
+        },
       },
     },
     --leave highlights table empty so that error buffers arent red
-    -- highlights = {},
+    highlights = {},
   },
 }

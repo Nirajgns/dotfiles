@@ -1,6 +1,5 @@
 return {
   "monkoose/neocodeium",
-  enabled = false,
   event = "InsertEnter",
   -- enabled = false,
   config = function()

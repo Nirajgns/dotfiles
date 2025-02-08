@@ -7,7 +7,7 @@ local js_based_languages = {
 }
 return {
   "mfussenegger/nvim-dap",
-
+  enabled = false,
   config = function()
     local dap = require("dap")
     for _, language in ipairs(js_based_languages) do
