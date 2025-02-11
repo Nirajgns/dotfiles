@@ -1,5 +1,9 @@
 return {
   "folke/snacks.nvim",
+  dependencies = {
+    "nvim-tree/nvim-web-devicons",
+    -- "3rd/image.nvim",  --requires luarocks
+  },
   keys = {
     {
       "<leader>,",

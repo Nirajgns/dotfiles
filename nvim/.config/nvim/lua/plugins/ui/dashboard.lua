@@ -39,6 +39,7 @@ return {
           action = function()
             require("persistence").load()
             vim.defer_fn(function()
+              -- Snacks.explorer.reveal()
               vim.cmd("Neotree show")
             end, 250)
           end,

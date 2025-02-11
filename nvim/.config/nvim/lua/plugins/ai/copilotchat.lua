@@ -1,7 +1,15 @@
+vim.api.nvim_create_autocmd("BufEnter", {
+  pattern = "copilot-*",
+  callback = function()
+    vim.opt_local.relativenumber = false
+    vim.opt_local.number = false
+  end,
+})
+
 return {
   {
     "CopilotC-Nvim/CopilotChat.nvim",
-    -- enabled = false,
+    enabled = false,
     cmd = { "CopilotChat", "CopilotChatExplain", "CopilotChatExplainLong", "CopilotChatFix", "CopilotChatToggle" },
     keys = {
       { mode = { "v", "n" }, "<leader>ac", ":CopilotChat<cr>", desc = "Copilot Chat", silent = true },
@@ -39,7 +47,7 @@ return {
           -- width = 0.6,
           layout = "vertical",
           relative = "editor",
-          width = 0.33,
+          width = 0.28,
           height = 0.4,
           row = 1,
         },
