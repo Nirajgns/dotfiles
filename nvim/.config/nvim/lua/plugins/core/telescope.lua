@@ -20,10 +20,10 @@ return {
     })
   end,
 
-  vim.keymap.set(
-    "n",
-    "<leader>'",
-    "<cmd>Telescope marks<cr>",
-    { noremap = true, silent = true, desc = "marks with telescope" }
-  ),
+  -- vim.keymap.set(
+  --   "n",
+  --   "<leader>'",
+  --   "<cmd>Telescope marks<cr>",
+  --   { noremap = true, silent = true, desc = "marks with telescope" }
+  -- ),
 }

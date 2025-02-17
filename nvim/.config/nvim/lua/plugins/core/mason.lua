@@ -16,6 +16,7 @@ return {
       "isort",
       "flake8",
       "eslint-lsp",
+      "emmet-language-server",
     },
   },
 }

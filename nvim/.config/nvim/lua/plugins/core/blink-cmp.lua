@@ -36,14 +36,12 @@ return {
   },
   opts = function()
     return {
-
+      cmdline = { enabled = true },
       snippets = {
         preset = "luasnip",
       },
       sources = {
         default = { "lsp", "path", "snippets", "buffer" },
-        -- optionally disable cmdline completions
-        cmdline = { enabled = false },
       },
       completion = {
         list = {
@@ -53,6 +51,7 @@ return {
         },
         accept = {
           auto_brackets = { enabled = true },
+          dot_repeat = false,
         },
         menu = {
           --disable auto_show in cmdline mode

@@ -8,12 +8,10 @@ return {
         delay = 200,
         reveal = { "close" },
       },
-
-      buffer_close_icon = " ",
-      -- indicator = {
-      --   style = "underline",
-      -- },
-      -- separator_style = "slope", --"slant" | "slope" | "thick" | "thin" | { 'any', 'any' },
+      vim.api.nvim_set_hl(0, "BufferClose", { fg = "#F38BA8" }), -- Red color
+      buffer_close_icon = "%#BufferClose#  ✘%#Normal#",
+      -- indicator = { style = "underline" },
+      -- separator_style = "slant", --"slant" | "slope" | "thick" | "thin" | { 'any', 'any' },
       offsets = {
         {
           filetype = "neo-tree",

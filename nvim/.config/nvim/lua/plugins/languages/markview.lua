@@ -1,13 +1,13 @@
 return {
   "OXY2DEV/markview.nvim",
-  ft = { "md", "markdown", ".md", "codecompanion" },
+  ft = { "md", "markdown", ".md" },
   dependencies = {
     "nvim-treesitter/nvim-treesitter",
   },
   opts = {
     preview = {
-      filetypes = { "markdown", "codecompanion" },
-      ignore_buftypes = {},
+      filetypes = { "markdown" },
+      ignore_buftypes = { "nofile" },
       hybrid_modes = { "i" },
     },
     markdown = {

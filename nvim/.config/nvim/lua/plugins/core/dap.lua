@@ -52,37 +52,6 @@ return {
         },
       }
     end
-
-    -- if not dap.adapters["pwa-chrome"] then
-    --   dap.adapters["pwa-chrome"] = {
-    --     type = "server",
-    --     host = "localhost",
-    --     port = "${port}",
-    --     executable = {
-    --       command = "node",
-    --       args = {
-    --         require("mason-registry").get_package("js-debug-adapter"):get_install_path()
-    --           .. "/js-debug/src/dapDebugServer.js",
-    --         "${port}",
-    --       },
-    --     },
-    --   }
-    -- end
-    -- for _, lang in ipairs({
-    --   "typescript",
-    --   "javascript",
-    --   "typescriptreact",
-    --   "javascriptreact",
-    -- }) do
-    --   dap.configurations[lang] = dap.configurations[lang] or {}
-    --   table.insert(dap.configurations[lang], {
-    --     type = "pwa-chrome",
-    --     request = "launch",
-    --     name = "Launch Chrome",
-    --     url = "http://localhost:5173",
-    --     sourceMaps = true,
-    --   })
-    -- end
     -- Set custom breakpoint icons
     local breakpoint_icons = {
       Breakpoint = "",
@@ -124,7 +93,7 @@ return {
     },
     { "<leader>dO", ":DapStepOut<cr>", desc = "Step Out", silent = true },
     { "<leader>db", ":DapToggleBreakpoint<cr>", desc = "Toggle Breakpoint", silent = true },
-    { "<leader>dc", ":DapContinue<cr>", desc = "Start/Continue", silent = true },
+    { "<leader>dc", ":DapContinue<cr>:Neotree close<cr>", desc = "Start/Continue", silent = true },
     {
       "<leader>dC",
       ":DapClearBreakpoints<cr>:echo 'Breakpoints cleared'<cr>",
@@ -184,7 +153,6 @@ return {
           handlers = {},
           ensure_installed = {
             "js-debug-adapter",
-            -- "js@v1.76.1",
           },
         })
       end,
@@ -195,27 +163,27 @@ return {
       build = "npm install --legacy-peer-deps --no-save && npx gulp vsDebugServerBundle && rm -rf out && mv dist out",
       version = "1.*",
     },
-    -- {
-    --   "mxsdev/nvim-dap-vscode-js",
-    --   config = function()
-    --     ---@diagnostic disable-next-line: missing-fields
-    --     require("dap-vscode-js").setup({
-    --
-    --       debugger_path = vim.fn.resolve(vim.fn.stdpath("data") .. "/lazy/vscode-js-debug"),
-    --
-    --       -- which adapters to register in nvim-dap
-    --       adapters = {
-    --         "chrome",
-    --         "pwa-node",
-    --         "pwa-chrome",
-    --         "pwa-msedge",
-    --         "pwa-extensionHost",
-    --         "node-terminal",
-    --         "chrome",
-    --       },
-    --     })
-    --   end,
-    -- },
+    {
+      "mxsdev/nvim-dap-vscode-js",
+      config = function()
+        ---@diagnostic disable-next-line: missing-fields
+        require("dap-vscode-js").setup({
+
+          debugger_path = vim.fn.resolve(vim.fn.stdpath("data") .. "/lazy/vscode-js-debug"),
+
+          -- which adapters to register in nvim-dap
+          adapters = {
+            "chrome",
+            "pwa-node",
+            "pwa-chrome",
+            "pwa-msedge",
+            "pwa-extensionHost",
+            "node-terminal",
+            "chrome",
+          },
+        })
+      end,
+    },
     {
       "Joakker/lua-json5",
       build = "./install.sh",

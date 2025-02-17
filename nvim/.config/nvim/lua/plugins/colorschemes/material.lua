@@ -45,7 +45,7 @@ return {
         "mini",
         "neogit",
         "neotest",
-        -- "neo-tree",
+        "neo-tree",
         "neorg",
         "noice",
         "nvim-cmp",

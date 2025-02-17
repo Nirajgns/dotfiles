@@ -1,6 +1,6 @@
 return {
   "olimorris/codecompanion.nvim",
-  -- enabled = false,
+  enabled = false,
   keys = {
     {
       "<leader>aa",

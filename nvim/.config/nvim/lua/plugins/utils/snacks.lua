@@ -228,6 +228,13 @@ return {
       desc = "Projects",
     },
     {
+      "<leader>'",
+      function()
+        Snacks.picker.marks()
+      end,
+      desc = "Marks Picker",
+    },
+    {
       "<leader>uu",
       function()
         Snacks.picker.undo()
