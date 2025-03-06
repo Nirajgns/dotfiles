@@ -36,7 +36,7 @@ return {
   },
   opts = function()
     return {
-      cmdline = { enabled = true },
+      cmdline = { enabled = false },
       snippets = {
         preset = "luasnip",
       },

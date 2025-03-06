@@ -12,24 +12,19 @@ return {
     enabled = false,
     cmd = { "CopilotChat", "CopilotChatExplain", "CopilotChatExplainLong", "CopilotChatFix", "CopilotChatToggle" },
     keys = {
-      { mode = { "v", "n" }, "<leader>ac", ":CopilotChat<cr>", desc = "Copilot Chat", silent = true },
+      { mode = { "v", "n" }, "<leader>ac", ":CopilotChat ", desc = "Copilot Chat" },
       { mode = { "v", "n" }, "<leader>ar", ":CopilotChatReview<cr>", desc = "Copilot Review", silent = true },
       { mode = { "v", "n" }, "<leader>ae", ":CopilotChatExplain<cr>", desc = "Explain", silent = true },
       { mode = { "v", "n" }, "<leader>aE", ":CopilotChatExplainLong<cr>", desc = "Explain long", silent = true },
       { mode = { "n" }, "<leader>aa", ":CopilotChatToggle<cr>", desc = "Copilot chat toggle", silent = true },
-      { mode = { "v" }, "<leader>aa", ":CopilotChat<cr>", desc = "Copilot chat toggle", silent = true },
       { mode = { "v", "n" }, "<leader>ao", ":CopilotChatOptimize<cr>", desc = "Copilot optimize", silent = true },
       { mode = { "v", "n" }, "<leader>at", ":CopilotChatTests<cr>", desc = "Copilot generate tests", silent = true },
       { mode = { "v", "n" }, "<leader>af", ":CopilotChatFix<cr>", desc = "Copilot fix", silent = true },
       {
         mode = { "n", "v" },
         "<leader>ap",
-        function()
-          local actions = require("CopilotChat.actions")
-          require("CopilotChat.integrations.snacks").pick(actions.prompt_actions(), {
-            layout = "select",
-          })
-        end,
+        ":CopilotChatPrompts<cr>",
+        silent = true,
         desc = "CopilotChat - Prompt actions",
       },
     },
@@ -61,6 +56,14 @@ return {
           },
         },
         mappings = {
+          accept_diff = {
+            normal = "<ga>",
+            insert = "<c-y>",
+          },
+          reject_diff = {
+            normal = "<gr>",
+            insert = "<C-e>",
+          },
           close = {
             normal = "q",
           },

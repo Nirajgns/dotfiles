@@ -1,6 +1,6 @@
 return {
   "olimorris/codecompanion.nvim",
-  enabled = false,
+  -- enabled = false,
   keys = {
     {
       "<leader>aa",
@@ -10,8 +10,15 @@ return {
       mode = { "n" },
     },
     {
+      "<leader>ac",
+      "<CMD>CodeCompanion <CR>",
+      desc = "CodeCompanion",
+      silent = true,
+      mode = { "n", "x" },
+    },
+    {
       "<leader>aa",
-      "<CMD>CodeCompanionChat<CR>",
+      "<CMD>CodeCompanionAdd<CR>",
       desc = "CodeCompanion Add",
       silent = true,
       mode = { "x" },
@@ -33,7 +40,7 @@ return {
     {
       "<leader>af",
       "<CMD>CodeCompanion please take a look at the code and fix it accordingly<CR>",
-      desc = "CodeCompanion Explain in short",
+      desc = "CodeCompanion fix",
       silent = true,
       mode = { "n", "x" },
     },
@@ -97,7 +104,8 @@ return {
           keymaps = {
             accept_change = {
               modes = {
-                n = "gA",
+                n = "ga",
+                i = "<C-y>",
               },
               index = 1,
               callback = "keymaps.accept_change",
@@ -105,7 +113,8 @@ return {
             },
             reject_change = {
               modes = {
-                n = "gR",
+                n = "gr",
+                i = "<C-e>",
               },
               index = 2,
               callback = "keymaps.reject_change",

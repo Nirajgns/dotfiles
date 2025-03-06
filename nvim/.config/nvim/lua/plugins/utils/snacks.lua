@@ -6,6 +6,13 @@ return {
   },
   keys = {
     {
+      "<leader>qb",
+      function()
+        Snacks.dashboard()
+      end,
+      desc = "Dashboard",
+    },
+    {
       "<leader>,",
       function()
         Snacks.picker.buffers()
@@ -29,7 +36,13 @@ return {
     {
       "<leader><space>",
       function()
-        Snacks.picker.files()
+        Snacks.picker.files({
+          formatters = {
+            file = {
+              filename_first = true, -- display filename before the file path
+            },
+          },
+        })
       end,
       desc = "Find Files",
     },
@@ -249,6 +262,11 @@ return {
     --   end,
     --   desc = "Undo Tree",
     -- },
+    {
+      "<leader>e",
+      false,
+      desc = "Undo Tree",
+    },
 
     -- LSP
     -- {
@@ -287,8 +305,64 @@ return {
     --   end,
     --   desc = "LSP Symbols",
     -- },
+    -- {
+    --   "<leader>ca",
+    --   function()
+    --     vim.lsp.buf.code_action()
+    --   end,
+    --   mode = { "v", "n" },
+    --   desc = "Code Action",
+    -- },
   },
   opts = {
+    image = {
+      enabled = not vim.g.neovide,
+      explorer = { enabled = false },
+      formats = {
+        "png",
+        "jpg",
+        "jpeg",
+        "gif",
+        "bmp",
+        "webp",
+        "tiff",
+        "heic",
+        "avif",
+        "mp4",
+        "mov",
+        "avi",
+        "mkv",
+        "webm",
+      },
+      force = true, -- try displaying the image, even if the terminal does not support it
+      doc = {
+        enabled = true,
+        inline = true,
+        float = true,
+        max_width = 80,
+        max_height = 40,
+      },
+      img_dirs = { "img", "images", "assets", "static", "public", "media", "attachments" },
+      wo = {
+        wrap = false,
+        number = false,
+        relativenumber = false,
+        cursorcolumn = false,
+        signcolumn = "no",
+        foldcolumn = "0",
+        list = false,
+        spell = false,
+        statuscolumn = "",
+      },
+      cache = vim.fn.stdpath("cache") .. "/snacks/image",
+      debug = {
+        request = false,
+        convert = false,
+        placement = false,
+      },
+      env = {},
+    },
+
     words = { enabled = true },
     scroll = {
       enabled = not vim.g.neovide,
@@ -358,7 +432,7 @@ return {
       end,
     },
     dashboard = {
-      enabled = false,
+      enabled = true,
       preset = {
         header = string.rep("\n", 1)
           .. [[                                                                       
@@ -376,11 +450,11 @@ return {
         keys = {
 
         -- stylua: ignore
-          {action = function()require("persistence").select()end,desc = "Sessions",icon = "💾 ",key = "s",},
+          {action = function()require("persistence").select()end,desc = "Sessions",icon = "💾",key = "s",},
           { icon = " ", key = "f", desc = "Find File", action = ":lua Snacks.dashboard.pick('files')" },
           { icon = " ", key = "n", desc = "New File", action = ":ene | startinsert" },
           { icon = " ", key = "g", desc = "Find Text", action = ":lua Snacks.dashboard.pick('live_grep')" },
-          { icon = " ", key = "r", desc = "Recent Files", action = ":lua Snacks.dashboard.pick('oldfiles')" },
+          { icon = "⏲ ", key = "r", desc = "Recent Files", action = ":lua Snacks.dashboard.pick('oldfiles')" },
           {
             icon = " ",
             key = "c",
@@ -403,7 +477,7 @@ return {
         },
         { section = "keys", gap = 0, padding = 1, pane = 2 },
         { pane = 1, icon = " ", title = "Projects", section = "projects", indent = 2, padding = 1 },
-        { pane = 1, icon = " ", title = "Recent Files", section = "recent_files", indent = 2, padding = 1 },
+        { pane = 1, icon = "⏲ ", title = "Recent Files", section = "recent_files", indent = 2, padding = 1 },
         {
           pane = 1,
           icon = " ",
