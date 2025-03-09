@@ -1,3 +1,14 @@
+--Autocmd to open neotree on session load
+vim.api.nvim_create_autocmd("User", {
+  pattern = "PersistenceLoadPost",
+  callback = function()
+    vim.defer_fn(function()
+      -- Snacks.explorer.reveal()
+      vim.cmd("Neotree show")
+    end, 100)
+  end,
+})
+
 return {
   "nvim-neo-tree/neo-tree.nvim",
   dependencies = {

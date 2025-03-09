@@ -395,7 +395,7 @@ return {
     },
     picker = {
       ui_select = true,
-      prompt = " 🔍 ",
+      prompt = " 🔍  ",
       sources = {},
       focus = "input",
       layout = {
@@ -449,9 +449,9 @@ return {
 
         keys = {
 
-        -- stylua: ignore
-          {action = function()require("persistence").select()end,desc = "Sessions",icon = "💾",key = "s",},
           { icon = " ", key = "f", desc = "Find File", action = ":lua Snacks.dashboard.pick('files')" },
+          -- stylua: ignore
+          {action = function()require("persistence").select()end,desc = "Sessions",icon = "💾",key = "s",},
           { icon = " ", key = "n", desc = "New File", action = ":ene | startinsert" },
           { icon = " ", key = "g", desc = "Find Text", action = ":lua Snacks.dashboard.pick('live_grep')" },
           { icon = "⏲ ", key = "r", desc = "Recent Files", action = ":lua Snacks.dashboard.pick('oldfiles')" },
@@ -475,9 +475,23 @@ return {
           height = 10,
           padding = 1,
         },
-        { section = "keys", gap = 0, padding = 1, pane = 2 },
-        { pane = 1, icon = " ", title = "Projects", section = "projects", indent = 2, padding = 1 },
-        { pane = 1, icon = "⏲ ", title = "Recent Files", section = "recent_files", indent = 2, padding = 1 },
+        { section = "keys", gap = 1, padding = 1, pane = 1 },
+        {
+          pane = 2,
+          icon = "                               ",
+          title = "Projects",
+          section = "projects",
+          indent = 20,
+          padding = 1,
+        },
+        {
+          pane = 2,
+          icon = "                              ⏲ ",
+          title = "Recent Files",
+          section = "recent_files",
+          indent = 20,
+          padding = 1,
+        },
         {
           pane = 1,
           icon = " ",

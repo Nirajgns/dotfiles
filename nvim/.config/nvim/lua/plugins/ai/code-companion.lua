@@ -7,7 +7,7 @@ return {
       "<CMD>CodeCompanionChat Toggle<CR>",
       desc = "CodeCompanion",
       silent = true,
-      mode = { "n" },
+      mode = { "n", "x" },
     },
     {
       "<leader>ac",
@@ -15,13 +15,6 @@ return {
       desc = "CodeCompanion",
       silent = true,
       mode = { "n", "x" },
-    },
-    {
-      "<leader>aa",
-      "<CMD>CodeCompanionAdd<CR>",
-      desc = "CodeCompanion Add",
-      silent = true,
-      mode = { "x" },
     },
     {
       "<leader>ae",
