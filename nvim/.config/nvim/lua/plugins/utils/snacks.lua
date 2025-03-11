@@ -315,9 +315,9 @@ return {
     -- },
   },
   opts = {
+    explorer = { enabled = false },
     image = {
       enabled = not vim.g.neovide,
-      explorer = { enabled = false },
       formats = {
         "png",
         "jpg",

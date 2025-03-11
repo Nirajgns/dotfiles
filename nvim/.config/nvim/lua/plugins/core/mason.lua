@@ -19,6 +19,8 @@ return {
       -- "eslint_d",
       "eslint-lsp",
       "emmet-language-server",
+      -- "chrome-debug-adapter",
+      "js-debug-adapter",
     },
   },
 }
