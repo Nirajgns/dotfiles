@@ -8,6 +8,9 @@ return {
         delay = 200,
         reveal = { "close" },
       },
+      buffer = {
+        setNames = true,
+      },
       vim.api.nvim_set_hl(0, "BufferClose", { fg = "#F38BA8" }), -- Red color
       buffer_close_icon = "%#BufferClose#  ✘%#Normal#",
       -- indicator = { style = "underline" },
@@ -36,6 +39,14 @@ return {
         {
           filetype = "snacks_layout_box",
           text = "Project Files",
+          highlight = "Directory",
+          text_align = "center",
+          separator = true, -- use a separator between bufferline and dap-ui
+        },
+
+        {
+          filetype = "no-neck-pain",
+          text = "",
           highlight = "Directory",
           text_align = "center",
           separator = true, -- use a separator between bufferline and dap-ui

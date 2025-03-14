@@ -1,3 +1,4 @@
+--NOTE: config copied from https://github.com/StevanFreeborn/nvim-config/blob/main/lua/plugins/debugging.lua
 local js_based_languages = {
   "typescript",
   "javascript",
@@ -217,49 +218,5 @@ return {
         })
       end,
     },
-    {
-      "jay-babu/mason-nvim-dap.nvim",
-      dependencies = { "williamboman/mason.nvim" },
-      config = function()
-        require("mason-nvim-dap").setup({
-          automatic_installation = true,
-          handlers = {},
-          ensure_installed = {
-            "js-debug-adapter",
-          },
-        })
-      end,
-    },
-    -- {
-    --   "microsoft/vscode-js-debug",
-    --   -- After install, build it and rename the dist directory to out
-    --   build = "npm install --legacy-peer-deps --no-save && npx gulp vsDebugServerBundle && rm -rf out && mv dist out",
-    --   version = "1.*",
-    -- },
-    -- {
-    --   "mxsdev/nvim-dap-vscode-js",
-    --   config = function()
-    --     ---@diagnostic disable-next-line: missing-fields
-    --     require("dap-vscode-js").setup({
-    --
-    --       debugger_path = vim.fn.resolve(vim.fn.stdpath("data") .. "/lazy/vscode-js-debug"),
-    --
-    --       -- which adapters to register in nvim-dap
-    --       adapters = {
-    --         "chrome",
-    --         "pwa-node",
-    --         "pwa-chrome",
-    --         "pwa-msedge",
-    --         "pwa-extensionHost",
-    --         "node-terminal",
-    --         "chrome",
-    --       },
-    --     })
-    --   end,
-    -- },
-    -- {
-    --   "Joakker/lua-json5",
-    --   build = "./install.sh",
-    -- },
   },
 }

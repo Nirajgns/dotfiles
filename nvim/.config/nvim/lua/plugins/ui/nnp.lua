@@ -23,8 +23,6 @@ return {
 
     if _G.is_nnp_enabled then
       vim.cmd("set laststatus=0")
-      vim.cmd("lua Snacks.dim()")
-      vim.o.tabline = "%!v:lua.pretty_path()"
       vim.cmd("Neotree float")
       vim.defer_fn(function()
         vim.cmd("Neotree close")
@@ -32,8 +30,6 @@ return {
       end, 200)
     else
       vim.cmd("set laststatus=3")
-      vim.cmd("lua Snacks.dim.disable()")
-      vim.o.tabline = "%!v:lua.nvim_bufferline()"
       vim.cmd("NoNeckPain")
       vim.cmd("Neotree left")
     end

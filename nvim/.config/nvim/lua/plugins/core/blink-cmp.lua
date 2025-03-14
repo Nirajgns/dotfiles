@@ -36,7 +36,9 @@ return {
   },
   opts = function()
     return {
-      cmdline = { enabled = false },
+      cmdline = { enabled = true, completion = {
+        ghost_text = { enabled = false },
+      } },
       snippets = {
         preset = "luasnip",
       },

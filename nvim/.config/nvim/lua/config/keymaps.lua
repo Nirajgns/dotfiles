@@ -1,13 +1,10 @@
 local map = vim.keymap.set
 
---C-d and C-u to move 20 lines up and down
-vim.keymap.set("n", "<C-d>", "20jzz", { noremap = true, silent = true })
-vim.keymap.set("n", "<C-u>", "20kzz", { noremap = true, silent = true })
+map("i", "<C-BS>", "<C-w>", { noremap = true, silent = true })
 
 --jk to exit insert and terminal mode
 map("i", "jk", "<ESC>", { noremap = true, silent = true })
-map("t", "ii", "<C-\\><C-n>", { noremap = true, silent = true })
-
+map("t", "jk", "<C-\\><C-n>", { noremap = true, silent = true })
 map("t", "<esc>", "<C-\\><C-n>", { noremap = true, silent = true })
 
 map("n", "<s-esc>", "<cmd>noh<cr>", { noremap = true, silent = false })

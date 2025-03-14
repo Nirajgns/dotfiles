@@ -1,6 +1,6 @@
 return {
   "marko-cerovac/material.nvim",
-  enabled = false,
+  -- enabled = false,
   config = function()
     require("material").setup({
 
@@ -15,14 +15,12 @@ return {
       },
 
       styles = { -- Give comments style such as bold, italic, underline etc.
-        comments = { --[[ italic = true ]]
-        },
+        comments = { italic = true },
         strings = { --[[ bold = true ]]
         },
         keywords = { --[[ underline = true ]]
         },
-        functions = { --[[ bold = true, undercurl = true ]]
-        },
+        functions = { italic = true, undercurl = false },
         variables = {},
         operators = {},
         types = {},
@@ -61,15 +59,15 @@ return {
       },
       disable = {
         colored_cursor = true, -- Disable the colored cursor
-        borders = true, -- Disable borders between vertically split windows
+        borders = false, -- Disable borders between vertically split windows
         background = false, -- Prevent the theme from setting the background (NeoVim then uses your terminal background)
         term_colors = false, -- Prevent the theme from setting terminal colors
         eob_lines = true, -- Hide the end-of-buffer lines
       },
 
       high_visibility = {
-        lighter = true, -- Enable higher contrast text for lighter style
-        darker = true, -- Enable higher contrast text for darker style
+        lighter = false, -- Enable higher contrast text for lighter style
+        darker = false, -- Enable higher contrast text for darker style
       },
 
       lualine_style = "stealth", -- Lualine style ( can be 'stealth' or 'default' )

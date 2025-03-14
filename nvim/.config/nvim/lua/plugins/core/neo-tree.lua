@@ -72,6 +72,32 @@ return {
             require("neo-tree.sources.manager").refresh(state.name)
           end)
         end,
+
+        system_open = function(state)
+          local node = state.tree:get_node()
+          local path = node:get_id()
+
+          -- Detect OS
+          local uname = vim.loop.os_uname().sysname
+
+          if uname == "Darwin" then
+            -- macOS: open file in default application
+            vim.fn.jobstart({ "open", path }, { detach = true })
+          elseif uname == "Linux" then
+            -- Linux: open file in default application
+            vim.fn.jobstart({ "xdg-open", path }, { detach = true })
+          elseif uname:match("Windows") then
+            -- Windows: Open folder in Explorer
+            local p
+            local lastSlashIndex = path:match("^.+()\\[^\\]*$") -- Match the last backslash
+            if lastSlashIndex then
+              p = path:sub(1, lastSlashIndex - 1) -- Extract substring before the last backslash
+            else
+              p = path -- If no backslash found, return original path
+            end
+            vim.cmd("silent !start explorer " .. p)
+          end
+        end,
       },
     },
     window = {
@@ -82,6 +108,7 @@ return {
       },
 
       mappings = {
+        ["O"] = "system_open",
         ["P"] = { "toggle_preview", config = { use_float = true, use_image_nvim = true } },
         ["a"] = {
           "add",

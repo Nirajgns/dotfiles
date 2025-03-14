@@ -42,20 +42,15 @@ return {
           { LazyVim.lualine.pretty_path() },
         },
         lualine_x = {
-          function()
-            -- Get attached LSP servers
-            local clients = vim.lsp.get_clients({ bufnr = vim.api.nvim_get_current_buf() })
-            if next(clients) == nil then
-              return " "
-            end
-            return "  "
-              .. table.concat(
-                vim.tbl_map(function(c)
-                  return c.name
-                end, clients),
-                ", "
-              )
-          end,
+          {
+            "lsp_status",
+            icon = " ",
+            symbols = {
+              spinner = { "⠋", "⠙", "⠹", "⠸", "⠼", "⠴", "⠦", "⠧", "⠇", "⠏" },
+              done = "✓",
+              separator = ",",
+            },
+          },
           {
             function()
               return require("noice").api.status.command.get()
@@ -112,26 +107,6 @@ return {
               return ""
             end,
           },
-
-          -- {
-          -- this function is for gitsigns
-          --   "diff",
-          --   symbols = {
-          --     added = icons.git.added,
-          --     modified = icons.git.modified,
-          --     removed = icons.git.removed,
-          --   },
-          --   source = function()
-          --     local gitsigns = vim.b.gitsigns_status_dict
-          --     if gitsigns then
-          --       return {
-          --         added = gitsigns.added,
-          --         modified = gitsigns.changed,
-          --         removed = gitsigns.removed,
-          --       }
-          --     end
-          --   end,
-          -- },
         },
         lualine_y = {
           { "progress", separator = " ", padding = { left = 1, right = 0 } },

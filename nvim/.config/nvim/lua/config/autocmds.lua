@@ -35,7 +35,7 @@ vim.g.neovide_floating_corner_radius = 10.0
 
 vim.g.neovide_hide_mouse_when_typing = true
 vim.g.gui_font_size = vim.g.gui_font_default_size
-vim.g.gui_font_face = "IosevkaTerm Nerd Font"
+vim.g.gui_font_face = "IosevkaTerm NF Light"
 
 vim.g.neovide_fullscreen = true
 vim.g.neovide_text_gamma = 1
@@ -101,20 +101,5 @@ vim.api.nvim_create_autocmd("TermOpen", {
   callback = function()
     vim.opt_local.number = false
     vim.opt_local.relativenumber = false
-  end,
-})
-
---NOTE: Disable cursorline in terminal windows
-vim.api.nvim_create_autocmd("TermOpen", {
-  pattern = "*",
-  command = "setlocal cursorline",
-})
-
---NOTE: Autocmd to manage cursorline in active/inactive windows, excluding NeoTree, Outline and file buffers
-vim.api.nvim_create_autocmd({ "WinLeave", "BufLeave" }, {
-  callback = function()
-    if vim.bo.filetype ~= "neo-tree" and vim.bo.filetype ~= "Outline" and vim.bo.buftype ~= "" then
-      vim.wo.cursorline = false -- Disable cursorline in inactive windows
-    end
   end,
 })

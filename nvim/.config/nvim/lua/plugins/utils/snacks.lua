@@ -39,7 +39,7 @@ return {
         Snacks.picker.files({
           formatters = {
             file = {
-              filename_first = true, -- display filename before the file path
+              -- filename_first = true, -- display filename before the file path
             },
           },
         })
@@ -393,7 +393,15 @@ return {
         -- height = 0.9,
       },
     },
+    input = { enabled = false },
     picker = {
+      win = {
+        input = {
+          keys = {
+            ["<C-bs>"] = { "<c-s-w>", mode = { "i" }, expr = true, desc = "delete word" },
+          },
+        },
+      },
       ui_select = true,
       prompt = " 🔍  ",
       sources = {},
@@ -448,7 +456,6 @@ return {
           .. "\n",
 
         keys = {
-
           { icon = " ", key = "f", desc = "Find File", action = ":lua Snacks.dashboard.pick('files')" },
           -- stylua: ignore
           {action = function()require("persistence").select()end,desc = "Sessions",icon = "💾",key = "s",},

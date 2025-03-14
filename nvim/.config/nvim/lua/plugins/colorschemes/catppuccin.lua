@@ -1,6 +1,6 @@
 return {
   "catppuccin/nvim",
-  -- enabled = false,
+  enabled = false,
   name = "catppuccin",
   config = function()
     require("catppuccin").setup({
