@@ -6,36 +6,38 @@ return {
   },
   opts = {
     preview = {
-      filetypes = { "markdown" },
+      filetypes = { "markdown", "html" },
       ignore_buftypes = { "nofile" },
-      hybrid_modes = { "i" },
+      hybrid_modes = { "v" },
     },
     markdown = {
       headings = {
+        shift_width = 2,
+        org_indent = true,
+        org_indent_wrap = true,
         heading_1 = {
           style = "label",
-          icon = "⬤  ",
+          icon = "⬤ ",
         },
         heading_2 = {
           style = "label",
-          icon = " ⬤⬤  ",
+          icon = " ⬤ ⬤ ",
         },
         heading_3 = {
           style = "label",
-          icon = " ⬤⬤⬤ ",
-          hl = "MarkviewHeading3",
+          icon = " ⬤ ⬤ ⬤ ",
         },
         heading_4 = {
           style = "label",
-          icon = " ⬤⬤⬤⬤",
+          icon = " ⬤ ⬤ ⬤ ⬤ ",
         },
         heading_5 = {
           style = "label",
-          icon = " ⬤⬤⬤⬤⬤ ",
+          icon = " ⬤ ⬤ ⬤ ⬤ ⬤ ",
         },
         heading_6 = {
           style = "label",
-          icon = "⬤⬤⬤⬤⬤⬤ ",
+          icon = "⬤ ⬤ ⬤ ⬤ ⬤ ⬤ ",
         },
       },
     },

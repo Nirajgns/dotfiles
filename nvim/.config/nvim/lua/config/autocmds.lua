@@ -35,7 +35,7 @@ vim.g.neovide_floating_corner_radius = 10.0
 
 vim.g.neovide_hide_mouse_when_typing = true
 vim.g.gui_font_size = vim.g.gui_font_default_size
-vim.g.gui_font_face = "IosevkaTerm NF Light"
+vim.g.gui_font_face = "Maple Mono NF ExtraLight"
 
 vim.g.neovide_fullscreen = true
 vim.g.neovide_text_gamma = 1
@@ -68,8 +68,10 @@ vim.api.nvim_create_autocmd("BufEnter", {
 vim.g.gui_font_default_size = 13.2
 
 RefreshGuiFont = function()
-  vim.opt.guifont = string.format("%s:h%s", vim.g.gui_font_face, vim.g.gui_font_size)
-  print("Font size set to: " .. vim.g.gui_font_size)
+  if vim.g.neovide then
+    vim.opt.guifont = string.format("%s:h%s", vim.g.gui_font_face, vim.g.gui_font_size)
+    print("Font size set to: " .. vim.g.gui_font_size)
+  end
 end
 
 ResizeGuiFont = function(delta)

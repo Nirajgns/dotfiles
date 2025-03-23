@@ -33,7 +33,7 @@ return {
           toggle_or_open = "<cr>",
           vsplit = "|",
           split = "-",
-          shuttle = "o",
+          shuttle = "<A-w>",
         },
       },
       hover = {
