@@ -10,7 +10,7 @@ return {
   end,
 
   event = "InsertEnter",
-  version = "v0.*",
+  build = "cargo build --release",
   opts_extend = {
     "sources.default",
     "sources.compat",
@@ -36,6 +36,7 @@ return {
   },
   opts = function()
     return {
+      fuzzy = { implementation = "prefer_rust" },
       cmdline = { enabled = true, completion = {
         ghost_text = { enabled = false },
       } },
