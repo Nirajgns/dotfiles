@@ -374,10 +374,10 @@ return {
       chunk = {
         enabled = true,
         char = {
-          horizontal = "-",
+          horizontal = " ",
           corner_top = "╭",
           corner_bottom = "╰",
-          arrow = "-",
+          arrow = " ",
         },
       },
     },
@@ -403,7 +403,7 @@ return {
         },
       },
       ui_select = true,
-      prompt = " 🔍  ",
+      prompt = " 🔍 ",
       sources = {},
       focus = "input",
       layout = {

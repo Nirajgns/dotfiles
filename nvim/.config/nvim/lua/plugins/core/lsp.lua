@@ -41,11 +41,12 @@ return {
         },
       },
       setup = {},
-      -- servers = {
-      --   vtsls = { settings = {
-      --     enableMoveToFileCodeAction = true,
-      --   } },
-      -- },
+      servers = {
+        tailwindcss = {},
+        vtsls = { settings = {
+          enableMoveToFileCodeAction = true,
+        } },
+      },
     }
   end,
 }

@@ -1,10 +1,5 @@
 return {
   {
-    "neovim/nvim-lspconfig",
-    opts = { servers = { tailwindcss = {} } },
-  },
-
-  {
     "laytan/tailwind-sorter.nvim",
     ft = { "jsx", "tsx", "javascriptreact", "typescriptreact", "html" },
     dependencies = { "nvim-treesitter/nvim-treesitter", "nvim-lua/plenary.nvim" },
@@ -19,7 +14,7 @@ return {
 
     keys = {
       {
-        "<leader>tw",
+        "<leader>Ts",
         function()
           _G.isSorterEnabled = not _G.isSorterEnabled
 
@@ -32,6 +27,27 @@ return {
           end
         end,
         desc = "Toggle Tailwind Sorter",
+      },
+    },
+  },
+
+  {
+    "razak17/tailwind-fold.nvim",
+    opts = {
+      symbol = "󱏿", -- 󱏿
+      highlight = {
+        fg = "#38BDF8", -- [[ symbol color ]]
+      },
+    },
+    dependencies = { "nvim-treesitter/nvim-treesitter" },
+    cmd = { "TailwindFoldToggle" },
+    ft = { "html", "svelte", "astro", "vue", "javascriptreact", "typescriptreact", "php", "blade" },
+    keys = {
+      {
+        "<leader>Tf",
+        ":TailwindFoldToggle<cr>",
+        desc = "Toggle Tailwind Inline Fold",
+        silent = true,
       },
     },
   },

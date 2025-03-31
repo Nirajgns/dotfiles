@@ -10,6 +10,7 @@ return {
         { "<leader>t", group = "Tasks (Overseer)" },
         { "<leader>l", group = "LAZY and LSP)" },
         { "<leader>r", group = "Refactoring" },
+        { "<leader>T", group = "Tailwind" },
       },
     },
     layout = {
