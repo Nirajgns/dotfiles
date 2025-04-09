@@ -9,12 +9,15 @@ return {
     local animate = require("vimade.style.value.animate")
 
     require("vimade").setup({
-      blocklist = { defaults = {
-        buf_opts = {
-          buftype = "terminal",
+      -- recipe = { "duo", { animate = true } },
+      blocklist = {
+        defaults = {
+          buf_opts = {
+            -- buftype = "terminal",
+          },
         },
-      } },
-      ncmode = "windows",
+      },
+      -- ncmode = "windows",
       style = {
         Fade({
           value = animate.Number({

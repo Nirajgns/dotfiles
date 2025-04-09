@@ -26,7 +26,16 @@ return {
       },
       sections = {
         lualine_a = { "mode" },
-        lualine_b = { "branch" },
+        lualine_b = {
+          {
+            --to show root directory
+            function()
+              local cwd = vim.fn.getcwd() -- Get current working directory
+              return vim.fn.fnamemodify(cwd, ":t") -- Extract the last part (project name)
+            end,
+          },
+          { "branch" },
+        },
         lualine_c = {
           LazyVim.lualine.root_dir(),
           {
