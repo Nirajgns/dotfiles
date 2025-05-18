@@ -10,7 +10,6 @@ return {
   end,
 
   event = "InsertEnter",
-  build = "cargo build --release",
   opts_extend = {
     "sources.default",
     "sources.compat",

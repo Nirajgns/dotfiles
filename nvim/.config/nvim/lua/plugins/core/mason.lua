@@ -1,5 +1,6 @@
 return {
   "williamboman/mason.nvim",
+  version = "1.11.0",
   event = "LazyFile",
   opts = {
     ensure_installed = {

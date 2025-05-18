@@ -1,6 +1,17 @@
 {
 	"file_history":
 	[
+		"/home/niraj/.config/kdeconnect/config",
+		"/home/niraj/.config/neovide/config.toml",
+		"/home/niraj/.config/lazygit/config.yml",
+		"/home/niraj/.config/yelp/yelp.cfg",
+		"/home/niraj/.ssh/id_ed25519.pub",
+		"/home/niraj/Desktop/search-light/metadata.json",
+		"/home/niraj/dotfiles/kitty/.config/kitty/kitty.conf",
+		"/home/niraj/.zshrc",
+		"/home/niraj/.bashrc",
+		"/home/niraj/.local/share/applications/neovide.desktop",
+		"/home/niraj/.local/share/applications/neovide.desktop.save",
 		"/home/niraj/.config/ghostty/config",
 		"/home/niraj/.sudo_as_admin_successful",
 		"/home/niraj/Desktop/Approutes.tsx",
@@ -36,8 +47,6 @@
 		"/home/niraj/.config/gnome-initial-setup-done",
 		"/home/niraj/.config/discoverrc",
 		"/home/niraj/.config/appimagelauncher.cfg",
-		"/home/niraj/.zshrc",
-		"/home/niraj/.bashrc",
 		"/home/niraj/.config/kitty/kitty.conf",
 		"/home/niraj/.config/GNOME-xdg-terminals.list",
 		"/home/niraj/.config/xdg-terminals.list",
@@ -104,7 +113,6 @@
 		"/home/niraj/.config/kservicemenurc",
 		"/home/niraj/.config/gsconnect/private.pem",
 		"/home/niraj/.config/lazygit/state.yml",
-		"/home/niraj/.config/lazygit/config.yml",
 		"/home/niraj/.config/gtk-2.0/gtkfilechooser.ini",
 		"/home/niraj/.config/Code/User/sync/keybindings/lastSynckeybindings.json",
 		"/home/niraj/.config/Caprine/custom.css",
@@ -120,15 +128,7 @@
 		"/home/niraj/Documents/Learn-react/.obsidian/.obsidian.vimrc",
 		"/home/niraj/Desktop/projects/js/ts-ecom-api/src/index.ts",
 		"/home/niraj/.config/sublime-text/Packages/Materialize/schemes/Material Glacier.tmTheme",
-		"/home/niraj/.config/sublime-text/Packages/User/Material Glacier.sublime-color-scheme",
-		"/home/niraj/Desktop/projects/js/ts-ecom-api/src/middlewares/roleMiddleware.ts",
-		"/home/niraj/Desktop/projects/js/ts-ecom-api/src/error-handler.ts",
-		"/home/niraj/.config/sublime-text/Packages/NeoVintageous/Preferences.sublime-settings",
-		"/home/niraj/Desktop/projects/js/ts-ecom-api/.env",
-		"/home/niraj/Downloads/ts-ecom-api-master/.env",
-		"/home/niraj/.ssh/config",
-		"/home/niraj/Desktop/nvim/lua/plugins/dap.lua",
-		"/home/niraj/Desktop/emergency.txt"
+		"/home/niraj/.config/sublime-text/Packages/User/Material Glacier.sublime-color-scheme"
 	],
 	"folder_history":
 	[
@@ -148,16 +148,16 @@
 	"last_version": 4192,
 	"last_window_id": 37,
 	"log_indexing": false,
-	"next_update_check": 1737951506,
+	"next_update_check": 1747624270,
 	"settings":
 	{
 		"new_window_full_screen": false,
-		"new_window_height": 0.0,
-		"new_window_maximized": true,
+		"new_window_height": 995.0,
+		"new_window_maximized": false,
 		"new_window_position":
 		[
-			0.0,
-			48.0
+			56.0,
+			96.0
 		],
 		"new_window_settings":
 		{
@@ -177,6 +177,14 @@
 				"last_filter": "",
 				"selected_items":
 				[
+					[
+						"instal",
+						"Package Control: Install Package"
+					],
+					[
+						"theme",
+						"UI: Select Color Scheme"
+					],
 					[
 						"install",
 						"Package Control: Install Package"
@@ -208,10 +216,6 @@
 					[
 						"menu",
 						"View: Toggle Menu"
-					],
-					[
-						"theme",
-						"UI: Select Color Scheme"
 					],
 					[
 						"color",
@@ -275,8 +279,30 @@
 			},
 			"file_history":
 			[
-				"/home/niraj/.config/ghostty/config",
+				"/home/niraj/.profile",
+				"/home/niraj/.bashrc",
 				"/home/niraj/.sudo_as_admin_successful",
+				"/home/niraj/dotfiles/bottom/bottom/bottom.toml",
+				"/home/niraj/.config/github-copilot/versions.json",
+				"/home/niraj/.config/github-copilot/apps.json",
+				"/home/niraj/.config/forge/config/windows.json",
+				"/home/niraj/.vscode/argv.json",
+				"/home/niraj/.gitconfig",
+				"/home/niraj/.local/share/applications/neovide.desktop",
+				"/home/niraj/.zshrc",
+				"/home/niraj/.zshenv",
+				"/home/niraj/dotfiles/zsh/.zshrc",
+				"/home/niraj/dotfiles/bash/.bashrc",
+				"/home/niraj/dotfiles/tmux/.tmux.conf",
+				"/home/niraj/.config/kdeconnect/config",
+				"/home/niraj/.config/neovide/config.toml",
+				"/home/niraj/.config/lazygit/config.yml",
+				"/home/niraj/.config/yelp/yelp.cfg",
+				"/home/niraj/.ssh/id_ed25519.pub",
+				"/home/niraj/Desktop/search-light/metadata.json",
+				"/home/niraj/dotfiles/kitty/.config/kitty/kitty.conf",
+				"/home/niraj/.local/share/applications/neovide.desktop.save",
+				"/home/niraj/.config/ghostty/config",
 				"/home/niraj/Desktop/Approutes.tsx",
 				"/home/niraj/Desktop/main.tsx",
 				"/home/niraj/t.txt",
@@ -302,7 +328,6 @@
 				"/home/niraj/.local/share/nvim/lazy/nvim-lspconfig/lua/lspconfig/util.lua",
 				"/home/niraj/.local/share/nvim/lazy/nvim-lspconfig/lua/lspconfig/configs/eslint.lua",
 				"/home/niraj/dotfiles/nvim/.config/nvim/lua/plugins/snacks.lua",
-				"/home/niraj/dotfiles/tmux/.tmux.conf",
 				"/home/niraj/.tmux.conf.bak",
 				"/home/niraj/.tmux.conf",
 				"/home/niraj/.config/kconf_updaterc",
@@ -310,23 +335,17 @@
 				"/home/niraj/.config/gnome-initial-setup-done",
 				"/home/niraj/.config/discoverrc",
 				"/home/niraj/.config/appimagelauncher.cfg",
-				"/home/niraj/.zshrc",
-				"/home/niraj/.bashrc",
 				"/home/niraj/.config/kitty/kitty.conf",
 				"/home/niraj/.config/GNOME-xdg-terminals.list",
 				"/home/niraj/.config/xdg-terminals.list",
 				"/home/niraj/.config/.gsd-keyboard.settings-ported",
 				"/home/niraj/yazi/target/release/ya.d",
-				"/home/niraj/dotfiles/bottom/bottom/bottom.toml",
 				"/home/niraj/.local/share/nvim/lazy/persistence.nvim/lua/persistence/config.lua",
 				"/home/niraj/.config/bottom/bottom.toml",
 				"/home/niraj/bottom/bottom.toml",
 				"/home/niraj/Desktop/Projects/js/meetly/package.json",
-				"/home/niraj/.gitconfig",
-				"/home/niraj/dotfiles/bash/.bashrc",
 				"/home/niraj/.config/kitty/kitty.conf.bak",
 				"/media/niraj/F8722EA8722E6C16/Dropbox/obsidian-vault/.gitignore",
-				"/home/niraj/.profile",
 				"/home/niraj/.config/nvim/lua/kickstart/plugins/debug.lua",
 				"/home/niraj/.config/nvim/lua/kickstart/plugins/neo-tree.lua",
 				"/home/niraj/.config/nvim/lua/kickstart/plugins/indent_line.lua",
@@ -372,7 +391,6 @@
 				"/home/niraj/.config/kservicemenurc",
 				"/home/niraj/.config/gsconnect/private.pem",
 				"/home/niraj/.config/lazygit/state.yml",
-				"/home/niraj/.config/lazygit/config.yml",
 				"/home/niraj/.config/gtk-2.0/gtkfilechooser.ini",
 				"/home/niraj/.config/Code/User/sync/keybindings/lastSynckeybindings.json",
 				"/home/niraj/.config/Caprine/custom.css",
@@ -388,25 +406,11 @@
 				"/home/niraj/Documents/Learn-react/.obsidian/.obsidian.vimrc",
 				"/home/niraj/Desktop/projects/js/ts-ecom-api/src/index.ts",
 				"/home/niraj/Desktop/projects/js/ts-ecom-api/src/middlewares/roleMiddleware.ts",
-				"/home/niraj/Desktop/projects/js/ts-ecom-api/src/error-handler.ts",
-				"/home/niraj/Desktop/projects/js/ts-ecom-api/.env",
-				"/home/niraj/Downloads/ts-ecom-api-master/.env",
-				"/home/niraj/.ssh/config",
-				"/home/niraj/Desktop/nvim/lua/plugins/dap.lua",
-				"/home/niraj/Desktop/emergency.txt",
-				"/home/niraj/.config/kanata/config.kbd",
-				"/home/niraj/.openai_key.zsh",
-				"/home/niraj/Downloads/WebStorm-2024.2/WebStorm-242.20224.342/Install-Linux-tar.txt",
-				"/home/niraj/Desktop/hello.py",
-				"/home/niraj/.config/system.d/user/kanata.service",
-				"/home/niraj/Desktop/nvim/lua/plugins/persistance.lua",
-				"/home/niraj/.config/nvim/lua/mappings.lua",
-				"/home/niraj/.config/nvim/lua/options.lua",
-				"/home/niraj/Desktop/Projects/flutter/rohit semriwal ecommerce/ecommerce-frontend/lib/core/ui.dart"
+				"/home/niraj/Desktop/projects/js/ts-ecom-api/src/error-handler.ts"
 			],
 			"find":
 			{
-				"height": 30.0
+				"height": 29.0
 			},
 			"find_in_files":
 			{
@@ -439,7 +443,7 @@
 			},
 			"incremental_find":
 			{
-				"height": 30.0
+				"height": 29.0
 			},
 			"input":
 			{
@@ -461,7 +465,7 @@
 			"pinned_build_system": "",
 			"replace":
 			{
-				"height": 56.0
+				"height": 54.0
 			},
 			"save_all_on_build": true,
 			"select_file":
@@ -501,7 +505,7 @@
 			{
 			}
 		},
-		"new_window_width": 0.0
+		"new_window_width": 957.0
 	},
 	"windows":
 	[
@@ -514,6 +518,183 @@
 			},
 			"buffers":
 			[
+				{
+					"file": "/home/niraj/dotfiles/tmux/.tmux.conf",
+					"settings":
+					{
+						"buffer_size": 4315,
+						"encoding": "UTF-8",
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/niraj/dotfiles/bash/.bashrc",
+					"settings":
+					{
+						"buffer_size": 1099,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/niraj/dotfiles/zsh/.zshrc",
+					"settings":
+					{
+						"buffer_size": 2444,
+						"encoding": "UTF-8",
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/niraj/.zshenv",
+					"settings":
+					{
+						"buffer_size": 0,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/niraj/.zshrc",
+					"settings":
+					{
+						"buffer_size": 2444,
+						"encoding": "UTF-8",
+						"line_ending": "Unix"
+					},
+					"undo_stack":
+					[
+						[
+							20,
+							1,
+							"revert",
+							null,
+							"AgAAAAAAAAAAAAAAAAAAAAAAAAChAgAAIyBMaW5lcyBjb25maWd1cmVkIGJ5IHpzaC1uZXd1c2VyLWluc3RhbGwKSElTVEZJTEU9fi8uaGlzdGZpbGUKSElTVFNJWkU9MTAwMApTQVZFSElTVD0xMDAwCmJpbmRrZXkgLWUKIyBFbmQgb2YgbGluZXMgY29uZmlndXJlZCBieSB6c2gtbmV3dXNlci1pbnN0YWxsCiMgVGhlIGZvbGxvd2luZyBsaW5lcyB3ZXJlIGFkZGVkIGJ5IGNvbXBpbnN0YWxsCnpzdHlsZSA6Y29tcGluc3RhbGwgZmlsZW5hbWUgJy9ob21lL25pcmFqLy56c2hyYycKCmF1dG9sb2FkIC1VeiBjb21waW5pdApjb21waW5pdAojIEVuZCBvZiBsaW5lcyBhZGRlZCBieSBjb21waW5zdGFsbApldmFsICIkKHN0YXJzaGlwIGluaXQgenNoKSIKCmV2YWwgIiQoL2hvbWUvbGludXhicmV3Ly5saW51eGJyZXcvYmluL2JyZXcgc2hlbGxlbnYpIgoKCmFsaWFzIG52PSduZW92aWRlIC0tZm9yaycKCmV4cG9ydCBOVk1fRElSPSIkSE9NRS8ubnZtIgpbIC1zICIkTlZNX0RJUi9udm0uc2giIF0gJiYgXC4gIiROVk1fRElSL252bS5zaCIgICMgVGhpcyBsb2FkcyBudm0KWyAtcyAiJE5WTV9ESVIvYmFzaF9jb21wbGV0aW9uIiBdICYmIFwuICIkTlZNX0RJUi9iYXNoX2NvbXBsZXRpb24iICAjIFRoaXMgbG9hZHMgbnZtIGJhc2hfY29tcGxldGlvbgpleHBvcnQgUEFUSD0iJFBBVEg6L29wdC9udmltLWxpbnV4LXg4Nl82NC9iaW4iCgAAAAAAAAAAJwQAAAAAAAAAAAAA",
+							"EAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+						],
+						[
+							23,
+							1,
+							"revert",
+							null,
+							"AgAAAAAAAAAAAAAAAAAAAAAAAAAnBAAAIyBMaW5lcyBjb25maWd1cmVkIGJ5IHpzaC1uZXd1c2VyLWluc3RhbGwKSElTVEZJTEU9fi8uaGlzdGZpbGUKSElTVFNJWkU9MTAwMApTQVZFSElTVD0xMDAwCmJpbmRrZXkgLWUKIyBFbmQgb2YgbGluZXMgY29uZmlndXJlZCBieSB6c2gtbmV3dXNlci1pbnN0YWxsCiMgVGhlIGZvbGxvd2luZyBsaW5lcyB3ZXJlIGFkZGVkIGJ5IGNvbXBpbnN0YWxsCnpzdHlsZSA6Y29tcGluc3RhbGwgZmlsZW5hbWUgJy9ob21lL25pcmFqLy56c2hyYycKCmF1dG9sb2FkIC1VeiBjb21waW5pdApjb21waW5pdAojIEVuZCBvZiBsaW5lcyBhZGRlZCBieSBjb21waW5zdGFsbApldmFsICIkKHN0YXJzaGlwIGluaXQgenNoKSIKCmV2YWwgIiQoL2hvbWUvbGludXhicmV3Ly5saW51eGJyZXcvYmluL2JyZXcgc2hlbGxlbnYpIgoKCmFsaWFzIG52PSduZW92aWRlIC0tZm9yaycKCmV4cG9ydCBOVk1fRElSPSIkSE9NRS8ubnZtIgpbIC1zICIkTlZNX0RJUi9udm0uc2giIF0gJiYgXC4gIiROVk1fRElSL252bS5zaCIgICMgVGhpcyBsb2FkcyBudm0KWyAtcyAiJE5WTV9ESVIvYmFzaF9jb21wbGV0aW9uIiBdICYmIFwuICIkTlZNX0RJUi9iYXNoX2NvbXBsZXRpb24iICAjIFRoaXMgbG9hZHMgbnZtIGJhc2hfY29tcGxldGlvbgpleHBvcnQgUEFUSD0iJFBBVEg6L29wdC9udmltLWxpbnV4LXg4Nl82NC9iaW4iCgoKIyBwbHVnaW5zCnNvdXJjZSAvdXNyL3NoYXJlL3pzaC1hdXRvc3VnZ2VzdGlvbnMvenNoLWF1dG9zdWdnZXN0aW9ucy56c2gKCgojIEVuYWJsZSBoaXN0b3J5IHN1YnN0cmluZyBzZWFyY2ggKHVwL2Rvd24gYXJyb3cgc2VhcmNoKQpiaW5ka2V5ICdeW1tBJyBoaXN0b3J5LXNlYXJjaC1iYWNrd2FyZApiaW5ka2V5ICdeW1tCJyBoaXN0b3J5LXNlYXJjaC1mb3J3YXJkCnNvdXJjZSAvdXNyL3NoYXJlL3pzaC1zeW50YXgtaGlnaGxpZ2h0aW5nL3pzaC1zeW50YXgtaGlnaGxpZ2h0aW5nLnpzaAoKYmluZGtleSAnXltbQScgaGlzdG9yeS1zZWFyY2gtYmFja3dhcmQKYmluZGtleSAnXltbQicgaGlzdG9yeS1zZWFyY2gtZm9yd2FyZAoKYXV0b2xvYWQgLVV6IGNvbXBpbml0CmNvbXBpbml0CgAAAAAAAAAA0ggAAAAAAAAAAAAA",
+							"EAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+						],
+						[
+							57,
+							1,
+							"nv_vi_d",
+							{
+								"count": 1,
+								"mode": "mode_visual_line",
+								"register": "\""
+							},
+							"AQAAAKQCAAAAAAAApAIAAAAAAAAyBgAAIyMjIEFkZGVkIGJ5IFppbml0J3MgaW5zdGFsbGVyCmlmIFtbICEgLWYgJEhPTUUvLmxvY2FsL3NoYXJlL3ppbml0L3ppbml0LmdpdC96aW5pdC56c2ggXV07IHRoZW4KICAgIHByaW50IC1QICIlRnszM30gJUZ7MjIwfUluc3RhbGxpbmcgJUZ7MzN9WkRIQVJNQS1DT05USU5VVU0lRnsyMjB9IEluaXRpYXRpdmUgUGx1Z2luIE1hbmFnZXIgKCVGezMzfXpkaGFybWEtY29udGludXVtL3ppbml0JUZ7MjIwfSnigKYlZiIKICAgIGNvbW1hbmQgbWtkaXIgLXAgIiRIT01FLy5sb2NhbC9zaGFyZS96aW5pdCIgJiYgY29tbWFuZCBjaG1vZCBnLXJ3WCAiJEhPTUUvLmxvY2FsL3NoYXJlL3ppbml0IgogICAgY29tbWFuZCBnaXQgY2xvbmUgaHR0cHM6Ly9naXRodWIuY29tL3pkaGFybWEtY29udGludXVtL3ppbml0ICIkSE9NRS8ubG9jYWwvc2hhcmUvemluaXQvemluaXQuZ2l0IiAmJiBcCiAgICAgICAgcHJpbnQgLVAgIiVGezMzfSAlRnszNH1JbnN0YWxsYXRpb24gc3VjY2Vzc2Z1bC4lZiViIiB8fCBcCiAgICAgICAgcHJpbnQgLVAgIiVGezE2MH0gVGhlIGNsb25lIGhhcyBmYWlsZWQuJWYlYiIKZmkKCnNvdXJjZSAiJEhPTUUvLmxvY2FsL3NoYXJlL3ppbml0L3ppbml0LmdpdC96aW5pdC56c2giCmF1dG9sb2FkIC1VeiBfemluaXQKKCggJHsrX2NvbXBzfSApKSAmJiBfY29tcHNbemluaXRdPV96aW5pdAoKCiMgQXV0b3N1Z2dlc3Rpb25zIChsb2FkcyBmYXN0IHdpdGggbGlnaHQgbW9kZSkKemluaXQgbGlnaHQgenNoLXVzZXJzL3pzaC1hdXRvc3VnZ2VzdGlvbnMKCiMgU3ludGF4IGhpZ2hsaWdodGluZyAoZGVmZXIgdG8gZW5kIG9mIGxvYWQpCnppbml0IGxpZ2h0IHpzaC11c2Vycy96c2gtc3ludGF4LWhpZ2hsaWdodGluZwoKIyAoT3B0aW9uYWwpIEhpc3Rvcnkgc3Vic3RyaW5nIHNlYXJjaAp6aW5pdCBsaWdodCB6c2gtdXNlcnMvenNoLWhpc3Rvcnktc3Vic3RyaW5nLXNlYXJjaAoKCgojIC0tLS0tLS0tIGZ6ZiBpbnRlZ3JhdGlvbiAtLS0tLS0tLQoKIyBMb2FkIGZ6ZiAoY29yZSkKemluaXQgbGlnaHQganVuZWd1bm4vZnpmCgojIE9wdGlvbmFsOiBmemYtdGFiIOKAlCBhZHZhbmNlZCBmemYgY29tcGxldGlvbiBmb3IgdGFiCnppbml0IGxpZ2h0IEFsb3hhZi9memYtdGFiCgojIE9wdGlvbmFsOiBmemYtaGlzdG9yeS13aWRnZXQgKGVuaGFuY2VkIGZ1enp5IGhpc3Rvcnkgc2VhcmNoKQp6aW5pdCBsaWdodCBwYm9ndXQvZnpmLWhpc3Rvcnktd2lkZ2V0CgoKCiMgRnV6enkgc2VhcmNoIGhpc3RvcnkgKEN0cmwrUikKYmluZGtleSAnXlInIGZ6Zi1oaXN0b3J5LXdpZGdldAoKIyBGdXp6eSBzZWFyY2ggZmlsZXMgKEN0cmwrVCkKZXhwb3J0IEZaRl9DVFJMX1RfQ09NTUFORD0nZmQgLS10eXBlIGYgLS1oaWRkZW4gLS1mb2xsb3cgLS1leGNsdWRlIC5naXQnCmJpbmRrZXkgJ15UJyBmemYtZmlsZS13aWRnZXQKCiMgRnV6enkgc3dpdGNoIGRpcmVjdG9yaWVzIChBbHQrQykKYmluZGtleSAnXltjJyBmemYtY2Qtd2lkZ2V0CgoKCnppbml0IGxpZ2h0IEFsb3hhZi9memYtdGFiCgoKenN0eWxlICc6ZnpmLXRhYjoqJyBmemYtY29tbWFuZCBmemYgLS1oZWlnaHQ9NDAlIC0tcmV2ZXJzZSAtLWJvcmRlcgo",
+							"EAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAApAIAAAAAAADSCAAAAAAAAAAAAAAAAPC/"
+						]
+					]
+				},
+				{
+					"file": "/home/niraj/.local/share/applications/neovide.desktop",
+					"settings":
+					{
+						"buffer_size": 515,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/niraj/.gitconfig",
+					"settings":
+					{
+						"buffer_size": 54,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/niraj/.vscode/argv.json",
+					"settings":
+					{
+						"buffer_size": 798,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/niraj/.config/forge/config/windows.json",
+					"settings":
+					{
+						"buffer_size": 3310,
+						"encoding": "UTF-8",
+						"line_ending": "Unix"
+					},
+					"undo_stack":
+					[
+						[
+							1,
+							1,
+							"revert",
+							null,
+							"AgAAAAAAAAAAAAAAAAAAAAAAAADwDAAAewogICAgIm92ZXJyaWRlcyI6IFsKICAgICAgICB7CiAgICAgICAgICAgICJ3bUNsYXNzIjogIm9yZy5nbm9tZS5TaGVsbC5FeHRlbnNpb25zIiwKICAgICAgICAgICAgIndtVGl0bGUiOiAiRm9yZ2UgU2V0dGluZ3MiLAogICAgICAgICAgICAibW9kZSI6ICJmbG9hdCIKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICAgIndtQ2xhc3MiOiAiamV0YnJhaW5zLXRvb2xib3giLAogICAgICAgICAgICAibW9kZSI6ICJmbG9hdCIKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICAgIndtQ2xhc3MiOiAiamV0YnJhaW5zLWdvbGFuZCIsCiAgICAgICAgICAgICJ3bVRpdGxlIjogInNwbGFzaCIsCiAgICAgICAgICAgICJtb2RlIjogImZsb2F0IgogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgICAid21DbGFzcyI6ICJqZXRicmFpbnMtd2Vic3Rvcm0iLAogICAgICAgICAgICAid21UaXRsZSI6ICJzcGxhc2giLAogICAgICAgICAgICAibW9kZSI6ICJmbG9hdCIKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICAgIndtQ2xhc3MiOiAiamV0YnJhaW5zLXBocHN0b3JtIiwKICAgICAgICAgICAgIndtVGl0bGUiOiAic3BsYXNoIiwKICAgICAgICAgICAgIm1vZGUiOiAiZmxvYXQiCiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAgICJ3bUNsYXNzIjogImpldGJyYWlucy1kYXRhZ3JpcCIsCiAgICAgICAgICAgICJ3bVRpdGxlIjogInNwbGFzaCIsCiAgICAgICAgICAgICJtb2RlIjogImZsb2F0IgogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgICAid21DbGFzcyI6ICJqZXRicmFpbnMtcnVieW1pbmUiLAogICAgICAgICAgICAid21UaXRsZSI6ICJzcGxhc2giLAogICAgICAgICAgICAibW9kZSI6ICJmbG9hdCIKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICAgIndtQ2xhc3MiOiAiamV0YnJhaW5zLWlkZWEiLAogICAgICAgICAgICAid21UaXRsZSI6ICJzcGxhc2giLAogICAgICAgICAgICAibW9kZSI6ICJmbG9hdCIKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICAgIndtQ2xhc3MiOiAiQ29tLmdpdGh1Yi5hbWV6aW4uZGR0ZXJtIiwKICAgICAgICAgICAgIm1vZGUiOiAiZmxvYXQiCiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAgICJ3bUNsYXNzIjogIkNvbS5naXRodWIuZG9uYWRpZ28uZWRkeSIsCiAgICAgICAgICAgICJtb2RlIjogImZsb2F0IgogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgICAid21DbGFzcyI6ICJDb25reSIsCiAgICAgICAgICAgICJtb2RlIjogImZsb2F0IgogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgICAid21DbGFzcyI6ICJHbm9tZS1pbml0aWFsLXNldHVwIiwKICAgICAgICAgICAgIm1vZGUiOiAiZmxvYXQiCiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAgICJ3bUNsYXNzIjogIm9yZy5nbm9tZS5DYWxjdWxhdG9yIiwKICAgICAgICAgICAgIm1vZGUiOiAiZmxvYXQiCiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAgICJ3bUNsYXNzIjogImdub21lLXRlcm1pbmFsLXNlcnZlciIsCiAgICAgICAgICAgICJ3bVRpdGxlIjogIlByZWZlcmVuY2VzIOKAkyBHZW5lcmFsIiwKICAgICAgICAgICAgIm1vZGUiOiAiZmxvYXQiCiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAgICJ3bUNsYXNzIjogImdub21lLXRlcm1pbmFsLXByZWZlcmVuY2VzIiwKICAgICAgICAgICAgIm1vZGUiOiAiZmxvYXQiCiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAgICJ3bUNsYXNzIjogIkd1YWtlIiwKICAgICAgICAgICAgIm1vZGUiOiAiZmxvYXQiCiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAgICJ3bUNsYXNzIjogInpvb20iLAogICAgICAgICAgICAibW9kZSI6ICJmbG9hdCIKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICAgIndtQ2xhc3MiOiAiZmlyZWZveCIsCiAgICAgICAgICAgICJ3bVRpdGxlIjogIkFib3V0IE1vemlsbGEgRmlyZWZveCIsCiAgICAgICAgICAgICJtb2RlIjogImZsb2F0IgogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgICAid21DbGFzcyI6ICJmaXJlZm94IiwKICAgICAgICAgICAgIndtVGl0bGUiOiAiIU1vemlsbGEgRmlyZWZveCIsCiAgICAgICAgICAgICJtb2RlIjogImZsb2F0IgogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgICAid21DbGFzcyI6ICJvcmcubW96aWxsYS5maXJlZm94LmRlc2t0b3AiLAogICAgICAgICAgICAid21UaXRsZSI6ICJBYm91dCBNb3ppbGxhIEZpcmVmb3giLAogICAgICAgICAgICAibW9kZSI6ICJmbG9hdCIKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICAgIndtQ2xhc3MiOiAib3JnLm1vemlsbGEuZmlyZWZveC5kZXNrdG9wIiwKICAgICAgICAgICAgIndtVGl0bGUiOiAiIU1vemlsbGEgRmlyZWZveCIsCiAgICAgICAgICAgICJtb2RlIjogImZsb2F0IgogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgICAid21DbGFzcyI6ICJ0aHVuZGVyYmlyZCIsCiAgICAgICAgICAgICJ3bVRpdGxlIjogIkFib3V0IE1vemlsbGEgVGh1bmRlcmJpcmQiLAogICAgICAgICAgICAibW9kZSI6ICJmbG9hdCIKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICAgIndtQ2xhc3MiOiAidGh1bmRlcmJpcmQiLAogICAgICAgICAgICAid21UaXRsZSI6ICIhTW96aWxsYSBUaHVuZGVyYmlyZCIsCiAgICAgICAgICAgICJtb2RlIjogImZsb2F0IgogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgICAid21DbGFzcyI6ICJvcmcubW96aWxsYS5UaHVuZGVyYmlyZC5kZXNrdG9wIiwKICAgICAgICAgICAgIndtVGl0bGUiOiAiQWJvdXQgTW96aWxsYSBUaHVuZGVyYmlyZCIsCiAgICAgICAgICAgICJtb2RlIjogImZsb2F0IgogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgICAid21DbGFzcyI6ICJvcmcubW96aWxsYS5UaHVuZGVyYmlyZC5kZXNrdG9wIiwKICAgICAgICAgICAgIndtVGl0bGUiOiAiIU1vemlsbGEgVGh1bmRlcmJpcmQiLAogICAgICAgICAgICAibW9kZSI6ICJmbG9hdCIKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICAgIndtQ2xhc3MiOiAiZXZvbHV0aW9uLWFsYXJtLW5vdGlmeSIsCiAgICAgICAgICAgICJtb2RlIjogImZsb2F0IgogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgICAid21DbGFzcyI6ICJ2YXJpZXR5IiwKICAgICAgICAgICAgIm1vZGUiOiAiZmxvYXQiCiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAgICJ3bUNsYXNzIjogInVwZGF0ZS1tYW5hZ2VyIiwKICAgICAgICAgICAgIm1vZGUiOiAiZmxvYXQiCiAgICAgICAgfQogICAgXQp9AAAAAAAAAADuDAAAAAAAAAAAAAA",
+							"AQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+						]
+					]
+				},
+				{
+					"file": "/home/niraj/.config/github-copilot/apps.json",
+					"settings":
+					{
+						"buffer_size": 150,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/niraj/.config/github-copilot/versions.json",
+					"settings":
+					{
+						"buffer_size": 49,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/niraj/dotfiles/bottom/bottom/bottom.toml",
+					"settings":
+					{
+						"buffer_size": 6631,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/niraj/.sudo_as_admin_successful",
+					"settings":
+					{
+						"buffer_size": 0,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/niraj/.bashrc",
+					"settings":
+					{
+						"buffer_size": 3568,
+						"line_ending": "Unix"
+					},
+					"undo_stack":
+					[
+						[
+							1,
+							1,
+							"revert",
+							null,
+							"EQAAAAAAAAAAAAAAAAAAAAAAAADbDQAAIyB+Ly5iYXNocmM6IGV4ZWN1dGVkIGJ5IGJhc2goMSkgZm9yIG5vbi1sb2dpbiBzaGVsbHMuCiMgc2VlIC91c3Ivc2hhcmUvZG9jL2Jhc2gvZXhhbXBsZXMvc3RhcnR1cC1maWxlcyAoaW4gdGhlIHBhY2thZ2UgYmFzaC1kb2MpCiMgZm9yIGV4YW1wbGVzCgojIElmIG5vdCBydW5uaW5nIGludGVyYWN0aXZlbHksIGRvbid0IGRvIGFueXRoaW5nCmNhc2UgJC0gaW4KICAgICppKikgOzsKICAgICAgKikgcmV0dXJuOzsKZXNhYwoKIyBkb24ndCBwdXQgZHVwbGljYXRlIGxpbmVzIG9yIGxpbmVzIHN0YXJ0aW5nIHdpdGggc3BhY2UgaW4gdGhlIGhpc3RvcnkuCiMgU2VlIGJhc2goMSkgZm9yIG1vcmUgb3B0aW9ucwpISVNUQ09OVFJPTD1pZ25vcmVib3RoCgojIGFwcGVuZCB0byB0aGUgaGlzdG9yeSBmaWxlLCBkb24ndCBvdmVyd3JpdGUgaXQKc2hvcHQgLXMgaGlzdGFwcGVuZAoKIyBmb3Igc2V0dGluZyBoaXN0b3J5IGxlbmd0aCBzZWUgSElTVFNJWkUgYW5kIEhJU1RGSUxFU0laRSBpbiBiYXNoKDEpCkhJU1RTSVpFPTEwMDAKSElTVEZJTEVTSVpFPTIwMDAKCiMgY2hlY2sgdGhlIHdpbmRvdyBzaXplIGFmdGVyIGVhY2ggY29tbWFuZCBhbmQsIGlmIG5lY2Vzc2FyeSwKIyB1cGRhdGUgdGhlIHZhbHVlcyBvZiBMSU5FUyBhbmQgQ09MVU1OUy4Kc2hvcHQgLXMgY2hlY2t3aW5zaXplCgojIElmIHNldCwgdGhlIHBhdHRlcm4gIioqIiB1c2VkIGluIGEgcGF0aG5hbWUgZXhwYW5zaW9uIGNvbnRleHQgd2lsbAojIG1hdGNoIGFsbCBmaWxlcyBhbmQgemVybyBvciBtb3JlIGRpcmVjdG9yaWVzIGFuZCBzdWJkaXJlY3Rvcmllcy4KI3Nob3B0IC1zIGdsb2JzdGFyCgojIG1ha2UgbGVzcyBtb3JlIGZyaWVuZGx5IGZvciBub24tdGV4dCBpbnB1dCBmaWxlcywgc2VlIGxlc3NwaXBlKDEpCiNbIC14IC91c3IvYmluL2xlc3NwaXBlIF0gJiYgZXZhbCAiJChTSEVMTD0vYmluL3NoIGxlc3NwaXBlKSIKCiMgc2V0IHZhcmlhYmxlIGlkZW50aWZ5aW5nIHRoZSBjaHJvb3QgeW91IHdvcmsgaW4gKHVzZWQgaW4gdGhlIHByb21wdCBiZWxvdykKaWYgWyAteiAiJHtkZWJpYW5fY2hyb290Oi19IiBdICYmIFsgLXIgL2V0Yy9kZWJpYW5fY2hyb290IF07IHRoZW4KICAgIGRlYmlhbl9jaHJvb3Q9JChjYXQgL2V0Yy9kZWJpYW5fY2hyb290KQpmaQoKIyBzZXQgYSBmYW5jeSBwcm9tcHQgKG5vbi1jb2xvciwgdW5sZXNzIHdlIGtub3cgd2UgIndhbnQiIGNvbG9yKQpjYXNlICIkVEVSTSIgaW4KICAgIHh0ZXJtLWNvbG9yfCotMjU2Y29sb3IpIGNvbG9yX3Byb21wdD15ZXM7Owplc2FjCgojIHVuY29tbWVudCBmb3IgYSBjb2xvcmVkIHByb21wdCwgaWYgdGhlIHRlcm1pbmFsIGhhcyB0aGUgY2FwYWJpbGl0eTsgdHVybmVkCiMgb2ZmIGJ5IGRlZmF1bHQgdG8gbm90IGRpc3RyYWN0IHRoZSB1c2VyOiB0aGUgZm9jdXMgaW4gYSB0ZXJtaW5hbCB3aW5kb3cKIyBzaG91bGQgYmUgb24gdGhlIG91dHB1dCBvZiBjb21tYW5kcywgbm90IG9uIHRoZSBwcm9tcHQKI2ZvcmNlX2NvbG9yX3Byb21wdD15ZXMKCmlmIFsgLW4gIiRmb3JjZV9jb2xvcl9wcm9tcHQiIF07IHRoZW4KICAgIGlmIFsgLXggL3Vzci9iaW4vdHB1dCBdICYmIHRwdXQgc2V0YWYgMSA+Ji9kZXYvbnVsbDsgdGhlbgoJIyBXZSBoYXZlIGNvbG9yIHN1cHBvcnQ7IGFzc3VtZSBpdCdzIGNvbXBsaWFudCB3aXRoIEVjbWEtNDgKCSMgKElTTy9JRUMtNjQyOSkuIChMYWNrIG9mIHN1Y2ggc3VwcG9ydCBpcyBleHRyZW1lbHkgcmFyZSwgYW5kIHN1Y2gKCSMgYSBjYXNlIHdvdWxkIHRlbmQgdG8gc3VwcG9ydCBzZXRmIHJhdGhlciB0aGFuIHNldGFmLikKCWNvbG9yX3Byb21wdD15ZXMKICAgIGVsc2UKCWNvbG9yX3Byb21wdD0KICAgIGZpCmZpCgppZiBbICIkY29sb3JfcHJvbXB0IiA9IHllcyBdOyB0aGVuCiAgICBQUzE9JyR7ZGViaWFuX2Nocm9vdDorKCRkZWJpYW5fY2hyb290KX1cW1wwMzNbMDE7MzJtXF1cdUBcaFxbXDAzM1swMG1cXTpcW1wwMzNbMDE7MzRtXF1cd1xbXDAzM1swMG1cXVwkICcKZWxzZQogICAgUFMxPScke2RlYmlhbl9jaHJvb3Q6KygkZGViaWFuX2Nocm9vdCl9XHVAXGg6XHdcJCAnCmZpCnVuc2V0IGNvbG9yX3Byb21wdCBmb3JjZV9jb2xvcl9wcm9tcHQKCiMgSWYgdGhpcyBpcyBhbiB4dGVybSBzZXQgdGhlIHRpdGxlIHRvIHVzZXJAaG9zdDpkaXIKY2FzZSAiJFRFUk0iIGluCnh0ZXJtKnxyeHZ0KikKICAgIFBTMT0iXFtcZV0wOyR7ZGViaWFuX2Nocm9vdDorKCRkZWJpYW5fY2hyb290KX1cdUBcaDogXHdcYVxdJFBTMSIKICAgIDs7CiopCiAgICA7Owplc2FjCgojIGVuYWJsZSBjb2xvciBzdXBwb3J0IG9mIGxzIGFuZCBhbHNvIGFkZCBoYW5keSBhbGlhc2VzCmlmIFsgLXggL3Vzci9iaW4vZGlyY29sb3JzIF07IHRoZW4KICAgIHRlc3QgLXIgfi8uZGlyY29sb3JzICYmIGV2YWwgIiQoZGlyY29sb3JzIC1iIH4vLmRpcmNvbG9ycykiIHx8IGV2YWwgIiQoZGlyY29sb3JzIC1iKSIKICAgIGFsaWFzIGxzPSdscyAtLWNvbG9yPWF1dG8nCiAgICAjYWxpYXMgZGlyPSdkaXIgLS1jb2xvcj1hdXRvJwogICAgI2FsaWFzIHZkaXI9J3ZkaXIgLS1jb2xvcj1hdXRvJwoKICAgICNhbGlhcyBncmVwPSdncmVwIC0tY29sb3I9YXV0bycKICAgICNhbGlhcyBmZ3JlcD0nZmdyZXAgLS1jb2xvcj1hdXRvJwogICAgI2FsaWFzIGVncmVwPSdlZ3JlcCAtLWNvbG9yPWF1dG8nCmZpCgojIGNvbG9yZWQgR0NDIHdhcm5pbmdzIGFuZCBlcnJvcnMKI2V4cG9ydCBHQ0NfQ09MT1JTPSdlcnJvcj0wMTszMTp3YXJuaW5nPTAxOzM1Om5vdGU9MDE7MzY6Y2FyZXQ9MDE7MzI6bG9jdXM9MDE6cXVvdGU9MDEnCgojIHNvbWUgbW9yZSBscyBhbGlhc2VzCiNhbGlhcyBsbD0nbHMgLWwnCiNhbGlhcyBsYT0nbHMgLUEnCiNhbGlhcyBsPSdscyAtQ0YnCgojIEFsaWFzIGRlZmluaXRpb25zLgojIFlvdSBtYXkgd2FudCB0byBwdXQgYWxsIHlvdXIgYWRkaXRpb25zIGludG8gYSBzZXBhcmF0ZSBmaWxlIGxpa2UKIyB+Ly5iYXNoX2FsaWFzZXMsIGluc3RlYWQgb2YgYWRkaW5nIHRoZW0gaGVyZSBkaXJlY3RseS4KIyBTZWUgL3Vzci9zaGFyZS9kb2MvYmFzaC1kb2MvZXhhbXBsZXMgaW4gdGhlIGJhc2gtZG9jIHBhY2thZ2UuCgppZiBbIC1mIH4vLmJhc2hfYWxpYXNlcyBdOyB0aGVuCiAgICAuIH4vLmJhc2hfYWxpYXNlcwpmaQoKIyBlbmFibGUgcHJvZ3JhbW1hYmxlIGNvbXBsZXRpb24gZmVhdHVyZXMgKHlvdSBkb24ndCBuZWVkIHRvIGVuYWJsZQojIHRoaXMsIGlmIGl0J3MgYWxyZWFkeSBlbmFibGVkIGluIC9ldGMvYmFzaC5iYXNocmMgYW5kIC9ldGMvcHJvZmlsZQojIHNvdXJjZXMgL2V0Yy9iYXNoLmJhc2hyYykuCmlmICEgc2hvcHQgLW9xIHBvc2l4OyB0aGVuCiAgaWYgWyAtZiAvdXNyL3NoYXJlL2Jhc2gtY29tcGxldGlvbi9iYXNoX2NvbXBsZXRpb24gXTsgdGhlbgogICAgLiAvdXNyL3NoYXJlL2Jhc2gtY29tcGxldGlvbi9iYXNoX2NvbXBsZXRpb24KICBlbGlmIFsgLWYgL2V0Yy9iYXNoX2NvbXBsZXRpb24gXTsgdGhlbgogICAgLiAvZXRjL2Jhc2hfY29tcGxldGlvbgogIGZpCmZpCi4gIiRIT01FLy5jYXJnby9lbnYiCgAAAAAAAAAABQ4AAAAAAAAAAAAAAAAAAAAAAAAFDgAAAAAAAAAAAAAAAAAAAAAAAPANAAAAAAAAAAAAAAAAAAAAAAAA8A0AAAAAAAAAAAAAAAAAAAAAAADwDQAAAAAAAAAAAAAAAAAAAAAAAPANAAAAAAAAAAAAAAAAAAAAAAAA8A0AAAAAAAAAAAAAAAAAAAAAAADwDQAAAAAAAAAAAAAAAAAAAAAAAPANAAAAAAAAAAAAAAAAAAAAAAAA8A0AAAAAAAAAAAAAAAAAAAAAAADwDQAAAAAAAAAAAAAAAAAAAAAAAPANAAAAAAAAAAAAAAAAAAAAAAAA8A0AAAAAAAAAAAAAAAAAAAAAAADwDQAAAAAAAAAAAAAAAAAAAAAAAPANAAAAAAAAAAAAAAAAAAAAAAAA8A0AAAAAAAAAAAAA",
+							"EAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+						]
+					]
+				},
+				{
+					"file": "/home/niraj/.profile",
+					"settings":
+					{
+						"buffer_size": 807,
+						"line_ending": "Unix"
+					}
+				}
 			],
 			"build_system": "",
 			"build_system_choices":
@@ -526,6 +707,14 @@
 				"last_filter": "",
 				"selected_items":
 				[
+					[
+						"instal",
+						"Package Control: Install Package"
+					],
+					[
+						"theme",
+						"UI: Select Color Scheme"
+					],
 					[
 						"install",
 						"Package Control: Install Package"
@@ -557,10 +746,6 @@
 					[
 						"menu",
 						"View: Toggle Menu"
-					],
-					[
-						"theme",
-						"UI: Select Color Scheme"
 					],
 					[
 						"color",
@@ -628,6 +813,17 @@
 			],
 			"file_history":
 			[
+				"/home/niraj/.config/kdeconnect/config",
+				"/home/niraj/.config/neovide/config.toml",
+				"/home/niraj/.config/lazygit/config.yml",
+				"/home/niraj/.config/yelp/yelp.cfg",
+				"/home/niraj/.ssh/id_ed25519.pub",
+				"/home/niraj/Desktop/search-light/metadata.json",
+				"/home/niraj/dotfiles/kitty/.config/kitty/kitty.conf",
+				"/home/niraj/.zshrc",
+				"/home/niraj/.bashrc",
+				"/home/niraj/.local/share/applications/neovide.desktop",
+				"/home/niraj/.local/share/applications/neovide.desktop.save",
 				"/home/niraj/.config/ghostty/config",
 				"/home/niraj/.sudo_as_admin_successful",
 				"/home/niraj/Desktop/Approutes.tsx",
@@ -663,8 +859,6 @@
 				"/home/niraj/.config/gnome-initial-setup-done",
 				"/home/niraj/.config/discoverrc",
 				"/home/niraj/.config/appimagelauncher.cfg",
-				"/home/niraj/.zshrc",
-				"/home/niraj/.bashrc",
 				"/home/niraj/.config/kitty/kitty.conf",
 				"/home/niraj/.config/GNOME-xdg-terminals.list",
 				"/home/niraj/.config/xdg-terminals.list",
@@ -725,7 +919,6 @@
 				"/home/niraj/.config/kservicemenurc",
 				"/home/niraj/.config/gsconnect/private.pem",
 				"/home/niraj/.config/lazygit/state.yml",
-				"/home/niraj/.config/lazygit/config.yml",
 				"/home/niraj/.config/gtk-2.0/gtkfilechooser.ini",
 				"/home/niraj/.config/Code/User/sync/keybindings/lastSynckeybindings.json",
 				"/home/niraj/.config/Caprine/custom.css",
@@ -747,19 +940,11 @@
 				"/home/niraj/.ssh/config",
 				"/home/niraj/Desktop/nvim/lua/plugins/dap.lua",
 				"/home/niraj/Desktop/emergency.txt",
-				"/home/niraj/.config/kanata/config.kbd",
-				"/home/niraj/.openai_key.zsh",
-				"/home/niraj/Downloads/WebStorm-2024.2/WebStorm-242.20224.342/Install-Linux-tar.txt",
-				"/home/niraj/Desktop/hello.py",
-				"/home/niraj/.config/system.d/user/kanata.service",
-				"/home/niraj/Desktop/nvim/lua/plugins/persistance.lua",
-				"/home/niraj/.config/nvim/lua/mappings.lua",
-				"/home/niraj/.config/nvim/lua/options.lua",
-				"/home/niraj/Desktop/Projects/flutter/rohit semriwal ecommerce/ecommerce-frontend/lib/core/ui.dart"
+				"/home/niraj/.config/kanata/config.kbd"
 			],
 			"find":
 			{
-				"height": 30.0
+				"height": 29.0
 			},
 			"find_in_files":
 			{
@@ -801,12 +986,469 @@
 				{
 					"sheets":
 					[
+						{
+							"buffer": 0,
+							"file": "/home/niraj/dotfiles/tmux/.tmux.conf",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 4315,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/ShellScript/Bash.sublime-syntax",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 14,
+							"stack_multiselect": false,
+							"type": "text"
+						},
+						{
+							"buffer": 1,
+							"file": "/home/niraj/dotfiles/bash/.bashrc",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 1099,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										1099,
+										1099
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/ShellScript/Bash.sublime-syntax",
+									"tab_size": 2,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 1,
+							"stack_multiselect": false,
+							"type": "text"
+						},
+						{
+							"buffer": 2,
+							"file": "/home/niraj/dotfiles/zsh/.zshrc",
+							"selected": true,
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 2444,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/ShellScript/Bash.sublime-syntax",
+									"tab_size": 2,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 0,
+							"stack_multiselect": false,
+							"type": "text"
+						},
+						{
+							"buffer": 3,
+							"file": "/home/niraj/.zshenv",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 0,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/ShellScript/Bash.sublime-syntax"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 13,
+							"stack_multiselect": false,
+							"type": "text"
+						},
+						{
+							"buffer": 4,
+							"file": "/home/niraj/.zshrc",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 2444,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"_nv_visual_sel_mode": "mode_visual_line",
+									"highlight_line": true,
+									"syntax": "Packages/ShellScript/Bash.sublime-syntax",
+									"tab_size": 2,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 198.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 9,
+							"stack_multiselect": false,
+							"type": "text"
+						},
+						{
+							"buffer": 5,
+							"file": "/home/niraj/.local/share/applications/neovide.desktop",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 515,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										515,
+										515
+									]
+								],
+								"settings":
+								{
+									"_nv_visual_sel_mode": "mode_visual",
+									"syntax": "Packages/Text/Plain text.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 8,
+							"stack_multiselect": false,
+							"type": "text"
+						},
+						{
+							"buffer": 6,
+							"file": "/home/niraj/.gitconfig",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 54,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										53,
+										53
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Materialize/Langs/Git.tmLanguage",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": false
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 7,
+							"stack_multiselect": false,
+							"type": "text"
+						},
+						{
+							"buffer": 7,
+							"file": "/home/niraj/.vscode/argv.json",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 798,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/JSON/JSON.sublime-syntax",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": false
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 6,
+							"stack_multiselect": false,
+							"type": "text"
+						},
+						{
+							"buffer": 8,
+							"file": "/home/niraj/.config/forge/config/windows.json",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 3310,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/JSON/JSON.sublime-syntax",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 2359.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 5,
+							"stack_multiselect": false,
+							"type": "text"
+						},
+						{
+							"buffer": 9,
+							"file": "/home/niraj/.config/github-copilot/apps.json",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 150,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/JSON/JSON.sublime-syntax"
+								},
+								"translation.x": 729.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 4,
+							"stack_multiselect": false,
+							"type": "text"
+						},
+						{
+							"buffer": 10,
+							"file": "/home/niraj/.config/github-copilot/versions.json",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 49,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/JSON/JSON.sublime-syntax"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 3,
+							"stack_multiselect": false,
+							"type": "text"
+						},
+						{
+							"buffer": 11,
+							"file": "/home/niraj/dotfiles/bottom/bottom/bottom.toml",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 6631,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/TOML/TOML.sublime-syntax"
+								},
+								"translation.x": 0.0,
+								"translation.y": 3817.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 2,
+							"stack_multiselect": false,
+							"type": "text"
+						},
+						{
+							"buffer": 12,
+							"file": "/home/niraj/.sudo_as_admin_successful",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 0,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Text/Plain text.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 11,
+							"stack_multiselect": false,
+							"type": "text"
+						},
+						{
+							"buffer": 13,
+							"file": "/home/niraj/.bashrc",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 3568,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/ShellScript/Bash.sublime-syntax",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 1409.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 10,
+							"stack_multiselect": false,
+							"type": "text"
+						},
+						{
+							"buffer": 14,
+							"file": "/home/niraj/.profile",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 807,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/ShellScript/Bash.sublime-syntax",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 12,
+							"stack_multiselect": false,
+							"type": "text"
+						}
 					]
 				}
 			],
 			"incremental_find":
 			{
-				"height": 30.0
+				"height": 29.0
 			},
 			"input":
 			{
@@ -848,11 +1490,11 @@
 				"height": 0.0
 			},
 			"pinned_build_system": "",
-			"position": "0,1,0,0,0,0,0,1920,1032,1920,1080,0",
+			"position": "0,0,0,0,0,56,50,1013,1045,1920,1080,0",
 			"project": "",
 			"replace":
 			{
-				"height": 56.0
+				"height": 54.0
 			},
 			"save_all_on_build": true,
 			"select_file":
@@ -885,6 +1527,8 @@
 			"selected_group": 0,
 			"settings":
 			{
+				"_vintageous_last_char_search_character": "f",
+				"_vintageous_last_char_search_command": "vi_f",
 				"_vintageous_reset_during_init": true
 			},
 			"show_minimap": false,

@@ -14,6 +14,15 @@ return {
   dependencies = {
     "nvim-tree/nvim-web-devicons",
     -- "3rd/image.nvim",  --requires luarocks
+    {
+      "s1n7ax/nvim-window-picker",
+      name = "window-picker",
+      event = "VeryLazy",
+      version = "2.*",
+      config = function()
+        require("window-picker").setup({ hint = "floating-big-letter" })
+      end,
+    },
   },
   cmd = "Neotree",
 

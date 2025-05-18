@@ -33,19 +33,19 @@ return {
       end,
       desc = "Command History",
     },
-    {
-      "<leader><space>",
-      function()
-        Snacks.picker.files({
-          formatters = {
-            file = {
-              -- filename_first = true, -- display filename before the file path
-            },
-          },
-        })
-      end,
-      desc = "Find Files",
-    },
+    -- {
+    --   "<leader><space>",
+    --   function()
+    --     Snacks.picker.files({
+    --       formatters = {
+    --         file = {
+    --           -- filename_first = true, -- display filename before the file path
+    --         },
+    --       },
+    --     })
+    --   end,
+    --   desc = "Find Files",
+    -- },
     -- find
     {
       "<leader>fb",
@@ -69,7 +69,7 @@ return {
       desc = "Find Files",
     },
     {
-      "<leader>fg",
+      "<leader><space>",
       function()
         Snacks.picker.git_files()
       end,
@@ -386,11 +386,11 @@ return {
         wo = {
           winbar = "",
         },
-        style = "float",
-        -- relative = "editor",
-        border = "rounded",
-        -- width = 0.9,
-        -- height = 0.9,
+        --   style = "float",
+        --   -- relative = "editor",
+        --   border = "rounded",
+        --   -- width = 0.9,
+        --   -- height = 0.9,
       },
     },
     input = { enabled = false },
@@ -478,7 +478,7 @@ return {
         {
           pane = 1,
           section = "terminal",
-          cmd = "colorscript -e square && colorscript -e square",
+          cmd = "btm -e",
           height = 10,
           padding = 1,
         },
