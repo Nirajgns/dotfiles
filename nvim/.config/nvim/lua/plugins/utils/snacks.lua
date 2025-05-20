@@ -315,6 +315,11 @@ return {
     -- },
   },
   opts = {
+    styles = {
+      blame_line = {
+        title_pos = "right",
+      },
+    },
     explorer = { enabled = false },
     image = {
       enabled = not vim.g.neovide,

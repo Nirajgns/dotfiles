@@ -1,5 +1,6 @@
 return {
   "tanvirtin/vgit.nvim",
+  -- enabled = false,
   branch = "v1.0.x",
   event = "LazyFile",
   config = function()
@@ -34,6 +35,13 @@ return {
           key = "<leader>gb",
           handler = "buffer_blame_preview",
           desc = "Show buffer blame preview",
+        },
+
+        {
+          mode = "n",
+          key = "<leader>gB",
+          handler = "buffer_diff_preview",
+          desc = "Show buffer diff preview",
         },
       },
 
@@ -91,6 +99,40 @@ return {
             local padding = math.max(0, available_space - blame_text_width)
             return string.rep(" ", padding - 15) .. blame_text
           end,
+        },
+        signs = {
+          priority = 10,
+          definitions = {
+            -- The sign definitions you provide will automatically be instantiated for you.
+            GitSignsAdd = {
+              texthl = "GitSignsAdd",
+              numhl = nil,
+              icon = nil,
+              linehl = nil,
+              text = "│",
+            },
+            GitSignsDelete = {
+              texthl = "GitSignsDelete",
+              numhl = nil,
+              icon = nil,
+              linehl = nil,
+              text = "›",
+            },
+            GitSignsChange = {
+              texthl = "GitSignsChange",
+              numhl = nil,
+              icon = nil,
+              linehl = nil,
+              text = "│",
+            },
+            GitSignsDeleteLn = {
+              linehl = "GitSignsDeleteLn",
+              texthl = nil,
+              numhl = nil,
+              icon = nil,
+              text = ">",
+            },
+          },
         },
       },
     })

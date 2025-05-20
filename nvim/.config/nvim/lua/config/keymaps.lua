@@ -4,9 +4,9 @@ map("i", "<C-BS>", "<C-w>", { noremap = true, silent = true })
 
 --jk to exit insert and terminal mode
 map("i", "jk", "<ESC>", { noremap = true, silent = true })
-map("i", "kj", "<ESC>", { noremap = true, silent = true })
-map("t", "jk", "<C-\\><C-n>", { noremap = true, silent = true })
-map("t", "kj", "<C-\\><C-n>", { noremap = true, silent = true })
+-- map("i", "kj", "<ESC>", { noremap = true, silent = true })
+map("t", "ii", "<C-\\><C-n>", { noremap = true, silent = true })
+-- map("t", "kj", "<C-\\><C-n>", { noremap = true, silent = true })
 map("t", "<esc>", "<C-\\><C-n>", { noremap = true, silent = true })
 
 -- Terminal mode window navigation
