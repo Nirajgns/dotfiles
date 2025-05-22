@@ -19,6 +19,7 @@ return {
       -- "isort",
       -- "flake8",
       -- "eslint_d",
+      "prisma-language-server",
       "eslint-lsp",
       "emmet-language-server",
       "js-debug-adapter",
