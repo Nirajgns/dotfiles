@@ -1,7 +1,7 @@
 return {
   "monkoose/neocodeium",
   event = "InsertEnter",
-  -- enabled = false,
+  enabled = false,
   config = function()
     local neocodeium = require("neocodeium")
     neocodeium.setup()
