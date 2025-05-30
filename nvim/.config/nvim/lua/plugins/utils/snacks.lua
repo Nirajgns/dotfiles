@@ -33,19 +33,13 @@ return {
       end,
       desc = "Command History",
     },
-    -- {
-    --   "<leader><space>",
-    --   function()
-    --     Snacks.picker.files({
-    --       formatters = {
-    --         file = {
-    --           -- filename_first = true, -- display filename before the file path
-    --         },
-    --       },
-    --     })
-    --   end,
-    --   desc = "Find Files",
-    -- },
+    {
+      "<leader><space>",
+      function()
+        Snacks.picker.git_files()
+      end,
+      desc = "Find git Files",
+    },
     -- find
     {
       "<leader>fb",
@@ -69,7 +63,7 @@ return {
       desc = "Find Files",
     },
     {
-      "<leader><space>",
+      "<leader>fg",
       function()
         Snacks.picker.git_files()
       end,
@@ -315,11 +309,6 @@ return {
     -- },
   },
   opts = {
-    styles = {
-      blame_line = {
-        title_pos = "right",
-      },
-    },
     explorer = { enabled = false },
     image = {
       enabled = not vim.g.neovide,

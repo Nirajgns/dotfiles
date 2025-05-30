@@ -43,9 +43,9 @@ return {
       setup = {},
       servers = {
         tailwindcss = {},
-        vtsls = { settings = {
-          enableMoveToFileCodeAction = true,
-        } },
+        -- vtsls = { settings = {
+        --   enableMoveToFileCodeAction = true,
+        -- } },
       },
     }
   end,
