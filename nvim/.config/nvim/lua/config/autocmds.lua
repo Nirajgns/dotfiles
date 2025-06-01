@@ -65,7 +65,7 @@ vim.api.nvim_create_autocmd("BufEnter", {
 })
 
 --=============FONT SIZE SETTINGS IN NEOVIDE==============--
-vim.g.gui_font_default_size = 11
+vim.g.gui_font_default_size = 12.5
 
 RefreshGuiFont = function()
   if vim.g.neovide then

@@ -1,10 +1,3 @@
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-
 # ----- History & Keybindings -----
 HISTFILE=~/.histfile
 HISTSIZE=1000
@@ -23,6 +16,9 @@ setopt extended_glob
 setopt hist_ignore_dups
 setopt hist_reduce_blanks
 
+# ----- Autosuggestions Color -----
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=240,bold'
+
 # ----- Completion -----
 autoload -Uz compinit
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
@@ -34,7 +30,7 @@ fi
 
 # ----- Aliases -----
 alias nv='neovide --fork'
-alias ls='ls --color'
+alias ls='eza --icons'
 
 # ----- Brew setup -----
 if [[ -x /home/linuxbrew/.linuxbrew/bin/brew ]]; then
@@ -55,19 +51,19 @@ source "$HOME/.local/share/zinit/zinit.git/zinit.zsh"
 
 # ----- Plugins -----
 zinit wait'0' lucid for \
-  zsh-users/zsh-autosuggestions \
-  zsh-users/zsh-syntax-highlighting \
-  Aloxaf/fzf-tab \
   ajeetdsouza/zoxide \
   zsh-users/zsh-completions \
   joshskidmore/zsh-fzf-history-search \
   unixorn/fzf-zsh-plugin \
-  hlissner/zsh-autopair
+  hlissner/zsh-autopair \
+  Aloxaf/fzf-tab \
+  zsh-users/zsh-syntax-highlighting \
 
-# zinit ice depth=1; zinit light romkatv/powerlevel10k
+# Theme or Prompt
 eval "$(starship init zsh)"
-eval "$(zoxide init zsh)"
 
+# zoxide init
+eval "$(zoxide init zsh)"
 
 # ----- FZF binary check -----
 if [[ ! -f ~/.fzf_warning_shown && ! -x "$(command -v fzf)" ]]; then
@@ -83,3 +79,16 @@ nvm() {
   nvm "$@"
 }
 
+. "$HOME/.local/bin/env"
+
+# ----- Auto-cd with yazi-----
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	yazi "$@" --cwd-file="$tmp"
+	IFS= read -r -d '' cwd < "$tmp"
+	[ -n "$cwd" ] && [ "$cwd" != "$PWD" ] && builtin cd -- "$cwd"
+	rm -f -- "$tmp"
+}
+
+export EDITOR=nvim
+export VISUAL=nvim

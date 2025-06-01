@@ -5,21 +5,17 @@
 	],
 	"installed_packages":
 	[
+		"Catppuccin color schemes",
 		"Dart",
 		"Dartlight",
 		"FileIcons",
-		"FlutterEnhancements",
-		"LSP-Dart",
 		"LSP-typescript",
-		"Materialize",
 		"NeoVintageous",
 		"NeoVintageousFiles",
 		"Package Control",
 		"SublimeLinter Inline Errors",
-		"Terminal",
 		"Terminus",
 		"Theme - Adaptify",
-		"Theme - Darkmatter",
 		"TOML",
 	],
 }

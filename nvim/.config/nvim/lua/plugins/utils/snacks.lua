@@ -36,7 +36,7 @@ return {
     {
       "<leader><space>",
       function()
-        Snacks.picker.git_files()
+        Snacks.picker.files()
       end,
       desc = "Find git Files",
     },

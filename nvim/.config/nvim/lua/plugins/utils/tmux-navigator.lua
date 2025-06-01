@@ -1,5 +1,5 @@
 return {
-  -- enabled = false,
+  enabled = not vim.g.neovide,
   "christoomey/vim-tmux-navigator",
   cmd = {
     "TmuxNavigateLeft",

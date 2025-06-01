@@ -22,23 +22,25 @@ return {
       },
     })
 
-    vim.keymap.set(
-      { "n", "t" },
-      "<A-v>",
-      '<cmd>lua require("nvterm.terminal").toggle("vertical")<CR>',
-      { noremap = true, silent = true, desc = "vertical terminal toggle" }
-    )
-    vim.keymap.set(
-      { "n", "t" },
-      "<A-t>",
-      '<cmd>lua require("nvterm.terminal").toggle("float")<CR>',
-      { noremap = true, silent = true, desc = "floating terminal toggle" }
-    )
-    vim.keymap.set(
-      { "n", "t" },
-      "<A-h>",
-      '<cmd>lua require("nvterm.terminal").toggle("horizontal")<CR>',
-      { noremap = true, silent = true, desc = "horizontal terminal toggle" }
-    )
+    local function toggle_and_insert(direction)
+      require("nvterm.terminal").toggle(direction)
+      vim.defer_fn(function()
+        if vim.bo.buftype == "terminal" then
+          vim.cmd("startinsert!")
+        end
+      end, 20) -- slight delay (in ms) to let Neovim switch buffers
+    end
+
+    vim.keymap.set({ "n", "t" }, "<A-v>", function()
+      toggle_and_insert("vertical")
+    end, { noremap = true, silent = true, desc = "vertical terminal toggle" })
+
+    vim.keymap.set({ "n", "t" }, "<A-t>", function()
+      toggle_and_insert("float")
+    end, { noremap = true, silent = true, desc = "floating terminal toggle" })
+
+    vim.keymap.set({ "n", "t" }, "<A-h>", function()
+      toggle_and_insert("horizontal")
+    end, { noremap = true, silent = true, desc = "horizontal terminal toggle" })
   end,
 }

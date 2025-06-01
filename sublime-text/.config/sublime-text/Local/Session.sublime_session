@@ -1,6 +1,14 @@
 {
 	"file_history":
 	[
+		"/home/niraj/.local/share/applications/neovide.desktop",
+		"/home/niraj/.local/bin/neovide",
+		"/home/niraj/.config/nvim/lua/plugins/scope.lua",
+		"/home/niraj/.zshrc",
+		"/home/niraj/dotfiles/sublime-text/.config/sublime-text/Packages/Theme - Default/Adaptive.sublime-theme",
+		"/home/niraj/dotfiles/sublime-text/.config/sublime-text/Packages/User/Adaptive.sublime-theme",
+		"/home/niraj/dotfiles/sublime-text/.config/sublime-text/Packages/Default/Preferences.sublime-settings",
+		"/home/niraj/dotfiles/sublime-text/.config/sublime-text/Packages/User/Preferences.sublime-settings",
 		"/home/niraj/.vscode/argv.json",
 		"/home/niraj/.config/forge/config/windows.json",
 		"/home/niraj/.config/github-copilot/apps.json",
@@ -10,8 +18,6 @@
 		"/home/niraj/.bashrc",
 		"/home/niraj/.profile",
 		"/home/niraj/.gitconfig",
-		"/home/niraj/.local/share/applications/neovide.desktop",
-		"/home/niraj/.zshrc",
 		"/home/niraj/.zshenv",
 		"/home/niraj/dotfiles/zsh/.zshrc",
 		"/home/niraj/dotfiles/bash/.bashrc",
@@ -122,16 +128,11 @@
 		"/home/niraj/.config/gtk-2.0/gtkfilechooser.ini",
 		"/home/niraj/.config/Code/User/sync/keybindings/lastSynckeybindings.json",
 		"/home/niraj/.config/Caprine/custom.css",
-		"/home/niraj/.ssh/id_rsa.pub",
-		"/home/niraj/Dropbox/obsidian-vault/Learn-react/React.md",
-		"/home/niraj/Dropbox/obsidian-vault/.obsidian.vimrc",
-		"/home/niraj/Desktop/projects/js/ts-ecom-api/src/routes/products.ts",
-		"/home/niraj/.bash_history",
-		"/home/niraj/.config/nvim.bak/lua/config/options.lua",
-		"/home/niraj/.blerc"
+		"/home/niraj/.ssh/id_rsa.pub"
 	],
 	"folder_history":
 	[
+		"/home/niraj",
 		"/home/niraj/.config/nvim/lua/custom/plugins",
 		"/home/niraj/.config/nvim",
 		"/home/niraj/Desktop/Projects/js/bookstore",
@@ -145,19 +146,19 @@
 		"/home/niraj/Desktop/Projects/todo_app",
 		"/home/niraj/Desktop/Projects/Nomad-backend-master"
 	],
-	"last_version": 4192,
-	"last_window_id": 37,
+	"last_version": 4200,
+	"last_window_id": 42,
 	"log_indexing": false,
-	"next_update_check": 1747624270,
+	"next_update_check": 1748795397,
 	"settings":
 	{
 		"new_window_full_screen": false,
-		"new_window_height": 1034.0,
+		"new_window_height": 1030.0,
 		"new_window_maximized": false,
 		"new_window_position":
 		[
 			56.0,
-			96.0
+			92.0
 		],
 		"new_window_settings":
 		{
@@ -178,20 +179,24 @@
 				"selected_items":
 				[
 					[
-						"instal",
-						"Package Control: Install Package"
+						"settin",
+						"Preferences: Settings"
+					],
+					[
+						"colors",
+						"UI: Select Color Scheme"
 					],
 					[
 						"theme",
-						"UI: Select Color Scheme"
+						"UI: Customize Theme"
 					],
 					[
 						"install",
 						"Package Control: Install Package"
 					],
 					[
-						"settin",
-						"Preferences: Settings"
+						"instal",
+						"Package Control: Install Package"
 					],
 					[
 						"men",
@@ -279,6 +284,13 @@
 			},
 			"file_history":
 			[
+				"/home/niraj/.local/share/applications/yazi.desktop",
+				"/home/niraj/.config/yazi/keymap.toml",
+				"/home/niraj/.zshrc",
+				"/home/niraj/dotfiles/nvim/.config/nvim/lua/plugins/disabled.lua",
+				"/home/niraj/.local/share/applications/neovide.desktop",
+				"/home/niraj/.local/bin/neovide",
+				"/home/niraj/.config/nvim/lua/plugins/scope.lua",
 				"/home/niraj/.vscode/argv.json",
 				"/home/niraj/.config/forge/config/windows.json",
 				"/home/niraj/.config/github-copilot/apps.json",
@@ -288,8 +300,6 @@
 				"/home/niraj/.bashrc",
 				"/home/niraj/.profile",
 				"/home/niraj/.gitconfig",
-				"/home/niraj/.local/share/applications/neovide.desktop",
-				"/home/niraj/.zshrc",
 				"/home/niraj/.zshenv",
 				"/home/niraj/dotfiles/zsh/.zshrc",
 				"/home/niraj/dotfiles/bash/.bashrc",
@@ -401,16 +411,11 @@
 				"/home/niraj/.bash_history",
 				"/home/niraj/.config/nvim.bak/lua/config/options.lua",
 				"/home/niraj/.blerc",
-				"/home/niraj/.cache/oh-my-posh/themes/1_shell.omp.json",
-				"/home/niraj/Documents/Learn-react/.obsidian.vimrc",
-				"/home/niraj/Documents/Learn-react/.obsidian/.obsidian.vimrc",
-				"/home/niraj/Desktop/projects/js/ts-ecom-api/src/index.ts",
-				"/home/niraj/Desktop/projects/js/ts-ecom-api/src/middlewares/roleMiddleware.ts",
-				"/home/niraj/Desktop/projects/js/ts-ecom-api/src/error-handler.ts"
+				"/home/niraj/.cache/oh-my-posh/themes/1_shell.omp.json"
 			],
 			"find":
 			{
-				"height": 29.0
+				"height": 47.0
 			},
 			"find_in_files":
 			{
@@ -424,7 +429,6 @@
 				"case_sensitive": false,
 				"find_history":
 				[
-					"outline"
 				],
 				"highlight": true,
 				"in_selection": false,
@@ -443,11 +447,11 @@
 			},
 			"incremental_find":
 			{
-				"height": 29.0
+				"height": 47.0
 			},
 			"input":
 			{
-				"height": 63.0
+				"height": 82.0
 			},
 			"menu_visible": false,
 			"output.Terminus":
@@ -456,16 +460,22 @@
 			},
 			"output.exec":
 			{
-				"height": 445.0
+				"height": 445.0,
+				"history":
+				[
+				]
 			},
 			"output.find_results":
 			{
-				"height": 0.0
+				"height": 0.0,
+				"history":
+				[
+				]
 			},
 			"pinned_build_system": "",
 			"replace":
 			{
-				"height": 54.0
+				"height": 90.0
 			},
 			"save_all_on_build": true,
 			"select_file":
@@ -498,14 +508,14 @@
 			"show_minimap": false,
 			"show_open_files": false,
 			"show_tabs": true,
-			"side_bar_visible": true,
+			"side_bar_visible": false,
 			"side_bar_width": 229.0,
 			"status_bar_visible": true,
 			"template_settings":
 			{
 			}
 		},
-		"new_window_width": 1920.0
+		"new_window_width": 954.0
 	},
 	"windows":
 	[
@@ -518,6 +528,125 @@
 			},
 			"buffers":
 			[
+				{
+					"file": "/home/niraj/dotfiles/nvim/.config/nvim/lua/plugins/disabled.lua",
+					"redo_stack":
+					[
+						[
+							1,
+							1,
+							"insert",
+							{
+								"characters": "jkjkjkjk"
+							},
+							"CAAAAAcAAAAAAAAABwAAAAAAAAABAAAAawYAAAAAAAAABgAAAAAAAAABAAAAagUAAAAAAAAABQAAAAAAAAABAAAAawQAAAAAAAAABAAAAAAAAAABAAAAagMAAAAAAAAAAwAAAAAAAAABAAAAawIAAAAAAAAAAgAAAAAAAAABAAAAagEAAAAAAAAAAQAAAAAAAAABAAAAawAAAAAAAAAAAAAAAAAAAAABAAAAag",
+							"BgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAgAAAAAAAAACAAAAAAAAAAAAAAAAADwvw"
+						]
+					],
+					"settings":
+					{
+						"buffer_size": 372,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/niraj/.zshrc",
+					"redo_stack":
+					[
+						[
+							1,
+							1,
+							"insert",
+							{
+								"characters": "jkjkj"
+							},
+							"BQAAAAQAAAAAAAAABAAAAAAAAAABAAAAagMAAAAAAAAAAwAAAAAAAAABAAAAawIAAAAAAAAAAgAAAAAAAAABAAAAagEAAAAAAAAAAQAAAAAAAAABAAAAawAAAAAAAAAAAAAAAAAAAAABAAAAag",
+							"BQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAFAAAAAAAAAAUAAAAAAAAAAAAAAAAA8L8"
+						]
+					],
+					"settings":
+					{
+						"buffer_size": 2350,
+						"encoding": "UTF-8",
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/niraj/.config/yazi/keymap.toml",
+					"settings":
+					{
+						"buffer_size": 123,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/niraj/.local/share/applications/yazi.desktop",
+					"settings":
+					{
+						"buffer_size": 199,
+						"encoding": "UTF-8",
+						"line_ending": "Unix"
+					},
+					"undo_stack":
+					[
+						[
+							13,
+							1,
+							"sequence",
+							{
+								"commands":
+								[
+									[
+										"nv_vi_a",
+										{
+											"count": 1,
+											"mode": "mode_internal_normal",
+											"register": "\""
+										}
+									],
+									[
+										"insert",
+										{
+											"characters": " EDITOR"
+										}
+									]
+								]
+							},
+							"BwAAAGAAAAAAAAAAYQAAAAAAAAAAAAAAYQAAAAAAAABiAAAAAAAAAAAAAABiAAAAAAAAAGMAAAAAAAAAAAAAAGMAAAAAAAAAZAAAAAAAAAAAAAAAZAAAAAAAAABlAAAAAAAAAAAAAABlAAAAAAAAAGYAAAAAAAAAAAAAAGYAAAAAAAAAZwAAAAAAAAAAAAAA",
+							"AQAAAAAAAAABAAAAXwAAAAAAAABfAAAAAAAAAAAAAAAAAPC/"
+						],
+						[
+							21,
+							1,
+							"insert",
+							{
+								"characters": "="
+							},
+							"AQAAAGcAAAAAAAAAaAAAAAAAAAAAAAAA",
+							"AQAAAAAAAAABAAAAZwAAAAAAAABnAAAAAAAAAAAAAAAAAPC/"
+						],
+						[
+							22,
+							1,
+							"insert",
+							{
+								"characters": " nvim"
+							},
+							"BQAAAGgAAAAAAAAAaQAAAAAAAAAAAAAAaQAAAAAAAABqAAAAAAAAAAAAAABqAAAAAAAAAGsAAAAAAAAAAAAAAGsAAAAAAAAAbAAAAAAAAAAAAAAAbAAAAAAAAABtAAAAAAAAAAAAAAA",
+							"AQAAAAAAAAABAAAAaAAAAAAAAABoAAAAAAAAAAAAAAAAAPC/"
+						],
+						[
+							23,
+							1,
+							"insert",
+							{
+								"characters": " yazi"
+							},
+							"BQAAAG0AAAAAAAAAbgAAAAAAAAAAAAAAbgAAAAAAAABvAAAAAAAAAAAAAABvAAAAAAAAAHAAAAAAAAAAAAAAAHAAAAAAAAAAcQAAAAAAAAAAAAAAcQAAAAAAAAByAAAAAAAAAAAAAAA",
+							"AQAAAAAAAAABAAAAbQAAAAAAAABtAAAAAAAAAAAAAAAAAPC/"
+						]
+					]
+				}
 			],
 			"build_system": "",
 			"build_system_choices":
@@ -531,20 +660,24 @@
 				"selected_items":
 				[
 					[
-						"instal",
-						"Package Control: Install Package"
+						"settin",
+						"Preferences: Settings"
+					],
+					[
+						"colors",
+						"UI: Select Color Scheme"
 					],
 					[
 						"theme",
-						"UI: Select Color Scheme"
+						"UI: Customize Theme"
 					],
 					[
 						"install",
 						"Package Control: Install Package"
 					],
 					[
-						"settin",
-						"Preferences: Settings"
+						"instal",
+						"Package Control: Install Package"
 					],
 					[
 						"men",
@@ -632,10 +765,18 @@
 			},
 			"expanded_folders":
 			[
-				"/home/niraj/.config/nvim/lua/custom/plugins"
+				"/home/niraj",
+				"/home/niraj/.config",
+				"/home/niraj/.nvm",
+				"/home/niraj/.supermaven",
+				"/home/niraj/.themes"
 			],
 			"file_history":
 			[
+				"/home/niraj/.local/share/applications/neovide.desktop",
+				"/home/niraj/.local/bin/neovide",
+				"/home/niraj/.config/nvim/lua/plugins/scope.lua",
+				"/home/niraj/.zshrc",
 				"/home/niraj/.vscode/argv.json",
 				"/home/niraj/.config/forge/config/windows.json",
 				"/home/niraj/.config/github-copilot/apps.json",
@@ -645,8 +786,6 @@
 				"/home/niraj/.bashrc",
 				"/home/niraj/.profile",
 				"/home/niraj/.gitconfig",
-				"/home/niraj/.local/share/applications/neovide.desktop",
-				"/home/niraj/.zshrc",
 				"/home/niraj/.zshenv",
 				"/home/niraj/dotfiles/zsh/.zshrc",
 				"/home/niraj/dotfiles/bash/.bashrc",
@@ -761,13 +900,11 @@
 				"/home/niraj/.cache/oh-my-posh/themes/1_shell.omp.json",
 				"/home/niraj/Documents/Learn-react/.obsidian.vimrc",
 				"/home/niraj/Documents/Learn-react/.obsidian/.obsidian.vimrc",
-				"/home/niraj/Desktop/projects/js/ts-ecom-api/src/index.ts",
-				"/home/niraj/Desktop/projects/js/ts-ecom-api/src/middlewares/roleMiddleware.ts",
-				"/home/niraj/Desktop/projects/js/ts-ecom-api/src/error-handler.ts"
+				"/home/niraj/Desktop/projects/js/ts-ecom-api/src/index.ts"
 			],
 			"find":
 			{
-				"height": 29.0
+				"height": 47.0
 			},
 			"find_in_files":
 			{
@@ -781,7 +918,6 @@
 				"case_sensitive": false,
 				"find_history":
 				[
-					"outline"
 				],
 				"highlight": true,
 				"in_selection": false,
@@ -801,7 +937,7 @@
 			"folders":
 			[
 				{
-					"path": "/home/niraj/.config/nvim/lua/custom/plugins"
+					"path": "/home/niraj"
 				}
 			],
 			"groups":
@@ -809,16 +945,139 @@
 				{
 					"sheets":
 					[
+						{
+							"buffer": 0,
+							"file": "/home/niraj/dotfiles/nvim/.config/nvim/lua/plugins/disabled.lua",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 372,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Lua/Lua.sublime-syntax",
+									"tab_size": 2,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 3,
+							"stack_multiselect": false,
+							"type": "text"
+						},
+						{
+							"buffer": 1,
+							"file": "/home/niraj/.zshrc",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 2350,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"highlight_line": true,
+									"syntax": "Packages/ShellScript/Zsh.sublime-syntax",
+									"tab_size": 2,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 2,
+							"stack_multiselect": false,
+							"type": "text"
+						},
+						{
+							"buffer": 2,
+							"file": "/home/niraj/.config/yazi/keymap.toml",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 123,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"highlight_line": true,
+									"syntax": "Packages/TOML/TOML.sublime-syntax"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 1,
+							"stack_multiselect": false,
+							"type": "text"
+						},
+						{
+							"buffer": 3,
+							"file": "/home/niraj/.local/share/applications/yazi.desktop",
+							"selected": true,
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 199,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										113,
+										113
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Text/Plain text.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 0,
+							"stack_multiselect": false,
+							"type": "text"
+						}
 					]
 				}
 			],
 			"incremental_find":
 			{
-				"height": 29.0
+				"height": 47.0
 			},
 			"input":
 			{
-				"height": 63.0
+				"height": 82.0
 			},
 			"layout":
 			{
@@ -849,18 +1108,24 @@
 			},
 			"output.exec":
 			{
-				"height": 445.0
+				"height": 445.0,
+				"history":
+				[
+				]
 			},
 			"output.find_results":
 			{
-				"height": 0.0
+				"height": 0.0,
+				"history":
+				[
+				]
 			},
 			"pinned_build_system": "",
-			"position": "0,0,0,0,0,56,50,1976,1084,1920,1080,0",
+			"position": "0,0,0,0,0,56,50,1010,1080,1920,1080,0",
 			"project": "",
 			"replace":
 			{
-				"height": 54.0
+				"height": 90.0
 			},
 			"save_all_on_build": true,
 			"select_file":
@@ -893,20 +1158,18 @@
 			"selected_group": 0,
 			"settings":
 			{
-				"_vintageous_last_char_search_character": "f",
-				"_vintageous_last_char_search_command": "vi_f",
 				"_vintageous_reset_during_init": true
 			},
 			"show_minimap": false,
 			"show_open_files": false,
 			"show_tabs": true,
-			"side_bar_visible": true,
+			"side_bar_visible": false,
 			"side_bar_width": 229.0,
 			"status_bar_visible": true,
 			"template_settings":
 			{
 			},
-			"window_id": 36,
+			"window_id": 41,
 			"workspace_name": ""
 		}
 	],

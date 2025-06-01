@@ -1,0 +1,69 @@
+[[plugin.deps]]
+use = "yazi-rs/plugins:smart-enter"
+rev = "c0ad8a3"
+hash = "a7ab702e1ef0c097defbc976ed34c186"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:full-border"
+rev = "c0ad8a3"
+hash = "3996fc74044bc44144b323686f887e1"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:git"
+rev = "c0ad8a3"
+hash = "bf6f074cd41ee33c3360341d168f9733"
+
+[[plugin.deps]]
+use = "macydnah/office"
+rev = "d1e3e51"
+hash = "35241f7d85abc5a0d2441020bc597ceb"
+
+[[plugin.deps]]
+use = "AnirudhG07/rich-preview"
+rev = "843c3fa"
+hash = "b4040931f0d2f9670ddb4923e55cd881"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:smart-filter"
+rev = "63f9650"
+hash = "4d82cd9e7534d976f000edf9c0f68d8f"
+
+[[plugin.deps]]
+use = "AnirudhG07/plugins-yazi:copy-file-contents"
+rev = "907e292"
+hash = "a61930b827d8f1ef8fa016409de458ed"
+
+[[plugin.deps]]
+use = "orhnk/system-clipboard"
+rev = "efb8f03"
+hash = "9b8f2573da54334b04747e51556040cc"
+
+[[plugin.deps]]
+use = "josephschmitt/auto-layout"
+rev = "626a601"
+hash = "747a700c90fffc5b187a6094fd0661b0"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:chmod"
+rev = "63f9650"
+hash = "d0ad0c1946b46a30c8489735fe8de41c"
+
+[[plugin.deps]]
+use = "Rolv-Apneseth/starship"
+rev = "428d43a"
+hash = "73b1c5d91575dea1a49c66302860797"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:toggle-pane"
+rev = "63f9650"
+hash = "d5d4f3527592da5fbe77fd6f51815f80"
+
+[[plugin.deps]]
+use = "h-hg/yamb"
+rev = "22af003"
+hash = "7cc42012a7c2099f80064d228feb8d44"
+
+[[flavor.deps]]
+use = "yazi-rs/flavors:catppuccin-mocha"
+rev = "657aaf3"
+hash = "662a1b35b98668d4f75746eb37af7fd"
