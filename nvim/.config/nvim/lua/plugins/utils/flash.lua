@@ -36,11 +36,11 @@ return {
       },
     })
 
-    vim.keymap.set({ "n", "x" }, "f", function()
+    vim.keymap.set({ "n", "x" }, "s", function()
       require("flash").jump({})
     end, { desc = "flash easy-motion" })
 
-    vim.keymap.set({ "n", "x" }, "F", function()
+    vim.keymap.set({ "n", "x" }, "T", function()
       require("flash").treesitter()
     end, { desc = "flash treesitter" })
   end,

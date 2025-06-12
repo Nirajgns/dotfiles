@@ -1,52 +1,15 @@
 local map = vim.keymap.set
 
-map("i", "<C-BS>", "<C-w>", { noremap = true, silent = true })
+map({ "i", "t", "c", "x" }, "<A-BS>", "<C-w>", { noremap = true, silent = false, desc = "delete word with alt+bcspc" })
+map({ "i", "t", "c", "x" }, "<C-BS>", "<C-w>", { noremap = true, silent = false, desc = "delete word with ctrl+bcspc" })
 
---jk to exit insert and terminal mode
-map("i", "jk", "<ESC>", { noremap = true, silent = true })
--- map("i", "kj", "<ESC>", { noremap = true, silent = true })
--- Function to check if the terminal is running lazygit or bottom
-local function is_excluded_terminal()
-  local bufname = vim.api.nvim_buf_get_name(0)
-  local term_cmd = vim.b.term_title or ""
-  return vim.bo.buftype == "terminal" and (string.match(term_cmd, "lazygit") or string.match(term_cmd, "btm"))
-end
+-- map("i", "jk", "<ESC>", { noremap = true, silent = true })
+-- map("i", "ii", "<ESC>", { noremap = true, silent = true })
+map("i", ";;", "<ESC>", { noremap = true, silent = true })
 
--- Function to set key mappings
-local function set_mappings()
-  vim.keymap.set("i", "jk", "<ESC>", { noremap = true, silent = true, buffer = 0 })
-  vim.keymap.set("t", "jk", "<C-\\><C-n>", { noremap = true, silent = true, buffer = 0 })
-end
-
--- Function to clear key mappings
-local function clear_mappings()
-  vim.keymap.del("i", "jk", { buffer = 0 })
-  vim.keymap.del("t", "jk", { buffer = 0 })
-end
-
--- Autocommand group to manage mappings
-vim.api.nvim_create_augroup("TerminalMappings", { clear = true })
-
--- Apply mappings when entering a buffer
-vim.api.nvim_create_autocmd({ "BufEnter", "TermOpen" }, {
-  group = "TerminalMappings",
-  callback = function()
-    if is_excluded_terminal() then
-      clear_mappings()
-    else
-      set_mappings()
-    end
-  end,
-})
-
--- Clear mappings when leaving a terminal buffer
-vim.api.nvim_create_autocmd("BufLeave", {
-  group = "TerminalMappings",
-  pattern = "term://*",
-  callback = function()
-    clear_mappings()
-  end,
-})
+-- map("t", "ii", "<C-\\><C-n>", { noremap = true, silent = true })
+map("t", ";;", "<C-\\><C-n>", { noremap = true, silent = true })
+-- map("t", "<esc>", "<C-\\><C-n>", { noremap = true, silent = true })
 
 -- Terminal mode window navigation
 
@@ -78,8 +41,6 @@ vim.keymap.del("n", "<leader>sr")
 
 ---=======================for easy typing--------------------------
 map({ "i", "t", "c", "x" }, "<C-BS>", "<C-w>", { noremap = true, silent = false, desc = "delete word with ctrl+bcspc" })
-
-map({ "i", "t", "c", "x" }, "<A-BS>", "<C-w>", { noremap = true, silent = false, desc = "delete word with ctrl+bcspc" })
 
 map({ "n" }, "<C-S-s>", "<cmd>wa<cr>", { noremap = true, silent = true, desc = "save all" })
 

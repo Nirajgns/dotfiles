@@ -308,6 +308,35 @@ return {
     --   desc = "Code Action",
     -- },
   },
+  init = function()
+    -- Apply highlights on colorscheme change
+    local function set_snacks_highlights()
+      -- Define a cohesive dark palette
+      local bg_picker = vim.api.nvim_get_hl(0, { name = "Normal", link = false }).bg
+      local bg_input = vim.api.nvim_get_hl(0, { name = "Pmenu", link = false }).bg
+      local bg_preview = vim.api.nvim_get_hl(0, { name = "NormalFloat", link = false }).bg
+      local fg_title = "#a0b0c0" -- Bright for readability
+
+      vim.api.nvim_set_hl(0, "SnacksPicker", { bg = bg_picker })
+      vim.api.nvim_set_hl(0, "SnacksPickerBorder", { fg = bg_picker, bg = bg_picker })
+      vim.api.nvim_set_hl(0, "SnacksPickerInput", { bg = bg_input })
+      vim.api.nvim_set_hl(0, "SnacksPickerInputBorder", { fg = bg_preview, bg = bg_preview })
+      vim.api.nvim_set_hl(0, "SnacksPickerPreview", { bg = bg_preview })
+      vim.api.nvim_set_hl(0, "SnacksPickerPreviewBorder", { fg = bg_preview, bg = bg_preview })
+      vim.api.nvim_set_hl(0, "FloatTitle", { bg = bg_input, fg = fg_title })
+    end
+
+    -- Set once on startup
+    vim.schedule(set_snacks_highlights)
+
+    -- Reapply on ColorScheme change
+    vim.api.nvim_create_autocmd("ColorScheme", {
+      callback = function()
+        set_snacks_highlights()
+      end,
+    })
+  end,
+
   opts = {
     explorer = { enabled = false },
     image = {
@@ -402,10 +431,12 @@ return {
       focus = "input",
       layout = {
         cycle = true,
-        --- Use the default layout or vertical if the window is too narrow
         preset = function()
           return vim.o.columns >= 120 and "default" or "vertical"
         end,
+        layout = {
+          backdrop = false,
+        },
       },
       icons = {
         indent = {
@@ -512,4 +543,11 @@ return {
     },
     notifier = { top_down = false, wo = { winblend = 1000 } },
   },
+
+  vim.api.nvim_set_hl(0, "SnacksPicker", { bg = "#111c22" }),
+  vim.api.nvim_set_hl(0, "SnacksPickerBorder", { fg = "#111c22", bg = "#111c22" }),
+  vim.api.nvim_set_hl(0, "SnacksPickerInput", { bg = "#233743" }),
+  vim.api.nvim_set_hl(0, "SnacksPickerInputBorder", { fg = "#233743", bg = "#233743" }),
+  vim.api.nvim_set_hl(0, "SnacksPickerPreview", { bg = "#17242c" }),
+  vim.api.nvim_set_hl(0, "SnacksPickerPreviewBorder", { fg = "#17242c", bg = "#17242c" }),
 }

@@ -17,6 +17,8 @@ return {
       "eslint-lsp",
       "emmet-language-server",
       "js-debug-adapter",
+      "taplo",
+      "json-lsp",
     },
     ui = { border = "rounded" },
   },

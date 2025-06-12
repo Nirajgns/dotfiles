@@ -2,6 +2,7 @@ return {
   "marko-cerovac/material.nvim",
   enabled = false,
   config = function()
+    local colors = require("material.colors")
     require("material").setup({
 
       contrast = {
@@ -76,7 +77,10 @@ return {
 
       custom_colors = nil, -- If you want to override the default colors, set this to a function
 
-      custom_highlights = {}, -- Overwrite highlights with your own
+      custom_highlights = {
+        Winbar = { fg = colors.purple, bg = colors.bg_dark, bold = true },
+        WinbarNC = { fg = colors.blue, italic = true },
+      }, -- Overwrite highlights with your own
     })
     vim.g.material_style = "deep ocean"
     vim.keymap.set(
