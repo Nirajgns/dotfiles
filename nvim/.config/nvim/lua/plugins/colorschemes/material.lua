@@ -1,9 +1,9 @@
 return {
-  "marko-cerovac/material.nvim",
+  'marko-cerovac/material.nvim',
   enabled = false,
   config = function()
-    local colors = require("material.colors")
-    require("material").setup({
+    local colors = require('material.colors')
+    require('material').setup({
 
       contrast = {
         terminal = false, -- Enable contrast for the built-in terminal
@@ -28,35 +28,35 @@ return {
       },
 
       plugins = { -- Uncomment the plugins that you use to highlight them
-        "coc",
-        "colorful-winsep",
-        "dap",
-        "dashboard",
-        "eyeliner",
-        "fidget",
-        "flash",
-        "gitsigns",
-        "harpoon",
-        "hop",
-        "illuminate",
-        "indent-blankline",
-        "lspsaga",
-        "mini",
-        "neogit",
-        "neotest",
-        "neo-tree",
-        "neorg",
-        "noice",
-        "nvim-cmp",
-        "nvim-navic",
-        "nvim-tree",
-        "nvim-web-devicons",
-        "rainbow-delimiters",
-        "sneak",
-        "telescope",
-        "trouble",
-        "which-key",
-        "nvim-notify",
+        'coc',
+        'colorful-winsep',
+        'dap',
+        'dashboard',
+        'eyeliner',
+        'fidget',
+        'flash',
+        'gitsigns',
+        'harpoon',
+        'hop',
+        'illuminate',
+        'indent-blankline',
+        'lspsaga',
+        'mini',
+        'neogit',
+        'neotest',
+        'neo-tree',
+        'neorg',
+        'noice',
+        'nvim-cmp',
+        'nvim-navic',
+        'nvim-tree',
+        'nvim-web-devicons',
+        'rainbow-delimiters',
+        'sneak',
+        'telescope',
+        'trouble',
+        'which-key',
+        'nvim-notify',
       },
       disable = {
         colored_cursor = true, -- Disable the colored cursor
@@ -71,7 +71,7 @@ return {
         darker = false, -- Enable higher contrast text for darker style
       },
 
-      lualine_style = "stealth", -- Lualine style ( can be 'stealth' or 'default' )
+      lualine_style = 'stealth', -- Lualine style ( can be 'stealth' or 'default' )
 
       async_loading = true, -- Load parts of the theme asynchronously for faster startup (turned on by default)
 
@@ -82,12 +82,12 @@ return {
         WinbarNC = { fg = colors.blue, italic = true },
       }, -- Overwrite highlights with your own
     })
-    vim.g.material_style = "deep ocean"
+    vim.g.material_style = 'deep ocean'
     vim.keymap.set(
-      "n",
-      "<leader>uM",
-      ":lua require('material.functions').find_style()<cr>",
-      { silent = true, desc = "Change material style" }
+      'n',
+      '<leader>uM',
+      ':lua require(\'material.functions\').find_style()<cr>',
+      { silent = true, desc = 'Change material style' }
     )
   end,
 }

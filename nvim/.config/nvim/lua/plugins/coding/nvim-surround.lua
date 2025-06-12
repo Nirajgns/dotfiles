@@ -1,9 +1,9 @@
 return {
-  "kylechui/nvim-surround",
-  event = "LazyFile",
-  version = "*", -- Use for stability; omit to use `main` branch for the latest features
+  'kylechui/nvim-surround',
+  event = 'LazyFile',
+  version = '*', -- Use for stability; omit to use `main` branch for the latest features
   config = function()
-    require("nvim-surround").setup({
+    require('nvim-surround').setup({
       -- Configuration here, or leave empty to use defaults
     })
   end,

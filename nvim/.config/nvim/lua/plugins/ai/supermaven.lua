@@ -1,12 +1,12 @@
 return {
-  "supermaven-inc/supermaven-nvim",
-  event = "InsertEnter",
+  'supermaven-inc/supermaven-nvim',
+  event = 'InsertEnter',
   config = function()
-    require("supermaven-nvim").setup({
+    require('supermaven-nvim').setup({
       keymaps = {
-        accept_suggestion = "<Tab>",
-        clear_suggestion = "<A-y>",
-        accept_word = "A-w>",
+        accept_suggestion = '<Tab>',
+        clear_suggestion = '<A-y>',
+        accept_word = 'A-w>',
       },
     })
   end,

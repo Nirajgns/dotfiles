@@ -1,15 +1,15 @@
 return {
-  "akinsho/flutter-tools.nvim",
+  'akinsho/flutter-tools.nvim',
   enabled = false,
   lazy = true,
-  ft = "dart",
+  ft = 'dart',
   setup = {},
   dependencies = {
-    "nvim-lua/plenary.nvim",
-    "stevearc/dressing.nvim",
+    'nvim-lua/plenary.nvim',
+    'stevearc/dressing.nvim',
   },
   config = function()
-    require("flutter-tools").setup({
+    require('flutter-tools').setup({
       widget_guides = { enabled = false },
       lsp = {
         color = {
@@ -18,40 +18,40 @@ return {
           background_color = nil,
           foreground = false,
           virtual_text = true,
-          virtual_text_str = "■■■■ ",
+          virtual_text_str = '■■■■ ',
         },
         settings = {
           analysisExcludedFolders = {
-            vim.fn.expand("$HOME/android"),
-            vim.fn.expand("$HOME/developmemt"),
-            vim.fn.expand("$HOME/AppData/Local/Pub/Cache"),
-            vim.fn.expand("$HOME/.pub-cache"),
-            vim.fn.expand("/opt/homebrew/"),
-            vim.fn.expand("$HOME/tools/flutter/"),
+            vim.fn.expand('$HOME/android'),
+            vim.fn.expand('$HOME/developmemt'),
+            vim.fn.expand('$HOME/AppData/Local/Pub/Cache'),
+            vim.fn.expand('$HOME/.pub-cache'),
+            vim.fn.expand('/opt/homebrew/'),
+            vim.fn.expand('$HOME/tools/flutter/'),
           },
         },
       },
       debugger = {
         enabled = true,
         run_via_dap = false,
-        exception_breakpoints = { "uncaughtException" },
+        exception_breakpoints = { 'uncaughtException' },
         register_configurations = function()
-          require("dap").configurations.dart = {
+          require('dap').configurations.dart = {
             {
-              name = "Flutter",
-              request = "launch",
-              type = "dart",
-              flutterMode = "debug",
+              name = 'Flutter',
+              request = 'launch',
+              type = 'dart',
+              flutterMode = 'debug',
             },
           }
         end,
       },
     })
     vim.keymap.set(
-      "n",
-      "<leader>ft",
-      ":Telescope flutter commands<cr>",
-      { silent = true, desc = "telescope flutter tools" }
+      'n',
+      '<leader>ft',
+      ':Telescope flutter commands<cr>',
+      { silent = true, desc = 'telescope flutter tools' }
     )
   end,
 }

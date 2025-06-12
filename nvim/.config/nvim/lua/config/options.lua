@@ -29,23 +29,23 @@ opt.cursorline = true
 
 -- Appearance
 opt.termguicolors = true
-opt.background = "dark"
-opt.signcolumn = "yes"
+opt.background = 'dark'
+opt.signcolumn = 'yes'
 
 vim.diagnostic.open_float()
 vim.diagnostic.config({
-  float = { border = "rounded" }, -- add border to diagnostic popups
+  float = { border = 'rounded' }, -- add border to diagnostic popups
 })
 
 -- Backspace
-opt.backspace = "indent,eol,start"
+opt.backspace = 'indent,eol,start'
 
 -- Split Windows
 opt.splitright = true
 opt.splitbelow = true
 
 -- Consider - as part of keyword
-opt.iskeyword:append("-")
+opt.iskeyword:append('-')
 opt.list = false --to remove "-" while typing "space"
 
 -- Disable the mouse while in nvim
@@ -53,11 +53,11 @@ opt.list = false --to remove "-" while typing "space"
 -- Folding
 -- fold settings
 opt.foldlevel = 20
-vim.o.foldmethod = "expr" --"indent"
-vim.o.foldexpr = "nvim_treesitter#foldexpr()"
+vim.o.foldmethod = 'expr' --"indent"
+vim.o.foldexpr = 'nvim_treesitter#foldexpr()'
 vim.wo.foldtext =
   [[substitute(getline(v:foldstart), '\\t', repeat(' ', &tabstop), 'g') .'     ...' . substitute(getline(v:foldend), '\\t', repeat(' ', &tabstop), 'g') . '         ====>>>    ' . (v:foldend - v:foldstart + 1) . ' lines folded!']]
-vim.wo.fillchars = "fold:\\"
+vim.wo.fillchars = 'fold:\\'
 
 -- vim.wo.foldnestmax = 3
 -- vim.wo.foldminlines = 1

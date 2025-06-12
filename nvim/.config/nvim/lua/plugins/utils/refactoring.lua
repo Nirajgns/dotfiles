@@ -1,94 +1,94 @@
 return {
-  "ThePrimeagen/refactoring.nvim",
-  cmd = "Refactor",
+  'ThePrimeagen/refactoring.nvim',
+  cmd = 'Refactor',
   dependencies = {
-    "nvim-lua/plenary.nvim",
-    "nvim-treesitter/nvim-treesitter",
+    'nvim-lua/plenary.nvim',
+    'nvim-treesitter/nvim-treesitter',
   },
   keys = {
-    { "<leader>r", "", desc = "+refactor", mode = { "n", "v" } },
+    { '<leader>r', '', desc = '+refactor', mode = { 'n', 'v' } },
     {
-      "<leader>rr",
+      '<leader>rr',
       function()
-        require("refactoring").select_refactor()
+        require('refactoring').select_refactor()
       end,
-      mode = { "n", "v", "x" },
-      desc = "refactorings",
+      mode = { 'n', 'v', 'x' },
+      desc = 'refactorings',
     },
     {
-      "<leader>ri",
+      '<leader>ri',
       function()
-        require("refactoring").refactor("Inline Variable")
+        require('refactoring').refactor('Inline Variable')
       end,
-      mode = { "n", "v" },
-      desc = "Inline Variable",
+      mode = { 'n', 'v' },
+      desc = 'Inline Variable',
     },
     {
-      "<leader>rb",
+      '<leader>rb',
       function()
-        require("refactoring").refactor("Extract Block")
+        require('refactoring').refactor('Extract Block')
       end,
-      desc = "Extract Block",
+      desc = 'Extract Block',
     },
     {
-      "<leader>rf",
+      '<leader>rf',
       function()
-        require("refactoring").refactor("Extract Block To File")
+        require('refactoring').refactor('Extract Block To File')
       end,
-      desc = "Extract Block To File",
+      desc = 'Extract Block To File',
     },
     {
-      "<leader>rP",
+      '<leader>rP',
       function()
-        require("refactoring").debug.printf({ below = false })
+        require('refactoring').debug.printf({ below = false })
       end,
-      desc = "Debug Print",
+      desc = 'Debug Print',
     },
     {
-      "<leader>rp",
+      '<leader>rp',
       function()
-        require("refactoring").debug.print_var({ normal = true })
+        require('refactoring').debug.print_var({ normal = true })
       end,
-      desc = "Debug Print Variable",
+      desc = 'Debug Print Variable',
     },
     {
-      "<leader>rc",
+      '<leader>rc',
       function()
-        require("refactoring").debug.cleanup({})
+        require('refactoring').debug.cleanup({})
       end,
-      desc = "Debug Cleanup",
+      desc = 'Debug Cleanup',
     },
     {
-      "<leader>rf",
+      '<leader>rf',
       function()
-        require("refactoring").refactor("Extract Function")
+        require('refactoring').refactor('Extract Function')
       end,
-      mode = "v",
-      desc = "Extract Function",
+      mode = 'v',
+      desc = 'Extract Function',
     },
     {
-      "<leader>rF",
+      '<leader>rF',
       function()
-        require("refactoring").refactor("Extract Function To File")
+        require('refactoring').refactor('Extract Function To File')
       end,
-      mode = "v",
-      desc = "Extract Function To File",
+      mode = 'v',
+      desc = 'Extract Function To File',
     },
     {
-      "<leader>rx",
+      '<leader>rx',
       function()
-        require("refactoring").refactor("Extract Variable")
+        require('refactoring').refactor('Extract Variable')
       end,
-      mode = "v",
-      desc = "Extract Variable",
+      mode = 'v',
+      desc = 'Extract Variable',
     },
     {
-      "<leader>rp",
+      '<leader>rp',
       function()
-        require("refactoring").debug.print_var()
+        require('refactoring').debug.print_var()
       end,
-      mode = "v",
-      desc = "Debug Print Variable",
+      mode = 'v',
+      desc = 'Debug Print Variable',
     },
   },
   opts = {

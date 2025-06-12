@@ -1,4 +1,4 @@
-local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+local lazypath = vim.fn.stdpath('data') .. '/lazy/lazy.nvim'
 
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
   -- bootstrap lazy.nvim
@@ -8,24 +8,24 @@ end
 
 ---@diagnostic disable-next-line: undefined-field
 vim.opt.rtp:prepend(vim.env.LAZY or lazypath)
-require("lazy").setup({
+require('lazy').setup({
   spec = {
     -- add LazyVim and import its plugins
     -- import any extras modules here
-    { "LazyVim/LazyVim", import = "lazyvim.plugins" },
+    { 'LazyVim/LazyVim', import = 'lazyvim.plugins' },
     -- import/override with your plugins
     -- { import = "lazyvim.plugins.extras.coding.blink" },
     -- { import = "lazyvim.plugins.extras.editor.telescope" },
 
-    { import = "lazyvim.plugins.extras.coding.nvim-cmp" },
-    { import = "plugins.ai" },
-    { import = "plugins.core" },
-    { import = "plugins" },
-    { import = "plugins.languages" },
-    { import = "plugins.coding" },
-    { import = "plugins.colorschemes" },
-    { import = "plugins.ui" },
-    { import = "plugins.utils" },
+    { import = 'lazyvim.plugins.extras.coding.nvim-cmp' },
+    { import = 'plugins.ai' },
+    { import = 'plugins.core' },
+    { import = 'plugins' },
+    { import = 'plugins.languages' },
+    { import = 'plugins.coding' },
+    { import = 'plugins.colorschemes' },
+    { import = 'plugins.ui' },
+    { import = 'plugins.utils' },
   },
   defaults = {
     -- By default, only LazyVim plugins will be lazy-loaded. Your custom plugins will load during startup.
@@ -42,18 +42,18 @@ require("lazy").setup({
     rtp = {
       -- disable some rtp plugins
       disabled_plugins = {
-        "gzip",
+        'gzip',
         -- "matchit",
         -- "matchparen",
         -- "netrwPlugin",
-        "tarPlugin",
-        "tohtml",
-        "tutor",
-        "zipPlugin",
+        'tarPlugin',
+        'tohtml',
+        'tutor',
+        'zipPlugin',
       },
     },
   },
   ui = {
-    border = "rounded",
+    border = 'rounded',
   },
 })

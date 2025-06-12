@@ -1,9 +1,9 @@
 return {
-  "shortcuts/no-neck-pain.nvim",
-  version = "*",
-  cmd = "NoNeckPain",
+  'shortcuts/no-neck-pain.nvim',
+  version = '*',
+  cmd = 'NoNeckPain',
   config = function()
-    require("no-neck-pain").setup({
+    require('no-neck-pain').setup({
       debug = false,
       width = 130,
       minSideBufferWidth = 20,
@@ -18,20 +18,20 @@ return {
     })
   end,
 
-  vim.keymap.set("n", "<leader>uN", function()
+  vim.keymap.set('n', '<leader>uN', function()
     _G.is_nnp_enabled = not _G.is_nnp_enabled
 
     if _G.is_nnp_enabled then
-      vim.cmd("set laststatus=0")
-      vim.cmd("Neotree float")
+      vim.cmd('set laststatus=0')
+      vim.cmd('Neotree float')
       vim.defer_fn(function()
-        vim.cmd("Neotree close")
-        vim.cmd("NoNeckPain")
+        vim.cmd('Neotree close')
+        vim.cmd('NoNeckPain')
       end, 200)
     else
-      vim.cmd("set laststatus=3")
-      vim.cmd("NoNeckPain")
-      vim.cmd("Neotree left")
+      vim.cmd('set laststatus=3')
+      vim.cmd('NoNeckPain')
+      vim.cmd('Neotree left')
     end
-  end, { silent = true, desc = "Toggle  NNP(Zen)" }),
+  end, { silent = true, desc = 'Toggle  NNP(Zen)' }),
 }

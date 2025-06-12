@@ -1,125 +1,125 @@
 return {
-  "folke/snacks.nvim",
+  'folke/snacks.nvim',
   dependencies = {
-    "nvim-tree/nvim-web-devicons",
+    'nvim-tree/nvim-web-devicons',
     -- "3rd/image.nvim",  --requires luarocks
   },
   keys = {
     {
-      "<leader>qb",
+      '<leader>qb',
       function()
         Snacks.dashboard()
       end,
-      desc = "Dashboard",
+      desc = 'Dashboard',
     },
     {
-      "<leader>,",
+      '<leader>,',
       function()
         Snacks.picker.buffers()
       end,
-      desc = "Buffers",
+      desc = 'Buffers',
     },
     {
-      "<leader>/",
+      '<leader>/',
       function()
         Snacks.picker.grep()
       end,
-      desc = "Grep",
+      desc = 'Grep',
     },
     {
-      "<leader>:",
+      '<leader>:',
       function()
         Snacks.picker.command_history()
       end,
-      desc = "Command History",
+      desc = 'Command History',
     },
     {
-      "<leader><space>",
+      '<leader><space>',
       function()
         Snacks.picker.files()
       end,
-      desc = "Find git Files",
+      desc = 'Find git Files',
     },
     -- find
     {
-      "<leader>fb",
+      '<leader>fb',
       function()
         Snacks.picker.buffers()
       end,
-      desc = "Buffers",
+      desc = 'Buffers',
     },
     {
-      "<leader>fc",
+      '<leader>fc',
       function()
-        Snacks.picker.files({ cwd = vim.fn.stdpath("config") })
+        Snacks.picker.files({ cwd = vim.fn.stdpath('config') })
       end,
-      desc = "Find Config File",
+      desc = 'Find Config File',
     },
     {
-      "<leader>ff",
+      '<leader>ff',
       function()
         Snacks.picker.files()
       end,
-      desc = "Find Files",
+      desc = 'Find Files',
     },
     {
-      "<leader>fg",
+      '<leader>fg',
       function()
         Snacks.picker.git_files()
       end,
-      desc = "Find Git Files",
+      desc = 'Find Git Files',
     },
     {
-      "<leader>fr",
+      '<leader>fr',
       function()
         Snacks.picker.recent()
       end,
-      desc = "Recent",
+      desc = 'Recent',
     },
     -- git
     {
-      "<leader>gc",
+      '<leader>gc',
       function()
         Snacks.picker.git_log()
       end,
-      desc = "Git Log",
+      desc = 'Git Log',
     },
     {
-      "<leader>gs",
+      '<leader>gs',
       function()
         Snacks.picker.git_status()
       end,
-      desc = "Git Status",
+      desc = 'Git Status',
     },
     -- Grep
     {
-      "<leader>sb",
+      '<leader>sb',
       function()
         Snacks.picker.lines()
       end,
-      desc = "Buffer Lines",
+      desc = 'Buffer Lines',
     },
     {
-      "<leader>sB",
+      '<leader>sB',
       function()
         Snacks.picker.grep_buffers()
       end,
-      desc = "Grep Open Buffers",
+      desc = 'Grep Open Buffers',
     },
     {
-      "<leader>sg",
+      '<leader>sg',
       function()
         Snacks.picker.grep()
       end,
-      desc = "Grep",
+      desc = 'Grep',
     },
     {
-      "<leader>sw",
+      '<leader>sw',
       function()
         Snacks.picker.grep_word()
       end,
-      desc = "Visual selection or word",
-      mode = { "n", "x" },
+      desc = 'Visual selection or word',
+      mode = { 'n', 'x' },
     },
     -- search
     {
@@ -127,126 +127,126 @@ return {
       function()
         Snacks.picker.registers()
       end,
-      desc = "Registers",
+      desc = 'Registers',
     },
     {
-      "<leader>sa",
+      '<leader>sa',
       function()
         Snacks.picker.autocmds()
       end,
-      desc = "Autocmds",
+      desc = 'Autocmds',
     },
     {
-      "<leader>sc",
+      '<leader>sc',
       function()
         Snacks.picker.command_history()
       end,
-      desc = "Command History",
+      desc = 'Command History',
     },
     {
-      "<leader>sC",
+      '<leader>sC',
       function()
         Snacks.picker.commands()
       end,
-      desc = "Commands",
+      desc = 'Commands',
     },
     {
-      "<leader>sd",
+      '<leader>sd',
       function()
         Snacks.picker.diagnostics()
       end,
-      desc = "Diagnostics",
+      desc = 'Diagnostics',
     },
     {
-      "<leader>sh",
+      '<leader>sh',
       function()
         Snacks.picker.help()
       end,
-      desc = "Help Pages",
+      desc = 'Help Pages',
     },
     {
-      "<leader>sH",
+      '<leader>sH',
       function()
         Snacks.picker.highlights()
       end,
-      desc = "Highlights",
+      desc = 'Highlights',
     },
     {
-      "<leader>sj",
+      '<leader>sj',
       function()
         Snacks.picker.jumps()
       end,
-      desc = "Jumps",
+      desc = 'Jumps',
     },
     {
-      "<leader>sk",
+      '<leader>sk',
       function()
         Snacks.picker.keymaps()
       end,
-      desc = "Keymaps",
+      desc = 'Keymaps',
     },
     {
-      "<leader>sl",
+      '<leader>sl',
       function()
         Snacks.picker.loclist()
       end,
-      desc = "Location List",
+      desc = 'Location List',
     },
     {
-      "<leader>sM",
+      '<leader>sM',
       function()
         Snacks.picker.man()
       end,
-      desc = "Man Pages",
+      desc = 'Man Pages',
     },
     {
-      "<leader>sm",
+      '<leader>sm',
       function()
         Snacks.picker.marks()
       end,
-      desc = "Marks",
+      desc = 'Marks',
     },
     {
-      "<leader>sR",
+      '<leader>sR',
       function()
         Snacks.picker.resume()
       end,
-      desc = "Resume",
+      desc = 'Resume',
     },
     {
-      "<leader>sq",
+      '<leader>sq',
       function()
         Snacks.picker.qflist()
       end,
-      desc = "Quickfix List",
+      desc = 'Quickfix List',
     },
     {
-      "<leader>uC",
+      '<leader>uC',
       function()
         Snacks.picker.colorschemes()
       end,
-      desc = "Colorschemes",
+      desc = 'Colorschemes',
     },
     {
-      "<leader>qp",
+      '<leader>qp',
       function()
         Snacks.picker.projects()
       end,
-      desc = "Projects",
+      desc = 'Projects',
     },
     {
-      "<leader>'",
+      '<leader>\'',
       function()
         Snacks.picker.marks()
       end,
-      desc = "Marks Picker",
+      desc = 'Marks Picker',
     },
     {
-      "<leader>uu",
+      '<leader>uu',
       function()
         Snacks.picker.undo()
       end,
-      desc = "Undo Tree",
+      desc = 'Undo Tree',
     },
 
     -- {
@@ -257,9 +257,9 @@ return {
     --   desc = "Undo Tree",
     -- },
     {
-      "<leader>e",
+      '<leader>e',
       false,
-      desc = "Undo Tree",
+      desc = 'Undo Tree',
     },
 
     -- LSP
@@ -312,25 +312,25 @@ return {
     -- Apply highlights on colorscheme change
     local function set_snacks_highlights()
       -- Define a cohesive dark palette
-      local bg_picker = vim.api.nvim_get_hl(0, { name = "Normal", link = false }).bg
-      local bg_input = vim.api.nvim_get_hl(0, { name = "Pmenu", link = false }).bg
-      local bg_preview = vim.api.nvim_get_hl(0, { name = "NormalFloat", link = false }).bg
-      local fg_title = "#a0b0c0" -- Bright for readability
+      local bg_picker = vim.api.nvim_get_hl(0, { name = 'Normal', link = false }).bg
+      local bg_input = vim.api.nvim_get_hl(0, { name = 'Pmenu', link = false }).bg
+      local bg_preview = vim.api.nvim_get_hl(0, { name = 'NormalFloat', link = false }).bg
+      local fg_title = '#a0b0c0' -- Bright for readability
 
-      vim.api.nvim_set_hl(0, "SnacksPicker", { bg = bg_picker })
-      vim.api.nvim_set_hl(0, "SnacksPickerBorder", { fg = bg_picker, bg = bg_picker })
-      vim.api.nvim_set_hl(0, "SnacksPickerInput", { bg = bg_input })
-      vim.api.nvim_set_hl(0, "SnacksPickerInputBorder", { fg = bg_preview, bg = bg_preview })
-      vim.api.nvim_set_hl(0, "SnacksPickerPreview", { bg = bg_preview })
-      vim.api.nvim_set_hl(0, "SnacksPickerPreviewBorder", { fg = bg_preview, bg = bg_preview })
-      vim.api.nvim_set_hl(0, "FloatTitle", { bg = bg_input, fg = fg_title })
+      vim.api.nvim_set_hl(0, 'SnacksPicker', { bg = bg_picker })
+      vim.api.nvim_set_hl(0, 'SnacksPickerBorder', { fg = bg_picker, bg = bg_picker })
+      vim.api.nvim_set_hl(0, 'SnacksPickerInput', { bg = bg_input })
+      vim.api.nvim_set_hl(0, 'SnacksPickerInputBorder', { fg = bg_preview, bg = bg_preview })
+      vim.api.nvim_set_hl(0, 'SnacksPickerPreview', { bg = bg_preview })
+      vim.api.nvim_set_hl(0, 'SnacksPickerPreviewBorder', { fg = bg_preview, bg = bg_preview })
+      vim.api.nvim_set_hl(0, 'FloatTitle', { bg = bg_input, fg = fg_title })
     end
 
     -- Set once on startup
     vim.schedule(set_snacks_highlights)
 
     -- Reapply on ColorScheme change
-    vim.api.nvim_create_autocmd("ColorScheme", {
+    vim.api.nvim_create_autocmd('ColorScheme', {
       callback = function()
         set_snacks_highlights()
       end,
@@ -342,20 +342,20 @@ return {
     image = {
       enabled = not vim.g.neovide,
       formats = {
-        "png",
-        "jpg",
-        "jpeg",
-        "gif",
-        "bmp",
-        "webp",
-        "tiff",
-        "heic",
-        "avif",
-        "mp4",
-        "mov",
-        "avi",
-        "mkv",
-        "webm",
+        'png',
+        'jpg',
+        'jpeg',
+        'gif',
+        'bmp',
+        'webp',
+        'tiff',
+        'heic',
+        'avif',
+        'mp4',
+        'mov',
+        'avi',
+        'mkv',
+        'webm',
       },
       force = true, -- try displaying the image, even if the terminal does not support it
       doc = {
@@ -365,19 +365,19 @@ return {
         max_width = 80,
         max_height = 40,
       },
-      img_dirs = { "img", "images", "assets", "static", "public", "media", "attachments" },
+      img_dirs = { 'img', 'images', 'assets', 'static', 'public', 'media', 'attachments' },
       wo = {
         wrap = false,
         number = false,
         relativenumber = false,
         cursorcolumn = false,
-        signcolumn = "no",
-        foldcolumn = "0",
+        signcolumn = 'no',
+        foldcolumn = '0',
         list = false,
         spell = false,
-        statuscolumn = "",
+        statuscolumn = '',
       },
-      cache = vim.fn.stdpath("cache") .. "/snacks/image",
+      cache = vim.fn.stdpath('cache') .. '/snacks/image',
       debug = {
         request = false,
         convert = false,
@@ -397,17 +397,17 @@ return {
       chunk = {
         enabled = true,
         char = {
-          horizontal = " ",
-          corner_top = "╭",
-          corner_bottom = "╰",
-          arrow = " ",
+          horizontal = ' ',
+          corner_top = '╭',
+          corner_bottom = '╰',
+          arrow = ' ',
         },
       },
     },
     terminal = {
       win = {
         wo = {
-          winbar = "",
+          winbar = '',
         },
         --   style = "float",
         --   -- relative = "editor",
@@ -421,18 +421,18 @@ return {
       win = {
         input = {
           keys = {
-            ["<C-bs>"] = { "<c-s-w>", mode = { "i" }, expr = true, desc = "delete word" },
+            ['<C-bs>'] = { '<c-s-w>', mode = { 'i' }, expr = true, desc = 'delete word' },
           },
         },
       },
       ui_select = true,
-      prompt = " 🔍 ",
+      prompt = ' 🔍 ',
       sources = {},
-      focus = "input",
+      focus = 'input',
       layout = {
         cycle = true,
         preset = function()
-          return vim.o.columns >= 120 and "default" or "vertical"
+          return vim.o.columns >= 120 and 'default' or 'vertical'
         end,
         layout = {
           backdrop = false,
@@ -440,9 +440,9 @@ return {
       },
       icons = {
         indent = {
-          vertical = "│ ",
-          middle = "├╴",
-          last = "╰-",
+          vertical = '│ ',
+          middle = '├╴',
+          last = '╰-',
         },
       },
     },
@@ -453,21 +453,21 @@ return {
         siblings = true,
       },
       animate = {
-        enabled = vim.fn.has("nvim-0.10") == 1,
-        easing = "outQuad",
+        enabled = vim.fn.has('nvim-0.10') == 1,
+        easing = 'outQuad',
         duration = {
           step = 20, -- ms per step
           total = 300, -- maximum duration
         },
       },
       filter = function(buf)
-        return vim.g.snacks_dim ~= false and vim.b[buf].snacks_dim ~= false and vim.bo[buf].buftype == ""
+        return vim.g.snacks_dim ~= false and vim.b[buf].snacks_dim ~= false and vim.bo[buf].buftype == ''
       end,
     },
     dashboard = {
       enabled = true,
       preset = {
-        header = string.rep("\n", 1)
+        header = string.rep('\n', 1)
           .. [[                                                                       
                                                                            
              ████ ██████           █████      ██                     
@@ -478,76 +478,76 @@ return {
         ███████████ ███    ███ █████████ █████ █████ ████ █████  
        ██████  █████████████████████ ████ █████ █████ ████ ██████ 
                                                                              ]]
-          .. "\n",
+          .. '\n',
 
         keys = {
           -- stylua: ignore
           {action = function()require("persistence").select()end,desc = "Sessions",icon = "💾",key = "s",},
-          { icon = " ", key = "f", desc = "Find File", action = ":lua Snacks.dashboard.pick('files')" },
-          { icon = " ", key = "n", desc = "New File", action = ":ene | startinsert" },
-          { icon = " ", key = "g", desc = "Find Text", action = ":lua Snacks.dashboard.pick('live_grep')" },
-          { icon = "⏲ ", key = "r", desc = "Recent Files", action = ":lua Snacks.dashboard.pick('oldfiles')" },
+          { icon = ' ', key = 'f', desc = 'Find File', action = ':lua Snacks.dashboard.pick(\'files\')' },
+          { icon = ' ', key = 'n', desc = 'New File', action = ':ene | startinsert' },
+          { icon = ' ', key = 'g', desc = 'Find Text', action = ':lua Snacks.dashboard.pick(\'live_grep\')' },
+          { icon = '⏲ ', key = 'r', desc = 'Recent Files', action = ':lua Snacks.dashboard.pick(\'oldfiles\')' },
           {
-            icon = " ",
-            key = "c",
-            desc = "Config",
-            action = ":lua Snacks.dashboard.pick('files', {cwd = vim.fn.stdpath('config')})",
+            icon = ' ',
+            key = 'c',
+            desc = 'Config',
+            action = ':lua Snacks.dashboard.pick(\'files\', {cwd = vim.fn.stdpath(\'config\')})',
           },
-          { icon = "󰒲 ", key = "L", desc = "Lazy", action = ":Lazy", enabled = package.loaded.lazy ~= nil },
-          { icon = " ", key = "q", desc = "Quit", action = ":qa" },
+          { icon = '󰒲 ', key = 'L', desc = 'Lazy', action = ':Lazy', enabled = package.loaded.lazy ~= nil },
+          { icon = ' ', key = 'q', desc = 'Quit', action = ':qa' },
         },
       },
 
       sections = {
-        { section = "header", pane = 2 },
+        { section = 'header', pane = 2 },
         {
           pane = 1,
-          section = "terminal",
-          cmd = "btm -e",
+          section = 'terminal',
+          cmd = 'btm -e',
           height = 10,
           padding = 1,
         },
-        { section = "keys", gap = 1, padding = 1, pane = 1 },
+        { section = 'keys', gap = 1, padding = 1, pane = 1 },
         {
           pane = 2,
-          icon = "                               ",
-          title = "Projects",
-          section = "projects",
+          icon = '                               ',
+          title = 'Projects',
+          section = 'projects',
           indent = 20,
           padding = 1,
         },
         {
           pane = 2,
-          icon = "                              ⏲ ",
-          title = "Recent Files",
-          section = "recent_files",
+          icon = '                              ⏲ ',
+          title = 'Recent Files',
+          section = 'recent_files',
           indent = 20,
           padding = 1,
         },
         {
           pane = 1,
-          icon = " ",
-          title = "Git Status",
-          section = "terminal",
+          icon = ' ',
+          title = 'Git Status',
+          section = 'terminal',
           enabled = function()
             return Snacks.git.get_root() ~= nil
           end,
-          cmd = "git status --short --branch --renames",
+          cmd = 'git status --short --branch --renames',
           height = 5,
           padding = 1,
           ttl = 5 * 60,
           indent = 3,
         },
-        { section = "startup" },
+        { section = 'startup' },
       },
     },
     notifier = { top_down = false, wo = { winblend = 1000 } },
   },
 
-  vim.api.nvim_set_hl(0, "SnacksPicker", { bg = "#111c22" }),
-  vim.api.nvim_set_hl(0, "SnacksPickerBorder", { fg = "#111c22", bg = "#111c22" }),
-  vim.api.nvim_set_hl(0, "SnacksPickerInput", { bg = "#233743" }),
-  vim.api.nvim_set_hl(0, "SnacksPickerInputBorder", { fg = "#233743", bg = "#233743" }),
-  vim.api.nvim_set_hl(0, "SnacksPickerPreview", { bg = "#17242c" }),
-  vim.api.nvim_set_hl(0, "SnacksPickerPreviewBorder", { fg = "#17242c", bg = "#17242c" }),
+  vim.api.nvim_set_hl(0, 'SnacksPicker', { bg = '#111c22' }),
+  vim.api.nvim_set_hl(0, 'SnacksPickerBorder', { fg = '#111c22', bg = '#111c22' }),
+  vim.api.nvim_set_hl(0, 'SnacksPickerInput', { bg = '#233743' }),
+  vim.api.nvim_set_hl(0, 'SnacksPickerInputBorder', { fg = '#233743', bg = '#233743' }),
+  vim.api.nvim_set_hl(0, 'SnacksPickerPreview', { bg = '#17242c' }),
+  vim.api.nvim_set_hl(0, 'SnacksPickerPreviewBorder', { fg = '#17242c', bg = '#17242c' }),
 }

@@ -1,11 +1,11 @@
 return {
-  "folke/trouble.nvim",
-  event = "LazyFile",
+  'folke/trouble.nvim',
+  event = 'LazyFile',
   opts = {
     modes = {
       symbols = { focus = true },
       lsp = {
-        win = { position = "right" },
+        win = { position = 'right' },
       },
       diagnostics = {
         focus = true,

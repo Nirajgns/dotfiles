@@ -1,7 +1,7 @@
 -- lazy.nvim
 return {
-  "folke/noice.nvim",
-  event = "VeryLazy",
+  'folke/noice.nvim',
+  event = 'VeryLazy',
   opts = {
     lsp = { progress = { enabled = true }, signature = {
       auto_open = { enabled = false },
@@ -9,8 +9,8 @@ return {
     routes = {
       {
         filter = {
-          event = "notify",
-          find = "No information available",
+          event = 'notify',
+          find = 'No information available',
         },
         opts = {
           skip = true,
@@ -19,7 +19,7 @@ return {
     },
   },
   dependencies = {
-    "MunifTanjim/nui.nvim",
-    "rcarriga/nvim-notify",
+    'MunifTanjim/nui.nvim',
+    'rcarriga/nvim-notify',
   },
 }

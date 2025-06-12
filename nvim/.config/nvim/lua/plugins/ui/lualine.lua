@@ -1,13 +1,13 @@
 return {
-  "nvim-lualine/lualine.nvim",
+  'nvim-lualine/lualine.nvim',
   event = function()
-    return { "BufReadPost", "BufWritePost", "BufNewFile" }
+    return { 'BufReadPost', 'BufWritePost', 'BufNewFile' }
   end,
   init = function()
     vim.g.lualine_laststatus = vim.o.laststatus
     if vim.fn.argc(-1) > 0 then
       -- Set an empty statusline until lualine loads
-      vim.o.statusline = " "
+      vim.o.statusline = ' '
     else
       -- Hide the statusline on the starter page
       vim.o.laststatus = 0
@@ -19,28 +19,28 @@ return {
 
     return {
       options = {
-        theme = "auto",
+        theme = 'auto',
         -- section_separators = { left = "", right = "" },
-        section_separators = { left = "", right = "" },
+        section_separators = { left = '', right = '' },
         globalstatus = vim.o.laststatus == 3,
-        disabled_filetypes = { statusline = { "dashboard", "alpha", "starter" } },
+        disabled_filetypes = { statusline = { 'dashboard', 'alpha', 'starter' } },
       },
       sections = {
-        lualine_a = { "mode" },
+        lualine_a = { 'mode' },
         lualine_b = {
           {
             --to show root directory
             function()
               local cwd = vim.fn.getcwd() -- Get current working directory
-              return vim.fn.fnamemodify(cwd, ":t") -- Extract the last part (project name)
+              return vim.fn.fnamemodify(cwd, ':t') -- Extract the last part (project name)
             end,
           },
-          { "branch" },
+          { 'branch' },
         },
         lualine_c = {
           LazyVim.lualine.root_dir(),
           {
-            "diagnostics",
+            'diagnostics',
             symbols = {
               error = icons.diagnostics.Error,
               warn = icons.diagnostics.Warn,
@@ -48,87 +48,87 @@ return {
               hint = icons.diagnostics.Hint,
             },
           },
-          { "filetype", icon_only = true, separator = "", padding = { left = 1, right = 0 } },
+          { 'filetype', icon_only = true, separator = '', padding = { left = 1, right = 0 } },
           { LazyVim.lualine.pretty_path() },
         },
         lualine_x = {
           {
-            "lsp_status",
-            icon = " ",
+            'lsp_status',
+            icon = ' ',
             symbols = {
-              spinner = { "⠋", "⠙", "⠹", "⠸", "⠼", "⠴", "⠦", "⠧", "⠇", "⠏" },
-              done = "✓",
-              separator = ",",
+              spinner = { '⠋', '⠙', '⠹', '⠸', '⠼', '⠴', '⠦', '⠧', '⠇', '⠏' },
+              done = '✓',
+              separator = ',',
             },
           },
           {
             function()
-              return require("noice").api.status.command.get()
+              return require('noice').api.status.command.get()
             end,
             cond = function()
-              return package.loaded["noice"] and require("noice").api.status.command.has()
+              return package.loaded['noice'] and require('noice').api.status.command.has()
             end,
           },
           {
             function()
-              return require("noice").api.status.mode.get()
+              return require('noice').api.status.mode.get()
             end,
             cond = function()
-              return package.loaded["noice"] and require("noice").api.status.mode.has()
+              return package.loaded['noice'] and require('noice').api.status.mode.has()
             end,
           },
-          { "overseer" },
+          { 'overseer' },
           {
             function()
-              return "  " .. require("dap").status()
+              return '  ' .. require('dap').status()
             end,
             cond = function()
-              return package.loaded["dap"] and require("dap").status() ~= ""
+              return package.loaded['dap'] and require('dap').status() ~= ''
             end,
           },
           {
-            require("lazy.status").updates,
-            cond = require("lazy.status").has_updates,
+            require('lazy.status').updates,
+            cond = require('lazy.status').has_updates,
           },
           {
             -- this function is for vgit
             function()
               local status = vim.b.vgit_status
-              if type(status) == "table" then
+              if type(status) == 'table' then
                 -- Extract the values
                 local added = status.added or 0
                 local removed = status.removed or 0
                 local changed = status.changed or 0
 
                 -- Format the output with color codes, but only if the value is greater than 0
-                local added_text = (added > 0) and string.format("%%#Added#  %d", added) or ""
-                local changed_text = (changed > 0) and string.format("%%#Changed#  %d", changed) or ""
-                local removed_text = (removed > 0) and string.format("%%#Removed#  %d", removed) or ""
+                local added_text = (added > 0) and string.format('%%#Added#  %d', added) or ''
+                local changed_text = (changed > 0) and string.format('%%#Changed#  %d', changed) or ''
+                local removed_text = (removed > 0) and string.format('%%#Removed#  %d', removed) or ''
 
                 -- Set the colors
-                vim.api.nvim_set_hl(0, "Added", { fg = "#98c379" }) -- Green
-                vim.api.nvim_set_hl(0, "Changed", { fg = "#e5c07b" }) -- Yellow
-                vim.api.nvim_set_hl(0, "Removed", { fg = "#e06c75" }) -- Red
+                vim.api.nvim_set_hl(0, 'Added', { fg = '#98c379' }) -- Green
+                vim.api.nvim_set_hl(0, 'Changed', { fg = '#e5c07b' }) -- Yellow
+                vim.api.nvim_set_hl(0, 'Removed', { fg = '#e06c75' }) -- Red
 
                 -- Return the concatenated string, but skip empty values
-                local result = table.concat({ added_text, changed_text, removed_text }, " ")
+                local result = table.concat({ added_text, changed_text, removed_text }, ' ')
                 return result
               end
-              return ""
+              return ''
             end,
           },
         },
         lualine_y = {
-          { "progress", separator = " ", padding = { left = 1, right = 0 } },
-          { "location", padding = { left = 0, right = 1 } },
+          { 'progress', separator = ' ', padding = { left = 1, right = 0 } },
+          { 'location', padding = { left = 0, right = 1 } },
         },
         lualine_z = {
           function()
-            return "  " .. os.date("%R")
+            return '  ' .. os.date('%R')
           end,
         },
       },
-      extensions = { "neo-tree", "lazy" },
+      extensions = { 'neo-tree', 'lazy' },
     }
   end,
 }

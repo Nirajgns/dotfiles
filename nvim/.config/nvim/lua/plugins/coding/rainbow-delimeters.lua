@@ -1,4 +1,4 @@
 return {
-  "HiPhish/rainbow-delimiters.nvim",
-  event = "LazyFile",
+  'HiPhish/rainbow-delimiters.nvim',
+  event = 'LazyFile',
 }

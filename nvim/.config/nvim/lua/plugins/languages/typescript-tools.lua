@@ -1,8 +1,8 @@
 return {
-  "pmizio/typescript-tools.nvim",
+  'pmizio/typescript-tools.nvim',
   -- enabled = false,
-  dependencies = { "nvim-lua/plenary.nvim", "neovim/nvim-lspconfig" },
-  ft = { "typescript", "typescriptreact", "javascriptreact", "javascript" },
+  dependencies = { 'nvim-lua/plenary.nvim', 'neovim/nvim-lspconfig' },
+  ft = { 'typescript', 'typescriptreact', 'javascriptreact', 'javascript' },
   opts = {},
 }
 

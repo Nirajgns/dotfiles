@@ -1,11 +1,11 @@
 return {
-  "hedyhli/outline.nvim",
-  cmd = "Outline",
-  keys = "<leader>lo",
+  'hedyhli/outline.nvim',
+  cmd = 'Outline',
+  keys = '<leader>lo',
   enabled = true,
   config = function()
-    vim.keymap.set("n", "<leader>lo", "<cmd>Outline<CR>", { desc = "Toggle Outline" })
-    require("outline").setup({
+    vim.keymap.set('n', '<leader>lo', '<cmd>Outline<CR>', { desc = 'Toggle Outline' })
+    require('outline').setup({
       outline_window = {
         auto_jump = true,
         jump_highlight_duration = false,
@@ -25,7 +25,7 @@ return {
           -- Set true for 1 node, false for 0.
           only = true,
         },
-        markers = { " ", " " },
+        markers = { ' ', ' ' },
       },
     })
   end,

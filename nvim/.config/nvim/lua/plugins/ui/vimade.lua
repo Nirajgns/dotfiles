@@ -1,14 +1,14 @@
 return {
-  "TaDaa/vimade",
+  'TaDaa/vimade',
   -- enabled = false,
-  event = "LazyFile",
+  event = 'LazyFile',
   config = function()
-    local Fade = require("vimade.style.fade").Fade
-    local direction = require("vimade.style.value.direction")
-    local ease = require("vimade.style.value.ease")
-    local animate = require("vimade.style.value.animate")
+    local Fade = require('vimade.style.fade').Fade
+    local direction = require('vimade.style.value.direction')
+    local ease = require('vimade.style.value.ease')
+    local animate = require('vimade.style.value.animate')
 
-    require("vimade").setup({
+    require('vimade').setup({
       -- recipe = { "duo", { animate = true } },
       blocklist = {
         defaults = {
@@ -32,10 +32,10 @@ return {
       },
     })
     vim.keymap.set(
-      "n",
-      "<leader>uv",
-      ":VimadeToggle<CR>",
-      { desc = "Toggle Vimade Shading", noremap = true, silent = true }
+      'n',
+      '<leader>uv',
+      ':VimadeToggle<CR>',
+      { desc = 'Toggle Vimade Shading', noremap = true, silent = true }
     )
   end,
 }

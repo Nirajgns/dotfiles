@@ -1,5 +1,5 @@
 return {
-  "nvimdev/dashboard-nvim",
+  'nvimdev/dashboard-nvim',
   enabled = false,
   lazy = false, -- As https://github.com/nvimdev/dashboard-nvim/pull/450, dashboard-nvim shouldn't be lazy-loaded to properly handle stdin.
   opts = function()
@@ -14,15 +14,15 @@ return {
        ██████  █████████████████████ ████ █████ █████ ████ ██████ 
                                                                              ]]
 
-    logo = string.rep("\n", 1) .. logo .. "\n"
+    logo = string.rep('\n', 1) .. logo .. '\n'
 
     local opts = {
-      theme = "hyper",
+      theme = 'hyper',
       hide = {
         statusline = false,
       },
       config = {
-        header = vim.split(logo, "\n"),
+        header = vim.split(logo, '\n'),
         -- stylua: ignore
         shortcut = {
 
@@ -38,36 +38,36 @@ return {
           enable = true, --FIX: in issue with dashboard, try disabling and re-enabling this
           limit = 9,
           action = function()
-            require("persistence").load()
+            require('persistence').load()
             vim.defer_fn(function()
               -- Snacks.explorer.reveal()
-              vim.cmd("Neotree show")
+              vim.cmd('Neotree show')
             end, 250)
           end,
         },
         mru = { limit = 8, cwd_only = false },
         footer = function()
-          local stats = require("lazy").stats()
+          local stats = require('lazy').stats()
           local ms = (math.floor(stats.startuptime * 100 + 0.5) / 100)
           return {
-            "   " .. stats.loaded .. "/" .. stats.count .. " in " .. "⏲  " .. ms .. " ms",
+            '   ' .. stats.loaded .. '/' .. stats.count .. ' in ' .. '⏲  ' .. ms .. ' ms',
           }
         end,
       },
     }
 
     -- close Lazy and re-open when the dashboard is ready
-    if vim.o.filetype == "lazy" then
+    if vim.o.filetype == 'lazy' then
       vim.cmd.close()
-      vim.api.nvim_create_autocmd("User", {
-        pattern = "DashboardLoaded",
+      vim.api.nvim_create_autocmd('User', {
+        pattern = 'DashboardLoaded',
         callback = function()
-          require("lazy").show()
+          require('lazy').show()
         end,
       })
     end
 
-    vim.keymap.set("n", "<leader>qb", ":Dashboard<cr>:Neotree close<cr>", { silent = true, desc = "Dashboard" })
+    vim.keymap.set('n', '<leader>qb', ':Dashboard<cr>:Neotree close<cr>', { silent = true, desc = 'Dashboard' })
 
     return opts
   end,

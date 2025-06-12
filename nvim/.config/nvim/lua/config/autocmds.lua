@@ -1,21 +1,21 @@
-vim.cmd("set iskeyword-=-")
+vim.cmd('set iskeyword-=-')
 
-vim.cmd("set iskeyword-=A-Z")
+vim.cmd('set iskeyword-=A-Z')
 ---=================show diagnostics in insert mode===================--
 
-vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(vim.lsp.diagnostic.on_publish_diagnostics, {
+vim.lsp.handlers['textDocument/publishDiagnostics'] = vim.lsp.with(vim.lsp.diagnostic.on_publish_diagnostics, {
   -- delay update diagnostics
   update_in_insert = true,
 })
 --===================floating diagnostics on cursor===================--
 -- Function to check if a floating dialog exists and if not
 -- then check for diagnostics under the cursor
-local augroup = vim.api.nvim_create_augroup("LspDiagnosticsFloat", { clear = true })
+local augroup = vim.api.nvim_create_augroup('LspDiagnosticsFloat', { clear = true })
 
 --NOTE: Set the autocommand to open the diagnostic float on CursorHold event
-vim.api.nvim_create_autocmd("CursorHold", {
+vim.api.nvim_create_autocmd('CursorHold', {
   group = augroup,
-  pattern = "*",
+  pattern = '*',
   callback = function()
     vim.diagnostic.open_float(nil, { focus = false })
   end,
@@ -23,7 +23,7 @@ vim.api.nvim_create_autocmd("CursorHold", {
 
 --NOTE:set set_highlight_groups for folded lines
 local function set_highlight_groups()
-  vim.cmd("highlight Folded guibg=none guifg=brown gui=italic")
+  vim.cmd('highlight Folded guibg=none guifg=brown gui=italic')
 end
 
 set_highlight_groups()
@@ -35,7 +35,7 @@ vim.g.neovide_floating_corner_radius = 10.0
 
 vim.g.neovide_hide_mouse_when_typing = true
 vim.g.gui_font_size = vim.g.gui_font_default_size
-vim.g.gui_font_face = "Maple Mono NF ExtraLight"
+vim.g.gui_font_face = 'Maple Mono NF ExtraLight'
 
 vim.g.neovide_fullscreen = true
 vim.g.neovide_text_gamma = 1
@@ -49,13 +49,13 @@ vim.g.neovide_cursor_animation_length = 0.3
 vim.g.neovide_scroll_animation_length = 0.08
 
 --NOTE: these functions prevent neovide from scrolling animations on buffer switch
-vim.api.nvim_create_autocmd("BufLeave", {
+vim.api.nvim_create_autocmd('BufLeave', {
   callback = function()
     vim.g.neovide_scroll_animation_length = 0
     vim.g.neovide_cursor_animation_length = 0.08
   end,
 })
-vim.api.nvim_create_autocmd("BufEnter", {
+vim.api.nvim_create_autocmd('BufEnter', {
   callback = function()
     vim.fn.timer_start(70, function()
       vim.g.neovide_scroll_animation_length = 0.3
@@ -69,8 +69,8 @@ vim.g.gui_font_default_size = 10.9
 
 RefreshGuiFont = function()
   if vim.g.neovide then
-    vim.opt.guifont = string.format("%s:h%s", vim.g.gui_font_face, vim.g.gui_font_size)
-    print("Font size set to: " .. vim.g.gui_font_size)
+    vim.opt.guifont = string.format('%s:h%s', vim.g.gui_font_face, vim.g.gui_font_size)
+    print('Font size set to: ' .. vim.g.gui_font_size)
   end
 end
 
@@ -87,19 +87,19 @@ end
 ResetGuiFont()
 
 --NOTE: Keymaps for adjusting neovide fontsize
-vim.keymap.set({ "n", "i" }, "<C-+>", function()
+vim.keymap.set({ 'n', 'i' }, '<C-+>', function()
   ResizeGuiFont(0.1)
-end, { desc = "increase font size" })
-vim.keymap.set({ "n", "i" }, "<C-->", function()
+end, { desc = 'increase font size' })
+vim.keymap.set({ 'n', 'i' }, '<C-->', function()
   ResizeGuiFont(-0.1)
-end, { desc = "decrease font size" })
-vim.keymap.set({ "n", "i" }, "<C-=>", function()
+end, { desc = 'decrease font size' })
+vim.keymap.set({ 'n', 'i' }, '<C-=>', function()
   ResetGuiFont()
-end, { desc = "reset font size" })
+end, { desc = 'reset font size' })
 
 --NOTE: Autocommand to disable numbers in terminal buffers
-vim.api.nvim_create_autocmd("TermOpen", {
-  pattern = "*",
+vim.api.nvim_create_autocmd('TermOpen', {
+  pattern = '*',
   callback = function()
     vim.opt_local.number = false
     vim.opt_local.relativenumber = false

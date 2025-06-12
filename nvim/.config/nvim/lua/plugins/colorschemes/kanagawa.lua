@@ -1,9 +1,9 @@
 return {
-  "rebelot/kanagawa.nvim",
+  'rebelot/kanagawa.nvim',
   enabled = false,
   config = function()
     -- Default options:
-    require("kanagawa").setup({
+    require('kanagawa').setup({
 
       compile = false, -- enable compiling the colorscheme
       undercurl = true, -- enable undercurls
@@ -19,7 +19,7 @@ return {
         theme = {
           all = {
             ui = {
-              bg_gutter = "none",
+              bg_gutter = 'none',
             },
           },
         },
@@ -35,9 +35,9 @@ return {
           TelescopePreviewNormal = { bg = theme.ui.bg_dim },
           TelescopePreviewBorder = { bg = theme.ui.bg_dim, fg = theme.ui.bg_dim },
 
-          NormalFloat = { bg = "none" },
-          FloatBorder = { bg = "none" },
-          FloatTitle = { bg = "none" },
+          NormalFloat = { bg = 'none' },
+          FloatBorder = { bg = 'none' },
+          FloatTitle = { bg = 'none' },
 
           -- Save an hlgroup with dark background and dimmed foreground
           -- so that you can use it where your still want darker windows.
@@ -50,14 +50,14 @@ return {
           MasonNormal = { bg = theme.ui.bg_m3, fg = theme.ui.fg_dim },
         }
       end,
-      theme = "dragon", -- Load "wave" theme when 'background' option is not set
+      theme = 'dragon', -- Load "wave" theme when 'background' option is not set
       background = { -- map the value of 'background' option to a theme
-        dark = "dragon", -- try "dragon" !
-        light = "lotus",
+        dark = 'dragon', -- try "dragon" !
+        light = 'lotus',
       },
     })
 
     -- setup must be called before loading
-    vim.cmd("colorscheme kanagawa")
+    vim.cmd('colorscheme kanagawa')
   end,
 }

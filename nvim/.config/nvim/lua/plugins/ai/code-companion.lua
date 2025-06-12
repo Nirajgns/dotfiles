@@ -1,59 +1,59 @@
 return {
-  "olimorris/codecompanion.nvim",
-  event = "InsertEnter",
+  'olimorris/codecompanion.nvim',
+  event = 'InsertEnter',
   -- enabled = false,
   keys = {
     {
-      "<leader>aa",
-      "<CMD>CodeCompanionChat Toggle<CR>",
-      desc = "CodeCompanion",
+      '<leader>aa',
+      '<CMD>CodeCompanionChat Toggle<CR>',
+      desc = 'CodeCompanion',
       silent = true,
-      mode = { "n", "x" },
+      mode = { 'n', 'x' },
     },
     {
-      "<leader>ac",
-      "<CMD>CodeCompanion <CR>",
-      desc = "CodeCompanion",
+      '<leader>ac',
+      '<CMD>CodeCompanion <CR>',
+      desc = 'CodeCompanion',
       silent = true,
-      mode = { "n", "x" },
+      mode = { 'n', 'x' },
     },
     {
-      "<leader>ae",
-      "<CMD>CodeCompanion /explain<CR>",
-      desc = "CodeCompanion Explain",
+      '<leader>ae',
+      '<CMD>CodeCompanion /explain<CR>',
+      desc = 'CodeCompanion Explain',
       silent = true,
-      mode = { "n", "x" },
+      mode = { 'n', 'x' },
     },
     {
-      "<leader>aE",
-      "<CMD>CodeCompanion explain in short<CR>",
-      desc = "CodeCompanion Explain in detail",
+      '<leader>aE',
+      '<CMD>CodeCompanion explain in short<CR>',
+      desc = 'CodeCompanion Explain in detail',
       silent = true,
-      mode = { "n", "x" },
+      mode = { 'n', 'x' },
     },
     {
-      "<leader>af",
-      "<CMD>CodeCompanion please take a look at the code and fix it accordingly<CR>",
-      desc = "CodeCompanion fix",
+      '<leader>af',
+      '<CMD>CodeCompanion please take a look at the code and fix it accordingly<CR>',
+      desc = 'CodeCompanion fix',
       silent = true,
-      mode = { "n", "x" },
+      mode = { 'n', 'x' },
     },
     {
-      "<leader>ap",
-      "<CMD>CodeCompanionActions<CR>",
-      desc = "CodeCompanion Actions picker",
+      '<leader>ap',
+      '<CMD>CodeCompanionActions<CR>',
+      desc = 'CodeCompanion Actions picker',
       silent = true,
-      mode = { "n", "x" },
+      mode = { 'n', 'x' },
     },
   },
   config = function()
-    require("codecompanion").setup({
+    require('codecompanion').setup({
       display = {
         action_palette = {
           width = 95,
           height = 10,
-          prompt = "Prompt ", -- Prompt used for interactive LLM calls
-          provider = "default", -- default|telescope|mini_pick
+          prompt = 'Prompt ', -- Prompt used for interactive LLM calls
+          provider = 'default', -- default|telescope|mini_pick
           opts = {
             show_default_actions = true, -- Show the default actions in the action palette?
             show_default_prompt_library = true, -- Show the default prompt library in the action palette?
@@ -61,31 +61,31 @@ return {
         },
         chat = {
           chat = {
-            intro_message = "Welcome to CodeCompanion ✨! Press ? for options",
+            intro_message = 'Welcome to CodeCompanion ✨! Press ? for options',
             show_header_separator = false, -- Show header separators in the chat buffer? Set this to false if you're using an external markdown formatting plugin
-            separator = "~", -- The separator between the different messages in the chat buffer
+            separator = '~', -- The separator between the different messages in the chat buffer
             show_references = true, -- Show references (from slash commands and variables) in the chat buffer?
             show_settings = true, -- Show LLM settings at the top of the chat buffer?
             show_token_count = true, -- Show the token count for each response?
             start_in_insert_mode = true, -- Open the chat buffer in insert mode?
           },
           window = {
-            layout = "vertical", -- float|vertical|horizontal|buffer
-            position = "right", -- left|right|top|bottom (nil will default depending on vim.opt.plitright|vim.opt.splitbelow)
-            border = "single",
+            layout = 'vertical', -- float|vertical|horizontal|buffer
+            position = 'right', -- left|right|top|bottom (nil will default depending on vim.opt.plitright|vim.opt.splitbelow)
+            border = 'single',
             height = 0.8,
             width = 0.3,
-            relative = "editor",
+            relative = 'editor',
             opts = {
               number = false,
               relativenumber = false,
               breakindent = true,
               cursorline = true,
-              foldcolumn = "0",
+              foldcolumn = '0',
               linebreak = true,
               list = false,
               numberwidth = 1,
-              signcolumn = "no",
+              signcolumn = 'no',
               spell = false,
               wrap = true,
             },
@@ -94,25 +94,25 @@ return {
       },
       strategies = {
         inline = {
-          adapter = "copilot",
+          adapter = 'copilot',
           keymaps = {
             accept_change = {
               modes = {
-                n = "ga",
-                i = "<C-y>",
+                n = 'ga',
+                i = '<C-y>',
               },
               index = 1,
-              callback = "keymaps.accept_change",
-              description = "Accept the AI suggested change",
+              callback = 'keymaps.accept_change',
+              description = 'Accept the AI suggested change',
             },
             reject_change = {
               modes = {
-                n = "gr",
-                i = "<C-e>",
+                n = 'gr',
+                i = '<C-e>',
               },
               index = 2,
-              callback = "keymaps.reject_change",
-              description = "Reject the AI suggested change",
+              callback = 'keymaps.reject_change',
+              description = 'Reject the AI suggested change',
             },
           },
           prompts = {
@@ -129,39 +129,39 @@ return {
           keymaps = {
             completion = {
               modes = {
-                i = "<C-x>",
+                i = '<C-x>',
               },
               index = 1,
-              callback = "keymaps.completion",
-              description = "Completion Menu",
+              callback = 'keymaps.completion',
+              description = 'Completion Menu',
             },
             send = {
-              modes = { n = "<CR>", i = "<c-CR>" },
+              modes = { n = '<CR>', i = '<c-CR>' },
             },
             stop = {
               modes = {
-                n = "<C-c>",
+                n = '<C-c>',
               },
               index = 5,
-              callback = "keymaps.stop",
-              description = "Stop Request",
+              callback = 'keymaps.stop',
+              description = 'Stop Request',
             },
             codeblock = {
               modes = {
-                n = "gi",
+                n = 'gi',
               },
               index = 7,
-              callback = "keymaps.codeblock",
-              description = "Insert Codeblock",
+              callback = 'keymaps.codeblock',
+              description = 'Insert Codeblock',
             },
             close = {
               modes = {
-                n = "q",
-                i = "<C-c>",
+                n = 'q',
+                i = '<C-c>',
               },
               index = 4,
-              callback = "keymaps.close",
-              description = "Close Chat",
+              callback = 'keymaps.close',
+              description = 'Close Chat',
             },
           },
         },

@@ -1,16 +1,16 @@
 return {
-  "folke/which-key.nvim",
+  'folke/which-key.nvim',
   opts = {
-    preset = "classic",
-    sort = { "alphanum" },
+    preset = 'classic',
+    sort = { 'alphanum' },
     spec = {
       {
-        mode = { "n", "v" },
-        { "<leader>a", group = "AI" },
-        { "<leader>t", group = "Tasks (Overseer)" },
-        { "<leader>l", group = "LAZY and LSP)" },
-        { "<leader>r", group = "Refactoring" },
-        { "<leader>T", group = "Tailwind" },
+        mode = { 'n', 'v' },
+        { '<leader>a', group = 'AI' },
+        { '<leader>t', group = 'Tasks (Overseer)' },
+        { '<leader>l', group = 'LAZY and LSP)' },
+        { '<leader>r', group = 'Refactoring' },
+        { '<leader>T', group = 'Tailwind' },
       },
     },
     layout = {

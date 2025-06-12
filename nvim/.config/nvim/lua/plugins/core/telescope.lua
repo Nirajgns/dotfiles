@@ -1,21 +1,21 @@
 return {
-  "nvim-telescope/telescope.nvim",
+  'nvim-telescope/telescope.nvim',
   enabled = false,
   lazy = true,
-  cmd = "Telescope",
+  cmd = 'Telescope',
   opts = function()
-    require("telescope").setup({
+    require('telescope').setup({
       defaults = {
-        prompt_prefix = "  ",
-        selection_caret = "🢂 ",
-        layout_strategy = "horizontal",
+        prompt_prefix = '  ',
+        selection_caret = '🢂 ',
+        layout_strategy = 'horizontal',
         layout_config = {
           horizontal = {
             preview_width = 0.5,
-            prompt_position = "top",
+            prompt_position = 'top',
           },
         },
-        sorting_strategy = "ascending",
+        sorting_strategy = 'ascending',
       },
     })
   end,

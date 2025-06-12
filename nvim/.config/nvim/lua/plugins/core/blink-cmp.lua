@@ -1,50 +1,50 @@
 return {
-  "saghen/blink.cmp",
+  'saghen/blink.cmp',
   -- enabled = false,
 
   --to disable for prompts and other input fields
   enabled = function()
-    return not vim.tbl_contains({ "lua", "markdown" }, vim.bo.filetype)
-      and vim.bo.buftype ~= "prompt"
+    return not vim.tbl_contains({ 'lua', 'markdown' }, vim.bo.filetype)
+      and vim.bo.buftype ~= 'prompt'
       and vim.b.completion ~= false
   end,
 
-  event = "InsertEnter",
+  event = 'InsertEnter',
   opts_extend = {
-    "sources.default",
-    "sources.compat",
+    'sources.default',
+    'sources.compat',
   },
-  version = "1.*",
+  version = '1.*',
   dependencies = {
     {
-      "L3MON4D3/LuaSnip",
+      'L3MON4D3/LuaSnip',
       lazy = true,
       dependencies = {
         {
-          "rafamadriz/friendly-snippets",
+          'rafamadriz/friendly-snippets',
           config = function()
-            require("luasnip.loaders.from_vscode").lazy_load()
-            require("luasnip.loaders.from_vscode").lazy_load({ paths = { vim.fn.stdpath("config") .. "/snippets" } })
+            require('luasnip.loaders.from_vscode').lazy_load()
+            require('luasnip.loaders.from_vscode').lazy_load({ paths = { vim.fn.stdpath('config') .. '/snippets' } })
           end,
         },
       },
       opts = {
         history = true,
-        delete_check_events = "TextChanged",
+        delete_check_events = 'TextChanged',
       },
     },
   },
   opts = function()
     return {
-      fuzzy = { implementation = "prefer_rust" },
+      fuzzy = { implementation = 'prefer_rust' },
       cmdline = { enabled = true, completion = {
         ghost_text = { enabled = false },
       } },
       snippets = {
-        preset = "luasnip",
+        preset = 'luasnip',
       },
       sources = {
-        default = { "lsp", "path", "snippets", "buffer" },
+        default = { 'lsp', 'path', 'snippets', 'buffer' },
       },
       completion = {
         list = {
@@ -61,17 +61,17 @@ return {
           -- auto_show = function(ctx)
           --   return ctx.mode ~= "cmdline"
           -- end,
-          border = "rounded",
+          border = 'rounded',
           winblend = 10,
-          winhighlight = "Normal:CatppuccinSurface0,FloatBorder:CatppuccinSurface2,Search:None",
-          draw = { treesitter = { "lsp" } },
+          winhighlight = 'Normal:CatppuccinSurface0,FloatBorder:CatppuccinSurface2,Search:None',
+          draw = { treesitter = { 'lsp' } },
         },
         documentation = {
           auto_show = true,
           window = {
-            border = "rounded",
+            border = 'rounded',
             winblend = 10,
-            winhighlight = "Normal:CatppuccinSurface0,FloatBorder:CatppuccinSurface2,Search:None",
+            winhighlight = 'Normal:CatppuccinSurface0,FloatBorder:CatppuccinSurface2,Search:None',
           },
           auto_show_delay_ms = 100,
         },
@@ -79,15 +79,15 @@ return {
       signature = {
         enabled = true,
         window = {
-          border = "rounded",
+          border = 'rounded',
           winblend = 10,
-          winhighlight = "Normal:CatppuccinSurface0,FloatBorder:CatppuccinSurface2,Search:None",
+          winhighlight = 'Normal:CatppuccinSurface0,FloatBorder:CatppuccinSurface2,Search:None',
         },
       },
       keymap = {
-        preset = "enter",
-        ["<C-space>"] = { "show", "hide" },
-        ["<C-e>"] = { "show_documentation", "hide_documentation" },
+        preset = 'enter',
+        ['<C-space>'] = { 'show', 'hide' },
+        ['<C-e>'] = { 'show_documentation', 'hide_documentation' },
       },
     }
   end,

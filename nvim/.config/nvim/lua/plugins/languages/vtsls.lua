@@ -1,9 +1,9 @@
 return {
-  "yioneko/nvim-vtsls",
+  'yioneko/nvim-vtsls',
   enabled = false,
-  ft = { "typescript", "typescriptreact", "javascriptreact", "javascript" },
+  ft = { 'typescript', 'typescriptreact', 'javascriptreact', 'javascript' },
   config = function()
-    require("vtsls").config({
+    require('vtsls').config({
       -- customize handlers for commands
       handlers = {
         source_definition = function(err, locations) end,
@@ -18,6 +18,6 @@ return {
         telescope_opts = function(items, default) end,
       },
     })
-    vim.keymap.set("n", "<leader>cv", ":VtsExec ", { noremap = true, silent = false, desc = "vtsls" })
+    vim.keymap.set('n', '<leader>cv', ':VtsExec ', { noremap = true, silent = false, desc = 'vtsls' })
   end,
 }

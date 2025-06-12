@@ -1,9 +1,9 @@
 return {
-  "zbirenbaum/copilot.lua",
+  'zbirenbaum/copilot.lua',
   enabled = false,
-  cmd = "Copilot",
-  event = "InsertEnter",
+  cmd = 'Copilot',
+  event = 'InsertEnter',
   config = function()
-    require("copilot").setup({})
+    require('copilot').setup({})
   end,
 }

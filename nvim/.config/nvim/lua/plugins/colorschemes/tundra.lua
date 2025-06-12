@@ -1,8 +1,8 @@
 return {
-  "sam4llis/nvim-tundra",
+  'sam4llis/nvim-tundra',
   enabled = false,
   config = function()
-    require("nvim-tundra").setup({
+    require('nvim-tundra').setup({
       transparent_background = false,
       dim_inactive_windows = {
         enabled = false,
@@ -56,8 +56,8 @@ return {
       },
     })
 
-    vim.g.tundra_biome = "arctic" -- 'arctic' or 'jungle'
-    vim.opt.background = "dark"
-    vim.cmd("colorscheme tundra")
+    vim.g.tundra_biome = 'arctic' -- 'arctic' or 'jungle'
+    vim.opt.background = 'dark'
+    vim.cmd('colorscheme tundra')
   end,
 }
