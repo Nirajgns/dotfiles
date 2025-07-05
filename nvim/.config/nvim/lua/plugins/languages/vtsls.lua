@@ -1,6 +1,6 @@
 return {
   'yioneko/nvim-vtsls',
-  enabled = false,
+  -- enabled = false,
   ft = { 'typescript', 'typescriptreact', 'javascriptreact', 'javascript' },
   config = function()
     require('vtsls').config({

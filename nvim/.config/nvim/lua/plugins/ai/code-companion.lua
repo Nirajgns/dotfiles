@@ -20,14 +20,14 @@ return {
     {
       '<leader>ae',
       '<CMD>CodeCompanion /explain<CR>',
-      desc = 'CodeCompanion Explain',
+      desc = 'CodeCompanion Explain details',
       silent = true,
       mode = { 'n', 'x' },
     },
     {
       '<leader>aE',
       '<CMD>CodeCompanion explain in short<CR>',
-      desc = 'CodeCompanion Explain in detail',
+      desc = 'CodeCompanion Explain in short',
       silent = true,
       mode = { 'n', 'x' },
     },

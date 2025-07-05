@@ -39,7 +39,7 @@ return {
 
         {
           mode = 'n',
-          key = '<leader>gB',
+          key = '<leader>gd',
           handler = 'buffer_diff_preview',
           desc = 'Show buffer diff preview',
         },

@@ -1,3 +1,11 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette
 {
   "edit_predictions": {
     "disabled_globs": [
@@ -27,15 +35,15 @@
       "proxy": null,
       "proxy_no_verify": null
     },
-    "enabled_in_text_threads": false
+    "enabled_in_assistant": false
   },
-  "icon_theme": "Catppuccin Mocha",
+  "icon_theme": "Zed (Default)",
   "notification_panel": {
     "enabled": false,
     "button": false
   },
 
-  "agent": {
+  "assistant": {
     "default_profile": "ask",
     "default_model": {
       "provider": "zed.dev",
@@ -183,8 +191,8 @@
     "env": {
       "EDITOR": "zed --wait"
     },
-    "font_size": 13,
-    "font_family": "Maple Mono NF ExtraLight",
+    "font_size": 16,
+    "font_family": "Maple Mono NF",
     "detect_venv": {
       "on": {
         // Default directories to search for virtual environments, relative
@@ -259,8 +267,8 @@
   },
   "ui_font_size": 16,
   "buffer_font_size": 16,
-  "buffer_font_family": "Maple Mono NF ExtraLight",
-  "ui_font_family": "Maple Mono NF ExtraLight",
+  "buffer_font_family": "Maple Mono NF",
+  "ui_font_family": "Maple Mono NF",
   "autosave": "on_focus_change",
   "theme": {
     "mode": "dark",

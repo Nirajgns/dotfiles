@@ -32,6 +32,7 @@ return {
   opts = {
     dap = false,
     task_list = {
+      direction = 'vertical',
       default_detail = 2,
       max_width = 50,
       min_width = 50,

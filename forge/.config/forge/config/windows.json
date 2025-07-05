@@ -127,14 +127,6 @@
         {
             "wmClass": "update-manager",
             "mode": "float"
-        },
-        {
-            "wmClass": "Ulauncher",
-            "mode": "float"
-        },
-        {
-            "wmClass": "com.mattjakeman.ExtensionManager",
-            "mode": "float"
         }
     ]
 }

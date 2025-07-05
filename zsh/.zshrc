@@ -31,6 +31,7 @@ fi
 # ----- Aliases -----
 alias nv='neovide --fork'
 alias ls='eza --icons'
+alias c='clear'
 
 # ----- Brew setup -----
 if [[ -x /home/linuxbrew/.linuxbrew/bin/brew ]]; then

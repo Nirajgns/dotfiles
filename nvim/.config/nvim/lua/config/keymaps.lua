@@ -1,18 +1,17 @@
 local map = vim.keymap.set
 
+vim.keymap.set('t', '<C-S-v>', [[<C-\><C-n>"+pa]], { noremap = true })
+
 map({ 'i', 't', 'c', 'x' }, '<A-BS>', '<C-w>', { noremap = true, silent = false, desc = 'delete word with alt+bcspc' })
 map({ 'i', 't', 'c', 'x' }, '<C-BS>', '<C-w>', { noremap = true, silent = false, desc = 'delete word with ctrl+bcspc' })
 
--- map("i", "jk", "<ESC>", { noremap = true, silent = true })
--- map("i", "ii", "<ESC>", { noremap = true, silent = true })
-map('i', ';;', '<ESC>', { noremap = true, silent = true })
+map('i', 'jk', '<ESC>', { noremap = true, silent = true })
 
--- map("t", "ii", "<C-\\><C-n>", { noremap = true, silent = true })
-map('t', ';;', '<C-\\><C-n>', { noremap = true, silent = true })
--- map("t", "<esc>", "<C-\\><C-n>", { noremap = true, silent = true })
+map('i', 'ii', '<ESC>', { noremap = true, silent = true })
+map('t', 'ii', '<C-\\><C-n>', { noremap = true, silent = true })
+map('t', '<esc>', '<C-\\><C-n>', { noremap = true, silent = true })
 
 -- Terminal mode window navigation
-
 vim.api.nvim_set_keymap('n', '<c-q>', '<cmd>lua Snacks.bufdelete()<cr>', { desc = 'delete buffer' })
 vim.api.nvim_set_keymap('t', '<C-h>', '<C-\\><C-n><C-w>h', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('t', '<C-j>', '<C-\\><C-n><C-w>j', { noremap = true, silent = true })

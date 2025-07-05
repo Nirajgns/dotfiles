@@ -116,6 +116,9 @@ return {
       },
 
       mappings = {
+        ['<A-h>'] = 'toggle_hidden',
+        ['l'] = 'open',
+        ['h'] = 'toggle_node',
         ['<S-CR>'] = 'open_with_window_picker',
         ['O'] = 'system_open',
         ['P'] = { 'toggle_preview', config = { use_float = true, use_image_nvim = true } },

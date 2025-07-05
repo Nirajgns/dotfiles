@@ -1,0 +1,28 @@
+font-family = Maple Mono NF ExtraLight
+
+window-padding-x = 0
+window-padding-y = 0
+window-padding-balance= false
+
+theme = catppuccin-mocha
+
+mouse-hide-while-typing=true
+
+fullscreen=false
+clipboard-read=allow
+clipboard-write=allow
+
+cursor-style = block
+cursor-style-blink = false
+shell-integration-features = no-cursor
+cursor-invert-fg-bg = true
+
+
+
+background-blur=true
+
+quick-terminal-position=bottom
+
+
+keybind = global:ctrl+grave_accent=toggle_quick_terminal
+
