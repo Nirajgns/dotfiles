@@ -1,6 +1,6 @@
 return {
   'tanvirtin/vgit.nvim',
-  -- enabled = false,
+  enabled = false,
   branch = 'v1.0.x',
   event = 'LazyFile',
   config = function()

@@ -30,14 +30,14 @@
 
 .window-tiled-border {
   border-width: 3px;
-  border-color: rgb(61,56,70);
+  border-color: rgb(94,92,100);
   border-style: solid;
   border-radius: 14px;
 }
 
 .window-split-border {
   border-width: 3px;
-  border-color: rgba(191,64,64,0);
+  border-color: rgb(94,92,100);
   border-style: solid;
   border-radius: 14px;
 }
@@ -56,14 +56,14 @@
 
 .window-stacked-border {
   border-width: 3px;
-  border-color: rgba(51,51,51,0.25);
+  border-color: rgb(94,92,100);
   border-style: solid;
   border-radius: 14px;
 }
 
 .window-tabbed-border {
   border-width: 3px;
-  border-color: rgba(0,0,0,0.25);
+  border-color: rgb(94,92,100);
   border-style: solid;
   border-radius: 14px;
 }
@@ -74,7 +74,7 @@
 
 .window-tabbed-tab {
   background-color: rgba(54, 47, 45, 1);
-  border-color: rgba(0,0,0,0.6);
+  border-color: rgba(94,92,100,0.6);
   border-width: 1px;
   border-radius: 8px;
   color: white;
@@ -83,7 +83,7 @@
 }
 
 .window-tabbed-tab-active {
-  background-color: rgba(0,0,0,0.25);
+  background-color: rgb(94,92,100);
   color: black;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
 }
@@ -101,7 +101,7 @@
 }
 
 .window-floated-border {
-  border-width: 3px;
+  border-width: 2px;
   border-color: rgba(191,64,64,0);
   border-style: solid;
   border-radius: 14px;
@@ -109,18 +109,18 @@
 
 .window-tilepreview-tiled {
   border-width: 1px;
-  border-color: rgba(61,56,70,0.3);
+  border-color: rgba(94,92,100,0.3);
   border-style: solid;
   border-radius: 14px;
-  background-color: rgba(61,56,70,0.2);
+  background-color: rgba(94,92,100,0.2);
 }
 
 .window-tilepreview-stacked {
   border-width: 1px;
-  border-color: rgba(51,51,51,0.3);
+  border-color: rgba(94,92,100,0.3);
   border-style: solid;
   border-radius: 14px;
-  background-color: rgba(51,51,51,0.2);
+  background-color: rgba(94,92,100,0.2);
 }
 
 .window-tilepreview-swap {
@@ -133,8 +133,8 @@
 
 .window-tilepreview-tabbed {
   border-width: 1px;
-  border-color: rgba(0,0,0,0.3);
+  border-color: rgba(94,92,100,0.3);
   border-style: solid;
   border-radius: 14px;
-  background-color: rgba(0,0,0,0.2);
+  background-color: rgba(94,92,100,0.2);
 }

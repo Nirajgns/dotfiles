@@ -127,6 +127,10 @@
         {
             "wmClass": "update-manager",
             "mode": "float"
+        },
+        {
+            "wmClass": "com.mitchellh.ghostty",
+            "mode": "float"
         }
     ]
 }

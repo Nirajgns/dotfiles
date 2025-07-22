@@ -16,8 +16,8 @@ return {
             height = 0.80, -- 75% of the editor's height
             border = 'rounded', -- Rounded border for the floating window
           },
-          horizontal = { location = 'rightbelow', split_ratio = 0.30 },
-          vertical = { location = 'rightbelow', split_ratio = 0.30 },
+          horizontal = { location = 'rightbelow', split_ratio = 0.33 },
+          vertical = { location = 'rightbelow', split_ratio = 0.33 },
         },
       },
     })

@@ -91,31 +91,32 @@ return {
             cond = require('lazy.status').has_updates,
           },
           {
+            "diff"
             -- this function is for vgit
-            function()
-              local status = vim.b.vgit_status
-              if type(status) == 'table' then
-                -- Extract the values
-                local added = status.added or 0
-                local removed = status.removed or 0
-                local changed = status.changed or 0
-
-                -- Format the output with color codes, but only if the value is greater than 0
-                local added_text = (added > 0) and string.format('%%#Added#  %d', added) or ''
-                local changed_text = (changed > 0) and string.format('%%#Changed#  %d', changed) or ''
-                local removed_text = (removed > 0) and string.format('%%#Removed#  %d', removed) or ''
-
-                -- Set the colors
-                vim.api.nvim_set_hl(0, 'Added', { fg = '#98c379' }) -- Green
-                vim.api.nvim_set_hl(0, 'Changed', { fg = '#e5c07b' }) -- Yellow
-                vim.api.nvim_set_hl(0, 'Removed', { fg = '#e06c75' }) -- Red
-
-                -- Return the concatenated string, but skip empty values
-                local result = table.concat({ added_text, changed_text, removed_text }, ' ')
-                return result
-              end
-              return ''
-            end,
+            -- function()
+            --   local status = vim.b.vgit_status
+            --   if type(status) == 'table' then
+            --     -- Extract the values
+            --     local added = status.added or 0
+            --     local removed = status.removed or 0
+            --     local changed = status.changed or 0
+            --
+            --     -- Format the output with color codes, but only if the value is greater than 0
+            --     local added_text = (added > 0) and string.format('%%#Added#  %d', added) or ''
+            --     local changed_text = (changed > 0) and string.format('%%#Changed#  %d', changed) or ''
+            --     local removed_text = (removed > 0) and string.format('%%#Removed#  %d', removed) or ''
+            --
+            --     -- Set the colors
+            --     vim.api.nvim_set_hl(0, 'Added', { fg = '#98c379' }) -- Green
+            --     vim.api.nvim_set_hl(0, 'Changed', { fg = '#e5c07b' }) -- Yellow
+            --     vim.api.nvim_set_hl(0, 'Removed', { fg = '#e06c75' }) -- Red
+            --
+            --     -- Return the concatenated string, but skip empty values
+            --     local result = table.concat({ added_text, changed_text, removed_text }, ' ')
+            --     return result
+            --   end
+            --   return ''
+            -- end,
           },
         },
         lualine_y = {

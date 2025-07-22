@@ -1,6 +1,7 @@
 {
 	"file_history":
 	[
+		"/home/niraj/Desktop/install-yaak.sh",
 		"/home/niraj/dotfiles/nvim/.config/nvim/lua/plugins/disabled.lua",
 		"/home/niraj/.zshrc",
 		"/home/niraj/.config/yazi/keymap.toml",
@@ -127,8 +128,7 @@
 		"/home/niraj/.config/dolphinrc",
 		"/home/niraj/.config/user-dirs.locale",
 		"/home/niraj/.config/kservicemenurc",
-		"/home/niraj/.config/gsconnect/private.pem",
-		"/home/niraj/.config/lazygit/state.yml"
+		"/home/niraj/.config/gsconnect/private.pem"
 	],
 	"folder_history":
 	[
@@ -150,7 +150,7 @@
 	"last_version": 4200,
 	"last_window_id": 43,
 	"log_indexing": false,
-	"next_update_check": 1751430247,
+	"next_update_check": 1752637704,
 	"settings":
 	{
 		"new_window_full_screen": false,
@@ -529,15 +529,6 @@
 			},
 			"buffers":
 			[
-				{
-					"file": "/home/niraj/Desktop/install-yaak.sh",
-					"settings":
-					{
-						"buffer_size": 1339,
-						"encoding": "UTF-8",
-						"line_ending": "Unix"
-					}
-				}
 			],
 			"build_system": "",
 			"build_system_choices":
@@ -665,6 +656,7 @@
 			],
 			"file_history":
 			[
+				"/home/niraj/Desktop/install-yaak.sh",
 				"/home/niraj/dotfiles/nvim/.config/nvim/lua/plugins/disabled.lua",
 				"/home/niraj/.zshrc",
 				"/home/niraj/.config/yazi/keymap.toml",
@@ -791,8 +783,7 @@
 				"/home/niraj/Dropbox/obsidian-vault/.obsidian.vimrc",
 				"/home/niraj/Desktop/projects/js/ts-ecom-api/src/routes/products.ts",
 				"/home/niraj/.bash_history",
-				"/home/niraj/.config/nvim.bak/lua/config/options.lua",
-				"/home/niraj/.blerc"
+				"/home/niraj/.config/nvim.bak/lua/config/options.lua"
 			],
 			"find":
 			{
@@ -837,38 +828,6 @@
 				{
 					"sheets":
 					[
-						{
-							"buffer": 0,
-							"file": "/home/niraj/Desktop/install-yaak.sh",
-							"selected": true,
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 1339,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										0,
-										0
-									]
-								],
-								"settings":
-								{
-									"syntax": "Packages/ShellScript/Bash.sublime-syntax",
-									"tab_size": 2,
-									"translate_tabs_to_spaces": true
-								},
-								"translation.x": 0.0,
-								"translation.y": 0.0,
-								"zoom_level": 1.0
-							},
-							"stack_index": 0,
-							"stack_multiselect": false,
-							"type": "text"
-						}
 					]
 				}
 			],

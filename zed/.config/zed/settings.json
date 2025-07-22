@@ -29,7 +29,7 @@
     },
     "enabled_in_text_threads": false
   },
-  "icon_theme": "Catppuccin Mocha",
+  "icon_theme": "Material Icon Theme",
   "notification_panel": {
     "enabled": false,
     "button": false
