@@ -18,6 +18,6 @@ return {
         telescope_opts = function(items, default) end,
       },
     })
-    vim.keymap.set('n', '<leader>cv', ':VtsExec ', { noremap = true, silent = false, desc = 'vtsls' })
+    vim.keymap.set('n', '<leader>cv', ':VtsExec <tab>', { noremap = true, silent = false, desc = 'vtsls' })
   end,
 }
