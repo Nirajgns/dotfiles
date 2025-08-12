@@ -37,9 +37,9 @@ return {
       max_width = 50,
       min_width = 50,
       width = 50,
-      max_height = 15,
-      min_height = 15,
-      height = 15,
+      max_height = 7,
+      min_height = 7,
+      height = 7,
       separator = '---------------------------------------------------------------------------------------------------',
       bindings = {
         ['<C-h>'] = false,

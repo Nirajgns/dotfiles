@@ -36,15 +36,17 @@ return {
     {
       '<leader><space>',
       function()
-        Snacks.picker.files()
+        Snacks.picker.files({
+          layout = 'vscode',
+        })
       end,
       desc = 'Find git Files',
     },
     -- find
     {
-      '<leader>fb',
+      '<leader>ff',
       function()
-        Snacks.picker.buffers()
+        Snacks.picker.buffers({ layout = 'select' })
       end,
       desc = 'Buffers',
     },
@@ -55,13 +57,13 @@ return {
       end,
       desc = 'Find Config File',
     },
-    {
-      '<leader>ff',
-      function()
-        Snacks.picker.files()
-      end,
-      desc = 'Find Files',
-    },
+    -- {
+    --   '<leader>ff',
+    --   function()
+    --     Snacks.picker.files()
+    --   end,
+    --   desc = 'Find Files',
+    -- },
     {
       '<leader>fg',
       function()
@@ -151,7 +153,7 @@ return {
       desc = 'Commands',
     },
     {
-      '<leader>sd',
+      '<leader>xx',
       function()
         Snacks.picker.diagnostics()
       end,
@@ -318,7 +320,7 @@ return {
       local fg_title = '#a0b0c0' -- Bright for readability
 
       vim.api.nvim_set_hl(0, 'SnacksPicker', { bg = bg_picker })
-      vim.api.nvim_set_hl(0, 'SnacksPickerBorder', { fg = bg_picker, bg = bg_picker })
+      -- vim.api.nvim_set_hl(0, 'SnacksPickerBorder', { fg = bg_picker, bg = bg_picker })
       vim.api.nvim_set_hl(0, 'SnacksPickerInput', { bg = bg_input })
       vim.api.nvim_set_hl(0, 'SnacksPickerInputBorder', { fg = bg_preview, bg = bg_preview })
       vim.api.nvim_set_hl(0, 'SnacksPickerPreview', { bg = bg_preview })
@@ -557,11 +559,4 @@ return {
     },
     notifier = { top_down = false, wo = { winblend = 1000 } },
   },
-
-  -- vim.api.nvim_set_hl(0, 'SnacksPicker', { bg = '#111c22' }),
-  -- vim.api.nvim_set_hl(0, 'SnacksPickerBorder', { fg = '#111c22', bg = '#111c22' }),
-  -- vim.api.nvim_set_hl(0, 'SnacksPickerInput', { bg = '#233743' }),
-  -- vim.api.nvim_set_hl(0, 'SnacksPickerInputBorder', { fg = '#233743', bg = '#233743' }),
-  -- vim.api.nvim_set_hl(0, 'SnacksPickerPreview', { bg = '#17242c' }),
-  -- vim.api.nvim_set_hl(0, 'SnacksPickerPreviewBorder', { fg = '#17242c', bg = '#17242c' }),
 }
