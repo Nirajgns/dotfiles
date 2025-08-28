@@ -16,8 +16,8 @@ return {
             height = 0.80, -- 75% of the editor's height
             border = 'rounded', -- Rounded border for the floating window
           },
-          horizontal = { location = 'rightbelow', split_ratio = 0.33 },
-          vertical = { location = 'rightbelow', split_ratio = 0.33 },
+          horizontal = { location = 'rightbelow', split_ratio = 0.30 },
+          vertical = { location = 'rightbelow', split_ratio = 0.30 },
         },
       },
     })
@@ -28,7 +28,7 @@ return {
         if vim.bo.buftype == 'terminal' then
           vim.cmd('startinsert!')
         end
-      end, 20) -- slight delay (in ms) to let Neovim switch buffers
+      end, 5) -- slight delay (in ms) to let Neovim switch buffers
     end
 
     vim.keymap.set({ 'n', 't' }, '<A-v>', function()

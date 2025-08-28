@@ -37,9 +37,17 @@ return {
   opts = function()
     return {
       fuzzy = { implementation = 'prefer_rust' },
-      cmdline = { enabled = true, completion = {
-        ghost_text = { enabled = false },
-      } },
+      cmdline = {
+        keymap = {
+          ['<Tab>'] = { 'accept' },
+          ['<CR>'] = { 'accept_and_enter', 'fallback' },
+        },
+        -- (optionally) automatically show the menu
+        completion = {
+          ghost_text = { enabled = true },
+          menu = { auto_show = true },
+        },
+      },
       snippets = {
         preset = 'luasnip',
       },

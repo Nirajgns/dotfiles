@@ -82,3 +82,29 @@ vim.keymap.set('n', 'gf', function()
     vim.api.nvim_win_set_cursor(0, { line, col - 1 }) -- Column is 0-based in API
   end)
 end, { desc = 'Open file under cursor', noremap = true, silent = true })
+
+-- function to jump to the next closed fold in a given direction
+local function next_closed_fold(dir)
+  local view = vim.fn.winsaveview()
+  local l0, l = 0, view.lnum
+  local open = true
+
+  local cmd = dir == 'j' and 'normal! zj' or 'normal! zk'
+
+  while l ~= l0 and open do
+    vim.cmd(cmd)
+    l0, l = l, vim.fn.line('.')
+    open = vim.fn.foldclosed(l) < 0
+  end
+
+  if open then
+    vim.fn.winrestview(view)
+  end
+end
+
+vim.keymap.set('n', ']z', function()
+  next_closed_fold('j')
+end, { silent = true })
+vim.keymap.set('n', '[z', function()
+  next_closed_fold('k')
+end, { silent = true })

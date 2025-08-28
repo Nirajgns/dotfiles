@@ -15,7 +15,26 @@ return {
     {
       '<leader>,',
       function()
-        Snacks.picker.buffers()
+        Snacks.picker.buffers({
+          layout = {
+            preview = false,
+            cycle = true,
+            layout = {
+              backdrop = false,
+              width = 0.5,
+              min_width = 80,
+              height = 0.4,
+              min_height = 3,
+              box = 'vertical',
+              border = 'rounded',
+              title = '{title}',
+              title_pos = 'center',
+              { win = 'input', height = 1, border = 'bottom' },
+              { win = 'list', border = 'none' },
+              { win = 'preview', title = '{preview}', height = 0.4, border = 'top' },
+            },
+          },
+        })
       end,
       desc = 'Buffers',
     },
@@ -37,7 +56,24 @@ return {
       '<leader><space>',
       function()
         Snacks.picker.files({
-          layout = 'vscode',
+          layout = {
+            preview = false,
+            cycle = true,
+            layout = {
+              backdrop = false,
+              width = 0.5,
+              min_width = 80,
+              height = 0.4,
+              min_height = 3,
+              box = 'vertical',
+              border = 'rounded',
+              title = '{title}',
+              title_pos = 'center',
+              { win = 'input', height = 1, border = 'bottom' },
+              { win = 'list', border = 'none' },
+              { win = 'preview', title = '{preview}', height = 0.4, border = 'top' },
+            },
+          },
         })
       end,
       desc = 'Find git Files',
@@ -46,7 +82,26 @@ return {
     {
       '<leader>ff',
       function()
-        Snacks.picker.buffers({ layout = 'select' })
+        Snacks.picker.buffers({
+          layout = {
+            preview = false,
+            cycle = true,
+            layout = {
+              backdrop = false,
+              width = 0.5,
+              min_width = 80,
+              height = 0.4,
+              min_height = 3,
+              box = 'vertical',
+              border = 'rounded',
+              title = '{title}',
+              title_pos = 'center',
+              { win = 'input', height = 1, border = 'bottom' },
+              { win = 'list', border = 'none' },
+              { win = 'preview', title = '{preview}', height = 0.4, border = 'top' },
+            },
+          },
+        })
       end,
       desc = 'Buffers',
     },
@@ -252,17 +307,17 @@ return {
     },
 
     -- {
-    --   "<leader>e",
+    --   '<leader>e',
     --   function()
     --     Snacks.explorer()
     --   end,
-    --   desc = "Undo Tree",
+    --   desc = 'Undo Tree',
     -- },
-    {
-      '<leader>e',
-      false,
-      desc = 'Undo Tree',
-    },
+    -- {
+    --   '<leader>e',
+    --   false,
+    --   desc = 'Undo Tree',
+    -- },
 
     -- LSP
     -- {
@@ -321,11 +376,11 @@ return {
 
       vim.api.nvim_set_hl(0, 'SnacksPicker', { bg = bg_picker })
       -- vim.api.nvim_set_hl(0, 'SnacksPickerBorder', { fg = bg_picker, bg = bg_picker })
-      vim.api.nvim_set_hl(0, 'SnacksPickerInput', { bg = bg_input })
+      -- vim.api.nvim_set_hl(0, 'SnacksPickerInput', { bg = bg_input })
       vim.api.nvim_set_hl(0, 'SnacksPickerInputBorder', { fg = bg_preview, bg = bg_preview })
       vim.api.nvim_set_hl(0, 'SnacksPickerPreview', { bg = bg_preview })
       vim.api.nvim_set_hl(0, 'SnacksPickerPreviewBorder', { fg = bg_preview, bg = bg_preview })
-      vim.api.nvim_set_hl(0, 'FloatTitle', { bg = bg_input, fg = fg_title })
+      -- vim.api.nvim_set_hl(0, 'FloatTitle', { bg = bg_input, fg = fg_title })
     end
 
     -- Set once on startup
@@ -516,30 +571,7 @@ return {
 
       sections = {
         { section = 'header', pane = 1 },
-        -- {
-        --   pane = 1,
-        --   section = 'terminal',
-        --   cmd = 'fastfetch',
-        --   height = 10,
-        --   padding = 1,
-        -- },
         { section = 'keys', gap = 1, padding = 1, pane = 1 },
-        -- {
-        --   pane = 2,
-        --   icon = '                               ',
-        --   title = 'Projects',
-        --   section = 'projects',
-        --   indent = 20,
-        --   padding = 1,
-        -- },
-        -- {
-        --   pane = 1,
-        --   icon = '                              ⏲ ',
-        --   title = 'Recent Files',
-        --   section = 'recent_files',
-        --   indent = 20,
-        --   padding = 1,
-        -- },
         {
           pane = 1,
           icon = ' ',
