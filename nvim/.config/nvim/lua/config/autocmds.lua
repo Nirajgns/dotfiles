@@ -96,12 +96,3 @@ end, { desc = 'decrease font size' })
 vim.keymap.set({ 'n', 'i' }, '<C-=>', function()
   ResetGuiFont()
 end, { desc = 'reset font size' })
-
---NOTE: Autocommand to disable numbers in terminal buffers
-vim.api.nvim_create_autocmd('TermOpen', {
-  pattern = '*',
-  callback = function()
-    vim.opt_local.number = false
-    vim.opt_local.relativenumber = false
-  end,
-})

@@ -22,7 +22,7 @@ return {
         Fade({
           value = animate.Number({
             start = 1,
-            to = 0.6,
+            to = 0.5,
             direction = direction.OUT,
             duration = 700,
             ease = ease.LINEAR,

@@ -11,6 +11,10 @@ return {
   end,
   config = function()
     require('catppuccin').setup({
+      float = {
+        transparent = true,
+        solid = true,
+      },
       integrations = {
         telescope = {
           enabled = true,
@@ -20,7 +24,7 @@ return {
         blink_cmp = true,
       },
       color_overrides = {
-        mocha = { base = '#11111b', mantle = '#12121c', crust = '#19191f' },
+        mocha = { base = '#111118', mantle = '#12121c', crust = '#19191f' },
       },
       flavour = 'mocha',
       term_colors = true,

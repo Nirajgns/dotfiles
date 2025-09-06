@@ -6,12 +6,14 @@ return {
       '<cmd>lua require("grug-far").open({ prefills = { paths = vim.fn.expand("%"),search = vim.fn.expand("<cword>") } })<CR>',
       desc = 'Search and replace on current file',
       mode = { 'n', 'v' },
+      silent = true,
     },
     {
       '<leader>sp',
-      '<cmd>lua require("grug-far").grug_far({ prefills = { search = vim.fn.expand("<cword>") } })<CR>',
+      ':lua require("grug-far").open({ prefills = { search = vim.fn.expand("<cword>") } })<CR>',
       desc = 'Search and replace on entire project',
       mode = { 'n', 'v' },
+      silent = true,
     },
   },
   config = function()
