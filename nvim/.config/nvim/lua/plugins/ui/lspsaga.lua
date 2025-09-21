@@ -47,33 +47,33 @@ return {
         '<cmd>Lspsaga term_toggle<cr>',
         { silent = true, desc = 'toggle lspsaga floating terminal' }
       ),
-      vim.keymap.set('n', 'K', '<cmd>Lspsaga hover_doc<cr>', { desc = 'hover doc', silent = true }),
-      vim.keymap.set('n', 'grr', '<cmd>Lspsaga finder<cr>', { desc = 'references (finder)', silent = true }),
+      vim.keymap.set('n', 'gK', '<cmd>Lspsaga hover_doc<cr>', { desc = 'hover doc', silent = true }),
+      vim.keymap.set('n', 'gRR', '<cmd>Lspsaga finder<cr>', { desc = 'references (finder)', silent = true }),
 
-      vim.keymap.set('n', 'gd', '<cmd>Lspsaga goto_definition<cr>', { desc = 'go to definition', silent = true }),
-      vim.keymap.set('n', 'grd', '<cmd>Lspsaga peek_definition<cr>', { desc = 'peek definition', silent = true }),
+      -- vim.keymap.set('n', 'gd', '<cmd>Lspsaga goto_definition<cr>', { desc = 'go to definition', silent = true }),
+      vim.keymap.set('n', 'gpd', '<cmd>Lspsaga peek_definition<cr>', { desc = 'peek definition', silent = true }),
 
       vim.keymap.set(
         'n',
-        'grY',
+        'gRY',
         '<cmd>Lspsaga goto_type_definition<cr>',
         { desc = 'go to type definition', silent = true }
       ),
       vim.keymap.set(
         'n',
-        'gry',
+        'gRy',
         '<cmd>Lspsaga peek_type_definition<cr>',
         { desc = 'peek type definition', silent = true }
       ),
       vim.keymap.set(
         { 'n', 'v', 'x' },
-        'gra',
+        '<leader>ca',
         '<cmd>Lspsaga code_action<cr>',
         { desc = 'code actions', silent = true }
       ),
 
-      vim.keymap.set('n', 'grn', '<cmd>Lspsaga rename mode=n<cr>', { desc = 'Rename with lsp', silent = true }),
-      vim.keymap.set('n', 'gro', '<cmd>Lspsaga outline<cr>', { desc = 'Outline', silent = true }),
+      vim.keymap.set('n', 'gRn', '<cmd>Lspsaga rename mode=n<cr>', { desc = 'Rename with lsp', silent = true }),
+      vim.keymap.set('n', 'gRo', '<cmd>Lspsaga outline<cr>', { desc = 'Outline', silent = true }),
     })
   end,
 }

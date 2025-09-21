@@ -1,7 +1,6 @@
 return {
   'NvChad/nvterm',
   keys = { '<A-v>', '<A-h>', '<A-t>' },
-  -- enabled = false,
   config = function()
     require('nvterm').setup({
       terminals = {

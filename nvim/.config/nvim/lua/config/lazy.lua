@@ -12,7 +12,7 @@ require('lazy').setup({
   spec = {
     -- add LazyVim and import its plugins
     -- import any extras modules here
-    { 'LazyVim/LazyVim', import = 'lazyvim.plugins' },
+    { 'LazyVim/LazyVim', import = 'lazyvim.plugins', version = '14' },
     -- import/override with your plugins
     -- { import = "lazyvim.plugins.extras.coding.blink" },
     -- { import = "lazyvim.plugins.extras.editor.telescope" },

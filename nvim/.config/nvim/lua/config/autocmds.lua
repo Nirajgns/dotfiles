@@ -35,7 +35,7 @@ vim.g.neovide_floating_corner_radius = 10.0
 
 vim.g.neovide_hide_mouse_when_typing = true
 vim.g.gui_font_size = vim.g.gui_font_default_size
-vim.g.gui_font_face = 'Maple Mono NF ExtraLight'
+vim.g.gui_font_face = 'JetBrainsMono NF ExtraLight'
 
 vim.g.neovide_fullscreen = true
 vim.g.neovide_text_gamma = 1

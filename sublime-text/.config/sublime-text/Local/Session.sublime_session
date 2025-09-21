@@ -1,6 +1,10 @@
 {
 	"file_history":
 	[
+		"/home/niraj/.config/nvim/lua/config/lazy.lua",
+		"/home/niraj/.config/nvim/lua/config/keymaps.lua",
+		"/home/niraj/.config/nvim/lua/config/autocmds.lua",
+		"/home/niraj/.config/nvim/lua/plugins/utils/snacks.lua",
 		"/home/niraj/Desktop/install-yaak.sh",
 		"/home/niraj/dotfiles/nvim/.config/nvim/lua/plugins/disabled.lua",
 		"/home/niraj/.zshrc",
@@ -45,7 +49,6 @@
 		"/home/niraj/.config/nvim-bak/lua/plugins/ui/lualine.lua",
 		"/home/niraj/ghostty/dist/linux/ghostty_dolphin.desktop",
 		"/home/niraj/.config/nvim.bak/lua/config/autocmds.lua",
-		"/home/niraj/.config/nvim/lua/config/autocmds.lua",
 		"/home/niraj/.config/nvim-bak/lua/plugins/coding/blink-cmp.lua",
 		"/home/niraj/.config/nvim.bak/lua/plugins/typescript-tools.lua",
 		"/home/niraj/.config/nvim.bak/lua/plugins/blink-cmp.lua",
@@ -89,7 +92,6 @@
 		"/home/niraj/.config/nvim/lua/custom/plugins/init.lua",
 		"/home/niraj/.config/nvim/init.lua",
 		"/home/niraj/.config/nvim/lua/custom/plugins/which-key.lua",
-		"/home/niraj/.config/nvim/lua/config/keymaps.lua",
 		"/home/niraj/.local/share/nvim/lazy/persistence.nvim/doc/persistence.nvim.txt",
 		"/home/niraj/Desktop/Projects/instaclone/frontend/components.json",
 		"/home/niraj/Desktop/Projects/js/insta1/insta/node_modules/framer-motion/dist/es/gestures/utils/is-node-or-child.mjs",
@@ -126,16 +128,14 @@
 		"/home/niraj/.config/dleyna-server-service.conf",
 		"/home/niraj/.config/baloofileinformationrc",
 		"/home/niraj/.config/dolphinrc",
-		"/home/niraj/.config/user-dirs.locale",
-		"/home/niraj/.config/kservicemenurc",
-		"/home/niraj/.config/gsconnect/private.pem"
+		"/home/niraj/.config/user-dirs.locale"
 	],
 	"folder_history":
 	[
+		"/home/niraj/.config/nvim",
 		"/home/niraj/Downloads/mrgun/mrgun/workitpt-api/workitpt-api",
 		"/home/niraj",
 		"/home/niraj/.config/nvim/lua/custom/plugins",
-		"/home/niraj/.config/nvim",
 		"/home/niraj/Desktop/Projects/js/bookstore",
 		"/home/niraj/.config/nvim.bak",
 		"/home/niraj/Desktop/projects/js/ts-ecom-api",
@@ -148,18 +148,18 @@
 		"/home/niraj/Desktop/Projects/Nomad-backend-master"
 	],
 	"last_version": 4200,
-	"last_window_id": 43,
+	"last_window_id": 45,
 	"log_indexing": false,
-	"next_update_check": 1752637704,
+	"next_update_check": 1757152749,
 	"settings":
 	{
-		"new_window_full_screen": false,
+		"new_window_full_screen": true,
 		"new_window_height": 1040.0,
 		"new_window_maximized": false,
 		"new_window_position":
 		[
-			56.0,
-			90.0
+			0.0,
+			0.0
 		],
 		"new_window_settings":
 		{
@@ -179,6 +179,10 @@
 				"last_filter": "",
 				"selected_items":
 				[
+					[
+						"split",
+						"Sublime Merge: Open Repository"
+					],
 					[
 						"settin",
 						"Preferences: Settings"
@@ -226,10 +230,6 @@
 					[
 						"color",
 						"UI: Customize Color Scheme"
-					],
-					[
-						"split",
-						"File: Split View"
 					],
 					[
 						"install ",
@@ -285,6 +285,10 @@
 			},
 			"file_history":
 			[
+				"/home/niraj/.config/nvim/lua/config/options.lua",
+				"/home/niraj/.config/nvim/lua/config/keymaps.lua",
+				"/home/niraj/.config/nvim/lua/config/autocmds.lua",
+				"/home/niraj/.config/nvim/lua/plugins/utils/snacks.lua",
 				"/home/niraj/Desktop/install-yaak.sh",
 				"/home/niraj/dotfiles/nvim/.config/nvim/lua/plugins/disabled.lua",
 				"/home/niraj/.zshrc",
@@ -325,7 +329,6 @@
 				"/home/niraj/.config/nvim-bak/lua/plugins/ui/lualine.lua",
 				"/home/niraj/ghostty/dist/linux/ghostty_dolphin.desktop",
 				"/home/niraj/.config/nvim.bak/lua/config/autocmds.lua",
-				"/home/niraj/.config/nvim/lua/config/autocmds.lua",
 				"/home/niraj/.config/nvim-bak/lua/plugins/coding/blink-cmp.lua",
 				"/home/niraj/.config/nvim.bak/lua/plugins/typescript-tools.lua",
 				"/home/niraj/.config/nvim.bak/lua/plugins/blink-cmp.lua",
@@ -367,7 +370,6 @@
 				"/home/niraj/.config/nvim/lua/custom/plugins/init.lua",
 				"/home/niraj/.config/nvim/init.lua",
 				"/home/niraj/.config/nvim/lua/custom/plugins/which-key.lua",
-				"/home/niraj/.config/nvim/lua/config/keymaps.lua",
 				"/home/niraj/.local/share/nvim/lazy/persistence.nvim/doc/persistence.nvim.txt",
 				"/home/niraj/Desktop/Projects/instaclone/frontend/components.json",
 				"/home/niraj/Desktop/Projects/js/insta1/insta/node_modules/framer-motion/dist/es/gestures/utils/is-node-or-child.mjs",
@@ -410,9 +412,7 @@
 				"/home/niraj/.ssh/id_rsa.pub",
 				"/home/niraj/Dropbox/obsidian-vault/Learn-react/React.md",
 				"/home/niraj/Dropbox/obsidian-vault/.obsidian.vimrc",
-				"/home/niraj/Desktop/projects/js/ts-ecom-api/src/routes/products.ts",
-				"/home/niraj/.bash_history",
-				"/home/niraj/.config/nvim.bak/lua/config/options.lua"
+				"/home/niraj/Desktop/projects/js/ts-ecom-api/src/routes/products.ts"
 			],
 			"find":
 			{
@@ -485,6 +485,14 @@
 				"last_filter": "",
 				"selected_items":
 				[
+					[
+						"opti",
+						"lua/config/options.lua"
+					],
+					[
+						"sna",
+						"lua/plugins/utils/snacks.lua"
+					]
 				],
 				"width": 0.0
 			},
@@ -516,7 +524,7 @@
 			{
 			}
 		},
-		"new_window_width": 1920.0
+		"new_window_width": 960.0
 	},
 	"windows":
 	[
@@ -529,6 +537,28 @@
 			},
 			"buffers":
 			[
+				{
+					"file": "/home/niraj/.config/nvim/lua/config/keymaps.lua",
+					"settings":
+					{
+						"buffer_size": 4536,
+						"line_ending": "Unix"
+					},
+					"undo_stack":
+					[
+					]
+				},
+				{
+					"file": "/home/niraj/.config/nvim/lua/config/options.lua",
+					"settings":
+					{
+						"buffer_size": 1558,
+						"line_ending": "Unix"
+					},
+					"undo_stack":
+					[
+					]
+				}
 			],
 			"build_system": "",
 			"build_system_choices":
@@ -541,6 +571,10 @@
 				"last_filter": "",
 				"selected_items":
 				[
+					[
+						"split",
+						"Sublime Merge: Open Repository"
+					],
 					[
 						"settin",
 						"Preferences: Settings"
@@ -588,10 +622,6 @@
 					[
 						"color",
 						"UI: Customize Color Scheme"
-					],
-					[
-						"split",
-						"File: Split View"
 					],
 					[
 						"install ",
@@ -647,15 +677,15 @@
 			},
 			"expanded_folders":
 			[
-				"/home/niraj",
-				"/home/niraj/.config",
-				"/home/niraj/.config/app.yaak.desktop",
-				"/home/niraj/.config/gnome-session",
-				"/home/niraj/.supermaven",
-				"/home/niraj/.themes"
+				"/home/niraj/.config/nvim",
+				"/home/niraj/.config/nvim/lua",
+				"/home/niraj/.config/nvim/lua/config"
 			],
 			"file_history":
 			[
+				"/home/niraj/.config/nvim/lua/config/keymaps.lua",
+				"/home/niraj/.config/nvim/lua/config/autocmds.lua",
+				"/home/niraj/.config/nvim/lua/plugins/utils/snacks.lua",
 				"/home/niraj/Desktop/install-yaak.sh",
 				"/home/niraj/dotfiles/nvim/.config/nvim/lua/plugins/disabled.lua",
 				"/home/niraj/.zshrc",
@@ -696,7 +726,6 @@
 				"/home/niraj/.config/nvim-bak/lua/plugins/ui/lualine.lua",
 				"/home/niraj/ghostty/dist/linux/ghostty_dolphin.desktop",
 				"/home/niraj/.config/nvim.bak/lua/config/autocmds.lua",
-				"/home/niraj/.config/nvim/lua/config/autocmds.lua",
 				"/home/niraj/.config/nvim-bak/lua/plugins/coding/blink-cmp.lua",
 				"/home/niraj/.config/nvim.bak/lua/plugins/typescript-tools.lua",
 				"/home/niraj/.config/nvim.bak/lua/plugins/blink-cmp.lua",
@@ -738,7 +767,6 @@
 				"/home/niraj/.config/nvim/lua/custom/plugins/init.lua",
 				"/home/niraj/.config/nvim/init.lua",
 				"/home/niraj/.config/nvim/lua/custom/plugins/which-key.lua",
-				"/home/niraj/.config/nvim/lua/config/keymaps.lua",
 				"/home/niraj/.local/share/nvim/lazy/persistence.nvim/doc/persistence.nvim.txt",
 				"/home/niraj/Desktop/Projects/instaclone/frontend/components.json",
 				"/home/niraj/Desktop/Projects/js/insta1/insta/node_modules/framer-motion/dist/es/gestures/utils/is-node-or-child.mjs",
@@ -782,8 +810,7 @@
 				"/home/niraj/Dropbox/obsidian-vault/Learn-react/React.md",
 				"/home/niraj/Dropbox/obsidian-vault/.obsidian.vimrc",
 				"/home/niraj/Desktop/projects/js/ts-ecom-api/src/routes/products.ts",
-				"/home/niraj/.bash_history",
-				"/home/niraj/.config/nvim.bak/lua/config/options.lua"
+				"/home/niraj/.bash_history"
 			],
 			"find":
 			{
@@ -820,7 +847,7 @@
 			"folders":
 			[
 				{
-					"path": "/home/niraj"
+					"path": "/home/niraj/.config/nvim"
 				}
 			],
 			"groups":
@@ -828,6 +855,71 @@
 				{
 					"sheets":
 					[
+						{
+							"buffer": 0,
+							"file": "/home/niraj/.config/nvim/lua/config/keymaps.lua",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 4536,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										27,
+										27
+									]
+								],
+								"settings":
+								{
+									"_nv_visual_sel_mode": "mode_visual_line",
+									"highlight_line": true,
+									"syntax": "Packages/Lua/Lua.sublime-syntax",
+									"tab_size": 2,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 1,
+							"stack_multiselect": false,
+							"type": "text"
+						},
+						{
+							"buffer": 1,
+							"file": "/home/niraj/.config/nvim/lua/config/options.lua",
+							"selected": true,
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 1558,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										1237,
+										1237
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Lua/Lua.sublime-syntax",
+									"tab_size": 2,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 951.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 0,
+							"stack_multiselect": false,
+							"type": "text"
+						}
 					]
 				}
 			],
@@ -881,7 +973,7 @@
 				]
 			},
 			"pinned_build_system": "",
-			"position": "0,0,0,0,0,56,50,1976,1090,1920,1080,0",
+			"position": "1,0,0,0,0,56,50,1016,1090,1920,1080,0",
 			"project": "",
 			"replace":
 			{
@@ -894,6 +986,14 @@
 				"last_filter": "",
 				"selected_items":
 				[
+					[
+						"opti",
+						"lua/config/options.lua"
+					],
+					[
+						"sna",
+						"lua/plugins/utils/snacks.lua"
+					]
 				],
 				"width": 0.0
 			},
@@ -929,7 +1029,7 @@
 			"template_settings":
 			{
 			},
-			"window_id": 41,
+			"window_id": 44,
 			"workspace_name": ""
 		}
 	],
