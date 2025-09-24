@@ -1,6 +1,6 @@
 return {
   'NvChad/nvterm',
-  keys = { '<A-v>', '<A-h>', '<A-t>' },
+  event = 'LazyFile',
   config = function()
     require('nvterm').setup({
       terminals = {
