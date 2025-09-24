@@ -1,57 +1,51 @@
 return {
-  -- 'neovim/nvim-lspconfig',
-  -- -- ensure this loads when LSP attaches
-  -- event = 'LspAttach',
-  -- opts = function()
-  --   -- get the current LazyVim LSP keymap table
-  --   local keys = require('lazyvim.plugins.lsp.keymaps').get()
-  --
-  --   -- disable / remove keymaps you don't want
-  --   -- using `false` will disable them
-  --   keys[#keys + 1] = { '<C-k>', mode = 'i', false }
-  --   keys[#keys + 1] = { 'K', mode = 'n', false }
-  --   keys[#keys + 1] = { 'gr', mode = 'n', false }
-  --   keys[#keys + 1] = { 'gy', mode = 'n', false }
-  --   keys[#keys + 1] = { 'gd', mode = 'n', false }
-  --   -- keys[#keys + 1] = { "gD", mode = "n", false } -- if needed
-  --   keys[#keys + 1] = { '<leader>cr', mode = 'n', false }
-  --   keys[#keys + 1] = { '<leader>cc', mode = 'n', false }
-  --   keys[#keys + 1] = { '<leader>ca', mode = { 'v', 'n' }, false }
-  --
-  --   -- add a custom keymap: signature help in insert mode
-  --   keys[#keys + 1] = {
-  --     '<C-S-K>', -- or "C-s-k"? adjust case as you want
-  --     vim.lsp.buf.signature_help,
-  --     mode = 'i',
-  --     desc = 'Signature Help',
-  --     has = 'signatureHelp',
-  --   }
-  --
-  --   -- then return the rest of the LSP config opts
-  --   return {
-  --     inlay_hints = {
-  --       enabled = false,
-  --       exclude = { 'vue' },
-  --     },
-  --     codelens = {
-  --       enabled = false,
-  --     },
-  --     diagnostics = {
-  --       underline = true,
-  --       update_in_insert = true,
-  --       virtual_text = {
-  --         spacing = 25,
-  --         source = 'if_many',
-  --         prefix = '⬤', -- or whatever symbol you want
-  --       },
-  --       -- you might also add severity_sort if you prefer sorting
-  --       severity_sort = true,
-  --     },
-  --     -- define which servers to enable
-  --     servers = {
-  --       tailwindcss = {},
-  --       -- other servers...
-  --     },
-  --   }
-  -- end,
+  'neovim/nvim-lspconfig',
+  event = 'LspAttach',
+  opts = function(_, opts)
+    local keys = require('lazyvim.plugins.lsp.keymaps').get()
+
+    -- disable default keys
+    keys[#keys + 1] = { '<c-k>', mode = 'i', false }
+    keys[#keys + 1] = { 'K', mode = 'n', false }
+    keys[#keys + 1] = { 'gr', mode = 'n', false }
+    keys[#keys + 1] = { 'gy', mode = 'n', false }
+    keys[#keys + 1] = { 'gd', mode = 'n', false }
+    keys[#keys + 1] = { '<leader>cr', mode = 'n', false }
+    keys[#keys + 1] = { '<leader>cc', mode = 'n', false }
+    keys[#keys + 1] = { '<leader>ca', mode = { 'v', 'n' }, false }
+
+    -- add custom key
+    keys[#keys + 1] = {
+      '<c-s-k>',
+      vim.lsp.buf.signature_help,
+      mode = 'i',
+      desc = 'Signature Help',
+      has = 'signatureHelp',
+    }
+
+    -- apply keymaps back into opts
+    opts.keys = keys
+
+    -- now tweak opts without wiping defaults
+    opts.inlay_hints = {
+      enabled = false,
+      exclude = { 'vue' },
+    }
+    opts.codelens = { enabled = false }
+    opts.diagnostics = {
+      underline = true,
+      update_in_insert = true,
+      virtual_text = {
+        spacing = 25,
+        source = 'if_many',
+        prefix = '⬤',
+      },
+    }
+
+    opts.servers = vim.tbl_extend('force', opts.servers or {}, {
+      tailwindcss = {},
+    })
+
+    return opts
+  end,
 }
