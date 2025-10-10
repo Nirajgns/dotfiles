@@ -29,6 +29,8 @@ return {
         },
       },
       finder = {
+        right_width = 1,
+        left_width = 0.3,
         keys = {
           toggle_or_open = '<cr>',
           vsplit = '|',

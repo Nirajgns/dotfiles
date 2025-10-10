@@ -1,8 +1,11 @@
 return {
   'akinsho/bufferline.nvim',
   event = 'LazyFile',
-  opts = {
+  config = {
     options = {
+      max_name_length = 100,
+      show_buffer_close_icons = true,
+      show_close_icon = true,
       hover = {
         enabled = true,
         delay = 200,
