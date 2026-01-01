@@ -1,38 +1,13 @@
 return {
   'neovim/nvim-lspconfig',
   event = 'LspAttach',
-  opts = function(_, opts)
-    local keys = require('lazyvim.plugins.lsp.keymaps').get()
-
-    -- disable default keys
-    keys[#keys + 1] = { '<c-k>', mode = 'i', false }
-    keys[#keys + 1] = { 'K', mode = 'n', false }
-    keys[#keys + 1] = { 'gr', mode = 'n', false }
-    keys[#keys + 1] = { 'gy', mode = 'n', false }
-    keys[#keys + 1] = { 'gd', mode = 'n', false }
-    keys[#keys + 1] = { '<leader>cr', mode = 'n', false }
-    keys[#keys + 1] = { '<leader>cc', mode = 'n', false }
-    keys[#keys + 1] = { '<leader>ca', mode = { 'v', 'n' }, false }
-
-    -- add custom key
-    keys[#keys + 1] = {
-      '<c-s-k>',
-      vim.lsp.buf.signature_help,
-      mode = 'i',
-      desc = 'Signature Help',
-      has = 'signatureHelp',
-    }
-
-    -- apply keymaps back into opts
-    opts.keys = keys
-
-    -- now tweak opts without wiping defaults
-    opts.inlay_hints = {
+  opts = {
+    inlay_hints = {
       enabled = false,
       exclude = { 'vue' },
-    }
-    opts.codelens = { enabled = false }
-    opts.diagnostics = {
+    },
+    codelens = { enabled = false },
+    diagnostics = {
       underline = true,
       update_in_insert = true,
       virtual_text = {
@@ -40,12 +15,33 @@ return {
         source = 'if_many',
         prefix = '⬤',
       },
-    }
+    },
+    servers = {
+      ['*'] = {
+        keys = {
+          -- disable default keys by setting false
+          { '<c-k>', mode = 'i', false },
+          { 'K', mode = 'n', false },
+          { 'gr', mode = 'n', false },
+          { 'gy', mode = 'n', false },
+          { 'gd', mode = 'n', false },
+          { '<leader>cr', mode = 'n', false },
+          { '<leader>cc', mode = 'n', false },
+          { '<leader>ca', mode = { 'v', 'n' }, false },
 
-    opts.servers = vim.tbl_extend('force', opts.servers or {}, {
+          -- add your custom key
+          {
+            '<C-s-k>',
+            function()
+              vim.lsp.buf.signature_help()
+            end,
+            mode = 'i',
+            desc = 'Signature Help',
+            has = 'signatureHelp',
+          },
+        },
+      },
       tailwindcss = {},
-    })
-
-    return opts
-  end,
+    },
+  },
 }
